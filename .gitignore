@@ -1,0 +1,8 @@
+/build_local/
+/build_staging/
+/build_production/
+/node_modules/
+/vendor/
+.DS_Store
+.php_cs.cache
+.env

@@ -1,0 +1,4 @@
+build_local/
+build_production/
+source/assets/
+vendor/

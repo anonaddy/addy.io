@@ -1,0 +1,29 @@
+.mobile-nav-menu {
+  @apply .gradient;
+  @apply .pb-2;
+  @apply .pt-6;
+  @apply .px-2;
+  @apply .shadow;
+  @apply .w-auto;
+  @apply .hidden;
+}
+
+.nav-menu-hide {
+  display: none;
+}
+
+#menu-handle {
+  display: none;
+}
+#menu-handle:checked {
+  + label .nav-menu-hide {
+    display: block;
+  }
+  + label .nav-menu-show {
+    display: none;
+  }
+  +label + .mobile-nav-menu {
+    display: block;
+  }
+}
+
