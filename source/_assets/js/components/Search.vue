@@ -113,33 +113,3 @@ export default {
   },
 }
 </script>
-
-<style>
-input[name='search'] {
-  background-image: url('/assets/img/magnifying-glass.svg');
-  background-position: 0.8em;
-  background-repeat: no-repeat;
-  border-radius: 25px;
-  text-indent: 1.2em;
-}
-
-input[name='search'].transition-border {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
-.fade-enter-active {
-  transition: opacity 0.5s;
-}
-
-.fade-leave-active {
-  transition: opacity 0s;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>

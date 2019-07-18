@@ -24,7 +24,6 @@ cloneRepository
 runComposer
 runNpm
 generateAssets
-optimizeInstallation
 cleanOldReleases
 finishDeploy
 @endstory
@@ -77,12 +76,8 @@ npm run production --no-progress &> /dev/null
 # Mark release
 cd {{ $newReleaseDir }}
 echo "{{ $newReleaseName }}" > build_production/release-name.txt
-@endtask
 
-@task("optimizeInstallation", ["on" => "remote"])
-{{ logMessage("✨  Optimizing installation...") }}
-cd {{ $newReleaseDir }}
-php artisan clear-compiled
+ln -nfs {{ $newReleaseDir }} {{ $currentDir }}
 @endtask
 
 @task("cleanOldReleases", ["on" => "remote"])
@@ -91,6 +86,10 @@ php artisan clear-compiled
 cd {{ $releasesDir }}
 ls -dt {{ $releasesDir }}/* | tail -n +6 | xargs -d "\n" chown -R deployer .
 ls -dt {{ $releasesDir }}/* | tail -n +6 | xargs -d "\n" rm -rf
+@endtask
+
+@task("finishDeploy", ["on" => "local"])
+{{ logMessage("🚀  Application deployed!") }}
 @endtask
 
 @task("deploymentRollback")
