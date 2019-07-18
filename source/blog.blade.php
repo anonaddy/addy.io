@@ -14,9 +14,11 @@ title: "Blog"
 @endpush
 
 @section('body')
-    <div id="vue-search" class="flex flex-1 items-center relative">
+    <div class="flex flex-1 items-center relative">
         <h1 class="mb-0">Blog</h1>
-        <search></search>
+        <div id="vue-search" class="flex flex-1">
+            <search></search>
+        </div>
     </div>
 
     <hr class="border-b my-6">
