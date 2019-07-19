@@ -64,7 +64,7 @@ Yes when you have encryption enabled all forwarded emails are signed using our m
 
 You can add this key to your own keyring so that you can verify emails have come from us.
 
-The fingerprint of the mailer@anonaddy.me key is "26A987650243B28802524E2F809FD0D502E2F695" you can find the key on [https://keys.openpgp.org](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695).
+The fingerprint of the mailer@anonaddy.me key is <span class="break-words">"26A987650243B28802524E2F809FD0D502E2F695"</span> you can find the key on [https://keys.openpgp.org](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695).
 
 
 #### **What if I don't trust you?**
