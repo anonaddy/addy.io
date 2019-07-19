@@ -51,7 +51,7 @@ I've also been doing some work on improving the security of the mail server by e
 
 This is on top of DNSSEC, TLSv1.3, DMARC, SPF, DKIM, CAA etc.
 
-The server now gets all green lights on [hardenize.com](https://www.hardenize.com/).
+The sending domain anonaddy.me now gets all green lights on [hardenize.com](https://www.hardenize.com/).
 
 ## What's next?
 

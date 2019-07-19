@@ -3,6 +3,7 @@
 /build_production/
 /node_modules/
 /vendor/
+.vscode/
 .DS_Store
 .php_cs.cache
 .env

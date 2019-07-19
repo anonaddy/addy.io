@@ -7,7 +7,6 @@ import Search from './components/Search.vue'
 Vue.config.productionTip = false
 
 new Vue({
-  components: {
-    Search,
-  },
-}).$mount('#vue-search')
+  el: '#vue-search',
+  render: h => h(Search),
+})
