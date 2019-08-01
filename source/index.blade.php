@@ -46,7 +46,7 @@
 
 
 
-<section class="bg-white border-b py-8">
+<section class="bg-white border-b border-grey-100 py-8">
 	<div class="container max-w-5xl mx-auto m-8">
 		<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">How Does It Work?</h1>
 		<div class="w-full mb-4">
@@ -100,11 +100,81 @@
 	</div>
 </section>
 
-<!-- Change the colour #f8fafc to match the previous section colour -->
+<section class="bg-white border-b py-8">
+	<div class="container max-w-5xl mx-auto m-8">
+		<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Features You'll Love</h1>
+		<div class="w-full mb-4">
+			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+		</div>
+
+		<div class="flex flex-wrap">
+			<div class="w-full sm:w-1/2 p-6">
+				<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">GPG/OpenPGP Encryption</h3>
+				<p class="text-grey-600 mb-4">Bring your own GPG/OpenPGP public keys and add them per recipient.</p>
+
+				<p class="text-grey-600">You can then easily toggle encryption on and off. With encryption on, all forwarded messages will be encrypted with your public key. Only you will be able to decrypt them with the corresponding private key.</p>
+
+				<p class="text-grey-600">This is great if you are using Gmail or Outlook and wish to prevent any inbox snooping.</p>
+
+			</div>
+			<div class="w-full sm:w-1/2 p-6">
+
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/fingerprint.svg">
+
+			</div>
+		</div>
+
+		<div class="flex flex-wrap flex-col-reverse sm:flex-row">
+			<div class="w-full sm:w-1/2 p-6 mt-6">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/domains.svg">
+			</div>
+			<div class="w-full sm:w-1/2 p-6 mt-6">
+				<div class="align-middle">
+					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Custom Domains</h3>
+					<p class="text-grey-600 mb-4">If you have your own domain you can add it and use it as a catch-all.</p>
+				<p class="text-grey-600 b-4">You'll be able to use it exactly like your username subdomain aliases e.g. <b>alias@yourdomain.com</b>.</p>
+					<p class="text-grey-600 mb-4">You can then manage your aliases and deactivate/delete any that start receiving spam!</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="flex flex-wrap">
+			<div class="w-full sm:w-1/2 p-6">
+				<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Generate UUID Aliases</h3>
+				<p class="text-grey-600 mb-4">If you don't like the fact that all your aliases contain your username then you can generate unique aliases from your dashboard.</p>
+				<p class="text-grey-600 mb-4">The generated aliases will look something like this <b>94960540-f914-42e0-9c50-6faa7a385384@anonaddy.me</b>.</p>
+				<p class="text-grey-600 mb-4">This prevents anyone linking ownership of the alias to you.</p>
+			</div>
+			<div class="w-full sm:w-1/2 p-6">
+
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/anonymous.svg">
+
+			</div>
+		</div>
+
+		<div class="flex flex-wrap flex-col-reverse sm:flex-row">
+			<div class="w-full sm:w-1/2 p-6 mt-6">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/recipients.svg">
+			</div>
+			<div class="w-full sm:w-1/2 p-6 mt-6">
+				<div class="align-middle">
+					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Multiple Recipients Per Alias</h3>
+					<p class="text-grey-600 mb-4">If you'd like an alias to go to more than one recipient you can easily add multiple recipients from your dashboard.</p>
+					<p class="text-grey-600 mb-4">You can even add recipients to an alias as it is created by doing <b>alias+2.3.4@user.anonaddy.com</b></p>
+					<p class="text-grey-600 mb-4">Where 2,3 and 4 are the keys for existing recipients in your account.</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
 <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 		<g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-			<g class="wave" fill="#f8fafc">
+			<g class="wave" fill="#fff">
 				<path d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"></path>
 			</g>
 			<g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
