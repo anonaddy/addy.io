@@ -25,7 +25,7 @@ We may collect the following data from you:
 
 Our site does not store/save any emails that are forwarded or replied to through the service. Emails are either immediately forwarded on or erased from memory. You can check the source code to see what happens when an email is piped to our application by Postfix.
 
-Our server uses Postfix as the mail server software and Nginx as the web server. Nginx access and error logs are kept which do record IP addresses. Default log settings are used for Postfix. The logs are retained and periodically rotated, deleting old log files.
+Our server uses Postfix as the mail server software and Nginx as the web server. Nginx access and error logs are kept which do record IP addresses. Default log settings are used for Postfix. The logs are rotated daily and retained for 7 days, old log files are deleted.
 
 Server logs are only used to improve our service and prevent abuse or prohibited use. This information will not be provided under any circumstances to any parties other than when compelled by law.
 
@@ -42,7 +42,7 @@ We use information held about you for the following purposes:
 
 We will never misuse, sell, rent, share or give away any personal information to any third parties.
 
-Our website is open-source and available for anyone to view and audit. We do not use Google Analytics or any other analytics/tracking (unless you count server logs mentioned above) on our site.
+Our website is open-source and available for anyone (who understands PHP) to view and audit. We do not use Google Analytics or any other analytics/tracking (unless you count server logs mentioned above) on our site.
 
 
 #### **Security**

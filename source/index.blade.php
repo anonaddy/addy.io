@@ -56,15 +56,13 @@
 		<div class="flex flex-wrap">
 			<div class="w-full sm:w-1/2 p-6">
 				<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">1. Register Your Username</h3>
-				<p class="text-grey-600 mb-4">Let's say that you choose <b>johndoe</b> as your username. You can now use *@johndoe.anonaddy.me as your email. Where * denotes any valid local part for an email address.</p>
+				<p class="text-grey-600 mb-4">Let's say your username is <b>johndoe</b>. You can now use *@johndoe.anonaddy.com (or .me) as your email. Where * denotes any valid local part for an email address.</p>
 
-				<p class="text-grey-600">If you would like to remain anonymous choose a username that is not linked to your real name or identify.</p>
+				<p class="text-grey-600">If you would like to remain anonymous choose a username that is not linked to your real name or identify and that you haven't used anywhere else.</p>
 
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
-
 				<img class="w-full sm:h-64 mx-auto" src="/assets/img/register.svg">
-
 			</div>
 		</div>
 
@@ -76,7 +74,7 @@
 				<div class="align-middle">
 					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">2. Create Aliases On The Fly</h3>
 					<p class="text-grey-600 mb-4">Next time you are signing up to a website or newsletter, simply make up a new alias and enter that instead of your real email address.</p>
-					<p class="text-grey-600 mb-4">For example, if you are on vuejs.org and you want to sign up to their newsletter you could simply enter <b>vuejs@johndoe.anonaddy.me</b>.</p>
+					<p class="text-grey-600 mb-4">For example, if you are on vuejs.org and you want to sign up to their newsletter you could simply enter <b>vuejs@johndoe.anonaddy.com</b> (or .me).</p>
 					<p class="text-grey-600 mb-4">We'll automatically create the alias in your dashboard as soon as it receives its first email. You can reply to emails anonymously too!</p>
 				</div>
 			</div>
@@ -91,9 +89,7 @@
 				<p class="text-grey-600 mb-4">You can also delete the alias. Then our system will <b>reject</b> any emails and respond with an error.</p>
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
-
 				<img class="w-full sm:h-64 mx-auto" src="/assets/img/dashboard.svg">
-
 			</div>
 		</div>
 
@@ -118,9 +114,7 @@
 
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
-
 				<img class="w-full sm:h-64 mx-auto" src="/assets/img/fingerprint.svg">
-
 			</div>
 		</div>
 
@@ -132,11 +126,10 @@
 				<div class="align-middle">
 					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Custom Domains</h3>
 					<p class="text-grey-600 mb-4">If you have your own domain you can add it and use it as a catch-all.</p>
-				<p class="text-grey-600 b-4">You'll be able to use it exactly like your username subdomain aliases e.g. <b>alias@yourdomain.com</b>.</p>
+				<p class="text-grey-600 b-4">You'll be able to use it exactly like your username subdomain aliases e.g. <b>alias@example.com</b>.</p>
 					<p class="text-grey-600 mb-4">You can then manage your aliases and deactivate/delete any that start receiving spam!</p>
 				</div>
 			</div>
-
 		</div>
 
 		<div class="flex flex-wrap">
@@ -147,9 +140,7 @@
 				<p class="text-grey-600 mb-4">This prevents anyone linking ownership of the alias to you.</p>
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
-
 				<img class="w-full sm:h-64 mx-auto" src="/assets/img/anonymous.svg">
-
 			</div>
 		</div>
 
@@ -165,7 +156,18 @@
 					<p class="text-grey-600 mb-4">Where 2,3 and 4 are the keys for existing recipients in your account.</p>
 				</div>
 			</div>
+		</div>
 
+		<div class="flex flex-wrap">
+			<div class="w-full sm:w-1/2 p-6">
+				<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Add Additional Usernames</h3>
+				<p class="text-grey-600 mb-4">You can add additional usernames to your account and use them exactly like the one you signed up with.</p>
+				<p class="text-grey-600 mb-4">So if you signed up as johndoe you can add johnsmith as an additional username and then use <b>anyalias@johnsmith.anonaddy.com</b> too.</p>
+				<p class="text-grey-600 mb-4">This can be used to compartmentalise your aliases. You could have a username for work emails a different one for personal emails etc.</p>
+			</div>
+			<div class="w-full sm:w-1/2 p-6">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/usernames.svg">
+			</div>g
 		</div>
 
 	</div>
