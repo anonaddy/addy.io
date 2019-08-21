@@ -73,13 +73,13 @@ The fingerprint of the mailer@anonaddy.me key is <span class="break-words">"26A9
 
 If you're concerned that your aliases are all linked by your username e.g. @johndoe.anonaddy.com, then you have a couple of options:
 
-1. You can generate UUID aliases instead, these are all under the root domain and cannot be linked to a user.
+1. You can generate UUID aliases instead, these are all under the parent domain and cannot be linked to a user.
 2. You can add additional usernames and separate your aliases under your these. e.g. you could have one username for personal stuff, another for work, another for hobbies etc.
 
 
 #### **What if I don't trust you?**
 
-It's good to keep your guard up when online so you should never trust anyone 100%. I'll try my best to be as honest and transparent as I can but if you still aren't convinced you can always just fire up your own server and self-host this application. You'll need to know about server admin and PHP. I'll be adding more details on how to do this soon.
+It's good to keep your guard up when online so you should never trust anyone 100%. I'll try my best to be as honest and transparent as I can but if you still aren't convinced you can always just fire up your own server and self-host this application. You'll need to know about server administration and PHP. I'll be adding more details on how to do this soon.
 
 
 #### **What is the maximum number of recipients I can add to an alias?**
