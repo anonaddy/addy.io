@@ -225,31 +225,35 @@
 					<div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
 					<div class="px-8 pt-8 text-base my-0 flex justify-center">
 						<div>
-							<div class="py-4">
+							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
 								<b>Everything</b> in Free
 							</div>
-							<div class="py-4">
+							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
 								<b>5</b> Custom Domains
 							</div>
-							<div class="py-4">
+							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
 								<b>3</b> Additional Usernames
 							</div>
-							<div class="py-4">
+							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
 								<b>50</b> Recipients
 							</div>
-							<div class="py-4">
+							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
 								<b>Anonymous</b> Email Replies
 							</div>
-							<div class="py-4">
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								Access to <b>Pro Settings</b>
+							</div>
+							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
 								<b>Priority</b> Email Queue
 							</div>
-							<div class="py-4">
+							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
 								<b>500MB</b> Monthly Bandwidth
 							</div>
