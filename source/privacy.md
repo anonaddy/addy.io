@@ -9,7 +9,7 @@ section: body
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-<p class="text-sm text-grey-400 mb-4">Last Updated: 18th June 2019</p>
+<p class="text-sm text-grey-400 mb-4">Last Updated: 4th September 2019</p>
 
 This policy (together with our Terms and Conditions) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. It applies to anonaddy.com and any subdomains e.g. app.anonaddy.com.
 
@@ -22,6 +22,7 @@ We may collect the following data from you:
 * Information that you provide by filling in forms on our site. This includes information provided at the time of registering to use our site or subscribing to our service.
 * If you contact us, we may keep a record of that correspondence.
 * For keeping track of authenticated sessions we use a small number of cookies. This site does not provide any third parts cookies (or other content) and makes no effort to track you. You can delete stored cookies from your browser whenever you wish.
+* If you start a subscription we may ask you to provide us with information such as your name and payment information. Your name and card details will not be stored in our database.
 
 Our site does not store/save any emails that are forwarded or replied to through the service. Emails are either immediately forwarded on or erased from memory. You can check the source code to see what happens when an email is piped to our application by Postfix.
 
@@ -59,6 +60,11 @@ We take all measures reasonably necessary to protect against unauthorised access
 You have the right to request access to personal data that we may process about you.
 
 You have the right to require us to correct any inaccuracies in your data, free of charge. You can access, correct, update or request deletion of your personal information at any time, either through your online account or by contacting us.
+
+
+#### **Third party services**
+
+The only third party service that we use is [Stripe](https://stripe.com) to process payments for subscriptions. Any payment transactions will be carried out by Stripe over encrypted connections.
 
 
 #### **Changes To Our Privacy Policy**

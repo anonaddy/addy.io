@@ -9,7 +9,7 @@ section: body
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-<p class="text-sm text-grey-400 mb-4">Last Updated: 18th June 2019</p>
+<p class="text-sm text-grey-400 mb-4">Last Updated: 4th September 2019</p>
 
 Please read these terms of use carefully before you start to use the site. By using our site, you indicate that you accept these terms of use and that you agree to abide by them. If you do not agree to these terms of use, please refrain from using our site.
 
@@ -27,6 +27,17 @@ We may terminate or suspend access to our Service immediately, without prior not
 All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
 
 Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply contact us.
+
+
+#### **Subscriptions**
+
+Some features of the service are billed on a subscription basis. The subscription fees are billed on a monthly cycle, your subscription will automatically renew unless you or AnonAddy cancels it. You may cancel your subscription to the service at any time.
+
+You agree that you will accept the full responsibility for successfully cancelling your subscription. If you need assistance in cancelling your subscription please simply contact us. You agree to provide us with 2 days advance notice to attend to your request.
+
+If we are unable to process a payment for your subscription, we reserve the right to terminate this license and cancel your subscription for non-payment.
+
+We reserve the right to make changes to subscription fees in the future, you will receive notification of any changes in advance by email.
 
 
 #### **Intellectual Property Rights**
