@@ -21,7 +21,7 @@ We may collect the following data from you:
 
 * Information that you provide by filling in forms on our site. This includes information provided at the time of registering to use our site or subscribing to our service.
 * If you contact us, we may keep a record of that correspondence.
-* For keeping track of authenticated sessions we use a small number of cookies. This site does not provide any third party cookies (or other content) and makes no effort to track you. You can delete stored cookies from your browser whenever you wish.
+* For keeping track of authenticated sessions we use a small number of cookies. This site does not provide any third party cookies and makes no effort to track you. You can delete stored cookies from your browser whenever you wish.
 * If you start a subscription we may ask you to provide us with information such as your name and payment information. Your name and card details will not be stored in our database.
 
 Our site does not store/save any emails that are forwarded or replied to through the service. Emails are either immediately forwarded on or erased from memory. You can check the source code to see what happens when an email is piped to our application by Postfix.
@@ -48,7 +48,7 @@ Our website is open-source and available for anyone (who understands PHP) to vie
 
 #### **Security**
 
-All information you provide to us is stored on our secure servers in the United Kingdom (Vultr). Sensitive data in our database such as your recipient email addresses are encrypted using OpenSSL and the AES-256-CBC cipher. Furthermore, all encrypted values are signed with a message authentication code (MAC) to detect any modifications to the encrypted string. Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it. Opportunistic TLS encryption with strong cipher preference is used for all emails sent through our service.
+All information you provide to us is stored on our secure servers in the Netherlands (Greenhost.net). Sensitive data in our database such as your recipient email addresses are encrypted using OpenSSL and the AES-256-CBC cipher. Furthermore, all encrypted values are signed with a message authentication code (MAC) to detect any modifications to the encrypted string. Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it. Opportunistic TLS encryption with strong cipher preference is used for all emails sent through our service.
 
 No service can be 100% secure at all times so please do not use this service to forward emails containing highly sensitive information such as bank or cryptocurrency information.
 

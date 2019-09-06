@@ -18,7 +18,7 @@
         "hasbin": "^1.2.3",
         "highlight.js": "^9.15.10",
         "husky": "^3.0.5",
-        "laravel-mix": "^4.0.0",
+        "laravel-mix": "^4.1.4",
         "laravel-mix-purgecss": "^3.0.0",
         "lint-staged": "^9.2.5",
         "node-cmd": "^3.0.0",

@@ -31,7 +31,7 @@ Upon termination, your right to use the Service will immediately cease. If you w
 
 #### **Subscriptions**
 
-Some features of the service are billed on a subscription basis. The subscription fees are billed on a monthly cycle, your subscription will automatically renew unless you or AnonAddy cancels it. You may cancel your subscription to the service at any time.
+Some features of the service are billed on a subscription basis. The subscription fees are billed on a monthly/yearly cycle, your subscription will automatically renew unless you or AnonAddy cancels it. You may cancel your subscription to the service at any time.
 
 You agree that you will accept the full responsibility for successfully cancelling your subscription. If you need assistance in cancelling your subscription please simply contact us. You agree to provide us with 2 days advance notice to attend to your request.
 
