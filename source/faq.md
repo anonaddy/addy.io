@@ -122,7 +122,7 @@ A few days before your billing cycle ends you will receive an email letting you 
 * Any additional usernames will be **deactivated**
 * If you have any more than **2 recipients** they will be **deleted**
 * Pro account settings will be reverted to default values
-* Any aliases using domain Pro only domains will be **deactivated**
+* Any aliases using Pro only domains will be **deactivated**
 * If you have any more than 20 UUID aliases they will be **deactivated**
 
 You will not be able to activate any of the above again until you resubscribe.
