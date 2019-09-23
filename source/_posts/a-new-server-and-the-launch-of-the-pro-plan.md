@@ -29,7 +29,7 @@ I started the open beta to try to iron out any existing bugs and to make the ser
 
 Over the course of the beta I've fixed a fair few bugs and received lots a great feedback from users and have implemented many of the suggestions. I've also added some suggestions to my TO-DO list and will work on them over the coming weeks.
 
-There will still be a generous Free plan that will allow you to create unlimited aliases and UUID aliases. The Free plan will have a monthly bandwidth limit of 10MB, the average size of an email is around 75KB (about 7,000 words in plain text). This means that you will be able to receive around 137 emails per month before reaching your limit.
+There will still be a generous Free plan that will allow you to create unlimited aliases and some UUID aliases. The Free plan will have a monthly bandwidth limit of 10MB, the average size of an email is around 75KB (about 7,000 words in plain text). This means that you will be able to receive around 137 emails per month before reaching your limit.
 
 ## A free 3 month Pro subscription for all beta testers
 
