@@ -2,6 +2,7 @@
 title: "Terms Of Service"
 extends: _layouts.master
 section: body
+description: Please read these terms of use carefully before you start to use the site. By using our site, you indicate that you accept these terms of use and that you agree to abide by them.
 ---
 
 <h1 class="w-full text-center">Terms Of Service</h1>

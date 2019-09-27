@@ -3,15 +3,10 @@ pagination:
     collection: posts
     perPage: 5
 title: "Blog"
+description: The list of all blog posts for AnonAddy. You'll find information about site updates, announcements and how to guides.
 ---
-@extends('_layouts.master')
 
-@push('meta')
-    <meta property="og:title" content="{{ $page->siteName }} Blog" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="The list of blog posts for {{ $page->siteName }}" />
-@endpush
+@extends('_layouts.master')
 
 @section('body')
     <div class="flex flex-1 items-center relative">

@@ -2,6 +2,7 @@
 title: "Privacy Policy"
 extends: _layouts.master
 section: body
+description: This policy (together with our Terms and Conditions) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.
 ---
 
 <h1 class="w-full text-center">Privacy Policy</h1>

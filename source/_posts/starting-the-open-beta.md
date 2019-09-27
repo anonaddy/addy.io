@@ -1,9 +1,10 @@
 ---
 extends: _layouts.post
+ogtype: article
 section: content
 title: Starting the open beta
 date: 2019-07-17
-description: Starting the open beta for AnonAddy, testing out the anonymous email forwarder.
+description: Starting the open beta for AnonAddy, testing out the anonymous email forwarder. The introduction of GPG/OpenPGP encryption for all forwarded emails.
 categories: [updates]
 ---
 

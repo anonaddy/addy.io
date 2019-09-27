@@ -4,13 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="{{ $page->meta_description ?? $page->siteDescription }}">
         <meta name="author" content="AnonAddy">
-
-        <meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="{{ $page->getUrl() }}"/>
-        <meta property="og:description" content="{{ $page->siteDescription }}" />
+        <meta name="description" content="{{ $page->description ?? $page->siteDescription }}" />
+		<meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
+		<meta property="og:url" content="{{ $page->getUrl() }}"/>
+		<meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
+        <meta property="og:image" content="https://anonaddy.com/assets/img/mail.svg">
+        <meta property="og:type" content="{{ $page->ogtype ?? 'website'}}" />
+        <meta property="twitter:card" content="summary" />
+		<meta property="twitter:site" content="@AnonAddy" />
+		<meta property="twitter:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}" />
+		<meta property="twitter:description" content="{{ $page->description ?? $page->siteDescription }}" />
+		<meta property="twitter:image" content="https://anonaddy.com/assets/img/mail.svg" />
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#19216C">
+        @stack('meta')
 
         <title>{{ $page->title ?  $page->title . ' - ' : '' }}{{ $page->siteName }}</title>
 
@@ -20,12 +28,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#19216C">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
-
-        @stack('meta')
-
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 

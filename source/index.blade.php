@@ -1,3 +1,7 @@
+---
+title: "Anonymous Email Forwarding"
+---
+
 @extends('_layouts.master')
 
 @section('body')

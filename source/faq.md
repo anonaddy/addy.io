@@ -1,5 +1,6 @@
 ---
 title: "FAQ"
+description: Frequently asked questions about AnonAddy. Why did you make this site? I made the code open-source to show everyone what was going on behind the scenes and to allow others to help improve the application.
 extends: _layouts.master
 section: body
 ---
@@ -23,6 +24,17 @@ I also wanted to address some issues with other services such as:
 I made the code open-source to show everyone what was going on behind the scenes and to allow others to help improve the application.
 
 I use this service myself for the vast majority of sites I'm signed up to.
+
+#### **Why should I use AnonAddy?**
+
+There are a number of reasons you should consider using this service:
+
+* Protect your real email address from spam by simply deactivating/deleting aliases that receive unsolicited emails
+* Identify who has sold your data by using a different email address for every site
+* Protect your identity in the event of a data breach by making it difficult for hackers to cross-reference your accounts
+* Prevent inbox snooping by encrypting all inbound emails using GPG/OpenPGP encryption
+* Update where emails are forwarded without having to go through and change your email address for each site individually
+* Reply to forwarded emails anonymously without revealing your true email address
 
 #### **Do you store emails?**
 
@@ -165,7 +177,7 @@ If you get close to your limit you'll be sent an email letting you know. If you 
 
 Please make sure to add mailer@anonaddy.me to your address book and check your spam folder. Make sure to mark emails from us as safe if they turn up in spam.
 
-Please also check that the senders domain is not in the [disposable-email-domains](https://github.com/ivolo/disposable-email-domains) list mentioned above, as these are blocked.
+Please also check that the sender's domain is not in the [disposable-email-domains](https://github.com/ivolo/disposable-email-domains) list mentioned above, as these are blocked.
 
 If an alias has been previously deleted and you try to send email to it, the emails will bounce with an error message - "554 5.7.1 Recipient address rejected: Access denied".
 

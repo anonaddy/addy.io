@@ -1,9 +1,10 @@
 ---
 extends: _layouts.post
+ogtype: article
 section: content
 title: A new server and the launch of the Pro plan
 date: 2019-09-06
-description: A new server with privacy friendly Greenhost and the launch of the Pro plan!
+description: A new server with privacy friendly Greenhost based in Amsterdam and the launch of the Pro plan!
 categories: [updates]
 ---
 
