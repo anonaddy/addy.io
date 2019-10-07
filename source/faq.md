@@ -55,7 +55,7 @@ Here are a few reasons I can think of:
 * Open-source application code
 * No limitation on the number of aliases that can be created
 * Generous monthly bandwidth
-* Multiple domains to choose for aliases (currently anonaddy.com and anonaddy.me)
+* Multiple domains to choose for aliases (currently anonaddy.com, anonaddy.me and another for Pro plan users)
 * Ability to generate UUID aliases
 * Ability to add additional usernames to compartmentalise aliases
 * New features added regularly
@@ -144,7 +144,6 @@ The following is in place to help prevent spam:
 * SpamAssassin - score threshold of 5.0
 * DNS blacklist checks - spamhaus.org
 * SPF, DKIM - to check the SPF record on the sender's domain
-* Disposable Email Addresses are blocked - [disposable-email-domains](https://github.com/ivolo/disposable-email-domains)
 * DMARC - to check for email spoofing and reject emails that fail
 * FQDN - the sender must be using a valid fully qualified domain name
 * PTR record check - if the sender has no valid PTR record it is rejected
@@ -177,8 +176,6 @@ If you get close to your limit you'll be sent an email letting you know. If you 
 
 Please make sure to add mailer@anonaddy.me to your address book and check your spam folder. Make sure to mark emails from us as safe if they turn up in spam.
 
-Please also check that the sender's domain is not in the [disposable-email-domains](https://github.com/ivolo/disposable-email-domains) list mentioned above, as these are blocked.
-
 If an alias has been previously deleted and you try to send email to it, the emails will bounce with an error message - "554 5.7.1 Recipient address rejected: Access denied".
 
 Check that you have not deactivated the alias, custom domain or additional username. When any of these are deactivated, emails will be silently discarded, they will not bounce or return any error message.
@@ -205,4 +202,4 @@ My name is Will Browning, I'm a web developer from the UK and an advocate for on
 
 #### **I couldn't find an answer to my question, how can I contact you?**
 
-For any other questions just send an email to - [contact@anonaddy.com](mailto:contact@anonaddy.com)
+For any other questions just send an email to - [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words">([70E400B5064061EB84181DABEDADE14D67325B36](https://keys.openpgp.org/search?q=70E400B5064061EB84181DABEDADE14D67325B36))</span>
