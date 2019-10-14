@@ -17,7 +17,7 @@
         "fuse.js": "^3.3.0",
         "hasbin": "^1.2.3",
         "highlight.js": "^9.15.10",
-        "husky": "^3.0.8",
+        "husky": "^3.0.9",
         "laravel-mix": "^4.1.4",
         "laravel-mix-purgecss": "^3.0.0",
         "lint-staged": "^9.4.2",

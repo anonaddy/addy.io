@@ -9,13 +9,13 @@
 		<meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
 		<meta property="og:url" content="{{ $page->getUrl() }}"/>
 		<meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
-        <meta property="og:image" content="https://anonaddy.com/icon.png">
+        <meta property="og:image" content="{{ $page->image ?? 'https://anonaddy.com/icon.png' }}">
         <meta property="og:type" content="{{ $page->ogtype ?? 'website'}}" />
         <meta property="twitter:card" content="summary" />
 		<meta property="twitter:site" content="@AnonAddy" />
 		<meta property="twitter:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}" />
 		<meta property="twitter:description" content="{{ $page->description ?? $page->siteDescription }}" />
-		<meta property="twitter:image" content="https://anonaddy.com/icon.png" />
+		<meta property="twitter:image" content="{{ $page->image ?? 'https://anonaddy.com/icon.png' }}" />
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#19216C">
         @stack('meta')
