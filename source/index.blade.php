@@ -106,6 +106,20 @@ title: "Anonymous Email Forwarding"
 			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 		</div>
 
+		<div class="flex flex-wrap flex-col-reverse sm:flex-row">
+			<div class="w-full sm:w-1/2 p-6 mt-6">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/browsers.svg">
+			</div>
+			<div class="w-full sm:w-1/2 p-6 mt-6">
+				<div class="align-middle">
+					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Browser Extension</h3>
+					<p class="text-grey-600 mb-4">Generate UUID aliases in a couple of clicks straight from your browser using the <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">open-source</a> browser extension.</p>
+				<p class="text-grey-600 b-4">The extension is available for download on <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">Firefox</a> and <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">Chrome</a>!</p>
+					<p class="text-grey-600 mb-4">Also available on other chromium based browsers such as Brave and Vivaldi.</p>
+				</div>
+			</div>
+		</div>
+
 		<div class="flex flex-wrap">
 			<div class="w-full sm:w-1/2 p-6">
 				<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">GPG/OpenPGP Encryption</h3>
