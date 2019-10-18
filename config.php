@@ -4,7 +4,7 @@ return [
     'baseUrl' => 'http://localhost:3000/',
     'production' => false,
     'siteName' => 'AnonAddy',
-    'siteDescription' => 'Open-source anonymous email forwarding. Create unlimited email aliases for free. Protect your email from spam, encrypt all forwarded emails with GPG/OpenPGP encryption. Disposable, burner addresses with your own catch-all subdomain.',
+    'siteDescription' => 'Create unlimited aliases for free. Protect your email from spam using disposable, burner addresses. Encrypt all forwarded emails with PGP encryption using this service.',
     'siteAuthor' => 'AnonAddy',
 
     // collections

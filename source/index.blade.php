@@ -1,5 +1,5 @@
 ---
-title: "Anonymous Email Forwarding"
+title: "Free Open-source Anonymous Email Forwarding"
 ---
 
 @extends('_layouts.master')
