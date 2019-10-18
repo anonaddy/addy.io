@@ -1,3 +1,4 @@
+<label for="menu-handle" class="hidden">Menu</label>
 <input id="menu-handle" type="checkbox">
 <label for="menu-handle" class="absolute top-0 right-0 mr-4 mt-3 flex justify-center items-center bg-indigo-500 border border-blue-500 h-10 px-5 rounded-full lg:hidden focus:outline-none cursor-pointer">
     <svg xmlns="http://www.w3.org/2000/svg"
