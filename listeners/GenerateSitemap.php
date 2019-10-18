@@ -10,7 +10,14 @@ class GenerateSitemap
     protected $exclude = [
         '/assets/*',
         '*/favicon.ico',
-        '*/404*'
+        '*/404*',
+        '/newsletter/*',
+        '*.png',
+        '*.svg',
+        '*.atom',
+        '/browserconfig.xml',
+        '/site.webmanifest',
+        '/robots.txt'
     ];
 
     public function handle(Jigsaw $jigsaw)

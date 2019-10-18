@@ -24,7 +24,7 @@ title: "Anonymous Email Forwarding"
 		</div>
 		<!--Right Col-->
 		<div class="w-full md:w-3/5 py-6 flex justify-center">
-			<img class="w-full md:w-4/5" src="/assets/img/mail.svg">
+			<img class="w-full md:w-4/5" src="/assets/img/mail.svg" alt="Forward Email">
 		</div>
 
 	</div>
@@ -65,13 +65,13 @@ title: "Anonymous Email Forwarding"
 
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/register.svg">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/register.svg" alt="Register">
 			</div>
 		</div>
 
 		<div class="flex flex-wrap flex-col-reverse sm:flex-row">
 			<div class="w-full sm:w-1/2 p-6 mt-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/email_aliases.svg">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/email_aliases.svg" alt="Email Aliases">
 			</div>
 			<div class="w-full sm:w-1/2 p-6 mt-6">
 				<div class="align-middle">
@@ -92,7 +92,7 @@ title: "Anonymous Email Forwarding"
 				<p class="text-grey-600 mb-4">You can also delete the alias. Then our system will <b>reject</b> any emails and respond with an error.</p>
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/dashboard.svg">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/dashboard.svg" alt="Manage Aliases">
 			</div>
 		</div>
 
@@ -108,13 +108,13 @@ title: "Anonymous Email Forwarding"
 
 		<div class="flex flex-wrap flex-col-reverse sm:flex-row">
 			<div class="w-full sm:w-1/2 p-6 mt-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/browsers.svg">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/browsers.svg" alt="Browser Extension">
 			</div>
 			<div class="w-full sm:w-1/2 p-6 mt-6">
 				<div class="align-middle">
 					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Browser Extension</h3>
 					<p class="text-grey-600 mb-4">Generate UUID aliases in a couple of clicks straight from your browser using the <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">open-source</a> browser extension.</p>
-				<p class="text-grey-600 b-4">The extension is available for download on <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">Firefox</a> and <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">Chrome</a>!</p>
+				<p class="text-grey-600 b-4">The extension is available for download on <a href="https://addons.mozilla.org/en-GB/firefox/addon/anonaddy/" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">Firefox</a> and <a href="https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">Chrome</a>!</p>
 					<p class="text-grey-600 mb-4">Also available on other chromium based browsers such as Brave and Vivaldi.</p>
 				</div>
 			</div>
@@ -131,13 +131,13 @@ title: "Anonymous Email Forwarding"
 
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/fingerprint.svg">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/fingerprint.svg" alt="GPG/OpenPGP Encryption">
 			</div>
 		</div>
 
 		<div class="flex flex-wrap flex-col-reverse sm:flex-row">
 			<div class="w-full sm:w-1/2 p-6 mt-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/domains.svg">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/domains.svg" alt="Custom Domains">
 			</div>
 			<div class="w-full sm:w-1/2 p-6 mt-6">
 				<div class="align-middle">
@@ -157,13 +157,13 @@ title: "Anonymous Email Forwarding"
 				<p class="text-grey-600 mb-4">This prevents anyone linking ownership of the alias to you.</p>
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/anonymous.svg">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/anonymous.svg" alt="UUID Aliases">
 			</div>
 		</div>
 
 		<div class="flex flex-wrap flex-col-reverse sm:flex-row">
 			<div class="w-full sm:w-1/2 p-6 mt-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/recipients.svg">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/recipients.svg" alt="Multiple Recipients">
 			</div>
 			<div class="w-full sm:w-1/2 p-6 mt-6">
 				<div class="align-middle">
@@ -183,7 +183,7 @@ title: "Anonymous Email Forwarding"
 				<p class="text-grey-600 mb-4">This can be used to compartmentalise your aliases. You could have a username for work emails a different one for personal emails etc.</p>
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/usernames.svg">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/usernames.svg" alt="Additional Usernames">
 			</div>g
 		</div>
 
