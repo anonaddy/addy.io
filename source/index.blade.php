@@ -184,7 +184,21 @@ title: "Free Open-source Anonymous Email Forwarding"
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
 				<img class="w-full sm:h-64 mx-auto" src="/assets/img/usernames.svg" alt="Additional Usernames">
-			</div>g
+			</div>
+        </div>
+
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+			<div class="w-full sm:w-1/2 p-6 mt-6">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/api.svg" alt="API">
+			</div>
+			<div class="w-full sm:w-1/2 p-6 mt-6">
+				<div class="align-middle">
+					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">API Access</h3>
+					<p class="text-grey-600 mb-4">Manage your aliases, recipients, domains and additional usernames using the AnonAddy API.</p>
+                    <p class="text-grey-600 mb-4">In order to use the API you first need to generate an API access token in your account settings.</p>
+                    <p class="text-grey-600 mb-4"><a href="https://app.anonaddy.com/docs" class="text-indigo-700">View API documentation</a></p>
+				</div>
+			</div>
 		</div>
 
 	</div>
@@ -221,6 +235,10 @@ title: "Free Open-source Anonymous Email Forwarding"
 							<div class="py-4">
 								<svg class="h-5 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
 								Public Key <b>Per Recipient</b>
+                            </div>
+                            <div class="py-4">
+								<svg class="h-5 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								<b>API</b> Access
 							</div>
 							<div class="py-4">
 								<svg class="h-5 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
