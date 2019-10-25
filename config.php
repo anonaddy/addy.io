@@ -4,7 +4,7 @@ return [
     'baseUrl' => 'http://localhost:3000/',
     'production' => false,
     'siteName' => 'AnonAddy',
-    'siteDescription' => 'Create unlimited aliases for free. Protect your email from spam using disposable, burner addresses. Encrypt all forwarded emails with PGP encryption using this service.',
+    'siteDescription' => 'Create unlimited aliases for free. Protect your email from spam using disposable addresses. Encrypt forwarded emails with PGP encryption using this service.',
     'siteAuthor' => 'AnonAddy',
 
     // collections

@@ -172,6 +172,10 @@ I don't use rolling 30 day total as the only way to do this would be to log the 
 
 Blocked emails do not count towards your bandwidth (e.g. an alias is inactive or deleted).
 
+#### **How many emails can I receive before I go over my bandwidth limit?**
+
+The average email is about 76800 bytes (75KB), this is roughly equivalent to 7,000 words in plain text. So the 10MB monthly allowance would be around 140 emails and the Pro plan's 500MB would be almost 7,000 emails.
+
 #### **What happens if I go over my bandwidth limit in a given month?**
 
 If you get close to your limit you'll be sent an email letting you know. If you continue and go over your limit the server will start discarding emails until your bandwidth resets the next month.
@@ -198,7 +202,7 @@ I am very passionite about this project. I use it myself everyday and will be ke
 
 #### **Is the application tested?**
 
-Yes it has over 100 automated PHPUnit tests written.
+Yes it has over 130 automated PHPUnit tests written.
 
 #### **How do I host this myself?**
 
@@ -210,4 +214,4 @@ My name is Will Browning, I'm a web developer from the UK and an advocate for on
 
 #### **I couldn't find an answer to my question, how can I contact you?**
 
-For any other questions just send an email to - [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words">([70E400B5064061EB84181DABEDADE14D67325B36](https://keys.openpgp.org/search?q=70E400B5064061EB84181DABEDADE14D67325B36))</span>
+For any other questions just send an email to - [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words text-sm">([70E400B5064061EB84181DABEDADE14D67325B36](https://keys.openpgp.org/search?q=70E400B5064061EB84181DABEDADE14D67325B36))</span>
