@@ -2,14 +2,14 @@
     <li class="pl-4">
         <a
             title="FAQ"
-            href="/faq"
+            href="/faq/"
             class="block mb-4 lg:mb-0 lg:ml-6 text-white hover:text-grey-50 {{ $page->isActive('/faq') ? 'active font-bold' : '' }}"
         >FAQ</a>
     </li>
     <li class="pl-4">
         <a
             title="Blog"
-            href="/blog"
+            href="/blog/"
             class="block mb-4 lg:mb-0 lg:ml-6 text-white hover:text-grey-50 {{ $page->isActive('/blog') ? 'active font-bold' : '' }}"
         >Blog</a>
     </li>

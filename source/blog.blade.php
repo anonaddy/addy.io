@@ -30,7 +30,7 @@ description: The list of all blog posts for AnonAddy. You'll find information ab
         <nav class="flex text-base my-8">
             @if ($previous = $pagination->previous)
                 <a
-                    href="{{ $previous }}"
+                    href="{{ $previous }}/"
                     title="Previous Page"
                     class="bg-grey-200 hover:bg-grey-400 rounded mr-3 px-5 py-3"
                 >&LeftArrow;</a>
@@ -38,7 +38,7 @@ description: The list of all blog posts for AnonAddy. You'll find information ab
 
             @foreach ($pagination->pages as $pageNumber => $path)
                 <a
-                    href="{{ $path }}"
+                    href="{{ $path }}/"
                     title="Go to Page {{ $pageNumber }}"
                     class="bg-grey-200 hover:bg-grey-400 text-indigo-700 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : '' }}"
                 >{{ $pageNumber }}</a>
@@ -46,7 +46,7 @@ description: The list of all blog posts for AnonAddy. You'll find information ab
 
             @if ($next = $pagination->next)
                 <a
-                    href="{{ $next }}"
+                    href="{{ $next }}/"
                     title="Next Page"
                     class="bg-grey-200 hover:bg-grey-400 rounded mr-3 px-5 py-3"
                 >&RightArrow;</a>

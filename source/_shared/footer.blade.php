@@ -4,9 +4,9 @@
 
         <div class="w-full flex flex-row justify-between py-6">
             <div>
-                <a href="/privacy" class="no-underline text-white mr-4 {{ $page->isActive('/privacy') ? 'active font-bold' : '' }}" title="Privacy">Privacy</a>
-                <a href="/terms" class="no-underline text-white mr-4 {{ $page->isActive('/terms') ? 'active font-bold' : '' }}" title="Terms">Terms</a>
-                <a href="https://app.anonaddy.com/docs" class="no-underline text-white" title="Terms">API</a>
+                <a href="/privacy/" class="no-underline text-white mr-4 {{ $page->isActive('/privacy') ? 'active font-bold' : '' }}" title="Privacy">Privacy</a>
+                <a href="/terms/" class="no-underline text-white mr-4 {{ $page->isActive('/terms') ? 'active font-bold' : '' }}" title="Terms">Terms</a>
+                <a href="https://app.anonaddy.com/docs/" class="no-underline text-white" title="Terms">API</a>
             </div>
             <div class="flex items-center">
                 <a href="https://github.com/anonaddy" target="_blank" rel="nofollow noreferrer noopener" class="no-underline text-white mr-4" title="AnonAddy GitHub">

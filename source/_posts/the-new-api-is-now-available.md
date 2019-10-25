@@ -45,7 +45,7 @@ There is a [Postman Collection](https://app.anonaddy.com/docs/collection.json) a
 
 ## Where can I find the API documentation?
 
-You can find documentation for the API here - [https://app.anonaddy.com/docs](https://app.anonaddy.com/docs)
+You can find documentation for the API here - [https://app.anonaddy.com/docs/](https://app.anonaddy.com/docs/)
 
 The documentation walks you through authentication and lists all available enpoints. Each endpoint includes an example request and example response.
 

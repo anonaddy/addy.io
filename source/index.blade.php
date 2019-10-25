@@ -196,7 +196,7 @@ title: "Free, Open-source Anonymous Email Forwarding"
 					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">API Access</h3>
 					<p class="text-grey-600 mb-4">Manage your aliases, recipients, domains and additional usernames using the AnonAddy API.</p>
                     <p class="text-grey-600 mb-4">In order to use the API you first need to generate an API access token in your account settings.</p>
-                    <p class="text-grey-600 mb-4"><a href="https://app.anonaddy.com/docs" class="text-indigo-700">View API documentation</a></p>
+                    <p class="text-grey-600 mb-4"><a href="https://app.anonaddy.com/docs/" class="text-indigo-700">View API documentation</a></p>
 				</div>
 			</div>
 		</div>
