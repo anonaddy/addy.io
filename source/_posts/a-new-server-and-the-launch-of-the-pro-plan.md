@@ -41,4 +41,4 @@ A couple of days before this Pro subscrition ends you will receive an email lett
 
 ## Feedback and suggestions
 
-If you have any feedback or suggestions please just drop me a line at [contact@anonaddy.com](mailto:contact@anonaddy.com) and sign up to the newsletter if you'd like to receive updates on new features!
+If you have any feedback or suggestions please just drop me a line at [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words text-sm">([5FCAFD8A67D2A783CFF4D0E31AC6D923E6FB4EF7](https://keys.openpgp.org/search?q=5FCAFD8A67D2A783CFF4D0E31AC6D923E6FB4EF7))</span> and sign up to the newsletter if you'd like to receive updates on new features!

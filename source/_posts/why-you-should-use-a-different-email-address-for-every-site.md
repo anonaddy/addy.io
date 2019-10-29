@@ -1,6 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
+image: https://anonaddy.com/assets/img/haveibeenpwned.jpg
 section: content
 title: Why you should use a different email address for every site
 date: 2019-10-07
@@ -25,6 +26,10 @@ Your email address may have been sold by a deceitful service, or it could have b
 **Tip:** use [haveibeenpwned.com](https://haveibeenpwned.com/) to check if your email address is involved in any known data breaches.
 
 Entering my first hotmail.com account on haveibeenpwnded returns **"Pwned on 13 breached sites and found 2 pastes"**. That is some pretty scary stuff!
+
+<div class="flex justify-center mb-4">
+  <img class="shadow" src="/assets/img/haveibeenpwned.jpg" alt="Have I Been Pwned" title="Have I Been Pwned">
+</div>
 
 One of the pastes even had my old (and incredibly weak) password right there in plain text! This is how scammers know what your password is when they send you that email claiming they've "hacked your account" whilst demanding $750 in Bitcoin. Just ignore these emails and obviously make sure you are not still using the exposed password anywhere else!
 
@@ -72,7 +77,9 @@ This means if your email alias is sold off or involved in a data breach and sudd
 
 With AnonAddy, when an alias is deactivated (turned off), all emails sent to it will be silently discarded by the system. The spammer will not realise that the emails haven't reached you. This will also increment the "blocked email counter" for that alias.
 
-When an alias is deleted, any further emails sent to it will bounce back to the sender with the error message - "554 5.7.1 Recipient address rejected: Access denied".
+When an alias is deleted, any further emails sent to it will bounce back to the sender with the error message:
+
+> "554 5.7.1 Recipient address rejected: Access denied".
 
 Another trick that some spam emails do is including a fake "Unsubscribe" link at the bottom of the email that is in fact a trap. By clicking on the link, instead of being unsubscribed, you simply validate the fact that this is an active email account and notify the scammer. The links can also take you to malicious websites and phishing sites.
 
@@ -84,7 +91,7 @@ Following on from the above point, if you have been giving out a different alias
 
 If one of your aliases starts to receive spam e.g. twitter@example.com, you can identify that it was Twitter who either sold your private information or was involved in a data breach.
 
-Of course, there is also the chance that someone randomly guessed the alias and sent spam to it. It can therefore be a good idea to add a few random characters to the local part of the email alias when creating it e.g. twitter9218@example.com. This makes it much harder for someone to correctly guess one of your aliases.
+Of course, there is also the chance that someone randomly guessed the alias and sent spam to it. It can therefore be a good idea to add a few random characters to the local part of the email alias when creating it e.g. **twitter9218@example.com**. This makes it much harder for someone to correctly guess one of your aliases.
 
 I'd recommend using a password manager; password managers can store your login credentials (email/username and password) for all websites, meaning it is easier to keep track of the individual aliases and passwords you have created for each different account.
 
@@ -108,6 +115,10 @@ With AnonAddy you can generate UUID (universally unique identifier) aliases that
 
 **94960540-f914-42e0-9c50-6faa7a385384@anonaddy.me**
 
+<div class="flex justify-center mb-4">
+  <img class="shadow" src="/assets/img/generate-uuid-alias.jpg" alt="Generate UUID Alias" title="Generate UUID Alias">
+</div>
+
 Having an email address similar to that shown in the above example makes it impossible to guess what site/service it has been used for, or identify who it might belong to.
 
 The shared domain is beneficial because many other users will have aliases at anonaddy.me which helps to protect your identity.
@@ -121,6 +132,10 @@ Let's say you have one email address that you've been using for every site and s
 Going through each site and updating your login details or re-subscribing to newsletters with the new email address can be very time consuming.
 
 If you are using a forwarding service with email aliases, you can simply go to your dashboard and update the recipient email address to the new email for all of your aliases. It’s that simple.
+
+<div class="flex justify-center mb-4">
+  <img class="shadow" src="/assets/img/update-default-recipient.jpg" alt="Update Default Recipient" title="Update Default Recipient">
+</div>
 
 There’s no need to update the emails individually, as they will all simply be forwarded to your new email.
 
@@ -136,6 +151,12 @@ More often than not the emails will start with "Dear Customer" or "Hi you@exampl
 
 Make sure to check the email headers such as; From:, MAIL FROM:, Return-Path:, Reply-To: etc.
 
+<div class="flex justify-center mb-4">
+  <img class="shadow" src="/assets/img/identifier-alignment.jpg" alt="Identifier Alignment" title="Identifier Alignment">
+</div>
+
+The above screenshot shows an example of strict identifier alignment, the **Return Path**, **From: header** and **d=domain** in the DKIM signature are all the same. If d=domain was a subdomain of the parent domain then this would be relaxed alignment. Notice also the Received-SPF: is a Pass as well as the Authentication-Results: dkim=pass.
+
 Hover over any links and check where they lead to. Also, if the email lands in your spam folder, it is likely that is attempting to spoof a legitimate sender. Check email headers to see if SPF and DKIM checks have passed and if [SPF is correctly aligned](https://mxtoolbox.com/dmarc/spf/spf-alignment?lm=NAV-UDC).
 
 Always use 2FA (TOTP is recommended over SMS 2FA) where available to protect yourself in case you do accidentally fall for one of these emails.
@@ -150,6 +171,10 @@ Now this feature obviously depends on what service you are using to forward your
 
 With AnonAddy, you can generate a GPG/OpenGPG key pair (or use an existing pair) for your email recipient e.g. you@example.com. You can then add the **public key** to this recipient and enable encryption.
 
+<div class="flex justify-center mb-4">
+  <img class="shadow" src="/assets/img/add-public-key.jpg" alt="Add Public Key" title="Add Public Key">
+</div>
+
 Once you have done this, all emails that are forwarded to you@example.com will be encrypted by AnonAddy using your public key.
 
 They are also signed by the private key for "mailer@anonaddy.me". By adding the [public key](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695) to your keyring, you can verify the email has indeed come from AnonAddy.
@@ -158,7 +183,11 @@ This is great if you are still using an email provider such as Gmail which has b
 snoop](https://www.bbc.com/news/technology-44699263) on users' inboxes.
 
 If you're on a desktop/laptop, you can use [Mozilla Thunderbird](https://www.thunderbird.net/en-GB/) plus
-[Enigmail](https://www.enigmail.net/index.php/en/) to manage PGP emails.
+[Enigmail](https://www.enigmail.net/index.php/en/) to manage PGP emails. If you have trusted the above key you will see the following information for each forwarded email.
+
+<div class="flex justify-center mb-4">
+  <img class="shadow" src="/assets/img/good-signature-enigmail.jpg" alt="Good Signature Enigmail" title="Good Signature Enigmail">
+</div>
 
 If you're on Android, you can use [K-9 Mail](https://k9mail.github.io/) with [OpenKeyChain](https://www.openkeychain.org/) (both open-source and found on F-droid) to manage PGP emails.
 
@@ -174,4 +203,4 @@ Whilst there are a couple of potential downsides, the benefits of using an email
 
 ## Feedback and suggestions
 
-If you have any feedback or suggestions please just drop me a line at [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words text-sm">([70E400B5064061EB84181DABEDADE14D67325B36](https://keys.openpgp.org/search?q=70E400B5064061EB84181DABEDADE14D67325B36))</span> and sign up to the newsletter if you'd like to receive updates on new features!
+If you have any feedback or suggestions please just drop me a line at [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words text-sm">([5FCAFD8A67D2A783CFF4D0E31AC6D923E6FB4EF7](https://keys.openpgp.org/search?q=5FCAFD8A67D2A783CFF4D0E31AC6D923E6FB4EF7))</span> and sign up to the newsletter if you'd like to receive updates on new features!

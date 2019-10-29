@@ -1700,20 +1700,21 @@
         },
         {
             "name": "tightenco/jigsaw",
-            "version": "v1.3.8",
+            "version": "v1.3.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/jigsaw.git",
-                "reference": "2096865666b583b890cc86a156ce92bcb87af5da"
+                "reference": "b782c667e5963ca913f241da173949a7fae74b1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/2096865666b583b890cc86a156ce92bcb87af5da",
-                "reference": "2096865666b583b890cc86a156ce92bcb87af5da",
+                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/b782c667e5963ca913f241da173949a7fae74b1d",
+                "reference": "b782c667e5963ca913f241da173949a7fae74b1d",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown-extra": "^0.7.1",
+                "erusev/parsedown": "^1.7",
+                "erusev/parsedown-extra": "^0.7",
                 "illuminate/container": "^5.8",
                 "illuminate/support": "^5.8",
                 "illuminate/view": "^5.8",
@@ -1751,6 +1752,10 @@
                 {
                     "name": "Adam Wathan",
                     "email": "adam.wathan@gmail.com"
+                },
+                {
+                    "name": "Keith Damiani",
+                    "email": "keith@tighten.co"
                 }
             ],
             "description": "Simple static sites with Laravel's Blade.",
@@ -1761,7 +1766,7 @@
                 "site",
                 "static"
             ],
-            "time": "2019-02-26T18:47:44+00:00"
+            "time": "2019-10-28T15:13:34+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

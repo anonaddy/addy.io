@@ -16,7 +16,7 @@ This post gives some more details on the recent launch of the new open-source br
 The new extension is [open-source](https://github.com/anonaddy/browser-extension) and is available for download for Firefox [here](https://addons.mozilla.org/en-GB/firefox/addon/anonaddy/) and Chromium based browsers (including Brave) [here](https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe).
 
 <div class="flex justify-center">
-  <img class="shadow" src="https://anonaddy.com/assets/img/browser-extension.png" alt="Browser extension" title="Browser extension">
+  <img class="shadow" src="/assets/img/browser-extension.png" alt="Browser extension" title="Browser extension">
 </div>
 
 ## Why does AnonAddy need a browser extension?
@@ -44,11 +44,11 @@ Click the "Generate New Token" button and enter a short name for the token e.g. 
 Copy the token to your clipboard and paste it into the browser extension and you're ready to start generating aliases.
 
 <div class="flex justify-center mb-4">
-  <img class="shadow" src="https://anonaddy.com/assets/img/browser-extension-token.png" alt="Browser extension token" title="Browser extension token">
+  <img class="shadow" src="/assets/img/browser-extension-token.png" alt="Browser extension token" title="Browser extension token">
 </div>
 
 I'll add more routes for the API and also documentation on how to use it in the coming weeks.
 
 ## Feedback and suggestions
 
-If you have any feedback or suggestions please just drop me a line at [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words text-sm">([70E400B5064061EB84181DABEDADE14D67325B36](https://keys.openpgp.org/search?q=70E400B5064061EB84181DABEDADE14D67325B36))</span> and sign up to the newsletter if you'd like to receive updates on new features!
+If you have any feedback or suggestions please just drop me a line at [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words text-sm">([5FCAFD8A67D2A783CFF4D0E31AC6D923E6FB4EF7](https://keys.openpgp.org/search?q=5FCAFD8A67D2A783CFF4D0E31AC6D923E6FB4EF7))</span> and sign up to the newsletter if you'd like to receive updates on new features!

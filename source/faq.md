@@ -10,6 +10,12 @@ section: body
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
+#### **Why is it called AnonAddy?**
+
+AnonAddy is short for "Anonymous Email Address". The word "Addy" is internet slang for email address, e.g.
+
+> "My email addy is being spammed. I should've kept it private."
+
 #### **Why did you make this site?**
 
 I made this service after trying a few other options that do a similar thing. I was really interested in how they worked and loved the thought of protecting my real email addresses from spam.
@@ -214,4 +220,4 @@ My name is Will Browning, I'm a web developer from the UK and an advocate for on
 
 #### **I couldn't find an answer to my question, how can I contact you?**
 
-For any other questions just send an email to - [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words text-sm">([70E400B5064061EB84181DABEDADE14D67325B36](https://keys.openpgp.org/search?q=70E400B5064061EB84181DABEDADE14D67325B36))</span>
+For any other questions just send an email to - [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words text-sm">([5FCAFD8A67D2A783CFF4D0E31AC6D923E6FB4EF7](https://keys.openpgp.org/search?q=5FCAFD8A67D2A783CFF4D0E31AC6D923E6FB4EF7))</span>

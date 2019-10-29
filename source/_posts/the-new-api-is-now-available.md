@@ -40,17 +40,17 @@ If you'd like to test out some of the other API endpoints then you can use softw
 There is a [Postman Collection](https://app.anonaddy.com/docs/collection.json) available for download too (also works with Insomnia)!
 
 <div class="flex justify-center">
-  <img class="shadow" src="https://anonaddy.com/assets/img/api-access-token.png" alt="API access token" title="API access token">
+  <img class="shadow" src="/assets/img/api-access-token.png" alt="API access token" title="API access token">
 </div>
 
 ## Where can I find the API documentation?
 
 You can find documentation for the API here - [https://app.anonaddy.com/docs/](https://app.anonaddy.com/docs/)
 
-The documentation walks you through authentication and lists all available enpoints. Each endpoint includes an example request and example response.
+The documentation walks you through authentication and lists all available endpoints. Each endpoint includes an example request and example response.
 
 The different error codes that can be returned by the API are also listed with explanations.
 
 ## Feedback and suggestions
 
-If you have any feedback or suggestions please just drop me a line at [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words text-sm">([70E400B5064061EB84181DABEDADE14D67325B36](https://keys.openpgp.org/search?q=70E400B5064061EB84181DABEDADE14D67325B36))</span> and sign up to the newsletter if you'd like to receive updates on new features!
+If you have any feedback or suggestions please just drop me a line at [contact@anonaddy.com](mailto:contact@anonaddy.com) <span class="break-words text-sm">([5FCAFD8A67D2A783CFF4D0E31AC6D923E6FB4EF7](https://keys.openpgp.org/search?q=5FCAFD8A67D2A783CFF4D0E31AC6D923E6FB4EF7))</span> and sign up to the newsletter if you'd like to receive updates on new features!
