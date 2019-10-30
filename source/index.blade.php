@@ -24,7 +24,7 @@ title: "Free, Open-source Anonymous Email Forwarding"
 		</div>
 		<!--Right Col-->
 		<div class="w-full md:w-3/5 py-6 flex justify-center">
-			<img class="w-full md:w-4/5" src="/assets/img/mail.svg" alt="Forward Email">
+			<img class="w-full md:w-4/5" src="/assets/img/anonaddy-app.svg" alt="Forward Email">
 		</div>
 
 	</div>
