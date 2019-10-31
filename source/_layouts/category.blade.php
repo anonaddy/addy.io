@@ -3,21 +3,19 @@
 @section('body')
     <h1>{{ $page->title }}</h1>
 
-    <div class="text-2xl border-b border-indigo-200 mb-6 pb-10">
+    <div class="text-2xl">
         @yield('content')
     </div>
+
+    <hr class="border-b my-6">
 
     @foreach ($page->posts($posts) as $post)
         @include('_components.post-preview-inline')
 
         @if (! $loop->last)
-            <hr class="w-full border-b mt-2 mb-6">
+            <hr class="border-b my-6">
         @endif
     @endforeach
 
     @include('_components.newsletter-signup')
 @stop
-
-@push('scripts')
-<script src="{{ mix('js/search.js', 'assets/build') }}"></script>
-@endpush

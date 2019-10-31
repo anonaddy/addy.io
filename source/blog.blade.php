@@ -1,7 +1,7 @@
 ---
 pagination:
     collection: posts
-    perPage: 5
+    perPage: 10
 title: "Blog"
 description: The list of all blog posts for AnonAddy. You'll find information about site updates, announcements and how to guides.
 ---

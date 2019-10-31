@@ -4,7 +4,7 @@
         <span class="mx-2">•</span>
         @foreach ($post->categories as $i => $category)
             <a
-                href="{{ '/blog/categories/' . $category }}/"
+                href="{{ '/blog/category/' . $category }}/"
                 title="View posts in {{ $category }}"
                 class="inline-block bg-indigo-700 hover:bg-indigo-800 leading-loose tracking-wide text-white uppercase text-2xs font-semibold rounded mr-4 px-2 pt-px"
             >{{ $category }}</a>
