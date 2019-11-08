@@ -15,6 +15,7 @@ class GenerateSitemap
         '*.png',
         '*.svg',
         '*.atom',
+        '*.asc',
         '/browserconfig.xml',
         '/site.webmanifest',
         '/robots.txt'
