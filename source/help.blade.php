@@ -3,6 +3,7 @@ pagination:
     collection: helpCategories
 title: "Help Centre"
 description: The list of all help articles for AnonAddy. You'll find information about using aliases, adding recipients and much more.
+width: full
 ---
 
 @extends('_layouts.help_centre')

@@ -1,5 +1,6 @@
 ---
 title: "Free, Open-source Anonymous Email Forwarding"
+width: full
 ---
 
 @extends('_layouts.master')

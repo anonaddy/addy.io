@@ -11,7 +11,7 @@ helpCategories: [aliases]
 
 This article guides you through the steps to create a new email alias on AnonAddy. There are currently two ways to create new aliases.
 
-### Option 1: Create aliases automatically on the fly
+## Option 1: Create aliases automatically on the fly
 
 To create aliases on the fly all you have to do is make up any new alias and give that out instead of your real email address.
 
@@ -25,7 +25,7 @@ The alias will show up in your dashboard automatically as soon as it has forward
 
 If you start receiving spam to the alias you can simply deactivate it or delete it all together!
 
-### Option 2: Generate a unique random alias
+## Option 2: Generate a unique random alias
 
 You can click the "Generate New Alias" button to generate a random UUID alias.
 

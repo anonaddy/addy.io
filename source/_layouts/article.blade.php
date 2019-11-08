@@ -1,7 +1,7 @@
-@extends('_layouts.help_centre')
+@extends('_layouts.master')
 
-@section('helpContent')
-    <h2 class="leading-none">{{ $page->title }}</h2>
+@section('body')
+    <h1 class="leading-none">{{ $page->title }}</h1>
 
     <div class="text-grey-700 text-base mb-6 md:mt-0 flex items-center">
         Last Updated: {{ date('F j, Y', $page->date) }}
