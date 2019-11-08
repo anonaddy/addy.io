@@ -79,6 +79,9 @@
 
 <script>
 export default {
+  props: {
+    help: Boolean,
+  },
   data() {
     return {
       fuse: null,
@@ -89,6 +92,9 @@ export default {
   computed: {
     results() {
       return this.query ? this.fuse.search(this.query) : []
+    },
+    indexPath() {
+      return this.help ? '/help/index.json' : '/index.json'
     },
   },
   methods: {
@@ -104,7 +110,7 @@ export default {
     },
   },
   created() {
-    axios('/index.json').then(response => {
+    axios(this.indexPath).then(response => {
       this.fuse = new fuse(response.data, {
         minMatchCharLength: 6,
         keys: ['title', 'snippet', 'categories'],

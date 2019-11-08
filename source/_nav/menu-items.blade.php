@@ -1,6 +1,13 @@
 <ul class="list-reset my-0 lg:flex">
     <li class="pl-4">
         <a
+            title="Help"
+            href="/help/"
+            class="block mb-4 lg:mb-0 lg:ml-6 text-white hover:text-grey-50 {{ $page->isActive('/help') ? 'active font-bold' : '' }}"
+        >Help</a>
+    </li>
+    <li class="pl-4">
+        <a
             title="FAQ"
             href="/faq/"
             class="block mb-4 lg:mb-0 lg:ml-6 text-white hover:text-grey-50 {{ $page->isActive('/faq') ? 'active font-bold' : '' }}"

@@ -22,6 +22,19 @@ return [
                 });
             },
         ],
+        'articles' => [
+            'author' => 'Will Browning', // Default author, if not provided in a post
+            'sort' => '-date',
+            'path' => 'help/{filename}',
+        ],
+        'helpCategories' => [
+            'path' => '/help/category/{filename}',
+            'articles' => function ($page, $allPosts) {
+                return $allPosts->filter(function ($post) use ($page) {
+                    return $post->helpCategories ? in_array($page->getFilename(), $post->helpCategories, true) : false;
+                });
+            },
+        ],
         'newsletter' => [
             'path' => 'newsletters/{filename}',
         ],
@@ -51,4 +64,11 @@ return [
     'isActive' => function ($page, $path) {
         return ends_with(trimPath($page->getPath()), trimPath($path));
     },
+    'startsWith' => function ($page, $needle) {
+        if ($needle !== '' && substr(trimPath($page->getPath()), 0, strlen($needle)) === (string) $needle) {
+            return true;
+        }
+
+        return false;
+    }
 ];
