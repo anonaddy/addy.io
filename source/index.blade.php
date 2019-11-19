@@ -205,7 +205,7 @@ width: full
 	</div>
 </section>
 
-<section class="bg-grey-50 py-8">
+<section id="pricing" class="bg-grey-50 py-8">
 
 	<div class="container mx-auto px-2 pt-4 pb-12 text-grey-800">
 
@@ -214,7 +214,7 @@ width: full
 			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 		</div>
 
-		<div class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
+		<div class="flex flex-col md:flex-row justify-center pt-12 my-12 sm:my-4">
 
 			<div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
 				<div class="flex-1 bg-white text-grey-600 rounded-t rounded-b-none overflow-hidden shadow">
@@ -254,9 +254,67 @@ width: full
 						<a href="https://app.anonaddy.com/register" class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-3 px-5 shadow-lg cursor-pointer">Choose Username</a>
 					</div>
 				</div>
-			</div>
+            </div>
 
-			<div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
+            <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 md:-mt-6 shadow-lg z-10">
+				<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+					<div class="w-full p-8 text-3xl font-bold text-center tracking-wide uppercase">Lite</div>
+					<div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+					<div class="px-8 pt-8 text-base my-0 flex justify-center">
+						<div>
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								<b>Everything</b> in Free
+							</div>
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								<b>50</b> UUID Aliases
+							</div>
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								<b>1</b> Custom Domain
+							</div>
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								<b>1</b> Additional Username
+							</div>
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								<b>5</b> Recipients
+							</div>
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								<b>20 daily</b> Anonymous Replies
+							</div>
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								Access to <b>Paid Plan Settings</b>
+							</div>
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								<b>Additional</b> Alias Domain
+							</div>
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								<b>Priority</b> Email Queue
+							</div>
+							<div class="py-3">
+								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
+								<b>50MB</b> Monthly Bandwidth
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-4">
+					<div class="w-full text-5xl font-bold text-center"><span class="text-base text-grey-500 font-normal">$</span>1 <span class="text-base text-grey-500 font-normal">/ month</span></div>
+					<div class="flex items-center justify-center">
+						<a href="https://app.anonaddy.com/register" class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg cursor-pointer">Choose Username</a>
+					</div>
+					<p class="text-sm text-grey-500 mb-0 w-full text-center">Billed Yearly</p>
+				</div>
+            </div>
+
+			<div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
 				<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
 					<div class="w-full p-8 text-3xl font-bold text-center tracking-wide uppercase">Pro</div>
 					<div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
@@ -284,15 +342,15 @@ width: full
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>Anonymous</b> Email Replies
+								<b>100 daily</b> Anonymous Replies
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								Access to <b>Pro Settings</b>
+								Access to <b>Paid Plan Settings</b>
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								Additional <b>Pro</b> Alias Domain
+								<b>Additional</b> Alias Domain
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
@@ -308,11 +366,11 @@ width: full
 				<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-4">
 					<div class="w-full text-5xl font-bold text-center"><span class="text-base text-grey-500 font-normal">$</span>3 <span class="text-base text-grey-500 font-normal">/ month</span></div>
 					<div class="flex items-center justify-center">
-						<a href="https://app.anonaddy.com/register" class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg cursor-pointer">Choose Username</a>
+                    <a href="https://app.anonaddy.com/register" class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-3 px-5 shadow-lg cursor-pointer">Choose Username</a>
 					</div>
-					<p class="text-sm text-grey-500 mb-0 w-full text-center">Billed Yearly. $4 Billed Monthly.</p>
+					<p class="text-sm text-grey-500 mb-0 w-full text-center">Billed Yearly, $4 Billed Monthly</p>
 				</div>
-			</div>
+            </div>
 
 		</div>
 

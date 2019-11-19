@@ -9,7 +9,7 @@ Copyright 2015, All rights reserved
 Code licensed under the MIT license
 http://zenorocha.mit-license.org
 
-@author Éverton Ribeiro <nuxlli@gmail.com>
+@author Ãverton Ribeiro <nuxlli@gmail.com>
 @author Zeno Rocha <hi@zenorocha.com>
 
 */
@@ -708,6 +708,16 @@ video {
 @media (min-width: 1280px){
   .container{
     max-width: 1280px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 

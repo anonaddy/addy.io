@@ -22,6 +22,13 @@
     </li>
     <li class="pl-4">
         <a
+            title="Pricing"
+            href="/#pricing"
+            class="block mb-4 lg:mb-0 lg:ml-6 text-white hover:text-grey-50"
+        >Pricing</a>
+    </li>
+    <li class="pl-4">
+        <a
             title="Sign In"
             href="https://app.anonaddy.com/login"
             class="block mb-4 lg:mb-0 lg:ml-6 text-white hover:text-grey-50"
