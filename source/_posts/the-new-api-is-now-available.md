@@ -15,7 +15,7 @@ This post gives some more details on the release of the new AnonAddy API that ca
 
 API stands for **Application Programming Interface**, it is essentially a way of communicating with a server (in this case the AnonAddy server) by making requests to different URLs (endpoints).
 
-For example, if you were to make a `GET` request to `https://app.anonaddy.com/api/v1/aliases` you would receive a response containing a list of all of your email aliases.
+For example, if you were to make a `GET` request to `/api/v1/aliases` you would receive a response containing a list of all of your email aliases.
 
 Using an API, developers can create their own software such as browser extensions or mobile applications to interact with the API server.
 
