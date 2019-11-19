@@ -24,7 +24,7 @@ return [
         ],
         'articles' => [
             'author' => 'Will Browning', // Default author, if not provided in a post
-            'sort' => '-date',
+            'sort' => 'title',
             'path' => 'help/{filename}',
         ],
         'helpCategories' => [
