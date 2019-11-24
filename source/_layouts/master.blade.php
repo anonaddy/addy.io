@@ -35,18 +35,18 @@
 
     <body class="{{ $page->isActive('/') ? 'gradient text-white' : 'flex flex-col justify-between min-h-screen bg-white text-grey-800' }} leading-normal font-sans">
 
-        @if($page->isActive('/'))
-            <div class="product-hunt">
-                <div class="container mx-auto px-5 py-4 md:py-0 flex justify-center items-center md:h-16">
-                    <div class="text-white text-left text-sm sm:text-base tracking-wide leading-tight md:w-1/2 lg:w-auto">
-                        AnonAddy is live on Product Hunt today! <span class="block md:inline-block font-semibold">50% off coupon in the comments</span>
-                    </div>
-                    <a href="https://www.producthunt.com/posts/anonaddy" target="_blank" rel="nofollow noreferrer noopener" class="text-xs md:text-base bg-white cursor-pointer hover:shadow-none font-bold py-2 px-2 md:px-4 rounded shadow-lg md:mt-0 ml-4 mr-16 md:mr-0">
-                        Join The Discussion
-                    </a>
+
+        <div class="product-hunt">
+            <div class="container mx-auto px-5 py-4 md:py-0 flex justify-center items-center md:h-16">
+                <div class="text-white text-left text-sm sm:text-base tracking-wide leading-tight md:w-1/2 lg:w-auto">
+                    AnonAddy is live on Product Hunt today! <span class="block md:inline-block font-semibold">50% off coupon in the comments</span>
                 </div>
+                <a href="https://www.producthunt.com/posts/anonaddy" target="_blank" rel="nofollow noreferrer noopener" class="text-xs md:text-base bg-white cursor-pointer hover:shadow-none font-bold py-2 px-2 md:px-4 rounded shadow-lg md:mt-0 ml-4 mr-16 md:mr-0">
+                    Join The Discussion
+                </a>
             </div>
-        @endif
+        </div>
+
 
         @include('_shared.header')
 
