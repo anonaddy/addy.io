@@ -918,6 +918,14 @@ pre code {
   display: block;
 }
 
+.product-hunt {
+  background: #cc4d29;
+}
+
+.product-hunt a {
+  color: #cc4d29;
+}
+
 input[name=search] {
   background-image: url("/assets/img/magnifying-glass.svg");
   background-position: 0.8em;
