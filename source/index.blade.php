@@ -114,8 +114,8 @@ width: full
 			<div class="w-full sm:w-1/2 p-6 mt-6">
 				<div class="align-middle">
 					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Browser Extension</h3>
-					<p class="text-grey-600 mb-4">Generate UUID aliases in a couple of clicks straight from your browser using the <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">open-source</a> browser extension.</p>
-				<p class="text-grey-600 b-4">The extension is available for download on <a href="https://addons.mozilla.org/en-GB/firefox/addon/anonaddy/" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">Firefox</a> and <a href="https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe" class="text-indigo-700" target="_blank" rel="nofollow noopener noreferrer">Chrome</a>!</p>
+					<p class="text-grey-600 mb-4">Generate UUID aliases in a couple of clicks straight from your browser using the <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a> browser extension.</p>
+				<p class="text-grey-600 b-4">The extension is available for download on <a href="https://addons.mozilla.org/en-GB/firefox/addon/anonaddy/" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Firefox</a> and <a href="https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Chrome</a>!</p>
 					<p class="text-grey-600 mb-4">Also available on other chromium based browsers such as Brave and Vivaldi.</p>
 				</div>
 			</div>
@@ -197,7 +197,7 @@ width: full
 					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">API Access</h3>
 					<p class="text-grey-600 mb-4">Manage your aliases, recipients, domains and additional usernames using the AnonAddy API.</p>
                     <p class="text-grey-600 mb-4">In order to use the API you first need to generate an API access token in your account settings.</p>
-                    <p class="text-grey-600 mb-4"><a href="https://app.anonaddy.com/docs/" class="text-indigo-700">View API documentation</a></p>
+                    <p class="text-grey-600 mb-4"><a href="https://app.anonaddy.com/docs/" class="text-indigo-700 font-bold">View API documentation</a></p>
 				</div>
 			</div>
 		</div>
@@ -264,7 +264,7 @@ width: full
 						<div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>Everything</b> in Free
+								<b>Everything</b> in the Free plan
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
@@ -322,7 +322,7 @@ width: full
 						<div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>Everything</b> in Free
+								<b>Everything</b> in the Free plan
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>

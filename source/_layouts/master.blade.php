@@ -34,16 +34,6 @@
     </head>
 
     <body class="{{ $page->isActive('/') ? 'gradient text-white' : 'flex flex-col justify-between min-h-screen bg-white text-grey-800' }} leading-normal font-sans">
-        @if($page->isActive('/'))
-            <div class="bg-indigo-900">
-                <div class="container mx-auto px-5 py-4 md:py-0 flex justify-center items-center md:h-16">
-                    <div class="text-white text-sm sm:text-base tracking-wide leading-tight mr-12 md:mr-0">
-                        Sale Alert! Until Friday get 50% off your first year with coupon code - <span class="block md:inline-block font-semibold">BLACKFRIDAY50</span>
-                    </div>
-                </div>
-            </div>
-        @endif
-
         @include('_shared.header')
 
         @include('_nav.menu-mobile')

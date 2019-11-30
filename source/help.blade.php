@@ -12,6 +12,9 @@ width: full
     <p>
         Welcome to the help centre. Select a category to see help articles for that topic.
     </p>
+    <p>
+        Please note that this is still very much <span class="font-semibold">a work in progress</span>, new articles will be added regularly.
+    </p>
     <p class="mb-0">
         Below you can find definitions for common terms used throughout this site.
     </p>
