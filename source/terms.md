@@ -83,4 +83,4 @@ We may revise these terms of use at any time by amending this page. You are expe
 
 #### **Contact**
 
-Questions, comments and requests regarding these terms of service are welcomed and should be directed to [contact@anonaddy.com](mailto:contact@anonaddy.com)
+Questions, comments and requests regarding these terms of service are welcomed and should be directed to [contact@anonaddy.com](mailto:contact@anonaddy.com) ([GPG Key](/anonaddy-contact-public-key.asc))

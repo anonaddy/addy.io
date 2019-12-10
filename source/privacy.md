@@ -10,7 +10,7 @@ description: This policy (together with our Terms and Conditions) sets out the b
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-<p class="text-sm text-grey-400 mb-4">Last Updated: 4th September 2019</p>
+<p class="text-sm text-grey-400 mb-4">Last Updated: 10th December 2019</p>
 
 This policy (together with our Terms and Conditions) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. It applies to anonaddy.com and any subdomains e.g. app.anonaddy.com.
 
@@ -25,9 +25,9 @@ We may collect the following data from you:
 * For keeping track of authenticated sessions we use a small number of cookies. This site does not provide any third party cookies and makes no effort to track you. You can delete stored cookies from your browser whenever you wish.
 * If you start a subscription we may ask you to provide us with information such as your name and payment information. Your name and card details will not be stored in our database.
 
-Our site does not store/save any emails that are forwarded or replied to through the service. Emails are either immediately forwarded on or erased from memory. You can check the source code to see what happens when an email is piped to our application by Postfix.
+Our site does not store/save any emails that are forwarded or replied to through the service. You can check the source code to see what happens when an email is piped to our application by Postfix.
 
-Our server uses Postfix as the mail server software and Nginx as the web server. Nginx access and error logs are kept which do record IP addresses. Default log settings are used for Postfix. The logs are rotated daily and retained for 7 days, old log files are deleted.
+Our server uses Postfix as the mail server software and Nginx as the web server. Nginx access and error logs are kept which do record IP addresses. Default log settings are used for Postfix. All log files are rotated daily and retained for 7 days, old log files are deleted.
 
 Server logs are only used to improve our service and prevent abuse or prohibited use. This information will not be provided under any circumstances to any parties other than when compelled by law.
 
@@ -49,7 +49,11 @@ Our website is open-source and available for anyone (who understands PHP) to vie
 
 #### **Security**
 
-All information you provide to us is stored on our secure servers in the Netherlands (Greenhost.net). Sensitive data in our database such as your recipient email addresses are encrypted using OpenSSL and the AES-256-CBC cipher. Furthermore, all encrypted values are signed with a message authentication code (MAC) to detect any modifications to the encrypted string. Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it. Opportunistic TLS encryption with strong cipher preference is used for all emails sent through our service.
+All information you provide to us is stored on our secure servers in the Netherlands (Greenhost.net). Sensitive data in our database such as your recipient email addresses are encrypted using OpenSSL and the AES-256-CBC cipher. Furthermore, all encrypted values are signed with a message authentication code (MAC) to detect any modifications to the encrypted string. Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it.
+
+Opportunistic DANE TLS encryption with strong cipher preference is used for all emails sent through our service. Our mail server also utilises STARTTLS, PFS, DNSSEC, MTA-STS, TLS-RPT, DMARC, SPF and DKIM. These measures help to protect emails sent to/from our server against MiTM (Man in The Middle) downgrade attacks and also against the risk of email forgery.
+
+Our site also uses security features such as; HSTS (HTTP Strict Transport Security), a strict CSP (Content Security Policy), Subresource Integrity, Expect CT and XSS Protection.
 
 No service can be 100% secure at all times so please do not use this service to forward emails containing highly sensitive information such as bank or cryptocurrency information.
 
@@ -65,7 +69,7 @@ You have the right to require us to correct any inaccuracies in your data, free 
 
 #### **Third party services**
 
-The only third party service that we use is [Stripe](https://stripe.com) to process payments for subscriptions. Any payment transactions will be carried out by Stripe over encrypted connections.
+The only third party service that we use is [Stripe](https://stripe.com) to process payments for subscriptions. Any payment transactions will be carried out by Stripe over encrypted connections hosted within an iframe served from Stripe’s domain. Your card information never touches our server.
 
 
 #### **Changes To Our Privacy Policy**
@@ -75,4 +79,4 @@ Any changes we may make to our privacy policy in the future will be posted on th
 
 #### **Contact**
 
-Questions, comments and requests regarding this privacy policy are welcomed and should be directed to the Data Protection Officer [contact@anonaddy.com](mailto:contact@anonaddy.com)
+Questions, comments and requests regarding this privacy policy are welcomed and should be directed to the Data Protection Officer [contact@anonaddy.com](mailto:contact@anonaddy.com) ([GPG Key](/anonaddy-contact-public-key.asc))
