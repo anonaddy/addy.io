@@ -110,7 +110,8 @@ The limit is currently set to 10 which should suffice in the vast majority of si
 When you delete your account the following happens:
 
 * All of your recipients are deleted from the database
-* All of your aliases are deleted from the database
+* All of your aliases that use a shared domain e.g. @anonaddy.me are soft deleted from the database (this is to prevent any chance of another user generating the same alias in the future)
+* All of your other aliases are deleted from the database
 * All of your custom domains are deleted from the database
 * Your user details are deleted from the database
 * Your username and any additional usernames that you created are encrypted and added to a table in the database. This is to prevent anybody signing up with the same username in the future.
