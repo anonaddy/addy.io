@@ -19,6 +19,8 @@ Let's say you're username is **johndoe** and you are signing up to example.com y
 
 The alias will show up in your dashboard automatically as soon as it has forwarded its first email.
 
+This works the same way for custom domains, your aliases are created as soon as they receive their first email.
+
 <div class="flex justify-center my-8">
   <img class="shadow" src="/assets/img/help-alias.jpg" alt="New Alias" title="New Alias">
 </div>
@@ -27,13 +29,13 @@ If you start receiving spam to the alias you can simply deactivate it or delete 
 
 ## Option 2: Generate a unique random alias
 
-You can click the "Generate New Alias" button to generate a random UUID alias.
+You can click the "Generate New Alias" button to generate a random UUID or random word (paid plans only) alias.
 
 <div class="my-8">
   <img class="shadow" src="/assets/img/help-generate-alias.jpg" alt="Generate New Alias" title="Generate New Alias">
 </div>
 
-After clicking this button a modal will appear with some options for the alias domain and an optional description. It is generally a good idea to add a description for the UUID alias even if you are using a password manager as it can be easy to forget what they were used for.
+After clicking this button a modal will appear with some options for the alias domain, the alias format and an optional description. It is generally a good idea to add a description for the UUID/random word aliases even if you are using a password manager as it can be easy to forget what they were used for.
 
 <div class="my-8">
   <img class="shadow" src="/assets/img/help-generate-alias-modal.jpg" alt="Generate New Alias Modal" title="Generate New Alias Modal">
@@ -42,6 +44,10 @@ After clicking this button a modal will appear with some options for the alias d
 Once you are happy with the details click "Generate Alias" and you will see something like the below at the top of your dashboard:
 
 `86064c92-da41-443e-a2bf-5a7b0247842f@anonaddy.me`
+
+or this:
+
+`circus.waltz449@anonaddy.me`
 
 These kinds of aliases are useful if you do not wish to include your username in the email as a potential link between aliases.
 
