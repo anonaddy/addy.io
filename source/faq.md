@@ -125,9 +125,13 @@ Yes this will work with any provider, althought I can't guarantee it won't land 
 
 Each forwarded email has a Reply-To: header set. This header will look something like this:
 
-Reply-To: "sender@example.com" <<span class="break-words"><alias+59fhbf7f1ea374c9182ac0f269m3192501fep210@johndoe.anonaddy.com></span>>
+Reply-To: <<span class="break-words"><alias+hello=example.com@johndoe.anonaddy.com></span>>
 
-Where sender@example.com is the address of the person who sent you the email and the part between the '<' '>' is the alias (alias@johndoe.anonaddy.com in this case) that forwarded the email along with a "hash" added as an extension after the "+". In order to reply successfully you must keep this entire email address and display name intact, do not remove the "sender@example.com" display name part.
+Where hello@example.com is the address of the person who sent you the email and alias@johndoe.anonaddy.com is the alias that forwarded you the email.
+
+Almost all mail clients respect the Reply-To: header, so all you need to do is click reply and it should automatically fill the To: field with the correct address.
+
+Some users have reported that Gmail's web mail has not been using the Reply-To header. If this is the case then you will have to manually copy the value of the Reply-To header and use this instead.
 
 To check if a reply has worked properly check in your dashboard if the reply count has been incremented for that alias.
 

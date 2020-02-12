@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 return [
     'baseUrl' => 'http://localhost:3000/',
     'production' => false,
@@ -62,7 +64,7 @@ return [
             : $cleaned;
     },
     'isActive' => function ($page, $path) {
-        return ends_with(trimPath($page->getPath()), trimPath($path));
+        return Str::endsWith(trimPath($page->getPath()), trimPath($path));
     },
     'startsWith' => function ($page, $needle) {
         if ($needle !== '' && substr(trimPath($page->getPath()), 0, strlen($needle)) === (string) $needle) {
