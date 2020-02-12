@@ -60,10 +60,11 @@ width: full
 		<div class="flex flex-wrap">
 			<div class="w-full sm:w-1/2 p-6">
 				<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">1. Register Your Username</h3>
-				<p class="text-grey-600 mb-4">Let's say your username is <b>johndoe</b>. You can now use *@johndoe.anonaddy.com (or .me) as your email. Where * denotes any valid local part for an email address.</p>
+                <p class="text-grey-600 mb-4">Let's say your username is <b>johndoe</b>. You can now use *@johndoe.anonaddy.com (or .me) as your email. Where * denotes any valid local part for an email address.</p>
 
-				<p class="text-grey-600">If you would like to remain anonymous choose a username that is not linked to your real name or identify and that you haven't used anywhere else.</p>
-
+                <p class="text-grey-600 mb-4">If you would like to remain anonymous choose a username that is not linked to your real name or identify and that you haven't used anywhere else.</p>
+ 
+                <p class="text-grey-600">You can also create aliases at <b>shared domains</b> if you are concerned about others linking alias ownership to you.</p>
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
 				<img class="w-full sm:h-64 mx-auto" src="/assets/img/register.svg" alt="Register">
@@ -76,10 +77,10 @@ width: full
 			</div>
 			<div class="w-full sm:w-1/2 p-6 mt-6">
 				<div class="align-middle">
-					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">2. Create Aliases On The Fly</h3>
-					<p class="text-grey-600 mb-4">Next time you are signing up to a website or newsletter, simply make up a new alias and enter that instead of your real email address.</p>
+					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">2. Create Aliases</h3>
+					<p class="text-grey-600 mb-4">Either <b>on the fly</b> or <b>generated</b> beforehand. Next time you are signing up to a website or newsletter, simply make up a new alias and enter that instead of your real email address.</p>
 					<p class="text-grey-600 mb-4">For example, if you are on vuejs.org and you want to sign up to their newsletter you could simply enter <b>vuejs@johndoe.anonaddy.com</b> (or .me).</p>
-					<p class="text-grey-600 mb-4">We'll automatically create the alias in your dashboard as soon as it receives its first email. You can reply to emails anonymously too!</p>
+					<p class="text-grey-600 mb-4">We'll automatically create the alias in your dashboard as soon as it receives its first email. You can reply to emails and send from aliases anonymously too!</p>
 				</div>
 			</div>
 
@@ -160,18 +161,18 @@ width: full
 			<div class="w-full sm:w-1/2 p-6">
 				<img class="w-full sm:h-64 mx-auto" src="/assets/img/anonymous.svg" alt="UUID Aliases">
 			</div>
-		</div>
+        </div>
 
-		<div class="flex flex-wrap flex-col-reverse sm:flex-row">
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
 			<div class="w-full sm:w-1/2 p-6 mt-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/recipients.svg" alt="Multiple Recipients">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/mail.svg" alt="Reply to and Send from">
 			</div>
 			<div class="w-full sm:w-1/2 p-6 mt-6">
 				<div class="align-middle">
-					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Multiple Recipients Per Alias</h3>
-					<p class="text-grey-600 mb-4">If you'd like an alias to go to more than one recipient you can easily add multiple recipients from your dashboard.</p>
-					<p class="text-grey-600 mb-4">You can even add recipients to an alias as it is created by doing <b>alias+2.3.4@user.anonaddy.com</b></p>
-					<p class="text-grey-600 mb-4">Where 2,3 and 4 are the keys for existing recipients in your account.</p>
+					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Reply To And Send From Aliases</h3>
+					<p class="text-grey-600 mb-4">Reply <b>anonymously</b> to forwarded emails, the sender will receive the email as if it has come from the alias.</p>
+					<p class="text-grey-600 mb-4">You can even initiate an email conversation by sending an email from one of your aliases.</b></p>
+					<p class="text-grey-600 mb-4">Your real email address is <b>not revealed</b> when replying or sending from an alias.</p>
 				</div>
 			</div>
 		</div>
@@ -182,16 +183,27 @@ width: full
 				<p class="text-grey-600 mb-4">You can add additional usernames to your account and use them exactly like the one you signed up with.</p>
 				<p class="text-grey-600 mb-4">So if you signed up as johndoe you can add johnsmith as an additional username and then use <b>anyalias@johnsmith.anonaddy.com</b> too.</p>
 				<p class="text-grey-600 mb-4">This can be used to compartmentalise your aliases. You could have a username for work emails a different one for personal emails etc.</p>
-			</div>
-			<div class="w-full sm:w-1/2 p-6">
+            </div>
+            <div class="w-full sm:w-1/2 p-6">
 				<img class="w-full sm:h-64 mx-auto" src="/assets/img/usernames.svg" alt="Additional Usernames">
 			</div>
         </div>
 
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-			<div class="w-full sm:w-1/2 p-6 mt-6">
-				<img class="w-full sm:h-64 mx-auto" src="/assets/img/api.svg" alt="API">
+        <div class="w-full sm:w-1/2 p-6 mt-6">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/recipients.svg" alt="Multiple Recipients">
 			</div>
+			<div class="w-full sm:w-1/2 p-6 mt-6">
+				<div class="align-middle">
+					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Multiple Recipients Per Alias</h3>
+					<p class="text-grey-600 mb-4">If you'd like an alias to go to more than one recipient you can easily add multiple recipients from your dashboard.</p>
+					<p class="text-grey-600 mb-4">You can even add recipients to an alias as it is created by doing <b>alias+2.3.4@user.anonaddy.com</b></p>
+					<p class="text-grey-600 mb-4">Where 2,3 and 4 are the keys for existing recipients in your account.</p>
+				</div>
+            </div>
+		</div>
+
+        <div class="flex flex-wrap">
 			<div class="w-full sm:w-1/2 p-6 mt-6">
 				<div class="align-middle">
 					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">API Access</h3>
@@ -199,6 +211,9 @@ width: full
                     <p class="text-grey-600 mb-4">In order to use the API you first need to generate an API access token in your account settings.</p>
                     <p class="text-grey-600 mb-4"><a href="https://app.anonaddy.com/docs/" class="text-indigo-700 font-bold">View API documentation</a></p>
 				</div>
+            </div>
+            <div class="w-full sm:w-1/2 p-6 mt-6">
+				<img class="w-full sm:h-64 mx-auto" src="/assets/img/api.svg" alt="API">
 			</div>
 		</div>
 
@@ -284,7 +299,7 @@ width: full
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>20 daily</b> Anonymous Replies
+								<b>20 daily</b> Anonymous Replies/Sends
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
@@ -342,7 +357,7 @@ width: full
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>100 daily</b> Anonymous Replies
+								<b>100 daily</b> Anonymous Replies/Sends
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
