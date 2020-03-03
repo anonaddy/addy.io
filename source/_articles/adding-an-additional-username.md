@@ -1,0 +1,38 @@
+---
+extends: _layouts.article
+ogtype: article
+image: https://anonaddy.com/assets/img/help-add-username.png
+section: content
+title: Adding an additional username
+date: 2020-03-03
+description: This article guides you through the steps to add an additional username on AnonAddy. This allows you to compartmenatlise your aliases in order to prevent anyone from linking them together.
+helpCategories: [usernames]
+---
+
+This article guides you through the steps to add an additional username on AnonAddy. This allows you to compartmenatlise your aliases in order to prevent anyone from linking them together.
+
+## Choosing a username
+
+When adding a new username choose one that is unrelated to the one you signed up with and that you haven't used anywhere else online. This will make it less likely that aliases under this username can be linked back to you.
+
+> **Note**: Please choose carefully, if you add a username and then immediately delete it, it will still count towards your additional username limit
+
+Enter the username that you'd like to add e.g. johndoe
+
+<div class="flex justify-center mb-6">
+  <img class="shadow" src="/assets/img/help-add-username.png" alt="Add additional username" title="Add additional username">
+</div>
+
+If the username is available then it will be succesfully added. You can then add a description and a default recipient for it if you like (this default recipient will override the account's global default recipient).
+
+<div class="flex justify-center mb-6">
+  <img class="shadow" src="/assets/img/help-new-username.png" alt="New additional username" title="New additional username">
+</div>
+
+You can use the additional username exactly like you would the one you signed up with.
+
+Creating unlimited aliases under *@**janedoe**.anonaddy.com or *@**janedoe**.anonaddy.me (or use the paid only domain).
+
+You can add 1 additional username as a Lite user and up to 3 additional usernames as a Pro user for totals of 2 and 4 respectively (including the one you signed up with). You can currently only login with the one that you originally signed up with.
+
+You can also use the API to add new a new username.
