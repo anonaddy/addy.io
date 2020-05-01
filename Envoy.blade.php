@@ -1,6 +1,6 @@
 @setup
 require __DIR__."/vendor/autoload.php";
-$dotenv = Dotenv\Dotenv::create(__DIR__, ".env");
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $userAndServer = getenv("ENVOY_USER_AND_SERVER");
