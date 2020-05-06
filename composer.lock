@@ -169,7 +169,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v7.9.2",
+            "version": "v7.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -213,16 +213,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.9.2",
+            "version": "v7.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "4f9cad4bd982e9f100b1f0a42677fdd3bbfa48fd"
+                "reference": "d05e0fc82ccfe401880309a246cd2e4f27eef992"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/4f9cad4bd982e9f100b1f0a42677fdd3bbfa48fd",
-                "reference": "4f9cad4bd982e9f100b1f0a42677fdd3bbfa48fd",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/d05e0fc82ccfe401880309a246cd2e4f27eef992",
+                "reference": "d05e0fc82ccfe401880309a246cd2e4f27eef992",
                 "shasum": ""
             },
             "require": {
@@ -253,11 +253,11 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2020-04-28T07:21:27+00:00"
+            "time": "2020-04-28T20:54:46+00:00"
         },
         {
             "name": "illuminate/events",
-            "version": "v7.9.2",
+            "version": "v7.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -302,7 +302,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v7.9.2",
+            "version": "v7.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -355,16 +355,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v7.9.2",
+            "version": "v7.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "677a3ad776db92b339a2926927929d0b070642ea"
+                "reference": "cd11fa914c52a2249c48cde08d03a871597e8781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/677a3ad776db92b339a2926927929d0b070642ea",
-                "reference": "677a3ad776db92b339a2926927929d0b070642ea",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/cd11fa914c52a2249c48cde08d03a871597e8781",
+                "reference": "cd11fa914c52a2249c48cde08d03a871597e8781",
                 "shasum": ""
             },
             "require": {
@@ -413,20 +413,20 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-04-28T07:20:41+00:00"
+            "time": "2020-05-05T16:21:56+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v7.9.2",
+            "version": "v7.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "78e3ffc81e657313d107cf5fa4a042cdb50be783"
+                "reference": "9c4f981bfca8d7884f95b652100a9f1780b26286"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/78e3ffc81e657313d107cf5fa4a042cdb50be783",
-                "reference": "78e3ffc81e657313d107cf5fa4a042cdb50be783",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/9c4f981bfca8d7884f95b652100a9f1780b26286",
+                "reference": "9c4f981bfca8d7884f95b652100a9f1780b26286",
                 "shasum": ""
             },
             "require": {
@@ -461,7 +461,7 @@
             ],
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
-            "time": "2020-04-28T16:02:03+00:00"
+            "time": "2020-04-29T16:49:12+00:00"
         },
         {
             "name": "michelf/php-markdown",
@@ -1627,20 +1627,20 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v4.1.4",
+            "version": "v4.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "feb6dad5ae24b1380827aee1629b730080fde500"
+                "reference": "539bb6927c101a5605d31d11a2d17185a2ce2bf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/feb6dad5ae24b1380827aee1629b730080fde500",
-                "reference": "feb6dad5ae24b1380827aee1629b730080fde500",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/539bb6927c101a5605d31d11a2d17185a2ce2bf1",
+                "reference": "539bb6927c101a5605d31d11a2d17185a2ce2bf1",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9 || ^7.0",
+                "php": "^5.5.9 || ^7.0 || ^8.0",
                 "phpoption/phpoption": "^1.7.2",
                 "symfony/polyfill-ctype": "^1.9"
             },
@@ -1687,7 +1687,17 @@
                 "env",
                 "environment"
             ],
-            "time": "2020-04-12T15:20:09+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-02T14:08:57+00:00"
         },
         {
             "name": "voku/portable-ascii",
@@ -2659,5 +2669,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
