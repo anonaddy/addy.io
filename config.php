@@ -64,10 +64,10 @@ return [
             : $cleaned;
     },
     'isActive' => function ($page, $path) {
-        return Str::endsWith(trimPath($page->getPath()), trimPath($path));
+        return Str::endsWith($page->getUrl(), $path);
     },
     'startsWith' => function ($page, $needle) {
-        if ($needle !== '' && substr(trimPath($page->getPath()), 0, strlen($needle)) === (string) $needle) {
+        if ($needle !== '' && substr($page->getUrl(), 0, strlen($needle)) === (string) $needle) {
             return true;
         }
 
