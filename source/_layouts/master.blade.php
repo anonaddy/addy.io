@@ -38,7 +38,7 @@
 
         @include('_nav.menu-mobile')
 
-        <main role="main" class="{{ $page->isActive('/') ? '' : 'flex-auto w-full container py-16' }} {{ $page->width === 'full' ? '' : 'max-w-5xl' }}">
+        <main class="{{ $page->isActive('/') ? '' : 'flex-auto w-full container py-16' }} {{ $page->width === 'full' ? '' : 'max-w-5xl' }}">
             @yield('body')
         </main>
 

@@ -30,7 +30,7 @@ DNSSEC adds two important security features to the DNS protocol:
 * Data origin authentication (resolvers can cryptographically verify data came from the expected zone)
 * Data integrity protection (resolvers can verify the data hasn't been modified in transit since it has been signed by the zone owner with the zone's private key)
 
-#### **Perfect foward secrecy**
+#### **Perfect forward secrecy**
 
 PFS is a method of encryption that enables short-term, completely private key exchanges between clients and servers. It gives assurances that session keys will not be compromised even if the private key of the server is compromised. PFS is a large leap forwards in protecting data on the transport layer. Our server's and MTA's cipher suites are ordered to enable PFS. Check out the site on [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=anonaddy.me).
 

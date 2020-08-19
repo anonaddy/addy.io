@@ -63,4 +63,4 @@ You can check the records for your domain using [mxtoolbox.com](https://mxtoolbo
 
 Please leave these records in place for the duration that you use the domain on AnonAddy.
 
-A daily check is carried out on the domain's records, if you remove any records then the domain will become unverified for sending. You will recieve an email notification to let you know if your domain has become unverified for sending and which record has caused it to happen.
+A daily check is carried out on the domain's records, if you remove any records then the domain will become unverified for sending. You will receive an email notification to let you know if your domain has become unverified for sending and which record has caused it to happen.

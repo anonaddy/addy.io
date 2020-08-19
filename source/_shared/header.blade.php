@@ -1,4 +1,4 @@
-<header class="flex items-center gradient lg:h-20 py-4" role="banner">
+<header class="flex items-center gradient lg:h-20 py-4">
     <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
         <div class="flex items-center">
             <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">

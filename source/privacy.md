@@ -57,7 +57,7 @@ Our site also uses security features such as; HSTS (HTTP Strict Transport Securi
 
 No service can be 100% secure at all times so please do not use this service to forward emails containing highly sensitive information such as bank or cryptocurrency information.
 
-We take all measures reasonably necessary to protect against unauthorised access, use, alteration or desctruction of data.
+We take all measures reasonably necessary to protect against unauthorised access, use, alteration or destruction of data.
 
 
 #### **Your Rights**

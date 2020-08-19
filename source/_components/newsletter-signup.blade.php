@@ -5,7 +5,7 @@
 
         <div class="flex flex-col items-center">
             <label for="email" class="hidden">Email Address</label>
-            <input type="email" value="" name="email" class="appearance-none bg-white shadow border-none w-full text-grey-700 py-2 px-3" aria-label="Email Address" placeholder="you@example.com" required>
+            <input type="email" id="email" value="" name="email" class="appearance-none bg-white shadow border-none w-full text-grey-700 py-2 px-3" aria-label="Email Address" placeholder="you@example.com" required>
             <div class="hidden">
                 <label for="hp">HP</label>
                 <input type="text" name="hp" id="hp"/>

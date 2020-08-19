@@ -8,7 +8,7 @@ description: A new server with privacy friendly Greenhost based in Amsterdam and
 categories: [updates]
 ---
 
-This post will give a few more details regarding the server migration this morning and the launch of the new Pro plan on the site. Also the end of the open beta and what it means for exisiting users.
+This post will give a few more details regarding the server migration this morning and the launch of the new Pro plan on the site. Also the end of the open beta and what it means for existing users.
 
 ## Why the new server?
 

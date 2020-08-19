@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-description: Frequently asked questions about AnonAddy. Why did you make this site? I made the code open-source to show everyone what was going on behind the scenes and to allow others to help improve the application.
+description: Frequently asked questions. Why did you make this site? I made the code open-source to show everyone what was going on behind the scenes and to allow others to help improve the application.
 extends: _layouts.master
 section: body
 ---
@@ -119,7 +119,7 @@ When you delete your account the following happens:
 
 #### **Does this work with any email provider?**
 
-Yes this will work with any provider, althought I can't guarantee it won't land in spam initially.
+Yes this will work with any provider, although I can't guarantee it won't land in spam initially.
 
 #### **How do I reply to a forwarded email?**
 

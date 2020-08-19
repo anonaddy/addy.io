@@ -52,7 +52,7 @@ width: full
 
 <section class="bg-white border-b border-grey-100 py-8">
 	<div class="container max-w-5xl mx-auto m-8">
-		<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">How Does It Work?</h1>
+		<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">How Does It Work?</h1>
 		<div class="w-full mb-4">
 			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 		</div>
@@ -103,7 +103,7 @@ width: full
 
 <section class="bg-white border-b border-grey-100 py-8">
 	<div class="container max-w-5xl mx-auto m-8">
-		<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Features You'll Love</h1>
+		<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Features You'll Love</h1>
 		<div class="w-full mb-4">
 			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 		</div>
@@ -224,7 +224,7 @@ width: full
 
 	<div class="container mx-auto px-2 pt-4 pb-12 text-grey-800">
 
-		<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Pricing</h1>
+		<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Pricing</h1>
 		<div class="w-full mb-4">
 			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 		</div>
@@ -412,7 +412,7 @@ width: full
 
 <section class="container flex flex-col items-center py-6">
 
-	<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Sign up for our newsletter</h1>
+	<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Sign up for our newsletter</h1>
 	<div class="w-full mb-4">
 		<div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
 	</div>

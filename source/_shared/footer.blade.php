@@ -1,5 +1,5 @@
 <!--Footer-->
-<footer class="gradient" role="contentinfo">
+<footer class="gradient">
 	<div class="container mx-auto px-8">
 
         <div class="w-full flex flex-row flex-wrap justify-between py-6">

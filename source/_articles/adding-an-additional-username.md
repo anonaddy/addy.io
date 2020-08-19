@@ -23,7 +23,7 @@ Enter the username that you'd like to add e.g. johndoe
   <img class="shadow" src="/assets/img/help-add-username.png" alt="Add additional username" title="Add additional username">
 </div>
 
-If the username is available then it will be succesfully added. You can then add a description and a default recipient for it if you like (this default recipient will override the account's global default recipient).
+If the username is available then it will be successfully added. You can then add a description and a default recipient for it if you like (this default recipient will override the account's global default recipient).
 
 <div class="flex justify-center mb-6">
   <img class="shadow" src="/assets/img/help-new-username.png" alt="New additional username" title="New additional username">
