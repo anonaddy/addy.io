@@ -62,7 +62,7 @@ It will likely work something like this:
 
 alias+2@user.anonaddy.com where the extension of "2" will be the identifier for your second recipient in your account.
 
-You will also be able to do alias+3,4@user.anonaddy.com so you can attach recipients "3" and "4" to the new alias.
+You will also be able to do alias+3.4@user.anonaddy.com so you can attach recipients "3" and "4" to the new alias.
 
 After I've finished this I'll likely work on adding the ability to have multiple "usernames" under the same account which would allow you to do alias@dave.anonaddy.com or alias@john.anonaddy.com etc.
 

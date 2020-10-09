@@ -12,6 +12,7 @@
                 <div class="text-grey-200 font-semibold mb-1">Development</div>
                 <a href="/security/" class="no-underline text-white my-1 {{ $page->isActive('/security') ? 'active font-bold' : '' }}" title="Privacy">Security</a>
                 <a href="https://app.anonaddy.com/docs/" class="no-underline text-white mt-1" title="Terms">API</a>
+                <a href="/self-hosting/" class="no-underline text-white my-1 {{ $page->isActive('/self-hosting') ? 'active font-bold' : '' }}" title="Privacy">Self-hosting</a>
             </div>
             <div class="flex flex-col mx-4 my-4 md:my-0">
                 <div class="text-grey-200 font-semibold mb-1">Support</div>

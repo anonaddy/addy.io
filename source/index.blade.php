@@ -144,8 +144,8 @@ width: full
 			<div class="w-full sm:w-1/2 p-6 mt-6">
 				<div class="align-middle">
 					<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Custom Domains</h3>
-					<p class="text-grey-600 mb-4">If you have your own domain you can add it and use it as a catch-all.</p>
-				<p class="text-grey-600 b-4">You'll be able to use it exactly like your username subdomain aliases e.g. <b>alias@example.com</b>.</p>
+					<p class="text-grey-600 mb-4">If you have your own domain you can add it and use it exactly like your username subdomain aliases e.g. <b>alias@example.com</b>.</p>
+				    <p class="text-grey-600 b-4">You can also enable or disable the <b>catch-all</b> functionality for each of your domains.</p>
 					<p class="text-grey-600 mb-4">You can then manage your aliases and deactivate/delete any that start receiving spam!</p>
 				</div>
 			</div>
@@ -242,7 +242,7 @@ width: full
 							</div>
 							<div class="py-4">
 								<svg class="h-5 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>20</b> UUID Aliases
+								<b>20</b> Shared Domain Aliases
 							</div>
 							<div class="py-4">
 								<svg class="h-5 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
@@ -283,7 +283,7 @@ width: full
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>50</b> UUID/Random Word Aliases
+								<b>50</b> Shared Domain Aliases
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
@@ -341,7 +341,7 @@ width: full
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>Unlimited</b> UUID/Random Word Aliases
+								<b>Unlimited</b> Shared Domain Aliases
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>

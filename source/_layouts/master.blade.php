@@ -45,5 +45,8 @@
         @include('_shared.footer')
 
         @stack('scripts')
+        @if($page->isActive('/self-hosting'))
+            <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        @endif
     </body>
 </html>

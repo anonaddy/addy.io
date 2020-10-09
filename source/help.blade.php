@@ -26,10 +26,16 @@ width: full
         <b>Aliases</b> - Aliases or email aliases are email addresses that are associated with another destination email address. They are simply forwarding email addresses, in the case of AnonAddy all aliases created forward emails to your real recipient email addresses.
     </p>
     <p>
-        <b>UUID Alias</b> - A UUID alias is generated at the parent domain e.g. anonaddy.me and look something like this - 94960540-f914-42e0-9c50-6faa7a385384@anonaddy.me. UUID stands for universally unique identifier, it is randomly generated string with no inherent logic (this applies to V4). Users who want maximum anonyminity may choose to use this kind of alias as it does not include your username or any other identifying information in the email address.
+        <b>Standard Alias</b> - A standard alias on AnonAddy is any alias that is created automatically when it receives its first email. If you signed up with a username of johndoe and gave out the following alias - hello@johndoe.anonaddy.com then this would be a standard alias.
     </p>
     <p>
-        <b>Standard Alias</b> - A standard alias on AnonAddy is any alias that is created automatically when it receives its first email. If you signed up with a username of johndoe and gave out the following alias - hello@johndoe.anonaddy.com then this would be a standard alias.
+        <b>Shared Domain Alias</b> - A shared domain alias is any alias that has a domain name that is also shared with other users. For example anyone can generate an alias with the @anonaddy.me domain. Aliases with shared domain names must be pre-generated and cannot be created on-the-fly like standard aliases.
+    </p>
+    <p>
+        <b>UUID Alias</b> - A UUID alias is generated at the parent domain e.g. anonaddy.me and looks something like this - 94960540-f914-42e0-9c50-6faa7a385384@anonaddy.me. UUID stands for universally unique identifier, it is randomly generated string with no inherent logic (this applies to V4). Users who want maximum anonyminity may choose to use this kind of alias as it does not include your username or any other identifying information in the email address.
+    </p>
+    <p>
+        <b>Random Word Alias</b> - A Random Word alias is generated at the parent domain e.g. anonaddy.me and looks something like this - circus.waltz449@anonaddy.me.
     </p>
     <p>
         <b>Recipients</b> - Your recipient email addresses are your real email addresses where aliases are forwarded to. You can set a default recipient for your account in your settings, this is where all aliases will forward emails if they have no other recipients attached. You can also set a default recipient for each custom domain and additional username.
