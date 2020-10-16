@@ -18,7 +18,7 @@ The option to be able to turn off automatic alias creation has been requested by
 If you head on over to your domains or usernames page you'll see the addition of a new column named "Catch-All". Each domain or username has a toggle switch to enable or disable the catch-all functionality.
 
 <div class="flex justify-center mb-4">
-  <img class="shadow" src="/assets/img/domains-catch-all.jpg" alt="Domains catch-all" title="Send from alias">
+  <img class="shadow" src="/assets/img/domains-catch-all.jpg" alt="Domains catch-all" title="Domains catch-all">
 </div>
 
 If you disable catch all for a username or domain then you will only be able to receive emails for aliases that **already exist** in your account.
@@ -42,7 +42,7 @@ For example, if I had the domain example.com and I wanted to create a new alias 
 The **local part** of an email address is anything before the `@` symbol.
 
 <div class="flex justify-center">
-  <img class="shadow" src="/assets/img/new-custom-alias-format.jpg" alt="New custom alias format" title="Send from alias">
+  <img class="shadow" src="/assets/img/new-custom-alias-format.jpg" alt="New custom alias format" title="New custom alias format">
 </div>
 
 ## Browser extension updates
@@ -54,7 +54,7 @@ A couple of other user requested additions have also been made. For those of you
 The extension will also now display the alias that was last generated so that you can easily copy it again.
 
 <div class="flex justify-center">
-  <img class="shadow" src="/assets/img/browser-extension-5.png" alt="Extension recalls last created alias" title="Send from alias">
+  <img class="shadow" src="/assets/img/browser-extension-5.png" alt="Extension recalls last created alias" title="Extension recalls last created alias">
 </div>
 
 ## Feedback and suggestions

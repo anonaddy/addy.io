@@ -1,10 +1,10 @@
 ---
 extends: _layouts.article
 ogtype: article
-image: https://anonaddy.com/assets/img/send-from-alias.png
+image: https://anonaddy.com/assets/img/send-from-alias-construction.jpg
 section: content
 title: Sending email from an alias
-date: 2020-03-03
+date: 2020-10-13
 description: This article guides you through the steps to send an email from an email alias on AnonAddy. This allows you to initiate a conversation without first having to receive an email you can reply to.
 helpCategories: [aliases]
 ---
@@ -12,6 +12,10 @@ helpCategories: [aliases]
 This article guides you through the steps to send an email from an email alias on AnonAddy. This allows you to initiate a conversation without first having to receive an email you can reply to.
 
 ## An example of how it works
+
+<div class="flex justify-center mb-4">
+  <img class="shadow" src="/assets/img/send-from-alias-construction.jpg" alt="Send from alias construction" title="Send from alias construction">
+</div>
 
 Let's say that you have the alias **first@johndoe.anonaddy.com** and you want to send an email to **hello@example.com**.
 
