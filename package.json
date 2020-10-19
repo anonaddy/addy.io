@@ -10,7 +10,7 @@
     },
     "devDependencies": {
         "axios": "^0.18.0",
-        "browser-sync": "^2.26.12",
+        "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^3.2.3",
         "extra-watch-webpack-plugin": "^1.0.3",
@@ -25,7 +25,7 @@
         "prettier": "^1.19.1",
         "sass": "^1.27.0",
         "sass-loader": "^7.3.1",
-        "tailwindcss": "^1.9.2",
+        "tailwindcss": "^1.9.4",
         "vue": "^2.6.12",
         "vue-template-compiler": "^2.6.12",
         "yargs": "^4.6.0"
