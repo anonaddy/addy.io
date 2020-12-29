@@ -1,9 +1,9 @@
 {
     "private": true,
     "scripts": {
-        "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
         "dev": "npm run local",
         "watch": "npm run local -- --watch",
         "format": "prettier --write 'source/_assets/**/*.{scss,js,vue}'"
@@ -11,24 +11,25 @@
     "devDependencies": {
         "axios": "^0.18.0",
         "browser-sync": "^2.26.13",
-        "browser-sync-webpack-plugin": "^2.0.1",
+        "browser-sync-webpack-plugin": "^2.3.0",
         "cross-env": "^3.2.3",
         "extra-watch-webpack-plugin": "^1.0.3",
         "fuse.js": "^3.6.1",
         "hasbin": "^1.2.3",
-        "highlight.js": "^10.4.0",
+        "highlight.js": "^10.5.0",
         "husky": "^3.1.0",
-        "laravel-mix": "^4.1.4",
+        "laravel-mix": "^6.0.5",
         "laravel-mix-purgecss": "^3.0.0",
         "lint-staged": "^9.5.0",
         "node-cmd": "^3.0.0",
+        "postcss": "^8.2.1",
         "prettier": "^1.19.1",
-        "sass": "^1.29.0",
+        "sass": "^1.30.0",
         "sass-loader": "^7.3.1",
         "tailwindcss": "^1.9.6",
         "vue": "^2.6.12",
         "vue-template-compiler": "^2.6.12",
-        "yargs": "^4.6.0"
+        "yargs": "^16.2.0"
     },
     "husky": {
         "hooks": {
