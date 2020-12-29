@@ -1,32 +1,31 @@
 {
     "private": true,
     "scripts": {
-        "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "dev": "npm run local",
+        "prod": "npm run production",
         "watch": "npm run local -- --watch",
         "format": "prettier --write 'source/_assets/**/*.{scss,js,vue}'"
     },
     "devDependencies": {
-        "axios": "^0.18.0",
+        "autoprefixer": "^9.8.6",
+        "axios": "^0.21.1",
         "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.3.0",
-        "cross-env": "^3.2.3",
+        "cross-env": "^7.0.3",
         "extra-watch-webpack-plugin": "^1.0.3",
         "fuse.js": "^3.6.1",
         "hasbin": "^1.2.3",
         "highlight.js": "^10.5.0",
-        "husky": "^3.1.0",
-        "laravel-mix": "^6.0.5",
-        "laravel-mix-purgecss": "^3.0.0",
-        "lint-staged": "^9.5.0",
+        "husky": "^4.3.6",
+        "laravel-mix": "^5.0.9",
+        "lint-staged": "^10.5.3",
         "node-cmd": "^3.0.0",
-        "postcss": "^8.2.1",
-        "prettier": "^1.19.1",
-        "sass": "^1.30.0",
-        "sass-loader": "^7.3.1",
-        "tailwindcss": "^1.9.6",
+        "postcss": "^7.0.35",
+        "prettier": "2.2.1",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
         "vue": "^2.6.12",
         "vue-template-compiler": "^2.6.12",
         "yargs": "^16.2.0"
@@ -38,12 +37,10 @@
     },
     "lint-staged": {
         "source/_assets/**/*.{scss,js,vue}": [
-            "prettier --write",
-            "git add"
+            "prettier --write"
         ],
         "*.php": [
-            "composer format",
-            "git add"
+            "composer format"
         ]
     }
 }

@@ -1,7 +1,20 @@
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
+  purge: {
+    content: [
+      'source/**/*.html',
+      'source/**/*.md',
+      'source/**/*.js',
+      'source/**/*.php',
+      'source/**/*.vue',
+    ],
+
+    // These options are passed through directly to PurgeCSS
+    options: {
+      safelist: [
+        /language/,
+        /hljs/
+      ],
+    },
   },
   theme: {
     extend: {

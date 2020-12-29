@@ -110,7 +110,7 @@ export default {
     },
   },
   created() {
-    axios(this.indexPath).then(response => {
+    axios(this.indexPath).then((response) => {
       this.fuse = new fuse(response.data, {
         minMatchCharLength: 6,
         keys: ['title', 'snippet', 'categories'],
