@@ -14,7 +14,7 @@
         "axios": "^0.21.1",
         "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.3.0",
-        "cross-env": "^7.0.3",
+        "cross-env": "^3.2.3",
         "extra-watch-webpack-plugin": "^1.0.3",
         "fuse.js": "^3.6.1",
         "hasbin": "^1.2.3",
