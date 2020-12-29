@@ -7,7 +7,8 @@ let BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 let ExtraWatchWebpackPlugin = require('extra-watch-webpack-plugin');
 
 let browserSyncInstance;
-let env = argv.e || argv.env || 'local';
+//let env = argv.e || argv.env || 'local';
+let env = process.env.NODE_ENV || 'local';
 let port = argv.p || argv.port || 3000;
 
 module.exports = {
