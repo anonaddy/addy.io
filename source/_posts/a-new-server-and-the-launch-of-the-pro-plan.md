@@ -32,11 +32,11 @@ Over the course of the beta I've fixed a fair few bugs and received lots a great
 
 There will still be a generous Free plan that will allow you to create unlimited aliases and some UUID aliases. The Free plan will have a monthly bandwidth limit of 10MB, the average size of an email is around 75KB (about 7,000 words in plain text). This means that you will be able to receive around 137 emails per month before reaching your limit.
 
-## A free 3 month Pro subscription for all beta testers
+## A free 3-month Pro subscription for all beta testers
 
-As a thank you for all the early beta testers I've added a 3 month Pro subscription to your accounts. You will be able to continue using the service exactly as you have been doing.
+As a thank you for all the early beta testers I've added a 3-month Pro subscription to your accounts. You will be able to continue using the service exactly as you have been doing.
 
-A couple of days before this Pro subscrition ends you will receive an email letting you know what steps you need to take if you don't wish to subscribe. After the subscription comes to an end your account will be reverted to the Free plan.
+A couple of days before this Pro subscription ends you will receive an email letting you know what steps you need to take if you don't wish to subscribe. After the subscription comes to an end your account will be reverted to the Free plan.
 
 
 ## Feedback and suggestions
