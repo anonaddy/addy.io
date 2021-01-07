@@ -262,7 +262,7 @@ If you still aren't receiving emails please contact me.
 
 #### **How do I know this site won't disappear next month?**
 
-I am very passionite about this project. I use it myself everyday and will be keeping it running indefinitely.
+I am very passionate about this project. I use it myself every day and will be keeping it running indefinitely.
 
 #### **Is the application tested?**
 

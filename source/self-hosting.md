@@ -307,7 +307,7 @@ Making sure to replace `johndoe` with the username of the user who will run the 
   <img class="shadow" src="/assets/img/postfix-master-2.png" alt="Postfix master pipe" title="Postfix master pipe">
 </div>
 
-This command will pipe the email through to our applicaton so that we can determine who the alias belongs to and who to forward the email to.
+This command will pipe the email through to our application so that we can determine who the alias belongs to and who to forward the email to.
 
 ## Installing Nginx
 
@@ -875,7 +875,7 @@ Make sure to update the database settings, redis password and the AnonAddy varia
 
 We'll set `ANONADDY_SIGNING_KEY_FINGERPRINT` shortly.
 
-`APP_KEY` will be generted in the next step, this is used by Laravel for securely encrypting values.
+`APP_KEY` will be generated in the next step, this is used by Laravel for securely encrypting values.
 
 For more information on Laravel configuration please visit - [https://laravel.com/docs/8.x/installation#configuration](https://laravel.com/docs/8.x/installation#configuration)
 
