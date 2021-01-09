@@ -17,15 +17,13 @@ This article guides you through the steps to reply to an email forwarded to you 
   <img class="shadow" src="/assets/img/send-from-alias-construction.jpg" alt="Send from alias construction" title="Send from alias construction">
 </div>
 
-Each forwarded email has a Reply-To: header set. This header will look something like this:
+Each forwarded email has a From: header set. This header will look something like this:
 
-Reply-To: <span class="break-words"><alias+hello=example.com@johndoe.anonaddy.com></span>
+From: <span class="break-words"><alias+hello=example.com@johndoe.anonaddy.com></span>
 
 Where hello@example.com is the address of the person who sent you the email and alias@johndoe.anonaddy.com is the alias that forwarded you the email.
 
-Almost all mail clients respect the Reply-To: header, so all you need to do is click reply and it should automatically fill the To: field with the correct address.
-
-Some users have reported that Gmail's web mail has not been using the Reply-To header. If this is the case then you will have to manually copy the value of the Reply-To header and use this instead.
+All you need to do is click reply in your email client or web interface and it will automatically fill the To: field with the correct address.
 
 To check if a reply has worked properly check in your dashboard if the reply count has been incremented for that alias.
 

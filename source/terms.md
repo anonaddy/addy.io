@@ -10,7 +10,7 @@ description: Please read these terms of use carefully before you start to use th
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-<p class="text-sm text-grey-400 mb-4">Last Updated: 4th September 2019</p>
+<p class="text-sm text-grey-400 mb-4">Last Updated: 9th Jan 2021</p>
 
 Please read these terms of use carefully before you start to use the site. By using our site, you indicate that you accept these terms of use and that you agree to abide by them. If you do not agree to these terms of use, please refrain from using our site.
 
@@ -22,7 +22,9 @@ You agree not to disclose your password to any third party. You must notify us i
 
 ## Termination
 
-We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever that includes, sending spam emails, sending viruses, repeatedly marking emails from us as spam, including without limitation if you breach the Terms of Service.
+We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever that includes, sending spam emails, sending viruses, repeatedly marking emails from us as spam, abusing or flooding the server by sending bulk email, any activity that aims to deteriorate the Service's email deliverability, including without limitation if you breach the Terms of Service.
+
+Accounts registered by bots or any automated methods are not authorised and will be terminated.
 
 All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
 
@@ -35,6 +37,8 @@ Some features of the service are billed on a subscription basis. The subscriptio
 You agree that you will accept the full responsibility for successfully cancelling your subscription. If you need assistance in cancelling your subscription please simply contact us. You agree to provide us with 2 days advance notice to attend to your request.
 
 If we are unable to process a payment for your subscription, we reserve the right to terminate this license and cancel your subscription for non-payment.
+
+The use of stolen card details for subscription payments is not authorised. In the result of a payment dispute/chargeback if we fail to hear back from you after multiple attempts to reach out your account may be terminted.
 
 We reserve the right to make changes to subscription fees in the future, you will receive notification of any changes in advance by email.
 
