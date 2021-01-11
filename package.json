@@ -1,16 +1,16 @@
 {
     "private": true,
     "scripts": {
-        "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "local": "mix",
+        "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "mix --production",
         "dev": "npm run local",
         "prod": "npm run production",
-        "watch": "npm run local -- --watch",
+        "watch": "mix watch",
         "format": "prettier --write 'source/_assets/**/*.{scss,js,vue}'"
     },
     "dependencies": {
-        "autoprefixer": "^9.8.6",
+        "autoprefixer": "^10.0.2",
         "axios": "^0.21.1",
         "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.3.0",
@@ -19,11 +19,13 @@
         "fuse.js": "^3.6.1",
         "hasbin": "^1.2.3",
         "highlight.js": "^10.5.0",
-        "laravel-mix": "^5.0.9",
+        "laravel-mix": "^6.0.6",
         "node-cmd": "^3.0.0",
-        "postcss": "^7.0.35",
-        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+        "postcss": "^8.1.14",
+        "postcss-import": "^12.0.1",
+        "tailwindcss": "^2.0.1",
         "vue": "^2.6.12",
+        "vue-loader": "^15.9.6",
         "vue-template-compiler": "^2.6.12",
         "yargs": "^16.2.0"
     },

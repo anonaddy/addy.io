@@ -7,6 +7,7 @@
                 <div class="text-grey-200 font-semibold mb-1">Company</div>
                 <a href="/privacy/" class="no-underline text-white my-1 {{ $page->isActive('/privacy') ? 'active font-bold' : '' }}" title="Privacy">Privacy</a>
                 <a href="/terms/" class="no-underline text-white my-1 {{ $page->isActive('/terms') ? 'active font-bold' : '' }}" title="Terms">Terms</a>
+                <a href="https://github.com/anonaddy/anonaddy/projects/1" target="_blank" rel="nofollow noreferrer noopener" class="no-underline text-white my-1" title="Roadmap">Roadmap</a>
             </div>
             <div class="flex flex-col mx-4 my-4 md:my-0">
                 <div class="text-grey-200 font-semibold mb-1">Development</div>

@@ -63,7 +63,7 @@ width: full
                 <p class="text-grey-600 mb-4">Let's say your username is <b>johndoe</b>. You can now use *@johndoe.anonaddy.com (or .me) as your email. Where * denotes any valid local part for an email address.</p>
 
                 <p class="text-grey-600 mb-4">If you would like to remain anonymous choose a username that is not linked to your real name or identify and that you haven't used anywhere else.</p>
- 
+
                 <p class="text-grey-600">You can also create aliases at <b>shared domains</b> if you are concerned about others linking alias ownership to you.</p>
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
@@ -153,9 +153,9 @@ width: full
 
 		<div class="flex flex-wrap">
 			<div class="w-full sm:w-1/2 p-6">
-				<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Generate UUID/Random Word Aliases</h3>
-				<p class="text-grey-600 mb-4">If you don't like the fact that all your aliases contain your username then you can generate unique aliases from your dashboard.</p>
-				<p class="text-grey-600 mb-4">The generated aliases will look something like this <b>94960540-f914-42e0-9c50-6faa7a385384@anonaddy.me</b> or <b>circus.waltz449@anonaddy.me</b></p>
+				<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Blend Into The Crowd</h3>
+				<p class="text-grey-600 mb-4">If you don't like the fact that all your aliases contain your username then you can generate random unique aliases from your dashboard.</p>
+				<p class="text-grey-600 mb-4">The generated aliases will look something like this <b>x481n904@anonaddy.me</b> or <b>circus.waltz449@anonaddy.me</b></p>
 				<p class="text-grey-600 mb-4">This prevents anyone linking ownership of the alias to you.</p>
 			</div>
 			<div class="w-full sm:w-1/2 p-6">
