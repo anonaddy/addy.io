@@ -27,7 +27,13 @@ All you need to do is enter the following in the To: field.
 
 Then send the email exactly as you would any other. To check that the email has sent successfully, look in your dashboard at the sent count column and see if it has been incremented for that alias.
 
-This works exactly the same for UUID/Random Word aliases, additional usernames and custom domains.
+This works exactly the same for shared domain aliases, additional usernames and custom domains.
+
+If you want an easy way to construct the correct email address that you should send to you can click "Send from" next to any alias in the web application and after entering the destination address it will display the right email address to use.
+
+<div class="flex justify-center mb-4">
+  <img class="shadow" src="/assets/img/send-from-alias-modal.png" alt="Send from alias modal" title="Send from alias modal">
+</div>
 
 You can even use the send from feature to create an alias on the fly that does not yet exist. This only works for standard aliases or those at custom domains that behave as a catch-all.
 
