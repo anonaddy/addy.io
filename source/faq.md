@@ -37,6 +37,7 @@ section: body
 - [Can emails have attachments?](#can-emails-have-attachments)
 - [What is the max email size limit?](#what-is-the-max-email-size-limit)
 - [What happens if I have a subscription but then cancel it?](#what-happens-if-i-have-a-subscription-but-then-cancel-it)
+- [If I subscribe will Stripe see my real email address?](#if-i-subscribe-will-stripe-see-my-real-email-address)
 - [How do you prevent spammers?](#how-do-you-prevent-spammers)
 - [What do you use to do DNS lookups on domain names?](#what-do-you-use-to-do-dns-lookups-on-domain-names)
 - [Is there a limit to how many emails I can forward?](#is-there-a-limit-to-how-many-emails-i-can-forward)
@@ -252,6 +253,10 @@ A few days before your billing cycle ends you will receive an email letting you 
 * If your account username has catch-all disabled then it will be enabled
 
 You will not be able to activate any of the above again until you resubscribe.
+
+## If I subscribe will Stripe see my real email address? {#if-i-subscribe-will-stripe-see-my-real-email-address}
+
+No, Stripe will instead be given an alias. This alias will only be created if Stripe sends an email to it, for example if your card payment fails or if your card has expired.
 
 ## How do you prevent spammers? {#how-do-you-prevent-spammers}
 
