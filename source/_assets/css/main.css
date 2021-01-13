@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 
-@import '~highlight.js/styles/dracula.css';
-
 html {
     scroll-behavior: smooth;
   }
