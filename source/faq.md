@@ -303,7 +303,7 @@ You can add 1 additional username as a Lite user and up to 3 additional username
 
 ## I'm not receiving any emails, what's wrong? {#im-not-receiving-any-emails-whats-wrong}
 
-Please make sure to add mailer@anonaddy.me, mailer@anonaddy.com and any other aliases you use to your address book and also to check your spam folder. Make sure to mark emails from us as safe if they turn up in spam.
+Please make sure to add mailer@anonaddy.me, mailer@anonaddy.com and any other aliases you use to your address book and also to check your spam folder. Make sure to mark emails from AnonAddy as safe if they turn up in spam.
 
 If an alias has been previously deleted and you try to send email to it, the emails will be rejected with an error message - "554 5.7.1 Recipient address rejected: Access denied".
 
@@ -313,13 +313,20 @@ The sender of the email may be failing SPF, DMARC or DNS blacklist checks result
 
 If you are forwarding emails to an icloud.com email address some users are having issues with a small number of emails being rejected (often those from Facebook).
 
-For some reason Apple seems to think these emails are spam and returns this error message:
+For some reason Apple seems to think these emails are spam/phishing and returns this error message:
 
 > Diagnostic-Code: smtp; 550 5.7.1 [CS01] Message rejected due to local policy.
 
 I have contacted Apple multiple times about this but they have not yet responded.
 
-If you are having issues with emails being rejected as "possibly spammy" by Google, iCloud or Microsoft then try adding a GPP key and **enabling encryption**. This will prevent the email's content being scanned and reduce the change of it being rejected.
+If you are having issues with emails being rejected as "possibly spammy" by Google, iCloud or Microsoft then please try the following steps if you can:
+
+1. **Replace the email subject** by going to your settings in AnonAddy
+2. Try adding a GPP key and **enabling encryption**. This will prevent the email's content being scanned and reduce the change of it being rejected.
+
+I will also soon be adding an option to change the format of the display from part of the "From:" header.
+
+If neither of the above options work then please try changing to another recipient so that you can continue to recieve emails.
 
 If you still aren't receiving emails please contact me.
 
