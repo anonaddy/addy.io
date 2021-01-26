@@ -10,7 +10,7 @@ description: Please read these terms of use carefully before you start to use th
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-<p class="text-sm text-grey-400 mb-4">Last Updated: 9th Jan 2021</p>
+<p class="text-sm text-grey-400 mb-4">Last Updated: 26th Jan 2021</p>
 
 Please read these terms of use carefully before you start to use the site. By using our site, you indicate that you accept these terms of use and that you agree to abide by them. If you do not agree to these terms of use, please refrain from using our site.
 
@@ -55,6 +55,8 @@ You must not misuse our site by knowingly introducing viruses, trojans, worms, l
 By breaching this provision, you would commit a criminal offence under the Computer Misuse Act 1990. We will report any such breach to the relevant law enforcement authorities and we will co-operate with those authorities by disclosing your identity to them. In the event of such a breach, your right to use our site will cease immediately.
 
 We will not be liable for any loss or damage caused by a distributed denial-of-service attack, viruses or other technologically harmful material that may infect your computer equipment, computer programs, data or other proprietary material due to your use of our site or to your downloading of any material posted on it, or on any website linked to it.
+
+Use of this service for the purpose of any illegal activity is not permitted.
 
 ## Limitation Of Liability
 

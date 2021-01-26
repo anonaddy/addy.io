@@ -7,12 +7,12 @@
         "dev": "npm run local",
         "prod": "npm run production",
         "watch": "mix watch",
-        "format": "prettier --write 'source/_assets/**/*.{scss,js,vue}'"
+        "format": "prettier --write 'source/_assets/**/*.{css,js,vue}'"
     },
     "dependencies": {
         "autoprefixer": "^10.2.3",
         "axios": "^0.21.1",
-        "browser-sync": "^2.26.13",
+        "browser-sync": "^2.26.14",
         "browser-sync-webpack-plugin": "^2.3.0",
         "cross-env": "^3.2.3",
         "extra-watch-webpack-plugin": "^1.0.3",
@@ -40,7 +40,7 @@
         }
     },
     "lint-staged": {
-        "source/_assets/**/*.{scss,js,vue}": [
+        "source/_assets/**/*.{css,js,vue}": [
             "prettier --write"
         ],
         "*.php": [
