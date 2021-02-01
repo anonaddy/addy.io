@@ -11,14 +11,15 @@
             </div>
             <div class="flex flex-col mx-4 my-4 md:my-0">
                 <div class="text-grey-200 font-semibold mb-1">Development</div>
-                <a href="/security/" class="no-underline text-white my-1 {{ $page->isActive('/security') ? 'active font-bold' : '' }}" title="Privacy">Security</a>
+                <a href="/security/" class="no-underline text-white my-1 {{ $page->isActive('/security') ? 'active font-bold' : '' }}" title="Security">Security</a>
                 <a href="https://app.anonaddy.com/docs/" class="no-underline text-white mt-1" title="Terms">API</a>
-                <a href="/self-hosting/" class="no-underline text-white my-1 {{ $page->isActive('/self-hosting') ? 'active font-bold' : '' }}" title="Privacy">Self-hosting</a>
+                <a href="/self-hosting/" class="no-underline text-white my-1 {{ $page->isActive('/self-hosting') ? 'active font-bold' : '' }}" title="Self-hosting">Self-hosting</a>
+                <a href="/donate/" class="no-underline text-white my-1 {{ $page->isActive('/donate') ? 'active font-bold' : '' }}" title="Donate">Donate</a>
             </div>
             <div class="flex flex-col mx-4 my-4 md:my-0">
                 <div class="text-grey-200 font-semibold mb-1">Support</div>
-                <a href="/faq/" class="no-underline text-white my-1 {{ $page->isActive('/faq') ? 'active font-bold' : '' }}" title="Privacy">FAQ</a>
-                <a href="/help/" class="no-underline text-white my-1 {{ $page->isActive('/help') ? 'active font-bold' : '' }}" title="Terms">Help Centre</a>
+                <a href="/faq/" class="no-underline text-white my-1 {{ $page->isActive('/faq') ? 'active font-bold' : '' }}" title="FAQ">FAQ</a>
+                <a href="/help/" class="no-underline text-white my-1 {{ $page->isActive('/help') ? 'active font-bold' : '' }}" title="Help Centre">Help Centre</a>
             </div>
             <div class="flex items-center mx-4 my-4 md:my-0">
                 <a href="https://github.com/anonaddy" target="_blank" rel="nofollow noreferrer noopener" class="no-underline text-white mr-4" title="AnonAddy GitHub">
