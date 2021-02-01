@@ -12,7 +12,7 @@ description: If you find AnonAddy useful and would like to support me, any contr
 
 If you find AnonAddy useful and would like to support me, any contribution is greatly appreciated.
 
-## Cyrptocurrencies
+## Cryptocurrencies
 
 - **Bitcoin** (BTC): <span class="break-words">37WETaWskeAEWqt3egYpgD3UZnmwKh9e6R</span>
 - **Monero** (XMR): <span class="break-words">84qZgh4rLS16PMuw6PBPbsBQPfzQSLpaJ9DENzXVTwgJPjsAPNFxvf5BpJF9Y2ayp47GFVWvDYnmNJ9dYyT1aAB9BvbVJbk</span>
