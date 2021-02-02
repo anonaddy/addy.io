@@ -11161,6 +11161,14 @@ input[name='search'].transition-border {
   height: 24rem;
 }
 
+.h-112 {
+  height: 28rem;
+}
+
+.h-136 {
+  height: 34rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -40695,6 +40703,14 @@ input[name='search'].transition-border {
     height: 24rem;
   }
 
+  .sm\:h-112 {
+    height: 28rem;
+  }
+
+  .sm\:h-136 {
+    height: 34rem;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -70141,6 +70157,14 @@ input[name='search'].transition-border {
 
   .md\:h-96 {
     height: 24rem;
+  }
+
+  .md\:h-112 {
+    height: 28rem;
+  }
+
+  .md\:h-136 {
+    height: 34rem;
   }
 
   .md\:h-auto {
@@ -99591,6 +99615,14 @@ input[name='search'].transition-border {
     height: 24rem;
   }
 
+  .lg\:h-112 {
+    height: 28rem;
+  }
+
+  .lg\:h-136 {
+    height: 34rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -129039,6 +129071,14 @@ input[name='search'].transition-border {
     height: 24rem;
   }
 
+  .xl\:h-112 {
+    height: 28rem;
+  }
+
+  .xl\:h-136 {
+    height: 34rem;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
@@ -158485,6 +158525,14 @@ input[name='search'].transition-border {
 
   .\32xl\:h-96 {
     height: 24rem;
+  }
+
+  .\32xl\:h-112 {
+    height: 28rem;
+  }
+
+  .\32xl\:h-136 {
+    height: 34rem;
   }
 
   .\32xl\:h-auto {
