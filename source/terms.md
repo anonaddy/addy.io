@@ -22,9 +22,11 @@ You agree not to disclose your password to any third party. You must notify us i
 
 ## Termination
 
-We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever that includes, sending spam emails, sending viruses, repeatedly marking emails from us as spam, abusing or flooding the server by sending bulk email, any activity that aims to deteriorate the Service's email deliverability, including without limitation if you breach the Terms of Service.
+We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever that includes, sending spam emails, sending viruses, repeatedly marking emails from us as spam, abusing or flooding the server by sending bulk email, mass signups for the purpose of discount code/coupon harvesting or other similar activity, disprupting the Service's networks or servers, any activity that aims to deteriorate the Service's email deliverability, including without limitation if you breach the Terms of Service.
 
 Accounts registered by bots or any automated methods are not authorised and will be terminated.
+
+Having multiple free accounts is not considered an acceptable use of our service. Any users found to be abusing this rule may have their accounts terminated.
 
 All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
 
@@ -32,15 +34,17 @@ Upon termination, your right to use the Service will immediately cease. If you w
 
 ## Subscriptions
 
-Some features of the service are billed on a subscription basis. The subscription fees are billed on a monthly/yearly cycle, your subscription will automatically renew unless you or AnonAddy cancels it. You may cancel your subscription to the service at any time.
+Some features of the service are billed on a subscription basis. The subscription fees are billed on a monthly/yearly cycle, and your subscription will automatically renew unless you or AnonAddy cancels it. You may cancel your subscription to the service at any time.
 
-You agree that you will accept the full responsibility for successfully cancelling your subscription. If you need assistance in cancelling your subscription please simply contact us. You agree to provide us with 2 days advance notice to attend to your request.
+You agree that you will accept the full responsibility for successfully cancelling your subscription. If you need assistance in cancelling your subscription please simply contact us. You agree to provide us with 2 working days advance notice to attend to your request.
 
 If we are unable to process a payment for your subscription, we reserve the right to terminate this license and cancel your subscription for non-payment.
 
-The use of stolen card details for subscription payments is not authorised. In the result of a payment dispute/chargeback if we fail to hear back from you after multiple attempts to reach out your account may be terminted.
+The use of stolen card details for subscription payments is not authorised. If a fraudulent payment is detected (such as the use of a stolen card) your subscription may be immediately cancelled and refunded.
 
-We reserve the right to make changes to subscription fees in the future, you will receive notification of any changes in advance by email.
+In the result of a payment dispute/chargeback, if we fail to hear back from you after making contact to resolve the dispute, your account may be terminated.
+
+We reserve the right to make changes to subscription fees in the future. You will receive notification of any changes in advance by email.
 
 ## Intellectual Property Rights
 
@@ -56,7 +60,7 @@ By breaching this provision, you would commit a criminal offence under the Compu
 
 We will not be liable for any loss or damage caused by a distributed denial-of-service attack, viruses or other technologically harmful material that may infect your computer equipment, computer programs, data or other proprietary material due to your use of our site or to your downloading of any material posted on it, or on any website linked to it.
 
-Use of this service for the purpose of any illegal activity is not permitted.
+Use of this service for the purpose of any unlawful or prohibited activities is not permitted.
 
 ## Limitation Of Liability
 
