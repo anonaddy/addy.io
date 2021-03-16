@@ -17917,7 +17917,6 @@ input[name='search'].transition-border {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -47463,7 +47462,6 @@ input[name='search'].transition-border {
   }
 
   .sm\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -76923,7 +76921,6 @@ input[name='search'].transition-border {
   }
 
   .md\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -106383,7 +106380,6 @@ input[name='search'].transition-border {
   }
 
   .lg\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -135843,7 +135839,6 @@ input[name='search'].transition-border {
   }
 
   .xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -165303,7 +165298,6 @@ input[name='search'].transition-border {
   }
 
   .\32xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 

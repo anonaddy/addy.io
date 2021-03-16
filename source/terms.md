@@ -10,7 +10,7 @@ description: Please read these terms of use carefully before you start to use th
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-<p class="text-sm text-grey-400 mb-4">Last Updated: 26th Jan 2021</p>
+<p class="text-sm text-grey-400 mb-4">Last Updated: 1st March 2021</p>
 
 Please read these terms of use carefully before you start to use the site. By using our site, you indicate that you accept these terms of use and that you agree to abide by them. If you do not agree to these terms of use, please refrain from using our site.
 
