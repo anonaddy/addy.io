@@ -3,8 +3,8 @@
 @section('body')
     <div class="flex flex-1 items-center relative">
         <h1 class="mb-0">Help Centre</h1>
-        <div id="vue-search" class="flex flex-1">
-            <search :help="true"></search>
+        <div id="vue-help-search" class="flex flex-1">
+            <search></search>
         </div>
     </div>
 
@@ -48,5 +48,5 @@
 @stop
 
 @push('scripts')
-<script src="{{ mix('js/search.js', 'assets/build') }}"></script>
+<script src="{{ mix('js/help-search.js', 'assets/build') }}"></script>
 @endpush

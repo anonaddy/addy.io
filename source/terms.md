@@ -22,7 +22,7 @@ You agree not to disclose your password to any third party. You must notify us i
 
 ## Termination
 
-We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever that includes, sending spam emails, sending viruses, repeatedly marking emails from us as spam, abusing or flooding the server by sending bulk email, mass signups for the purpose of discount code/coupon harvesting or other similar activity, disprupting the Service's networks or servers, any activity that aims to deteriorate the Service's email deliverability, including without limitation if you breach the Terms of Service.
+We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever that includes, sending spam emails, sending viruses, repeatedly marking emails from us as spam, abusing or flooding the server by sending bulk email, mass signups for the purpose of discount code/coupon harvesting or other similar activity, disrupting the Service's networks or servers, any activity that aims to deteriorate the Service's email deliverability, including without limitation if you breach the Terms of Service.
 
 Accounts registered by bots or any automated methods are not authorised and will be terminated.
 

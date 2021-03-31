@@ -12,7 +12,7 @@ description: The list of all blog posts for AnonAddy. You'll find information ab
     <div class="flex flex-1 items-center relative">
         <h1 class="mb-0">Blog</h1>
         <div id="vue-search" class="flex flex-1">
-            <search></search>
+            <search :index="/index.json"></search>
         </div>
     </div>
 
