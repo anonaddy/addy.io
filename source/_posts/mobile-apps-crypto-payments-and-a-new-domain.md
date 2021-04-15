@@ -61,7 +61,7 @@ The domain was the first premium domain I've ever purchased; I'm pretty happy wi
 
 A short while ago I migrated from [SpamAssassin](https://spamassassin.apache.org/) to [Rspamd](https://www.rspamd.com/) for spam filtering on the server.
 
-One of the main reasons for this was that Rspamd is much faster and uses less memory than SpamAssassin. Another reason was that Rspamd has support for [Authenticated Received Chain](https://tools.ietf.org/id/draft-ietf-dmarc-arc-protocol-18.html) (ARC) which is used to help improve how DKIM and SPF results are passed from one mail server to the next during forwarding. Without ARC, DKIM and SPF checks can fail if messages are passed to intermediaries like mailing lists or they are forwarded.
+One of the main reasons for this was that Rspamd is much faster and uses less memory than SpamAssassin. Another reason was that Rspamd has support for [Authenticated Received Chain](https://tools.ietf.org/html/rfc8617) (ARC) which is used to help improve how DKIM and SPF results are passed from one mail server to the next during forwarding. Without ARC, DKIM and SPF checks can fail if messages are passed to intermediaries like mailing lists or they are forwarded.
 
 So far I'm really happy with the performance.
 
