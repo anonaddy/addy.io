@@ -3,7 +3,7 @@ extends: _layouts.article
 ogtype: article
 section: content
 title: Subscribing with cryptocurrency
-date: 2020-05-01
+date: 2021-04-20
 description: This article guides you through the different options you have to subscribe using a cryptocurrency such as Bitcoin, Monero or Ethereum.
 helpCategories: [subscriptions]
 ---
@@ -12,6 +12,18 @@ This article guides you through the different options you have to subscribe usin
 
 ## How it works
 
-At the moment cryptocurrency subscriptions have to be processed manually. If you'd like to pay with Bitcoin, Monero or Ethereum then please send an email to [contact@anonaddy.com](mailto:contact@anonaddy.com) ([GPG Key](/anonaddy-contact-public-key.asc)) for further instructions.
+AnonAddy uses [Globee](https://globee.com/) to process cryptocurrency payments.
 
-I will be adding a way to automatically subscribe using cryptocurrency in the near future.
+Globee supports the following cryptocurrencies:
+
+- BTC (Bitcoin)
+- XMR (Monero)
+- LTC (Litecoin)
+- DOGE (Dogecoin)
+- DCR (Decred)
+- ETH (Ethereum)
+- LNBT (Bitcoin Lightning)
+
+There are some limitations such as a minimum invoice value of $10, so at the moment you can only pay with cryptocurrency for a yearly plan.
+
+If you'd prefer for your cryptocurrency payment to be processed manually then please [contact](/contact/) me for further instructions.

@@ -39,7 +39,7 @@
                         Couldn't find what you were looking for?
                     </h3>
                     <h4 class="my-0 text-base">
-                        Send an email to <a href="mailto:contact@anonaddy.com">contact@anonaddy.com</a> (<a href="/anonaddy-contact-public-key.asc">GPG Key</a>)
+                        Visit the <a href="/contact/">contact</a> page to get in touch.
                     </h4>
                 </div>
             </div>

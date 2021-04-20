@@ -311,7 +311,7 @@ width: full
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>2 Additional</b> Alias Domains
+								<b>3 Additional</b> Alias Domains
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
@@ -373,7 +373,7 @@ width: full
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>2 Additional</b> Alias Domains
+								<b>3 Additional</b> Alias Domains
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
@@ -418,31 +418,32 @@ width: full
 	</g>
 </svg>
 
-<section class="container flex flex-col items-center py-6">
-
-	<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Sign up for our newsletter</h1>
-	<div class="w-full mb-4">
-		<div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-	</div>
-
-	<p class="my-3 text-sm">Get notified about new features!</p>
-
-	<form action="https://news.anonaddy.com/subscribe" method="POST" accept-charset="utf-8" class="w-full max-w-sm">
-		<div class="flex items-center border-b border-b-2 border-white py-2">
-			<label for="email" class="hidden">Email</label>
-			<input class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" name="email" id="email" placeholder="you@example.com" aria-label="Email Address" required>
-			<div class="hidden">
+<section class="container flex items-center py-6">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <h2 class="inline text-3xl font-extrabold text-white sm:block sm:text-4xl">
+            Want product news and updates?
+        </h2>
+        <p class="inline text-lg font-bold tracking-tight text-indigo-50 sm:block">
+            Sign up for our newsletter.
+        </p>
+        <form action="https://news.anonaddy.com/subscribe" method="POST" accept-charset="utf-8" class="mt-8 sm:flex">
+            <label for="emailAddress" class="sr-only">Email address</label>
+            <input id="emailAddress" name="email" type="email" autocomplete="email" required class="w-full px-5 py-3 text-grey-700 placeholder-grey-500 focus:outline-none sm:max-w-xs border-grey-300 rounded-md" placeholder="Enter your email">
+            <div class="hidden">
 				<label for="hp">HP</label>
 				<input type="text" name="hp" id="hp"/>
 			</div>
-			<input type="hidden" name="list" value="JYLgy1unb31YYX3AW892Fxvg"/>
+            <input type="hidden" name="list" value="JYLgy1unb31YYX3AW892Fxvg"/>
 			<input type="hidden" name="subform" value="yes"/>
 			<label for="gdpr" class="hidden">GDPR</label>
-			<input class="hidden" type="checkbox" name="gdpr" id="gdpr" checked />
-			<input type="submit" name="submit" id="submit" value="Update Me!" class="flex-shrink-0 bg-white text-sm cursor-pointer text-indigo-500 py-2 px-4 rounded-full font-bold shadow">
-		</div>
-	</form>
-
+            <input class="hidden" type="checkbox" name="gdpr" id="gdpr" checked />
+            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none">
+                Notify me
+                </button>
+            </div>
+        </form>
+    </div>
 </section>
 
 @stop

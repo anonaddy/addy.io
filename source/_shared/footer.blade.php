@@ -8,6 +8,7 @@
                 <a href="/privacy/" class="no-underline text-white my-1 {{ $page->isActive('/privacy') ? 'active font-bold' : '' }}" title="Privacy">Privacy</a>
                 <a href="/terms/" class="no-underline text-white my-1 {{ $page->isActive('/terms') ? 'active font-bold' : '' }}" title="Terms">Terms</a>
                 <a href="https://github.com/anonaddy/anonaddy/projects/1" target="_blank" rel="nofollow noreferrer noopener" class="no-underline text-white my-1" title="Roadmap">Roadmap</a>
+                <a href="https://status.anonaddy.com/" class="no-underline text-white my-1" title="Status">Status</a>
             </div>
             <div class="flex flex-col mx-4 my-4 md:my-0">
                 <div class="text-grey-200 font-semibold mb-1">Development</div>
@@ -20,6 +21,7 @@
                 <div class="text-grey-200 font-semibold mb-1">Support</div>
                 <a href="/faq/" class="no-underline text-white my-1 {{ $page->isActive('/faq') ? 'active font-bold' : '' }}" title="FAQ">FAQ</a>
                 <a href="/help/" class="no-underline text-white my-1 {{ $page->isActive('/help') ? 'active font-bold' : '' }}" title="Help Centre">Help Centre</a>
+                <a href="/contact/" class="no-underline text-white my-1 {{ $page->isActive('/contact') ? 'active font-bold' : '' }}" title="contact">Contact</a>
             </div>
             <div class="flex items-center mx-4 my-4 md:my-0">
                 <a href="https://github.com/anonaddy" target="_blank" rel="nofollow noreferrer noopener" class="no-underline text-white mr-4" title="AnonAddy GitHub">

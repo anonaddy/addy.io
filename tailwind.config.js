@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: {
     content: [
       'source/**/*.html',
@@ -167,6 +168,6 @@ module.exports = {
         },
       }
       addUtilities(newUtilities)
-    }
+    },
   ]
 }

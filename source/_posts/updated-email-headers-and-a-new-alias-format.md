@@ -75,4 +75,4 @@ I've also enabled [GitHub discussions](https://github.com/anonaddy/anonaddy/disc
 
 ## Feedback and suggestions
 
-As always, if you have any feedback or suggestions please just drop me a line at [contact@anonaddy.com](mailto:contact@anonaddy.com) ([GPG Key](/anonaddy-contact-public-key.asc)) and sign up to the newsletter if you'd like to receive updates on new features!
+If you have any feedback or suggestions please just [get in touch](/contact/) and make sure to sign up to the newsletter if you'd like to receive updates on new features!
