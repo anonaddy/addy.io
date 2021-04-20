@@ -7,7 +7,9 @@
         "dev": "npm run local",
         "prod": "npm run production",
         "watch": "mix watch",
-        "format": "prettier --write 'source/_assets/**/*.{css,js,vue}'"
+        "format": "prettier --write 'source/_assets/**/*.{css,js,vue}'",
+        "pre-commit": "lint-staged",
+        "prepare": "husky install"
     },
     "dependencies": {
         "autoprefixer": "^10.2.4",
@@ -30,14 +32,9 @@
         "yargs": "^16.2.0"
     },
     "devDependencies": {
-        "husky": "^4.3.8",
+        "husky": "^6.0.0",
         "lint-staged": "^10.5.3",
         "prettier": "2.2.1"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
     },
     "lint-staged": {
         "source/_assets/**/*.{css,js,vue}": [
