@@ -10,7 +10,12 @@ section: body
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-## The mail server
+## The mail servers
+
+- mail.anonaddy.me (Greenhost.net, Netherlands)
+- mail2.anonaddy.me (UpCloud.com, Poland)
+
+Both mail servers have the following in place:
 
 ### TLS encryption
 
@@ -49,14 +54,16 @@ It does this by digitally signing emails with a signature that receiving mail se
 
 Domain-based Message Authentication (DMARC) allows you to inform cooperating mail servers what they should do with your email message if both SPF and DKIM checks fail. You can tell the mail servers to do nothing, to quarantine (mark/send to spam) or to reject the email. AnonAddy informs other mail servers that they should reject any emails claiming to come from us if they fail both SPF and DKIM checks.
 
-## The web server
-
-All information you provide to us is stored on our secure servers in the Netherlands (Greenhost.net). Sensitive data in our database such as your recipient email addresses are encrypted using OpenSSL and the AES-256-CBC cipher. Furthermore, all encrypted values are signed with a message authentication code (MAC) to detect any modifications to the encrypted string.
+## The web application
 
 Our site also uses security features such as; HSTS (HTTP Strict Transport Security), a strict CSP (Content Security Policy), Subresource Integrity, Expect CT and XSS Protection.
+
+## The database server
+
+All information you provide to us is stored on our secure servers in the Netherlands (UpCloud). Sensitive data in our database such as your recipient email addresses are encrypted using OpenSSL and the AES-256-CBC cipher. Furthermore, all encrypted values are signed with a message authentication code (MAC) to detect any modifications to the encrypted string.
 
 ### Login protection
 
 I recommend that you use a long passphrase to protect your account, you can store this in a reputable password manager such as BitWarden. A minimum password length of 8 characters is required when creating an account.
 
-Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it. You can use any compatible app such as Aegis or andOTP (both available on F-droid).
+Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it. You can use any compatible app such as Aegis or andOTP (both available on F-droid). You can also use a hardware authentication device such as a YubiKey.

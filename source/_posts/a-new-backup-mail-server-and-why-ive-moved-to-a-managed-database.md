@@ -13,7 +13,7 @@ This post gives a few more details regarding the new backup mail server and the 
 
 ## The new mail server
 
-Having a robust backup system is something that has been on my radar for quite some time. I've been exploring several methods to safeguard the AnonAddy email delivery should the server go offline, something that would continue to deliver emails and prevent the service from being disrupted. One of the reasons it's taken this long is because I was paralyzed by indecision whilst doing research and testing different database solutions that both mail servers would be able to connect to.
+Having a robust backup mail delivery system is something that has been on my radar for quite some time. I've been exploring several methods to safeguard the AnonAddy email delivery should the server go offline, something that would continue to deliver emails and prevent the service from being disrupted. One of the reasons it's taken this long is because I was paralyzed by indecision whilst doing research and testing different database solutions that both mail servers would be able to connect to.
 
 Once I was able to make a decision on the database, it allowed me to proceed with the new backup mail server for which I chose [UpCloud](https://upcloud.com/signup/?promo=D5H33W) (referral link). The new mail server has the hostname `mail2.anonaddy.me` and is hosted by Upcloud in their Poland data centre.
 
