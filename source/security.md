@@ -25,7 +25,7 @@ DNS-based Authentification of Named Entities (DANE) helps protect against MiTM (
 
 SMTP MTA Strict Transport Security (MTA-STS) is used, this is similar to DANE in that it is designed to avoid (Man in The Middle) downgrade attacks and verify the destination.
 
-SMTP TLS Reporting (TLS-RPT) is also used. This allows us to receive daily reports from external mail servers that connect to an AnonAddy domain. These reports can be used to detect potential attacks and identify any connection problems. Check out our security report by running a scan on [Hardenize](https://www.hardenize.com/).
+SMTP TLS Reporting (TLS-RPT) is also used. This allows us to receive daily reports from external mail servers that connect to an AnonAddy domain. These reports can be used to detect potential attacks and identify any connection problems. Check out our security report by running a scan on [Hardenize](https://www.hardenize.com/report/anonaddy.me/1619513845) or [Internet.nl](https://internet.nl/mail/anonaddy.me/520920/).
 
 ### DNSSEC
 
@@ -56,7 +56,11 @@ Domain-based Message Authentication (DMARC) allows you to inform cooperating mai
 
 ## The web application
 
-Our site also uses security features such as; HSTS (HTTP Strict Transport Security), a strict CSP (Content Security Policy), Subresource Integrity, Expect CT and XSS Protection.
+Our site uses modern security features such as; HSTS (HTTP Strict Transport Security), a strict CSP (Content Security Policy), Subresource Integrity, no mixed content, DANE, Expect CT and XSS Protection.
+
+<a href="https://internet.nl/" target="_blank" rel="nofollow noreferrer noopener" title="Internet.nl 100% badge">
+    <img src="/assets/img/embed-badge-websitetest.svg" alt="Badge with text: 100% score in website test">
+</a>
 
 ## The database server
 
