@@ -10,7 +10,7 @@ description: This policy (together with our Terms and Conditions) sets out the b
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-<p class="text-sm text-grey-400 mb-4">Last Updated: 10th December 2019</p>
+<p class="text-sm text-grey-400 mb-4">Last Updated: 30th April 2021</p>
 
 This policy (together with our Terms and Conditions) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. It applies to anonaddy.com and any subdomains e.g. app.anonaddy.com.
 
@@ -27,7 +27,7 @@ We may collect the following data from you:
 
 Our site does not store/save any emails that are forwarded or replied to through the service. You can check the source code to see what happens when an email is piped to our application by Postfix.
 
-Our server uses Postfix as the mail server software and Nginx as the web server. Nginx access and error logs are kept which do record IP addresses. Default log settings are used for Postfix. All log files are rotated daily and retained for 7 days, old log files are deleted.
+Our server uses Postfix as the mail server software and Nginx as the web server. Nginx access and error logs are kept which do record IP addresses. Default log settings are used for Postfix. All log files are rotated daily and retained for 3 days, old log files are deleted.
 
 Server logs are only used to improve our service and prevent abuse or prohibited use. This information will not be provided under any circumstances to any parties other than when compelled by law.
 
@@ -46,13 +46,13 @@ Our website is open-source and available for anyone (who understands PHP) to vie
 
 ## Security
 
-All information you provide to us is stored on our secure servers in the Netherlands (Greenhost.net). Sensitive data in our database such as your recipient email addresses are encrypted using OpenSSL and the AES-256-CBC cipher. Furthermore, all encrypted values are signed with a message authentication code (MAC) to detect any modifications to the encrypted string. Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it.
+All information you provide to us is stored on our secure servers in the Netherlands (UpCloud). Sensitive data in our database such as your recipient email addresses, alias descriptions, public GPG keys are encrypted using OpenSSL and the AES-256-CBC cipher. Furthermore, all encrypted values are signed with a message authentication code (MAC) to detect any modifications to the encrypted string. Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it.
 
 Opportunistic DANE TLS encryption with strong cipher preference is used for all emails sent through our service. Our mail server also utilises STARTTLS, PFS, DNSSEC, MTA-STS, TLS-RPT, DMARC, SPF and DKIM. These measures help to protect emails sent to/from our server against MiTM (Man in The Middle) downgrade attacks and also against the risk of email forgery.
 
 Our site also uses security features such as; HSTS (HTTP Strict Transport Security), a strict CSP (Content Security Policy), Subresource Integrity, Expect CT and XSS Protection.
 
-No service can be 100% secure at all times so please do not use this service to forward emails containing highly sensitive information such as bank or cryptocurrency information.
+You may use this service to forward emails containing sensitive information such as bank or cryptocurrency information, we do our best to make sure any email is not lost but this cannot be guarenteed.
 
 We take all measures reasonably necessary to protect against unauthorised access, use, alteration or destruction of data.
 
