@@ -375,7 +375,7 @@ They would make a Twitter announcement informing all users that they would be ke
 
 ## Is the application tested? {#is-the-appliction-tested}
 
-Yes it has over 180 automated PHPUnit tests written.
+Yes it has over 190 automated PHPUnit tests written.
 
 ## How do I host this myself? {#how-do-i-host-this-myself}
 

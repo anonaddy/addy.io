@@ -1,5 +1,4 @@
 window.axios = require('axios')
-window.fuse = require('fuse.js')
 import Vue from 'vue'
 
 const search = require('./components/Search.vue').default
