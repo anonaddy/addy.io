@@ -1,5 +1,5 @@
 import hljs from 'highlight.js/lib/core'
-import 'highlight.js/styles/dracula.css'
+import 'highlight.js/styles/base16/dracula.css'
 
 // Syntax highlighting
 hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'))

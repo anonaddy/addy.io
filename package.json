@@ -20,7 +20,7 @@
         "extra-watch-webpack-plugin": "^1.0.3",
         "fuse.js": "^6.0.0",
         "hasbin": "^1.2.3",
-        "highlight.js": "^10.5.0",
+        "highlight.js": "^11.0.0",
         "laravel-mix": "^6.0.11",
         "node-cmd": "^4.0.0",
         "postcss": "^8.1.14",

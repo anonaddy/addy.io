@@ -236,7 +236,7 @@ Please double check that you are indeed sending from a verified recipient email 
 
 If you see the rejection message `554 5.7.1 Recipient address rejected: Access denied` then this means that the alias has been deleted, you must restore it before you can send/reply from it.
 
-If you see the rejection message `5.7.1 Rejected due to potential send/reply spoof attempt...` then it is because your recipient's domain either does not have a DMARC policy or it has failed DMARC checks.
+If you see the rejection message `5.7.1 Rejected due to missing/failed DMARC policy...` then it is because your recipient's domain either does not have a DMARC policy or it has failed DMARC checks.
 
 When replying or sending from an alias, **additional checks** are carried out to ensure it is not a spoofed email. Your recipient's email domain must pass DMARC checks in order to protect against spoofed emails and to make sure that the reply/send from attempt definitely came from your recipient.
 
@@ -345,7 +345,7 @@ If you get close to your limit (over 80%) you'll be sent an email letting you kn
 
 ## Can I login using an additional username? {#can-i-login-using-an-additional-username}
 
-You can add 1 additional username as a Lite user and up to 3 additional usernames as a Pro user for totals of 2 and 4 respectively (including the one you signed up with). You can currently only login with the one that you originally signed up with.
+You can add 1 additional username as a Lite user and up to 10 additional usernames as a Pro user for totals of 2 and 11 respectively (including the one you signed up with). You can currently only login with the one that you originally signed up with.
 
 ## I'm not receiving any emails, what's wrong? {#im-not-receiving-any-emails-whats-wrong}
 

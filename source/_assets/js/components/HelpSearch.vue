@@ -16,8 +16,7 @@
           block
           h-10
           w-full
-          lg:w-1/2
-          lg:focus:w-3/4
+          lg:w-1/2 lg:focus:w-3/4
           border border-grey-500
           focus:border-indigo-400
           outline-none
