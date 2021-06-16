@@ -236,13 +236,15 @@ Please double check that you are indeed sending from a verified recipient email 
 
 If you see the rejection message `554 5.7.1 Recipient address rejected: Access denied` then this means that the alias has been deleted, you must restore it before you can send/reply from it.
 
-If you see the rejection message `5.7.1 Rejected due to missing/failed DMARC policy...` then it is because your recipient's domain either does not have a DMARC policy or it has failed DMARC checks.
+If you see the rejection message `5.7.1 Rejected due to missing/failed DMARC policy...` then it is because your AnonAddy recipient's domain either does not have a DMARC policy or it has failed DMARC checks.
 
-When replying or sending from an alias, **additional checks** are carried out to ensure it is not a spoofed email. Your recipient's email domain must pass DMARC checks in order to protect against spoofed emails and to make sure that the reply/send from attempt definitely came from your recipient.
+> Note: This is referring to **your verified recipient address on your AnonAddy account** and not the email address that you are replying / sending to
+
+When replying or sending from an alias, **additional checks** are carried out to ensure it is not a spoofed email. Your AnonAddy recipient's email domain must pass DMARC checks in order to protect against spoofed emails and to make sure that the reply/send from attempt definitely came from your recipient.
 
 To learn more about DMARC please see this site - [https://dmarc.org/](https://dmarc.org/).
 
-If your recipient is with a popular mail service provider for example: Gmail, Outlook, Tutanota, Mailbox.org, Protonmail etc. then they will already have a DMARC policy in place so you do not need to take any action.
+If your AnonAddy recipient is with a popular mail service provider for example: Gmail, Outlook, Tutanota, Mailbox.org, Protonmail etc. then they will already have a DMARC policy in place so you do not need to take any action.
 
 ## Does AnonAddy strip out the banner information when I reply to an email? {#does-anonaddy-strip-out-the-banner-information-when-i-reply-to-an-email}
 
