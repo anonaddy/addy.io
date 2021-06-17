@@ -3,7 +3,7 @@ extends: _layouts.post
 ogtype: article
 image: https://anonaddy.com/assets/img/extension-v2.png
 section: content
-title: Version 2 of the browser extension
+title: A new and improved browser extension
 date: 2021-06-17
 description: This post provides more details on the updated browser extension and the new increased Pro plan limits
 categories: [updates]
