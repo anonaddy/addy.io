@@ -20,6 +20,7 @@ Below is a full list of all the new features in v2 of the browser extension:
 - View aliases
 - Search aliases by email or description
 - View individual alias details
+- Add/Edit alias descriptions
 - Activate/Deactivate aliases
 - Delete/Restore aliases
 - Forget aliases
@@ -36,7 +37,6 @@ A couple of changes were made to the [GET aliases](https://app.anonaddy.com/docs
 
 Down the line I plan to add more features to the browser extension such as:
 
-- Edit alias descriptions
 - Edit alias recipients
 - View account details, usage and limits
 
