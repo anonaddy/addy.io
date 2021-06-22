@@ -4,6 +4,7 @@
 /build_production/
 /node_modules/
 /vendor/
+/cache/
 .vscode/
 .DS_Store
 .php-cs-fixer.cache
