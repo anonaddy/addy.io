@@ -248,10 +248,9 @@ For example if the verified recipient on your AnonAddy account is `hello@example
 
 To resolve this you simply need to add a DMARC record, for example:
 
-| Type | Host   | Value                       |
-|------|--------|-----------------------------|
-| TXT  | _dmarc | "v=DMARC1; p=none; adkim=s" |
-
+**Type**: TXT<br>
+**Host**: _dmarc<br>
+**Value**: "v=DMARC1; p=none; adkim=s"
 
 You should also have SPF and DKIM records in place.
 
