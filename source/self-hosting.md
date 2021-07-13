@@ -278,7 +278,7 @@ Make sure your hostname is correct in the Postfix config file.
 sudo postconf myhostname
 ```
 
-You'll see warnings that the mysql-... files do not exist. You should see mail.example.com if you don't edit `/etc/postfix/main.cf` and update the myhostname value.
+You'll see warnings that the mysql-... files do not exist. You should see mail.example.com, if you don't edit `/etc/postfix/main.cf` and update the myhostname value.
 
 Open up `/etc/postfix/master.cf` and update this line at the top of the file:
 
@@ -310,15 +310,7 @@ This command will pipe the email through to our application so that we can deter
 
 ## Installing Nginx
 
-On Ubuntu 20.04 Nginx is included in the default repositories so we can simply run:
-
-```bash
-sudo apt update
-sudo apt install nginx
-sudo nginx -v
-```
-
-If you're on Ubuntu 18.04 you will need to add the following signing key and repo.
+To install Nginx add the following signing key and repo.
 
 Import the nginx signing key and the repository.
 
@@ -491,7 +483,7 @@ We again need to switch to the root user to run these commands:
 sudo su
 ```
 
-Download the install script from GitHub and run it.
+Download the install script from GitHub and run it. (you can install git by running `sudo apt install git`)
 
 ```bash
 cd ~
@@ -527,15 +519,17 @@ To install the certificate run:
 
 Make sure to change example.com to your domain.
 
+You might see the following error message "Run reload cmd: service nginx force-reload nginx.service is not active, cannot reload.", this can be ignored.
+
 You can now type `exit` to go back to the `johndoe` user instead of `root`.
 
 ## Installing MariaDB
 
-At the time of writing this the latest stable release is v10.5. Make sure to check for any newer releases.
+At the time of writing this the latest stable release is v10.6. Make sure to check for any newer releases.
 
 Follow the instructions on this link to install MariaDB (make sure to change to 18.04 if you are using it):
 
-[https://downloads.mariadb.org/mariadb/repositories/#distro=Ubuntu&distro_release=focal--ubuntu_focal&mirror=digital-pacific&version=10.5](https://downloads.mariadb.org/mariadb/repositories/#distro=Ubuntu&distro_release=focal--ubuntu_focal&mirror=digital-pacific&version=10.5)
+[https://downloads.mariadb.org/mariadb/repositories/#distro=Ubuntu&distro_release=focal--ubuntu_focal&mirror=nus&version=10.6](https://downloads.mariadb.org/mariadb/repositories/#distro=Ubuntu&distro_release=focal--ubuntu_focal&mirror=nus&version=10.6)
 
 Make sure it is running correctly and check the version
 
@@ -544,7 +538,7 @@ sudo systemctl status mariadb
 sudo mysql -V
 ```
 
-At the time of writing this I am using "Ver 15.1 Distrib 10.5.8-MariaDB"
+At the time of writing this I am using "Ver 15.1 Distrib 10.6.3-MariaDB"
 
 When running securing mariadb Answer `no` for "Switch to unix_socket authentication" and `yes` for "Change the root password?" (Set a secure MySQL root password and make a note of it somewhere e.g. password manager.). Answer `yes` (default) to the other questions.
 
@@ -1057,7 +1051,7 @@ fi
 
 Make sure node is installed (`node -v`) if not then install it using NVM - [https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04#option-3-%E2%80%94-installing-node-using-the-node-version-manager](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04#option-3-%E2%80%94-installing-node-using-the-node-version-manager)
 
-At the time of writing this I'm using the latest LTS - v14.15.1
+At the time of writing this I'm using the latest LTS - v14.17.3
 
 ```bash
 cd /var/www/anonaddy
@@ -1204,6 +1198,8 @@ sudo supervisorctl update
 
 sudo supervisorctl start anonaddy:*
 ```
+
+Run `sudo service nginx start` to make sure Nginx is running.
 
 ## Creating your account
 
