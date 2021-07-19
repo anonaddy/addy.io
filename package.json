@@ -32,6 +32,7 @@
         "yargs": "^17.0.1"
     },
     "devDependencies": {
+        "css-loader": "^5.2.7",
         "husky": "^7.0.0",
         "lint-staged": "^11.0.0",
         "prettier": "^2.2.1"

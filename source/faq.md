@@ -149,15 +149,13 @@ Yes there is an [open-source](https://github.com/anonaddy/browser-extension) bro
 
 ## Is there an Android app? {#is-there-an-android-app}
 
-There is not an official Android app that I have made myself as I am not familiar with mobile development.
+Yes, there is an excellent [open-source](https://gitlab.com/Stjin/anonaddy-android) Android app created by [Stjin](https://twitter.com/Stjinchan) that is available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) (paid) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy) (free). The developer of this app has put in a lot of time and effort so if you would like to support him please purchase the Play Store version.
 
-There is however an excellent [open-source](https://gitlab.com/Stjin/anonaddy-android) Android app created by [Stjin](https://twitter.com/Stjinchan) that is available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) (paid) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy) (free). The developer of this app has put in a lot of time and effort so if you would like to support him please purchase the Play Store version.
-
-There is also another unofficial [open-source](https://github.com/KhalidWar/anonaddy) Android app created by [KhalidWar](https://twitter.com/RealKhalidWar) available on the [Play Store](https://play.google.com/store/apps/details?id=com.khalidwar.anonaddy).
+There is also another [open-source](https://github.com/KhalidWar/anonaddy) Android app created by [KhalidWar](https://twitter.com/RealKhalidWar) available on the [Play Store](https://play.google.com/store/apps/details?id=com.khalidwar.anonaddy).
 
 ## Is there an iOS app? {#is-there-an-ios-app}
 
-Yes, [KhalidWar's](https://twitter.com/RealKhalidWar) unofficial [open-source](https://github.com/KhalidWar/anonaddy) app from above is also available on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270).
+Yes, [KhalidWar's](https://twitter.com/RealKhalidWar) [open-source](https://github.com/KhalidWar/anonaddy) app from above is also available on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270).
 
 ## How do I add my own GPG/OpenPGP key for encryption? {#how-do-i-add-my-own-gpgopenpgp-key-for-encryption}
 
@@ -184,7 +182,7 @@ If you're concerned that your aliases are all linked by your username e.g. @john
 
 ## Where is the server located? {#where-is-the-server-located}
 
-The server is located in Amsterdam, Netherlands with [Greenhost.net](https://greenhost.net/). Greenhost focuses greatly on privacy and security and their servers run entirely on Dutch wind energy.
+The server is located in Amsterdam, Netherlands with [Greenhost.net](https://greenhost.net/). Greenhost focuses greatly on privacy and security and their servers run entirely on Dutch wind energy. The backup mail server is located in Warsaw, Poland with [UpCloud](https://upcloud.com).
 
 ## What if I don't trust you? {#what-if-i-dont-trust-you}
 
@@ -386,7 +384,7 @@ If you are having issues with emails being rejected as "possibly spammy" by Goog
 
 I will also soon be adding an option to change the format of the display from part of the "From:" header.
 
-If neither of the above options work then please try changing to another recipient so that you can continue to recieve emails.
+If neither of the above options work then please try changing to another recipient so that you can continue to receive emails.
 
 If you still aren't receiving emails please contact me.
 
