@@ -280,20 +280,7 @@ sudo postconf myhostname
 
 You'll see warnings that the mysql-... files do not exist. You should see mail.example.com, if you don't edit `/etc/postfix/main.cf` and update the myhostname value.
 
-Open up `/etc/postfix/master.cf` and update this line at the top of the file:
-
-```
-smtp       inet  n       -       -       -       -       smtpd
-        -o content_filter=anonaddy:dummy
-```
-
-This should be the only line for smtp.
-
-<div class="flex justify-center mb-4">
-  <img class="shadow" src="/assets/img/postfix-master.png" alt="Postfix master" title="Postfix master">
-</div>
-
-Then add these lines to the bottom of the file:
+Open up `/etc/postfix/master.cf` and add these lines to the bottom of the file:
 
 ```
 anonaddy unix - n n - - pipe
