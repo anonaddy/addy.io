@@ -21,7 +21,21 @@ Once logged into AnonAddy you can click on "Aliases" in the navigation bar. Here
 
 To deactivate an email alias all you have to do is toggle the switch in the column named "Active", it will appear greyed out as shown above.
 
-## Option 2: From the browser extension
+## Option 2: From a forwarded email
+
+Each email that is forwarded to you by AnonAddy will have some information in a banner (unless you have turned this off in your settings).
+
+<div class="my-8">
+  <img class="shadow" src="/assets/img/help-deactivate-alias-from-email.jpg" alt="Deactivate Alias From Email" title="Deactivate Alias From Email">
+</div>
+
+The banner information looks like the above image, to deactivate the alias all you need to do is click on the link provided.
+
+> Note: You need to already be logged in (or you can log in after clicking the link) for the alias to be successfully deactivated
+
+The reason you have to be logged in is to protect you when you reply to a forwarded message and potentially expose your alias' deactivation link to the recipient.
+
+## Option 3: From the browser extension
 
 The extension is available for download on [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/anonaddy/) and [Chrome](https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe). You can click on any alias that is displayed and then click "Deactivate alias".
 
@@ -29,7 +43,7 @@ The extension is available for download on [Firefox](https://addons.mozilla.org/
   <img class="shadow" src="/assets/img/extension-alias-details.png" alt="Deactivate an Alias from te Extension" title="Deactivate an Alias from te Extension">
 </div>
 
-## Option 3: Using one of the mobile apps
+## Option 4: Using one of the mobile apps
 
 Mobile apps for Android:
 
@@ -44,7 +58,7 @@ Mobile apps for iOS:
 
 You can deactivate an alias by following the instructions on each app.
 
-## Option 4: Using the API
+## Option 5: Using the API
 
 To use the API you first need to generate an Access Token from your account settings. You can then make calls to the available API endpoints to get information and make changes to your data.
 
