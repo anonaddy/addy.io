@@ -21,31 +21,30 @@ Once logged into AnonAddy you can click on "Aliases" in the navigation bar. Here
 
 To deactivate an email alias all you have to do is toggle the switch in the column named "Active", it will appear greyed out as shown above.
 
-## Option 2: From a forwarded email
+## Option 2: From the browser extension
 
-Each email that is forwarded to you by AnonAddy will have some information in a banner (unless you have turned this off in your settings).
+The extension is available for download on [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/anonaddy/) and [Chrome](https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe). You can click on any alias that is displayed and then click "Deactivate alias".
 
-<div class="my-8">
-  <img class="shadow" src="/assets/img/help-deactivate-alias-from-email.jpg" alt="Deactivate Alias From Email" title="Deactivate Alias From Email">
+<div class="flex justify-center my-8">
+  <img class="shadow" src="/assets/img/extension-alias-details.png" alt="Deactivate an Alias from te Extension" title="Deactivate an Alias from te Extension">
 </div>
 
-The banner information looks like the above image, to deactivate the alias all you need to do is click on the link provided.
+## Option 3: Using one of the mobile apps
 
-> Note: You need to already be logged in (or you can log in after clicking the link) for the alias to be successfully deactivated
+Mobile apps for Android:
 
-The reason you have to be logged in is to protect you when you reply to a forwarded message and potentially expose your alias' deactivation link to the recipient.
+- AnonAddy by [Stjin](https://twitter.com/Stjinchan) on the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) (paid)
+- AnonAddy by [Stjin](https://twitter.com/Stjinchan) on the [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy) (free)
+- AddyManager by [KhalidWar](https://github.com/KhalidWar) on the [Play Store](https://play.google.com/store/apps/details?id=com.khalidwar.anonaddy)
 
-All forwarded emails also have a `List-Unsubscribe:` header. This header contains your alias deactivation link mentioned above and also an email address you can send an email to in order to deactivate the alias.
+Mobile apps for iOS:
 
-For example: `<mailto:a4e5fc0f-429b-4f1c-v36d-e585826a2911@unsubscribe.anonaddy.com>`
+- AddyManager by [KhalidWar](https://github.com/KhalidWar) on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270)
 
-You can simply send an email (subject and body don't matter) to this email address and your alias will be deactivated.
 
-> Note: You must send the email from a verified recipient on your account for the alias to be successfully deactivated
+You can deactivate an alias by following the instructions on each app.
 
-This is again to prevent anyone else deactivating your aliases without your knowledge.
-
-## Option 3: Using the API
+## Option 4: Using the API
 
 To use the API you first need to generate an Access Token from your account settings. You can then make calls to the available API endpoints to get information and make changes to your data.
 

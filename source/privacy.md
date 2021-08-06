@@ -64,7 +64,7 @@ You have the right to require us to correct any inaccuracies in your data, free 
 
 ## Third party services
 
-The only third party service that we use is [Stripe](https://stripe.com) to process payments for subscriptions. Any payment transactions will be carried out by Stripe over encrypted connections hosted within an iframe served from Stripe’s domain. Your card information never touches our server.
+The only third party services that we use are [Stripe](https://stripe.com) and [GloBee](https://globee.com) to process payments for subscriptions. Any payment transactions will be carried out by Stripe and GloBee over encrypted connections. Your card information never touches our server. If you are subscribed to our newsletter then we will also use [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/) to deliver email campaigns.
 
 ## Changes To Our Privacy Policy
 
