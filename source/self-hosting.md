@@ -1448,8 +1448,7 @@ CAA @ 0 iodef "mailto:caapolicy@example.com"
 
 Before updating, **please check the release notes** on [GitHub](https://github.com/anonaddy/anonaddy/releases) for any **breaking changes**.
 
-In order to update you can run the following commands:
-
+To update to the latest version run the following commands:
 
 ```bash
 # Fetch the tags from the remote repository
@@ -1482,8 +1481,6 @@ php artisan route:cache
 # Restart queue workers to reflect changes
 php artisan queue:restart
 ```
-
-This should pull in any updates from the GitHub repository and update your dependencies. It will then run any migrations before finally clearing the cache and restarting the queue workers.
 
 ## Credits
 
