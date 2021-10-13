@@ -1477,6 +1477,7 @@ php artisan migrate
 php artisan config:cache
 php artisan view:cache
 php artisan route:cache
+php artisan event:cache
 
 # Restart queue workers to reflect changes
 php artisan queue:restart
