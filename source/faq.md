@@ -381,7 +381,7 @@ I have contacted Apple multiple times about this but they have not yet responded
 If you are having issues with emails being rejected as "possibly spammy" by Google, iCloud or Microsoft then please try the following steps if you can:
 
 1. **Replace the email subject** by going to your settings in AnonAddy
-2. Try adding a GPP key and **enabling encryption**. This will prevent the email's content being scanned and reduce the change of it being rejected.
+2. Try adding a GPG key and **enabling encryption**. This will prevent the email's content being scanned and reduce the change of it being rejected.
 
 I will also soon be adding an option to change the format of the display from part of the "From:" header.
 
