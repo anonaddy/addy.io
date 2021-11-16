@@ -15,7 +15,7 @@ module.exports = {
     jigsaw: {
         apply(compiler) {
             compiler.hooks.done.tap('DonePlugin', (compilation) => {
-                command.get(bin.path() + ' build -q ' + env, (error, stdout, stderr) => {
+                command.run(bin.path() + ' build -q ' + env, (error, stdout, stderr) => {
                     console.log(error ? stderr : stdout);
 
                     if (browserSyncInstance) {
