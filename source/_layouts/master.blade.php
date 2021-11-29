@@ -39,7 +39,7 @@
                 <div class="pr-16 sm:text-center sm:px-16">
                 <p class="font-medium text-white mb-0">
                     <span class="inline">
-                        Black Friday Offer! Get 50% off your first year with code
+                        Black Friday Offer (<b>Ends Today</b>)! Get 50% off your first year with code
                     </span>
                     <span class="block ml-1 sm:inline-block text-white font-bold tracking-wide">
                         BLACKFRIDAY21
