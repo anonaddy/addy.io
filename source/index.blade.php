@@ -425,7 +425,7 @@ width: full
 			<input type="hidden" name="subform" value="yes"/>
 			<label for="gdpr" class="hidden">GDPR</label>
             <input class="hidden" type="checkbox" name="gdpr" id="gdpr" checked />
-            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:shrink-0">
                 <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none">
                 Notify me
                 </button>

@@ -15,7 +15,7 @@
             <label for="gdpr" class="hidden">GDPR</label>
             <input class="hidden" type="checkbox" name="gdpr" id="gdpr" checked />
 
-            <input type="submit" name="submit" id="submit" value="Update Me!" class="flex-shrink-0 mt-4 bg-white text-sm cursor-pointer text-indigo-500 py-2 px-4 rounded-full font-bold shadow">
+            <input type="submit" name="submit" id="submit" value="Update Me!" class="shrink-0 mt-4 bg-white text-sm cursor-pointer text-indigo-500 py-2 px-4 rounded-full font-bold shadow">
         </div>
     </form>
 </div>

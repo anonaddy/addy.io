@@ -1,22 +1,16 @@
 module.exports = {
-  mode: 'jit',
-  purge: {
-    content: [
-      'source/**/*.html',
-      'source/**/*.md',
-      'source/**/*.js',
-      'source/**/*.php',
-      'source/**/*.vue',
+  content: [
+    'source/**/*.html',
+    'source/**/*.md',
+    'source/**/*.js',
+    'source/**/*.php',
+    'source/**/*.vue',
+  ],
+    safelist: [
+      {
+      pattern: /(language|hljs)/,
+      },
     ],
-
-    // These options are passed through directly to PurgeCSS
-    options: {
-      safelist: [
-        /language/,
-        /hljs/
-      ],
-    },
-  },
   theme: {
     extend: {
       fontFamily: {
@@ -46,6 +40,7 @@ module.exports = {
       }
     },
     colors: {
+      current: 'currentColor',
       white: '#FFF',
       black: '#000',
       transparent: 'transparent',
@@ -151,11 +146,6 @@ module.exports = {
       center: true,
       padding: '1.5rem',
     },
-  },
-  variants: {
-    borderRadius: ['responsive', 'focus'],
-    borderWidth: ['responsive', 'active', 'focus'],
-    width: ['responsive', 'focus']
   },
   plugins: [
     function({ addUtilities }) {
