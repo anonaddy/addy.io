@@ -941,6 +941,46 @@ Create a new file `/etc/rspamd/local.d/history_redis.conf` and enter the followi
 subject_privacy = true;
 ```
 
+Now let's setup the handling of DMARC for incoming messages, create a new file `/etc/rspamd/local.d/dmarc.conf` and enter the following inside:
+
+```
+actions = {
+  quarantine = "add_header";
+  reject = "reject";
+}
+```
+
+Here we are telling Rspamd to add a header to any message that fails DMARC checks and has a policy of `p=quarantine` and to reject any message that fails DMARC checks with a policy `p=reject`. You can change reject to "add_header"; too if you would still like to see these messages.
+
+Next we'll configure the headers to add, create a new file `/etc/rspamd/local.d/milter_headers.conf` and enter the following inside:
+
+```
+use = ["authentication-results", "remove-headers", "spam-header"];
+
+routines {
+  remove-headers {
+    headers {
+      "X-Spam" = 0;
+      "X-Spamd-Bar" = 0;
+      "X-Spam-Level" = 0;
+      "X-Spam-Status" = 0;
+      "X-Spam-Flag" = 0;
+    }
+  }
+  authentication-results {
+    header = "X-AnonAddy-Authentication-Results";
+    remove = 0;
+  }
+  spam-header {
+    header = "X-AnonAddy-Spam";
+    value = "Yes";
+    remove = 0;
+  }
+}
+```
+
+The authentication results header will give information on whether the message passed SPF, DKIM and DMARC checks and the spam header will be added if it fails any of these.
+
 To see the currently enabled modules in Rspamd we can run:
 
 ```bash
