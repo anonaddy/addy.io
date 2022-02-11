@@ -3,9 +3,9 @@ require __DIR__."/vendor/autoload.php";
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-$userAndServer = explode(',', getenv("ENVOY_USER_AND_SERVER"));
+$userAndServer = explode(',', $_ENV["ENVOY_USER_AND_SERVER"]);
 $repository = "anonaddy/anonaddy.com";
-$baseDir = getenv("ENVOY_BASE_DIR");
+$baseDir = $_ENV["ENVOY_BASE_DIR"];
 $releasesDir = "{$baseDir}/releases";
 $currentDir = "{$baseDir}/current";
 $newReleaseName = date("Ymd-His");

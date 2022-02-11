@@ -1,11 +1,5 @@
 window.axios = require('axios')
-import Vue from 'vue'
+import { createApp } from 'vue'
+import HelpSearch from './components/HelpSearch'
 
-const search = require('./components/HelpSearch.vue').default
-
-Vue.config.productionTip = false
-
-new Vue({
-  el: '#vue-help-search',
-  render: (createElement) => createElement(search),
-})
+createApp(HelpSearch).mount('#vue-help-search')

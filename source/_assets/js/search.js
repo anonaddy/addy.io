@@ -1,11 +1,5 @@
 window.axios = require('axios')
-import Vue from 'vue'
+import { createApp } from 'vue'
+import Search from './components/Search'
 
-const search = require('./components/Search.vue').default
-
-Vue.config.productionTip = false
-
-new Vue({
-  el: '#vue-search',
-  render: (createElement) => createElement(search),
-})
+createApp(Search).mount('#vue-search')

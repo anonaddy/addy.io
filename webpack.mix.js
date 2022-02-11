@@ -4,11 +4,6 @@ const build = require('./tasks/build.js');
 mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build/');
 mix.webpackConfig({
-    resolve: {
-      alias: {
-          'vue$': 'vue/dist/vue.runtime.js'
-      }
-    },
     plugins: [
         build.jigsaw,
         build.browserSync(),
