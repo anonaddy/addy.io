@@ -23,9 +23,11 @@ Opportunistic DANE TLS encryption with strong cipher preference is used for all 
 
 DNS-based Authentification of Named Entities (DANE) helps protect against MiTM (Man in The Middle) downgrade attacks. It does this by instructing cooperating mail servers to expect encrypted communication and to verify the destination's certificate by checking their TLSA DNS record.
 
-SMTP MTA Strict Transport Security (MTA-STS) is used, this is similar to DANE in that it is designed to avoid (Man in The Middle) downgrade attacks and verify the destination.
+SMTP MTA Strict Transport Security (MTA-STS) is used on all shared domains, this is similar to DANE in that it is designed to avoid (Man in The Middle) downgrade attacks and verify the destination.
 
 SMTP TLS Reporting (TLS-RPT) is also used. This allows us to receive daily reports from external mail servers that connect to an AnonAddy domain. These reports can be used to detect potential attacks and identify any connection problems. Check out our security report by running a scan on [Hardenize](https://www.hardenize.com/report/anonaddy.me/1619513845) or [Internet.nl](https://internet.nl/mail/anonaddy.me/520920/).
+
+At this time it is not possible to enable MTA-STS on username subdomains since this would require a wildcard certificate of the format mta-sts.*.anonaddy.me.
 
 ### DNSSEC
 

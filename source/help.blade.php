@@ -35,7 +35,25 @@ width: full
         <b>UUID Alias</b> - A UUID alias is generated at the parent domain e.g. anonaddy.me and looks something like this - 94960540-f914-42e0-9c50-6faa7a385384@anonaddy.me. UUID stands for universally unique identifier, it is randomly generated string with no inherent logic (this applies to V4). Users who want maximum anonyminity may choose to use this kind of alias as it does not include your username or any other identifying information in the email address.
     </p>
     <p>
+        <b>Random Character Alias</b> - A Random Character alias is generated at the parent domain e.g. anonaddy.me and looks something like this - x481n904@anonaddy.me.
+    </p>
+    <p>
         <b>Random Word Alias</b> - A Random Word alias is generated at the parent domain e.g. anonaddy.me and looks something like this - circus.waltz449@anonaddy.me.
+    </p>
+    <p>
+        <b>Deactivated Alias</b> - When an alias is deactivated, any messages sent to it will be silently discarded. The sender will not be notified of the unsuccessful delivery.
+    </p>
+    <p>
+        <b>Deleted Alias</b> - When an alias is deleted, any messages sent to it will be rejected with the message "5.7.1 Recipient address rejected: Address does not exist". Deleted Aliases can be restored.
+    </p>
+    <p>
+        <b>Forgotten Alias</b> - When an alias is forgotten it is completely disassociated from your account.
+        <p>
+        - If the alias is a shared domain alias (e.g. @anonaddy.me) then it can never be restored or used again. Once a shared domain alias is forgotten, it will reject any emails sent to it with the same message as above.
+        </p>
+        <p>
+        - If the alias is a standard alias then it can be created again in the future since it will be as if it never existed in the database. Once a standard alias is forgotten, if someone sends an email to it and you have catch-all enabled then it will be created automatically again. If you would like the alias to reject any messages sent to it then you should delete it or disable catch-all for that domain.
+        </p>
     </p>
     <p>
         <b>Recipients</b> - Your recipient email addresses are your real email addresses where aliases are forwarded to. You can set a default recipient for your account in your settings, this is where all aliases will forward emails if they have no other recipients attached. You can also set a default recipient for each custom domain and additional username.
