@@ -70,6 +70,6 @@ All information you provide to us is stored on our secure servers in the Netherl
 
 ### Login protection
 
-I recommend that you use a long passphrase to protect your account, you can store this in a reputable password manager such as BitWarden. A minimum password length of 8 characters is required when creating an account.
+I recommend that you use a long passphrase to protect your account, you can store this in a reputable password manager such as Bitwarden. A minimum password length of 8 characters is required when creating an account.
 
 Two Factor Authentication (2FA) is also available on our site and we encourage users to enable it. You can use any compatible app such as Aegis or andOTP (both available on F-droid). You can also use a hardware authentication device such as a YubiKey.

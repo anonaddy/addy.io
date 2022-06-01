@@ -44,7 +44,7 @@ They are generated using a universally unique identifier (UUID) and will look li
 
 As you can see the alias can no longer be linked to a particular user and could belong to anyone.
 
-Since the alias does not give any information away about what it is used for, I highly recommend using a password manager such as [BitWarden](https://bitwarden.com/) to save the alias or add a description in the dashboard so you remember what it is for.
+Since the alias does not give any information away about what it is used for, I highly recommend using a password manager such as [Bitwarden](https://bitwarden.com/) to save the alias or add a description in the dashboard so you remember what it is for.
 
 ## Feedback and suggestions
 
