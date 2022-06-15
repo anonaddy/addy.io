@@ -255,7 +255,7 @@ You should also have SPF and DKIM records in place.
 
 To learn more about DMARC please see this site - [https://dmarc.org/](https://dmarc.org/).
 
-If your AnonAddy recipient is with a popular mail service provider for example: Gmail, Outlook, Tutanota, Mailbox.org, Protonmail etc. then they will already have a DMARC policy in place so you do not need to take any action.
+If your AnonAddy recipient is with a popular mail service provider for example: Gmail, Outlook, Tutanota, Mailbox.org, ProtonMail etc. then they will already have a DMARC policy in place so you do not need to take any action.
 
 ## Does AnonAddy strip out the banner information when I reply to an email? {#does-anonaddy-strip-out-the-banner-information-when-i-reply-to-an-email}
 

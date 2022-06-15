@@ -39,7 +39,7 @@ Even worse is if you use the same password all over the place too. A hacker coul
 
 **Tip:** use a password manager such as [Bitwarden](https://bitwarden.com/) for your accounts, creating a long random unique password for each login.
 
-If you are looking for a fresh start and would like to create a new email address and keep it free from spam you can use a service such as [Tutanota](https://tutanota.com/), [Protonmail](https://protonmail.com/) or [Posteo](https://posteo.de/en).
+If you are looking for a fresh start and would like to create a new email address and keep it free from spam you can use a service such as [Tutanota](https://tutanota.com/), [ProtonMail](https://proton.me/mail) or [Posteo](https://posteo.de/en).
 
 If you'd like to see other options for password managers of email providers and loads of great privacy advice check out [PrivacyTools.io](https://www.privacytools.io/).
 
