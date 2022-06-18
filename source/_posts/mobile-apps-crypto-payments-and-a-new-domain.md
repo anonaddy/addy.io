@@ -23,11 +23,11 @@ Even though these apps are unofficial they are both open-source and I've been sp
 
 Android app created by [Stjin](https://twitter.com/Stjinchan), available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) (paid) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy) (free). The developer of this app has put in a lot of time and effort so if you would like to support him please do so by purchasing the Play Store version. ([source code](https://gitlab.com/Stjin/anonaddy-android))
 
-Android app created by [KhalidWar](https://twitter.com/RealKhalidWar) available on the [Play Store](https://play.google.com/store/apps/details?id=com.khalidwar.anonaddy). ([source code](https://github.com/KhalidWar/anonaddy))
+Android app created by [KhalidWar](https://github.com/KhalidWar) available on the [Play Store](https://play.google.com/store/apps/details?id=com.khalidwar.anonaddy). ([source code](https://github.com/KhalidWar/anonaddy))
 
 ### iOS
 
-iOS app created by [KhalidWar](https://twitter.com/RealKhalidWar) available on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270). ([source code](https://github.com/KhalidWar/anonaddy) )
+iOS app created by [KhalidWar](hhttps://github.com/KhalidWar) available on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270). ([source code](https://github.com/KhalidWar/anonaddy) )
 
 <div class="flex justify-center">
   <img class="shadow" src="/assets/img/anonaddy-app-stjin.jpeg" alt="Stjin mobile app" title="Stjin mobile app">
