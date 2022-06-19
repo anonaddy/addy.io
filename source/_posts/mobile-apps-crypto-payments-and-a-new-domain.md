@@ -27,7 +27,7 @@ Android app created by [KhalidWar](https://github.com/KhalidWar) available on th
 
 ### iOS
 
-iOS app created by [KhalidWar](hhttps://github.com/KhalidWar) available on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270). ([source code](https://github.com/KhalidWar/anonaddy) )
+iOS app created by [KhalidWar](https://github.com/KhalidWar) available on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270). ([source code](https://github.com/KhalidWar/anonaddy) )
 
 <div class="flex justify-center">
   <img class="shadow" src="/assets/img/anonaddy-app-stjin.jpeg" alt="Stjin mobile app" title="Stjin mobile app">
