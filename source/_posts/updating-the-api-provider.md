@@ -27,6 +27,14 @@ If you **aren't using** the browser extensions, mobiles apps or calling the API 
 
 If you **are using any of the above** then you will have received an email notification letting you know about this update. You will **need to re-create** all of your previous API tokens as they will have disappeared now that this update has been pushed live.
 
+For the browser extension, go to the settings tab, click "Logout" and then you will be able to enter your new token.
+
+For the AddyManager app click the settings cog in the top right and then click "Logout", you will then be able to enter your new token.
+
+The AnonAddy for Android app will automatically detect your token is invalid so will allow you to enter a new one when opening it.
+
+For the Bitwarden extension simply paste in your new token in the generator tab.
+
 ## What is an API?
 
 API stands for **Application Programming Interface**, it is essentially a way of communicating with a server (in this case the AnonAddy server) by making requests to different URLs (endpoints).
