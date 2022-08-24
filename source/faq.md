@@ -295,7 +295,7 @@ Yes you can add attachments to emails forwarded and replies. Attachments count t
 
 ## What is the max email size limit? {#what-is-the-max-email-size-limit}
 
-The max email size is currently set to 10MB (including attachments).
+The max email size is currently set to 25MB (including attachments).
 
 ## What happens if I have a subscription but then cancel it? {#what-happens-if-i-have-a-subscription-but-then-cancel-it}
 
