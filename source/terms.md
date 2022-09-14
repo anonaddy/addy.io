@@ -10,7 +10,7 @@ description: Please read these terms of use carefully before you start to use th
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-<p class="text-sm text-grey-400 mb-4">Last Updated: 1st March 2021</p>
+<p class="text-sm text-grey-400 mb-4">Last Updated: 14th September 2022</p>
 
 Please read these terms of use carefully before you start to use the site. By using our site, you indicate that you accept these terms of use and that you agree to abide by them. If you do not agree to these terms of use, please refrain from using our site.
 
@@ -22,7 +22,7 @@ You agree not to disclose your password to any third party. You must notify us i
 
 ## Termination
 
-We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever that includes, sending spam emails, sending viruses, repeatedly marking emails from us as spam, abusing or flooding the server by sending bulk email, mass signups for the purpose of discount code/coupon harvesting or other similar activity, disrupting the Service's networks or servers, any activity that aims to deteriorate the Service's email deliverability, including without limitation if you breach the Terms of Service.
+We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever that includes, sending spam emails, sending viruses, repeatedly marking emails from us as spam, abusing or flooding the server by sending bulk email, mass signups for the purpose of discount code/coupon harvesting, competition entries or any other similar activity, disrupting the Service's networks or servers, any activity that aims to deteriorate the Service's email deliverability, including without limitation if you breach the Terms of Service.
 
 Accounts registered by bots or any automated methods are not authorised and will be terminated.
 
@@ -50,7 +50,7 @@ We reserve the right to make changes to subscription fees in the future. You wil
 
 We are the owner or the licensee of all intellectual property rights in our site, and in the material published on it. Those works are protected by copyright laws and treaties around the world. All such rights are reserved.
 
-Note that you are not prohibited from using the open source code for the Service to create your own service, whether you charge a fee or not, provided you do not use the servers, bandwidth, and other similar resources of our Service to provide your service.
+You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the service, use of the service, or access to the service without the express written permission by the company.
 
 ## Viruses, Hacking And Other Offences
 
