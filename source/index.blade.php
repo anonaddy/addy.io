@@ -62,7 +62,7 @@ width: full
 				<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">1. Register Your Username</h3>
                 <p class="text-grey-600 mb-4">Let's say your username is <b>johndoe</b>. You can now use *@johndoe.anonaddy.com (or .me) as your email. Where * denotes any valid local part for an email address.</p>
 
-                <p class="text-grey-600 mb-4">If you would like to remain anonymous choose a username that is not linked to your real name or identify and that you haven't used anywhere else.</p>
+                <p class="text-grey-600 mb-4">If you would like to remain anonymous choose a username that is not linked to your real name or identity and that you haven't used anywhere else.</p>
 
                 <p class="text-grey-600">You can also create aliases at <b>shared domains</b> if you are concerned about others linking alias ownership to you.</p>
 			</div>

@@ -1,4 +1,3 @@
-window.axios = require('axios')
 import { createApp } from 'vue'
 import Search from './components/Search'
 

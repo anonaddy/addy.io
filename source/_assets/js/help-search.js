@@ -1,4 +1,3 @@
-window.axios = require('axios')
 import { createApp } from 'vue'
 import HelpSearch from './components/HelpSearch'
 
