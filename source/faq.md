@@ -23,6 +23,7 @@ section: body
 - [Is there a browser extension?](#is-there-a-browser-extension)
 - [Is there an Android app?](#is-there-an-android-app)
 - [Is there an iOS app?](#is-there-an-ios-app)
+- [Is there a Raycast extension?](#is-there-a-raycast-extension)
 - [How do I add my own GPG/OpenPGP key for encryption?](#how-do-i-add-my-own-gpgopenpgp-key-for-encryption)
 - [Are attachments encrypted too?](#are-attachments-encrypted-too)
 - [Are forwarded emails signed when encryption is enabled?](#are-forwarded-emails-signed-when-encryption-is-enabled)
@@ -157,6 +158,10 @@ There is also another [open-source](https://github.com/KhalidWar/anonaddy) Andro
 ## Is there an iOS app? {#is-there-an-ios-app}
 
 Yes, [KhalidWar's](https://github.com/KhalidWar) [open-source](https://github.com/KhalidWar/anonaddy) app from above is also available on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270).
+
+## Is there a Raycast extension? {#is-there-a-raycast-extension}
+
+Yes, [http.james'](https://httpjames.space/) [open-source](https://github.com/raycast/extensions/tree/cceffa51046266f25819f800316561b783c52663/extensions/anonaddy/) extension is available on the [Raycast Store](https://www.raycast.com/http.james/anonaddy).
 
 ## How do I add my own GPG/OpenPGP key for encryption? {#how-do-i-add-my-own-gpgopenpgp-key-for-encryption}
 
