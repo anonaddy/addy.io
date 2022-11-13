@@ -31,6 +31,8 @@
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+
+        <script defer data-domain="anonaddy.com" src="https://plausible.io/js/script.js"></script>
     </head>
 
     <body class="{{ $page->isActive('/') ? 'gradient text-white' : 'flex flex-col justify-between min-h-screen bg-white text-grey-800' }} leading-normal font-sans">
