@@ -36,6 +36,20 @@
     </head>
 
     <body class="{{ $page->isActive('/') ? 'gradient text-white' : 'flex flex-col justify-between min-h-screen bg-white text-grey-800' }} leading-normal font-sans">
+        <div class="relative bg-pink-600">
+            <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+                <div class="pr-16 sm:text-center sm:px-16">
+                <p class="font-medium text-white mb-0">
+                    <span class="inline">
+                        Black Friday Offer (<b>Ends 30th</b>)! Get 40% off your first year with code
+                    </span>
+                    <span class="block ml-1 sm:inline-block text-white font-bold tracking-wide">
+                        BLACKFRIDAY22
+                    </span>
+                </p>
+                </div>
+            </div>
+        </div>
         @include('_shared.header')
 
         @include('_nav.menu-mobile')

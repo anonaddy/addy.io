@@ -319,7 +319,7 @@ width: full
 							</div>
 							<div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
-								<b>50MB</b> Monthly Bandwidth
+								<b>100MB</b> Monthly Bandwidth
 							</div>
                             <div class="py-3">
 								<svg class="h-5 w-5 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#91E697"></circle><polyline stroke="#0E7817" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline></g></svg>
@@ -329,7 +329,7 @@ width: full
 					</div>
 				</div>
 				<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-4">
-					<div class="w-full text-5xl font-bold text-center"><span class="text-base text-grey-500 font-normal">$</span>1 <span class="text-base text-grey-500 font-normal">/ month</span></div>
+					<div class="w-full text-5xl font-bold text-center"><span class="text-base text-grey-500 font-normal line-through mr-3">$1</span><span class="text-grey-500 text-2xl font-normal">$</span>0.60 <span class="text-base text-grey-500 font-normal">/ month</span></div>
 					<div class="flex items-center justify-center">
 						<a href="https://app.anonaddy.com/register" class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg cursor-pointer">Choose Username</a>
 					</div>
@@ -375,11 +375,11 @@ width: full
 					</div>
 				</div>
 				<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-4">
-					<div class="w-full text-5xl font-bold text-center"><span class="text-base text-grey-500 font-normal">$</span>3 <span class="text-base text-grey-500 font-normal">/ month</span></div>
+                <div class="w-full text-5xl font-bold text-center"><span class="text-base text-grey-500 font-normal line-through mr-3">$3</span><span class="text-grey-500 text-2xl font-normal">$</span>1.80 <span class="text-base text-grey-500 font-normal">/ month</span></div>
 					<div class="flex items-center justify-center">
                     <a href="https://app.anonaddy.com/register" class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-3 px-5 shadow-lg cursor-pointer">Choose Username</a>
 					</div>
-					<p class="text-sm text-grey-500 mb-0 w-full text-center">Billed Yearly, $4 Billed Monthly</p>
+					<p class="text-sm text-grey-500 mb-0 w-full text-center">Billed Yearly, <span class="line-through">$4</span> $2.40 Billed Monthly</p>
 				</div>
             </div>
 
