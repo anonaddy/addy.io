@@ -79,7 +79,7 @@ With AnonAddy, when an alias is deactivated (turned off), all emails sent to it 
 
 When an alias is deleted, any further emails sent to it will bounce back to the sender with the error message:
 
-> "554 5.7.1 Recipient address rejected: Address does not exist".
+> "550 5.1.1 Recipient address rejected: Address does not exist".
 
 Another trick that some spam emails do is including a fake "Unsubscribe" link at the bottom of the email that is in fact a trap. By clicking on the link, instead of being unsubscribed, you simply validate the fact that this is an active email account and notify the scammer. The links can also take you to malicious websites and phishing sites.
 

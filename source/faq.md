@@ -102,7 +102,7 @@ A shared domain alias is any alias that has a domain name that is also shared wi
 
 ## What is a standard alias? {#what-is-a-standard-alias}
 
-A standard alias is any alias that can be created on-the-fly. Automatic on-the-fly alias creation is only available for domains that are unique to you. For example, your unique username subdomain, any additional usernames or any custom domains. So if you signed up with the username "johndoe", any alias you create using @johndoe.anonaddy.com would be a standard alias (even if you've generated a UUID/Random Word one).
+A standard alias is any alias that can be created on-the-fly. Automatic on-the-fly alias creation is only available for domains that are unique to you. For example, your unique username subdomain, any additional usernames or any custom domains. So if you signed up with the username "johndoe", any alias you create using @johndoe.anonaddy.com would be a standard alias (even if you've generated a Random Character/Random Word one).
 
 ## Can I use my own domain? {#can-i-use-my-own-domain}
 
@@ -141,7 +141,7 @@ Here are a few reasons I can think of:
 * No limitation on the number of aliases that can be created
 * Generous monthly bandwidth
 * Multiple domains to choose for aliases (currently anonaddy.com, anonaddy.me and another 3 for paid plan users)
-* Ability to generate UUID and random word aliases at shared domains
+* Ability to generate random character and random word aliases at shared domains
 * Ability to add additional usernames to compartmentalise aliases
 * New features added regularly
 
@@ -165,7 +165,7 @@ Yes, [http.james'](https://httpjames.space/) [open-source](https://github.com/ra
 
 ## How do I add my own GPG/OpenPGP key for encryption? {#how-do-i-add-my-own-gpgopenpgp-key-for-encryption}
 
-On the recipients page you simply need to click "Add public key" and paste in your **public** key data. Now all emails forwarded to you will be encrypted with your key. You should also replace the subject line of forwarded messages in your account settings as this cannot be encrypted.
+On the recipients page you simply need to click "Add public key" and paste in your **public** key data. Now all emails forwarded to you will be encrypted with your key. You can even hide and encrypt the subject as AnonAddy supports protected headers.
 
 ## Are attachments encrypted too? {#are-attachments-encrypted-too}
 
@@ -183,8 +183,8 @@ The fingerprint of the mailer@anonaddy.me key is <span class="break-words">"26A9
 
 If you're concerned that your aliases are all linked by your username e.g. @johndoe.anonaddy.com, then you have a couple of options:
 
-1. You can generate UUID or random word aliases instead, these are all under a shared domain and cannot be linked to a user.
-2. You can add additional usernames and separate your aliases under your these. e.g. you could have one username for personal stuff, another for work, another for hobbies etc.
+1. You can generate random character or random word aliases instead, these are all under a shared domain and cannot be linked to a user.
+2. You can add additional usernames and separate your aliases under each of them. e.g. you could have one username for personal stuff, another for work, another for hobbies etc.
 
 ## Where is the server located? {#where-is-the-server-located}
 
@@ -203,7 +203,7 @@ The limit is currently set to 10 which should suffice in the vast majority of si
 When you delete your account the following happens:
 
 * All of your recipients are deleted from the database
-* All of your aliases that use a shared domain e.g. @anonaddy.me are soft deleted from the database (this is to prevent any chance of another user generating the same alias in the future)
+* All of your aliases that use a shared domain e.g. @anonaddy.me are soft deleted from the database (this is to prevent any chance of another user generating the same alias in the future) any identifying information e.g the alias description is removed
 * All of your other aliases are deleted from the database
 * All of your custom domains are deleted from the database
 * Your user details are deleted from the database
@@ -230,7 +230,7 @@ For further details please see this help article - [Replying to email using an a
 
 ## I'm trying to reply/send from an alias but the email keeps coming back to me, what's wrong? {#im-trying-to-reply-send-from-an-alias-but-the-email-keeps-coming-back-to-me-whats-wrong}
 
-If you are tying to reply or send from an alias but the email keeps coming back to yourself then it is most likely because you are sending the message from an email address that **is not listed as a verified recipient** on your AnonAddy account.
+If you are trying to reply or send from an alias but the email keeps coming back to yourself then it is most likely because you are sending the message from an email address that **is not listed as a verified recipient** on your AnonAddy account.
 
 If you try to reply or send from an alias using an unverified email address then the message will simply be forwarded to you as it would be if it was sent by any other sender.
 
@@ -238,17 +238,15 @@ Please double check that you are indeed sending from a verified recipient email 
 
 ## I'm trying to reply/send from an alias but it is rejected, what's wrong? {#im-trying-to-reply-send-from-an-alias-but-it-is-rejected-whats-wrong}
 
-If you see the rejection message `5.7.1 Recipient address rejected: Address does not exist` then this means that the alias has either been deleted or does not yet exist (and you do not have catch-all enabled), you must restore (or create) it before you can send/reply from it.
+If you see the rejection message `550 5.1.1 Recipient address rejected: Address does not exist` then this means that the alias has either been deleted or does not yet exist (and you do not have catch-all enabled), you must restore (or create) it before you can send/reply from it.
 
-If you see the rejection message `5.7.1 Rejected due to missing/failed DMARC policy...` then it is because your AnonAddy recipient's domain either does not have a DMARC policy or it has failed DMARC checks.
-
-This is usually because you have a verified recipient that is using your own domain which does not have a DMARC policy.
+If you receive an email notification with the subject "Attempted reply/send from alias has failed" then it is usually because you have a verified recipient that is using your own domain which does not have a DMARC policy.
 
 > Note: This is referring to **your verified recipient address** on your AnonAddy account **and not** any of your custom domains or the email address that you are replying / sending to
 
 When replying or sending from an alias, **additional checks** are carried out to ensure it is not a spoofed email. Your AnonAddy recipient's email domain must pass DMARC checks in order to protect against spoofed emails and to make sure that the reply/send from attempt definitely came from your recipient.
 
-For example if the verified recipient on your AnonAddy account is `hello@example.com` and you get the "missing/failed DMARC policy" rejection message then it is because the domain "example.com" does not have a DMARC policy in place.
+For example if the verified recipient on your AnonAddy account is `hello@example.com` and you get this email notification then it is because the domain "example.com" does not have a DMARC policy in place.
 
 To resolve this you simply need to add a DMARC record, for example:
 
@@ -264,7 +262,7 @@ If your AnonAddy recipient is with a popular mail service provider for example: 
 
 ## Does AnonAddy strip out the banner information when I reply to an email? {#does-anonaddy-strip-out-the-banner-information-when-i-reply-to-an-email}
 
-At the moment the site does not automatically strip out the "This email was sent to..." text from forwarded emails when you reply to them. You need to either remove this from the quoted text manually or set the banner information to "off" in your account settings.
+Yes, the email banner "This email was sent to..." will be automatically removed when you reply to any messages. You can test this by replying to yourself from one of your aliases.
 
 ## How do I send email from an alias? {#how-do-i-send-email-from-an-alias}
 
@@ -320,7 +318,7 @@ You will not be able to activate any of the above again until you resubscribe.
 
 ## If I subscribe will Stripe see my real email address? {#if-i-subscribe-will-stripe-see-my-real-email-address}
 
-No, Stripe will instead be given an alias. This alias will only be created if Stripe sends an email to it, for example if your card payment fails or if your card has expired.
+When you subscribe you can choose which email to provide to Stripe, feel free to use an alias. This email will be used for notifications from Stripe such as; if your card payment fails or if your card has expired.
 
 ## How do you prevent spammers? {#how-do-you-prevent-spammers}
 
@@ -351,7 +349,7 @@ Each time a new email is received Postfix calculates its size in bytes. A column
 
 I don't use rolling 30 day total as the only way to do this would be to log the date and size of every single email received.
 
-Blocked emails do not count towards your bandwidth (e.g. an alias is inactive or deleted).
+Blocked emails do not count towards your bandwidth (e.g. if an alias is inactive or deleted).
 
 ## How many emails can I receive before I go over my bandwidth limit? {#how-many-emails-can-i-receive-before-i-go-over-my-bandwidth-limit}
 
@@ -363,13 +361,13 @@ If you get close to your limit (over 80%) you'll be sent an email letting you kn
 
 ## Can I login using an additional username? {#can-i-login-using-an-additional-username}
 
-You can add 1 additional username as a Lite user and up to 10 additional usernames as a Pro user for totals of 2 and 11 respectively (including the one you signed up with). You can currently only login with the one that you originally signed up with.
+Yes, you can login with any of your usernames. You can add 1 additional username as a Lite user and up to 10 additional usernames as a Pro user for totals of 2 and 11 respectively (including the one you signed up with).
 
 ## I'm not receiving any emails, what's wrong? {#im-not-receiving-any-emails-whats-wrong}
 
 Please make sure to add mailer@anonaddy.me, mailer@anonaddy.com and any other aliases you use to your address book and also to check your spam folder. Make sure to mark emails from AnonAddy as safe if they turn up in spam.
 
-If an alias has been previously deleted and you try to send email to it, the emails will be rejected with an error message - "554 5.7.1 Recipient address rejected: Address does not exist".
+If an alias has been deleted and you try to send email to it, the emails will be rejected with an error message - "550 5.1.1 Recipient address rejected: Address does not exist".
 
 Check that you have not deactivated the alias, custom domain or additional username. When any of these are deactivated, emails will be silently discarded, they will not be rejected or return any error message.
 
@@ -381,12 +379,11 @@ For some reason Apple seems to think these emails are spam/phishing and returns 
 
 > Diagnostic-Code: smtp; 550 5.7.1 [CS01] Message rejected due to local policy.
 
-I have contacted Apple multiple times about this but they have not yet responded.
-
 If you are having issues with emails being rejected as "possibly spammy" by Google, iCloud or Microsoft then please try the following steps if you can:
 
 1. **Replace the email subject** by going to your settings in AnonAddy
 2. Try adding a GPG key and **enabling encryption**. This will prevent the email's content being scanned and reduce the change of it being rejected.
+3. Enable the option to hide and encrypt the email subject
 
 I will also soon be adding an option to change the format of the display from part of the "From:" header.
 

@@ -127,7 +127,7 @@ width: full
 				<h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">GPG/OpenPGP Encryption</h3>
 				<p class="text-grey-600 mb-4">Bring your own GPG/OpenPGP public keys and add them per recipient.</p>
 
-				<p class="text-grey-600">You can then easily toggle encryption on and off. With encryption on, all forwarded messages will be encrypted with your public key. Only you will be able to decrypt them with the corresponding private key.</p>
+				<p class="text-grey-600">You can then easily toggle encryption on and off. With encryption on, all forwarded messages will be encrypted with your public key. Only you will be able to decrypt them with the corresponding private key. You can even hide and encrypt the email subject!</p>
 
 				<p class="text-grey-600">This is great if you are using Gmail or Outlook and wish to prevent any inbox snooping.</p>
 

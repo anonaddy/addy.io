@@ -44,7 +44,7 @@ width: full
         <b>Deactivated Alias</b> - When an alias is deactivated, any messages sent to it will be silently discarded. The sender will not be notified of the unsuccessful delivery.
     </p>
     <p>
-        <b>Deleted Alias</b> - When an alias is deleted, any messages sent to it will be rejected with the message "5.7.1 Recipient address rejected: Address does not exist". Deleted Aliases can be restored.
+        <b>Deleted Alias</b> - When an alias is deleted, any messages sent to it will be rejected with the message "550 5.1.1 Recipient address rejected: Address does not exist". Deleted Aliases can be restored.
     </p>
     <p>
         <b>Forgotten Alias</b> - When an alias is forgotten it is completely disassociated from your account.

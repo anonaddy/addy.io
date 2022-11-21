@@ -31,13 +31,13 @@ If you start receiving spam to the alias you can simply deactivate it or delete 
 
 ## Option 2: Generate a unique random alias
 
-You can click the "Generate New Alias" button on the website (or use the browser extension) to generate a random UUID or random word (paid plans only) alias.
+You can click the "Generate New Alias" button on the website (or use the browser extension) to generate a random character or random word (paid plans only) alias.
 
 <div class="my-8">
   <img class="shadow" src="/assets/img/help-generate-alias.jpg" alt="Generate New Alias" title="Generate New Alias">
 </div>
 
-After clicking this button a modal will appear with some options for the alias domain, the alias format and an optional description. It is generally a good idea to add a description for the UUID/random word aliases even if you are using a password manager as it can be easy to forget what they were used for.
+After clicking this button a modal will appear with some options for the alias domain, the alias format and an optional description. It is generally a good idea to add a description for the random character/random word aliases even if you are using a password manager as it can be easy to forget what they were used for.
 
 <div class="my-8">
   <img class="shadow" src="/assets/img/help-generate-alias-modal.jpg" alt="Generate New Alias Modal" title="Generate New Alias Modal">
@@ -55,6 +55,6 @@ These kinds of aliases are useful if you do not wish to include your username in
 
 You can now give this alias out and start receiving forwarded emails for it.
 
-> **Note**: If you generate a UUID/Random Word alias at your own username subdomain or custom domain then it **does not count** towards your UUID/Random Word alias limit
+> **Note**: If you generate a Random Character/Random Word alias at your own username subdomain or custom domain then it **does not count** towards your shared domain alias limit
 
 You can also use the API to generate a new alias, full API documentation can be found here - [https://app.anonaddy.com/docs](https://app.anonaddy.com/docs)
