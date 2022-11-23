@@ -16,7 +16,8 @@ mix.webpackConfig({
     ],
 });
 
-mix.js('source/_assets/js/main.js', 'js')
+mix.js('source/_assets/js/app.js', 'js')
+    .js('source/_assets/js/main.js', 'js')
     .js('source/_assets/js/search.js', 'js').vue()
     .js('source/_assets/js/help-search.js', 'js').vue()
     .sourceMaps()

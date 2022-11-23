@@ -32,7 +32,7 @@
 
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
-        <script defer data-api="/api/event" data-domain="anonaddy.com" src="/js/script.js"></script>
+        <script src="{{ mix('js/app.js', 'assets/build') }}"></script>
     </head>
 
     <body class="{{ $page->isActive('/') ? 'gradient text-white' : 'flex flex-col justify-between min-h-screen bg-white text-grey-800' }} leading-normal font-sans">
