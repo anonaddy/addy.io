@@ -60,7 +60,7 @@ return [
         }
 
         return strlen($cleaned) > $length
-            ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
+            ? preg_replace('/\s+?(\S+)?$/', '', $truncated).'...'
             : $cleaned;
     },
     'isActive' => function ($page, $path) {
@@ -72,5 +72,5 @@ return [
         }
 
         return false;
-    }
+    },
 ];

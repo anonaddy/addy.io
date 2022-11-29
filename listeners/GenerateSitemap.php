@@ -19,7 +19,7 @@ class GenerateSitemap
         '*.asc',
         '/browserconfig.xml',
         '/site.webmanifest',
-        '/robots.txt'
+        '/robots.txt',
     ];
 
     public function handle(Jigsaw $jigsaw)
@@ -27,21 +27,21 @@ class GenerateSitemap
         $baseUrl = $jigsaw->getConfig('baseUrl');
 
         if (! $baseUrl) {
-            echo("\nTo generate a sitemap.xml file, please specify a 'baseUrl' in config.php.\n\n");
+            echo "\nTo generate a sitemap.xml file, please specify a 'baseUrl' in config.php.\n\n";
 
             return;
         }
 
-        $sitemap = new Sitemap($jigsaw->getDestinationPath() . '/sitemap.xml');
+        $sitemap = new Sitemap($jigsaw->getDestinationPath().'/sitemap.xml');
 
         collect($jigsaw->getOutputPaths())
             ->reject(function ($path) {
                 return $this->isExcluded($path);
             })->each(function ($path) use ($baseUrl, $sitemap) {
                 if ($path) {
-                    $sitemap->addItem(rtrim($baseUrl, '/') . $path . '/', time(), Sitemap::DAILY);
+                    $sitemap->addItem(rtrim($baseUrl, '/').$path.'/', time(), Sitemap::DAILY);
                 } else {
-                    $sitemap->addItem(rtrim($baseUrl, '/') . $path, time(), Sitemap::DAILY);
+                    $sitemap->addItem(rtrim($baseUrl, '/').$path, time(), Sitemap::DAILY);
                 }
             });
 

@@ -12,11 +12,11 @@ class GenerateIndex
             return [
                 'title' => $page->title,
                 'categories' => $page->categories,
-                'link' => rightTrimPath($jigsaw->getConfig('baseUrl')) . $page->getPath(),
+                'link' => rightTrimPath($jigsaw->getConfig('baseUrl')).$page->getPath(),
                 'snippet' => $page->getExcerpt(),
             ];
         })->values());
 
-        file_put_contents($jigsaw->getDestinationPath() . '/index.json', json_encode($data));
+        file_put_contents($jigsaw->getDestinationPath().'/index.json', json_encode($data));
     }
 }

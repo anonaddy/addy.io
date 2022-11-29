@@ -1,0 +1,8 @@
+{
+  "exclude": [
+      "vendor"
+  ],
+  "notName": [
+    "*.blade.php"
+]
+}
