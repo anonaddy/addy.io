@@ -224,7 +224,7 @@ width: full
 
 	<div class="container mx-auto px-2 pt-4 pb-12 text-grey-800">
 
-		<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Black Friday Pricing</h1>
+		<h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Pricing</h1>
 		<div class="w-full mb-4">
 			<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 		</div>
@@ -329,7 +329,7 @@ width: full
 					</div>
 				</div>
 				<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-4">
-					<div class="w-full text-5xl font-bold text-center"><span class="text-base text-grey-500 font-normal line-through mr-3">$1</span><span class="text-grey-500 text-2xl font-normal">$</span>0.60 <span class="text-base text-grey-500 font-normal">/ month</span></div>
+					<div class="w-full text-5xl font-bold text-center"><span class="text-grey-500 text-2xl font-normal">$</span>1 <span class="text-base text-grey-500 font-normal">/ month</span></div>
 					<div class="flex items-center justify-center">
 						<a href="https://app.anonaddy.com/register" class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg cursor-pointer">Choose Username</a>
 					</div>
@@ -375,11 +375,11 @@ width: full
 					</div>
 				</div>
 				<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-4">
-                <div class="w-full text-5xl font-bold text-center"><span class="text-base text-grey-500 font-normal line-through mr-3">$3</span><span class="text-grey-500 text-2xl font-normal">$</span>1.80 <span class="text-base text-grey-500 font-normal">/ month</span></div>
+                <div class="w-full text-5xl font-bold text-center"><span class="text-grey-500 text-2xl font-normal">$</span>3 <span class="text-base text-grey-500 font-normal">/ month</span></div>
 					<div class="flex items-center justify-center">
                     <a href="https://app.anonaddy.com/register" class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-3 px-5 shadow-lg cursor-pointer">Choose Username</a>
 					</div>
-					<p class="text-sm text-grey-500 mb-0 w-full text-center">Billed Yearly, <span class="line-through">$4</span> $2.40 Billed Monthly</p>
+					<p class="text-sm text-grey-500 mb-0 w-full text-center">Billed Yearly, $4 Billed Monthly</p>
 				</div>
             </div>
 
