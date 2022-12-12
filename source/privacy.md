@@ -24,7 +24,7 @@ We may collect the following data from you:
 * If you contact us, we may keep a record of that correspondence.
 * For keeping track of authenticated sessions we use a small number of cookies. This site does not provide any third party cookies and makes no effort to track you. You can delete stored cookies from your browser whenever you wish.
 * If you start a subscription we may ask you to provide us with information such as your name and payment information. Your name and card details will not be stored in our database.
-* We use [Plausible](https://plausible.io/), an open-source, lightweight and privacy-friendly service for website analytics. All the site measurement is carried out absolutely anonymously. Cookies are not used and no personal data is collected. There are no persistent identifiers. No cross-site or cross-device tracking either. You can find out more in [Plausible's privacy policy](https://plausible.io/privacy).
+* We use a self-hosted instance of [Umami](https://umami.is/), an open-source, privacy-focused and lightweight option for website analytics. All the site measurement is carried out absolutely anonymously. Cookies are not used and no personal data is collected. There are no persistent identifiers. No cross-site or cross-device tracking either. You can find out more on [Umami's](https://umami.is/) website.
 
 Our site does not store/save any emails that are forwarded or replied to through the service. You can check the source code to see what happens when an email is piped to our application by Postfix.
 
@@ -65,7 +65,7 @@ You have the right to require us to correct any inaccuracies in your data, free 
 
 ## Third party services
 
-The only third party services that we use are [Stripe](https://stripe.com) and [GloBee](https://globee.com) to process payments for subscriptions and also [Plausible](https://plausible.io/) as mentioned above for anonymous analytics. Any payment transactions will be carried out by Stripe and GloBee over encrypted connections. Your card information never touches our server. If you are subscribed to our newsletter then we will also use [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/) to deliver email campaigns.
+The only third party services that we use are [Stripe](https://stripe.com) and [GloBee](https://globee.com) to process payments for subscriptions. Any payment transactions will be carried out by Stripe and GloBee over encrypted connections. Your card information never touches our server. If you are subscribed to our newsletter then we will also use [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/) to deliver email campaigns.
 
 ## Changes To Our Privacy Policy
 
