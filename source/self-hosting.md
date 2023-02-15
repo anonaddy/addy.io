@@ -71,7 +71,7 @@ Add a wildcard A and AAAA (if using IPv6) record too if you want to use all subd
 
 ```
 A * <Your-IPv4-address>
-AAAA * <Your-IPv4-address>
+AAAA * <Your-IPv6-address>
 ```
 
 If you want to just use the example.com domain and not bother with subdomains then you can skip the wildcard MX, A, AAAA records above (you will still need to add MX and A/AAAA for unsubscribe.example.com though to handle deactivating aliases).
