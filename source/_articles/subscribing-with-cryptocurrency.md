@@ -3,7 +3,7 @@ extends: _layouts.article
 ogtype: article
 section: content
 title: Subscribing with cryptocurrency
-date: 2021-04-20
+date: 2023-02-16
 description: This article guides you through the different options you have to subscribe using a cryptocurrency such as Bitcoin, Monero or Ethereum.
 helpCategories: [subscriptions]
 ---
