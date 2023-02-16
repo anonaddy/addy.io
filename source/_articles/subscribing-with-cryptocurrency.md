@@ -12,9 +12,9 @@ This article guides you through the different options you have to subscribe usin
 
 ## How it works
 
-AnonAddy uses [Globee](https://globee.com/) to process cryptocurrency payments.
+AnonAddy uses [NOWPayments](https://nowpayments.io/) to process cryptocurrency payments.
 
-Globee supports the following cryptocurrencies:
+NOWPayments supports many cryptocurrencies including:
 
 - BTC (Bitcoin)
 - XMR (Monero)
@@ -22,8 +22,8 @@ Globee supports the following cryptocurrencies:
 - DOGE (Dogecoin)
 - DCR (Decred)
 - ETH (Ethereum)
-- LNBT (Bitcoin Lightning)
+- XRP (Ripple)
 
-There are some limitations such as a minimum invoice value of $10, so at the moment you can only pay with cryptocurrency for a yearly plan.
+For a full list of supported coins [click here](https://nowpayments.io/supported-coins). There are some limitations such as a minimum invoice value of $10, so at the moment you can only pay with cryptocurrency for a yearly plan.
 
 If you'd prefer for your cryptocurrency payment to be processed manually then please [contact](/contact/) me for further instructions.
