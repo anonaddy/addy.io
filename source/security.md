@@ -31,7 +31,7 @@ At this time it is not possible to enable MTA-STS on username subdomains since t
 
 ### DNSSEC
 
-DNS Secturity Extensions (DNSSEC) is employed, this protects the user from getting bad data from a signed zone by detecting the attack and preventing the user from receiving any tampered data.
+DNS Security Extensions (DNSSEC) is employed, this protects the user from getting bad data from a signed zone by detecting the attack and preventing the user from receiving any tampered data.
 
 DNSSEC adds two important security features to the DNS protocol:
 
