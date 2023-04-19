@@ -22,7 +22,7 @@ You agree not to disclose your password to any third party. You must notify us i
 
 ## Termination
 
-We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever that includes, sending spam emails, sending viruses, repeatedly marking emails from us as spam, abusing or flooding the server by sending bulk email, mass signups for the purpose of discount code/coupon harvesting, competition entries or any other similar activity, disrupting the Service's networks or servers, any activity that aims to deteriorate the Service's email deliverability, including without limitation if you breach the Terms of Service.
+We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever that includes, sending spam emails, sending viruses, repeatedly marking emails from us as spam, abusing or flooding the server by sending bulk email, mass signups for the purpose of discount code/coupon harvesting, competition entries or any other similar activity, using the Service to create a large number of accounts on other websites/services, disrupting the Service's networks or servers, any activity that aims to deteriorate the Service's email deliverability, including without limitation if you breach the Terms of Service.
 
 Accounts registered by bots or any automated methods are not authorised and will be terminated.
 
@@ -34,7 +34,7 @@ Upon termination, your right to use the Service will immediately cease. If you w
 
 ## Subscriptions
 
-Some features of the service are billed on a subscription basis. The subscription fees are billed on a monthly/yearly cycle, and your subscription will automatically renew unless you or AnonAddy cancels it. You may cancel your subscription to the service at any time.
+Some features of the Service are billed on a subscription basis. The subscription fees are billed on a monthly/yearly cycle, and your subscription will automatically renew unless you or AnonAddy cancels it. You may cancel your subscription to the Service at any time.
 
 You agree that you will accept the full responsibility for successfully cancelling your subscription. If you need assistance in cancelling your subscription please simply contact us. You agree to provide us with 2 working days advance notice to attend to your request.
 
@@ -50,7 +50,7 @@ We reserve the right to make changes to subscription fees in the future. You wil
 
 We are the owner or the licensee of all intellectual property rights in our site, and in the material published on it. Those works are protected by copyright laws and treaties around the world. All such rights are reserved.
 
-You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the service, use of the service, or access to the service without the express written permission by the company.
+You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service without the express written permission by the company.
 
 ## Viruses, Hacking And Other Offences
 
@@ -60,7 +60,7 @@ By breaching this provision, you would commit a criminal offence under the Compu
 
 We will not be liable for any loss or damage caused by a distributed denial-of-service attack, viruses or other technologically harmful material that may infect your computer equipment, computer programs, data or other proprietary material due to your use of our site or to your downloading of any material posted on it, or on any website linked to it.
 
-Use of this service for the purpose of any unlawful or prohibited activities is not permitted.
+Use of this Service for the purpose of any unlawful or prohibited activities is not permitted.
 
 ## Limitation Of Liability
 
@@ -70,7 +70,7 @@ We do not accept any responsibility for any loss which may arise from accessing 
 
 Your use of the Service is at your sole risk. The Service is provided on an "as if" and "as available" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
 
-Access to our site is permitted on a temporary basis, and we reserve the right to withdraw or amend the service we provide on our site without notice. We will not be liable if for any reason our site is unavailable at any time or for any period.
+Access to our site is permitted on a temporary basis, and we reserve the right to withdraw or amend the Service we provide on our site without notice. We will not be liable if for any reason our site is unavailable at any time or for any period.
 
 In no event shall the authors or copyright holders be liable for any claim, damages or liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
 
