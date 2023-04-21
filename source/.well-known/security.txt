@@ -1,0 +1,25 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:contact@anonaddy.com
+Expires: 2024-01-01T00:00:00.000Z
+Encryption: https://anonaddy.com/anonaddy-contact-public-key.asc
+Preferred-Languages: en
+Canonical: https://anonaddy.com/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQJJBAEBCAAzFiEEX8r9imfSp4PP9NDjGsbZI+b7TvcFAmRCntcVHGNvbnRhY3RA
+YW5vbmFkZHkuY29tAAoJEBrG2SPm+073m44P/0eZrMOOe4JL03H8AhXI2FMA4aOG
+99UeIDZYKrqu0hgguIpu/cVaOlbsyNPxymEIec1hm0p72hOfNc1E2gep1Y0dW9lY
+R6Ts6lEmLjd3x5iMajHQknh8PgsQn4+VetdUIkpdB2C4WCcxj55aAQjBRSjLRAow
++aEuxA7KFhhoXade3Y6nMwIv5yhOkLz6Qp0EE4/6t4BF076WVsDW+luaV8s7U0OQ
+RR9G9E/WEasVyBbWAD5caZc+9hGfaKBzGRldK8xNIPWaYQcSOsEFnSAyijKx4J12
+NIGaXyc6MS6OGVZeWbGLd7guJfSk5F059WZU+qceCECHPv0b1qGQhauzmxl2TWrA
+M7z/ylCz6HMkzrOFQCHXS2qbjdZ7oroJqvOzMk+uvjjHsjf2g236forGPe7PRW17
+P2gQKEi4j7btYnpve398EU0xntKvWOeOlTtwhWz8UfwlyKvDe4A2h0nXdJxNFrKo
+DtLq/Ju2UrTNSfC0RNO4CE6rF27Es3eWDSAEkO4U4yD3zLwuqjFK/NkQkep1YHrV
+oCWV8QIKDD01H8lhIALJ9Tff6+7B9tc8uzC8qsbeCMxWid9Y8BajX9X6U6mDqrJ2
+3xY2gTiWj1JR/n+W4Ht+myTHcAiQX0sXOA5eWiCUMxwIsyBOTWV54h5C2IZqqAvw
+/ltSzBcntqwUO0US
+=/6LA
+-----END PGP SIGNATURE-----
