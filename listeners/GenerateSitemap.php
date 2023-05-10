@@ -38,7 +38,7 @@ class GenerateSitemap
             ->reject(function ($path) {
                 return $this->isExcluded($path);
             })->each(function ($path) use ($baseUrl, $sitemap) {
-                if ($path) {
+                if ($path && ! Str::endsWith($path, '.txt')) { // Prevent it adding a trailing slash to security.txt
                     $sitemap->addItem(rtrim($baseUrl, '/').$path.'/', time(), Sitemap::DAILY);
                 } else {
                     $sitemap->addItem(rtrim($baseUrl, '/').$path, time(), Sitemap::DAILY);
