@@ -53,7 +53,7 @@ Opportunistic DANE TLS encryption with strong cipher preference is used for all 
 
 Our site also uses security features such as; HSTS (HTTP Strict Transport Security), a strict CSP (Content Security Policy), Subresource Integrity, Expect CT and XSS Protection.
 
-You may use this service to forward emails containing sensitive information such as bank or cryptocurrency information, we do our best to make sure any email is not lost but this cannot be guarenteed.
+You may use this service to forward emails containing sensitive information such as bank or cryptocurrency information, we do our best to make sure any email is not lost but this cannot be guaranteed.
 
 We take all measures reasonably necessary to protect against unauthorised access, use, alteration or destruction of data.
 
