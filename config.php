@@ -3,7 +3,7 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => 'http://localhost:3000/',
+    'baseUrl' => 'http://localhost:8000/',
     'production' => false,
     'siteName' => 'AnonAddy',
     'siteDescription' => 'Create unlimited email aliases for free. Protect your real email from spam by using a different address for each service. Privacy friendly, anonymous replies.',

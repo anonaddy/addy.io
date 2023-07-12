@@ -19,7 +19,7 @@
             <ul>
                 @foreach ($helpCategories as $category)
                     <li class="list-none">
-                        <a href="{{ $category->getUrl() }}/" class="block px-3 py-2  x rounded-sm {{ $page->isActive($category->getPath()) ? 'text-indigo-900 bg-indigo-50' : 'hover:bg-grey-50 hover:bg-grey-50' }}">
+                        <a href="{{ $category->getUrl() }}/" class="block px-3 py-2  x rounded-sm {{ $page->isActive($category->getPath()) ? 'text-indigo-900 bg-indigo-50' : 'hover:bg-grey-50' }}">
                             {{ $category->title }}
                         </a>
                     </li>
