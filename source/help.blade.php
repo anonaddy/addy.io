@@ -32,7 +32,7 @@ width: full
         <b>Shared Domain Alias</b> - A shared domain alias is any alias that has a domain name that is also shared with other users. For example anyone can generate an alias with the @anonaddy.me domain. Aliases with shared domain names must be pre-generated and cannot be created on-the-fly like standard aliases.
     </p>
     <p>
-        <b>UUID Alias</b> - A UUID alias is generated at the parent domain e.g. anonaddy.me and looks something like this - 94960540-f914-42e0-9c50-6faa7a385384@anonaddy.me. UUID stands for universally unique identifier, it is randomly generated string with no inherent logic (this applies to V4). Users who want maximum anonyminity may choose to use this kind of alias as it does not include your username or any other identifying information in the email address.
+        <b>UUID Alias</b> - A UUID alias is generated at the parent domain e.g. anonaddy.me and looks something like this - 94960540-f914-42e0-9c50-6faa7a385384@anonaddy.me. UUID stands for universally unique identifier, it is randomly generated string with no inherent logic (this applies to V4). Users who want maximum anonymity may choose to use this kind of alias as it does not include your username or any other identifying information in the email address.
     </p>
     <p>
         <b>Random Character Alias</b> - A Random Character alias is generated at the parent domain e.g. anonaddy.me and looks something like this - x481n904@anonaddy.me.
