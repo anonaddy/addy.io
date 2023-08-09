@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/addy-io-square.png
+image: https://addy.io/assets/img/addy-io-square.jpg
 section: content
 title: AnonAddy has rebranded as addy.io
 date: 2023-08-09
