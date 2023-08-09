@@ -37,7 +37,7 @@ The reason you have to be logged in is to protect you when you reply to a forwar
 
 ## Option 3: From the browser extension
 
-The extension is available for download on [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/anonaddy/) and [Chrome](https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe). You can click on any alias that is displayed and then click "Deactivate alias".
+The extension is available for download on [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/addy_io/) and [Chrome](https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe). You can click on any alias that is displayed and then click "Deactivate alias".
 
 <div class="flex justify-center my-8">
   <img class="shadow" src="/assets/img/extension-alias-details.png" alt="Deactivate an Alias from te Extension" title="Deactivate an Alias from te Extension">

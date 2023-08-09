@@ -13,7 +13,7 @@ This post gives some more details on the recent launch of the new open-source br
 
 ## Where can I find the extension?
 
-The new extension is [open-source](https://github.com/anonaddy/browser-extension) and is available for download for Firefox [here](https://addons.mozilla.org/en-GB/firefox/addon/anonaddy/) and Chromium based browsers (including Brave) [here](https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe).
+The new extension is [open-source](https://github.com/anonaddy/browser-extension) and is available for download for Firefox [here](https://addons.mozilla.org/en-GB/firefox/addon/addy_io/) and Chromium based browsers (including Brave) [here](https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe).
 
 <div class="flex justify-center">
   <img class="shadow" src="/assets/img/browser-extension.png" alt="Browser extension" title="Browser extension">
