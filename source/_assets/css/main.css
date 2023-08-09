@@ -19,6 +19,10 @@ body {
   background: linear-gradient(90deg, theme('colors.indigo.600') 0%, theme('colors.cyan.600') 100%);
 }
 
+.ml-3\/4 {
+  margin-left: 75%;
+}
+
 a {
   @apply no-underline;
   @apply text-indigo-600;

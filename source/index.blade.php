@@ -559,7 +559,7 @@ width: full
         <div class="isolate mt-20 hidden lg:block">
             <div class="relative -mx-8">
                 <div class="absolute inset-x-4 inset-y-0 -z-10 flex">
-                    <div class="flex w-1/4 px-4" style="margin-left: 75%" aria-hidden="true">
+                    <div class="flex w-1/4 px-4 ml-3/4" aria-hidden="true">
                         <div class="w-full rounded-t-xl border-x border-t border-grey-900/10 bg-grey-400/5"></div>
                     </div>
                 </div>
