@@ -1,15 +1,15 @@
 ---
 extends: _layouts.article
 ogtype: article
-image: https://anonaddy.com/assets/img/help-verify-domain-for-sending.png
+image: https://addy.io/assets/img/help-verify-domain-for-sending.png
 section: content
 title: Adding a custom domain
 date: 2020-03-03
-description: This article guides you through the steps to add a custom domain on AnonAddy. This allows you to receive and send email from your own domain through the service.
+description: This article guides you through the steps to add a custom domain on addy.io. This allows you to receive and send email from your own domain through the service.
 helpCategories: [domains]
 ---
 
-This article guides you through the steps to add a custom domain on AnonAddy. This allows you to receive and send email from your own domain through the service.
+This article guides you through the steps to add a custom domain on addy.io. This allows you to receive and send email from your own domain through the service.
 
 ## Verifying ownership of the domain
 
@@ -41,9 +41,9 @@ A modal will appear after clicking "Check records" that will have some other rec
   <img class="shadow" src="/assets/img/help-verify-domain-for-sending.png" alt="Verify domain for sending" title="Verify domain for sending">
 </div>
 
-The SPF record authorises the AnonAddy server to send email on your behalf. The DMARC record informs cooperating mail servers what they should do with your email message if both SPF and DKIM checks fail.
+The SPF record authorises the addy.io server to send email on your behalf. The DMARC record informs cooperating mail servers what they should do with your email message if both SPF and DKIM checks fail.
 
-The CNAME records point to AnonAddy DKIM (DomainKeys Identified Mail) keys. The reason there are two is so that we can easily rotate keys in the future for security reasons.
+The CNAME records point to addy.io DKIM (DomainKeys Identified Mail) keys. The reason there are two is so that we can easily rotate keys in the future for security reasons.
 
 > **Note**: If you are adding a **subdomain** e.g. mail.example.com please change the host values to the following
 
@@ -61,6 +61,6 @@ If you've added the records but it still isn't verifying please wait a little wh
 
 You can check the records for your domain using [mxtoolbox.com](https://mxtoolbox.com)
 
-Please leave these records in place for the duration that you use the domain on AnonAddy.
+Please leave these records in place for the duration that you use the domain on addy.io.
 
 A daily check is carried out on the domain's records, if you remove any records then the domain will become unverified for sending. You will receive an email notification to let you know if your domain has become unverified for sending and which record has caused it to happen.

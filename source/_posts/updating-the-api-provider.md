@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://anonaddy.com/assets/img/sanctum-api-token.png
+image: https://addy.io/assets/img/sanctum-api-token.png
 section: content
 title: Updating the API provider
 date: 2022-08-01
@@ -13,7 +13,7 @@ This post gives some more details on the API provider update from [Laravel Passp
 
 ## Migrating from Laravel Passport to Laravel Sanctum
 
-When I intially launched the API for AnonAddy, Laravel Passport was the only offically supported option available and it has worked great. Laravel Passport provides a full OAuth2 server implementation which is overkill when AnonAddy only requires the use of personal access tokens.
+When I intially launched the API for addy.io, Laravel Passport was the only offically supported option available and it has worked great. Laravel Passport provides a full OAuth2 server implementation which is overkill when addy.io only requires the use of personal access tokens.
 
 If Laravel Sanctum had been available at the time I would have chosen that solution instead as the implementation is much more lightweight and simpler to install/use.
 
@@ -31,13 +31,13 @@ For the browser extension, go to the settings tab, click "Logout" and then you w
 
 For the AddyManager app click the settings cog in the top right and then click "Logout", you will then be able to enter your new token.
 
-The AnonAddy for Android app will automatically detect your token is invalid so will allow you to enter a new one when opening it.
+The addy.io for Android app will automatically detect your token is invalid so will allow you to enter a new one when opening it.
 
 For the Bitwarden extension simply paste in your new token in the generator tab.
 
 ## What is an API?
 
-API stands for **Application Programming Interface**, it is essentially a way of communicating with a server (in this case the AnonAddy server) by making requests to different URLs (endpoints).
+API stands for **Application Programming Interface**, it is essentially a way of communicating with a server (in this case the addy.io server) by making requests to different URLs (endpoints).
 
 For example, if you were to make a `GET` request to `/api/v1/aliases` you would receive a response containing a list of all of your email aliases.
 
@@ -49,7 +49,7 @@ This enables logged in users to easily consume the same API that is used by othe
 
 ## How do I get started using the API?
 
-First things first, you need to generate a new API personal access token from your [account settings](https://app.anonaddy.com/settings). After choosing a short name and an optional expiry date for the token it will be displayed on the screen.
+First things first, you need to generate a new API personal access token from your [account settings](https://app.addy.io/settings/api). After choosing a short name and an optional expiry date for the token it will be displayed on the screen.
 
 This is the only time the token will ever be displayed, so please make a note of it in a safe place (e.g. password manager)!
 
@@ -57,7 +57,7 @@ If you just want to use this token for the browser extension or mobile apps, the
 
 If you'd like to test out some of the other API endpoints then you can use software such as [Insomnia](https://insomnia.rest/), [Postman](https://www.getpostman.com/) or just plain old curl.
 
-There is a [Postman Collection](https://app.anonaddy.com/docs/collection.json) available for download too (also works with Insomnia)!
+There is a [Postman Collection](https://app.addy.io/docs/collection.json) available for download too (also works with Insomnia)!
 
 <div class="flex justify-center">
   <img class="shadow" src="/assets/img/sanctum-api-token.png" alt="Sanctum API token" title="Sanctum API token">
@@ -65,7 +65,7 @@ There is a [Postman Collection](https://app.anonaddy.com/docs/collection.json) a
 
 ## Where can I find the API documentation?
 
-You can find documentation for the API here - [https://app.anonaddy.com/docs/](https://app.anonaddy.com/docs/)
+You can find documentation for the API here - [https://app.addy.io/docs/](https://app.addy.io/docs/)
 
 The documentation walks you through authentication and lists all available endpoints. Each endpoint includes an example request and example response.
 

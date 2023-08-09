@@ -1,15 +1,15 @@
 ---
 extends: _layouts.article
 ogtype: article
-image: https://anonaddy.com/assets/img/api-access-token.png
+image: https://addy.io/assets/img/api-access-token.png
 section: content
 title: Creating new email aliases
 date: 2020-03-03
-description: This article guides you through the steps to create a new email alias on AnonAddy. There are currently two ways to create new aliases.
+description: This article guides you through the steps to create a new email alias on addy.io. There are currently two ways to create new aliases.
 helpCategories: [aliases]
 ---
 
-This article guides you through the steps to create a new email alias on AnonAddy. There are currently two ways to create new aliases.
+This article guides you through the steps to create a new email alias on addy.io. There are currently two ways to create new aliases.
 
 ## Option 1: Create aliases automatically on the fly
 
@@ -57,4 +57,4 @@ You can now give this alias out and start receiving forwarded emails for it.
 
 > **Note**: If you generate a Random Character/Random Word alias at your own username subdomain or custom domain then it **does not count** towards your shared domain alias limit
 
-You can also use the API to generate a new alias, full API documentation can be found here - [https://app.anonaddy.com/docs](https://app.anonaddy.com/docs)
+You can also use the API to generate a new alias, full API documentation can be found here - [https://app.addy.io/docs](https://app.addy.io/docs)

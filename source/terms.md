@@ -34,7 +34,7 @@ Upon termination, your right to use the Service will immediately cease. If you w
 
 ## Subscriptions
 
-Some features of the Service are billed on a subscription basis. The subscription fees are billed on a monthly/yearly cycle, and your subscription will automatically renew unless you or AnonAddy cancels it. You may cancel your subscription to the Service at any time.
+Some features of the Service are billed on a subscription basis. The subscription fees are billed on a monthly/yearly cycle, and your subscription will automatically renew unless you or addy.io cancels it. You may cancel your subscription to the Service at any time.
 
 You agree that you will accept the full responsibility for successfully cancelling your subscription. If you need assistance in cancelling your subscription please simply contact us. You agree to provide us with 2 working days advance notice to attend to your request.
 
@@ -86,4 +86,4 @@ We may revise these terms of use at any time by amending this page. You are expe
 
 ## Contact
 
-Questions, comments and requests regarding these terms of service are welcomed and should be directed to [contact@anonaddy.com](mailto:contact@anonaddy.com) ([GPG Key](/anonaddy-contact-public-key.asc))
+Questions, comments and requests regarding these terms of service are welcomed and should be directed to [contact@help.addy.io](mailto:contact@help.addy.io) ([GPG Key](/contact-public-key.asc))

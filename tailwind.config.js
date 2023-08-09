@@ -1,11 +1,8 @@
 module.exports = {
-  content: [
-    'source/**/*.html',
-    'source/**/*.md',
-    'source/**/*.js',
-    'source/**/*.php',
-    'source/**/*.vue',
-  ],
+  content: require('fast-glob').sync([
+    'source/**/*.{blade.php,blade.md,md,html,vue}',
+    '!source/**/_tmp/*' // exclude temporary files
+  ],{ dot: true }),
     safelist: [
       {
       pattern: /(language|hljs)/,

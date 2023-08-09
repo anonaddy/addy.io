@@ -1,11 +1,11 @@
 ---
-title: "How to self-host AnonAddy"
-description: This page contains instructions on how to self-host AnonAddy on your own server. You will need to be comfortable working with the command line.
+title: "How to self-host addy.io (AnonAddy)"
+description: This page contains instructions on how to self-host addy.io (AnonAddy) on your own server. You will need to be comfortable working with the command line.
 extends: _layouts.master
 section: body
 ---
 
-<h1 class="w-full text-center">How to self-host AnonAddy</h1>
+<h1 class="w-full text-center">How to self-host addy.io (AnonAddy)</h1>
 <div class="w-full mt-4 mb-12">
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>

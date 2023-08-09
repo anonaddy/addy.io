@@ -2,7 +2,7 @@
 title: "Donate"
 extends: _layouts.master
 section: body
-description: If you find AnonAddy useful and would like to support me, any contribution is greatly appreciated.
+description: If you find addy.io useful and would like to support me, any contribution is greatly appreciated.
 ---
 
 <h1 class="w-full text-center">Donate</h1>
@@ -10,15 +10,14 @@ description: If you find AnonAddy useful and would like to support me, any contr
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-If you find AnonAddy useful and would like to support me, any contribution is greatly appreciated.
+If you find addy.io useful and would like to support me, any contribution is greatly appreciated.
 
 ## Cryptocurrencies
 
-- **Bitcoin** (BTC): <span class="break-words">37WETaWskeAEWqt3egYpgD3UZnmwKh9e6R</span>
+- **Bitcoin** (BTC): <span class="break-words">3JbGY9SpUXzaRypwzmsQFUkpgGsNxGDLT8</span>
 - **Monero** (XMR): <span class="break-words">84qZgh4rLS16PMuw6PBPbsBQPfzQSLpaJ9DENzXVTwgJPjsAPNFxvf5BpJF9Y2ayp47GFVWvDYnmNJ9dYyT1aAB9BvbVJbk</span>
-- **Ethereum** (ETH): <span class="break-words">0x2c5823AACC532075037693Deab0D3dD4893231E6</span>
-- **Decred** (DCR): <span class="break-words">DsTw5XRSPYK2xYrV8tdqGCMFw1aYiMEdv2Q</span>
-- **Litecoin** (LTC): <span class="break-words">MWcHoBzNHgR7rVXF21YYkzCf14Y5rieVDE</span>
+- **Ethereum** (ETH): <span class="break-words">0xe7e4c7d7b8cfcc6b716e4a9be742a18ac2dc5172</span>
+- **Litecoin** (LTC): <span class="break-words">MArmVxUi4nPLBexGEErH54Na5nfuT5rAgb</span>
 
 ## GitHub Sponsors
 

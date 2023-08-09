@@ -1,21 +1,21 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://anonaddy.com/assets/img/bitwarden-generator.png
+image: https://addy.io/assets/img/bitwarden-generator.png
 section: content
-title: Bitwarden adds AnonAddy integration
+title: Bitwarden adds addy.io integration
 date: 2022-06-01
-description: Bitwarden integrates AnonAddy allowing you to create aliases with ease
+description: Bitwarden integrates addy.io allowing you to create aliases with ease
 categories: [updates]
 ---
 
-Bitwarden integrates AnonAddy allowing you to create aliases with ease.
+Bitwarden integrates addy.io allowing you to create aliases with ease.
 
-## Bitwarden + AnonAddy
+## Bitwarden + addy.io (AnonAddy)
 
-I'm extremely excited to announce that [Bitwarden](https://bitwarden.com/) has added AnonAddy integration with their latest update. It is now available within the Bitwarden desktop application, browser extensions, and Bitwarden web vault. Mobile application support is planned in a future release.
+I'm extremely excited to announce that [Bitwarden](https://bitwarden.com/) has added addy.io integration with their latest update. It is now available within the Bitwarden desktop application, browser extensions, and Bitwarden web vault. Mobile application support is planned in a future release.
 
-An email alias service like AnonAddy helps protect users’ privacy online, which makes us highly complementary to a password management service like Bitwarden.
+An email alias service like addy.io helps protect users’ privacy online, which makes us highly complementary to a password management service like Bitwarden.
 
 ## What is Bitwarden?
 
@@ -25,9 +25,9 @@ Password managers secure and protect your online data in the face of rising cybe
 
 If you don't have a Bitwarden account you can [create one](https://vault.bitwarden.com/#/register?layout=default) for free.
 
-## What will this mean for AnonAddy users?
+## What will this mean for addy.io users?
 
-If you use Bitwarden and AnonAddy it will mean that you will now be able to create email aliases for AnonAddy directly from the [Bitwarden Generator](https://bitwarden.com/help/generator/#generate-a-username).
+If you use Bitwarden and addy.io it will mean that you will now be able to create email aliases for addy.io directly from the [Bitwarden Generator](https://bitwarden.com/help/generator/#generate-a-username).
 
 This will make it extremely quick and convenient to create and save alias details directly in Bitwarden for each account.
 

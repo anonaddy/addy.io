@@ -12,7 +12,7 @@ This article guides you through the different options you have to subscribe usin
 
 ## How it works
 
-AnonAddy uses [NOWPayments](https://nowpayments.io/) to process cryptocurrency payments.
+addy.io uses [NOWPayments](https://nowpayments.io/) to process cryptocurrency payments.
 
 NOWPayments supports many cryptocurrencies including:
 

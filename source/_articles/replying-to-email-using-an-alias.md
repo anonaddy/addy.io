@@ -1,15 +1,15 @@
 ---
 extends: _layouts.article
 ogtype: article
-image: https://anonaddy.com/assets/img/send-from-alias-construction.jpg
+image: https://addy.io/assets/img/send-from-alias-construction.jpg
 section: content
 title: Replying to email using an alias
 date: 2020-10-13
-description: This article guides you through the steps to reply to an email forwarded to you on AnonAddy. This allows you to reply anonymously without revealing your real email address.
+description: This article guides you through the steps to reply to an email forwarded to you on addy.io. This allows you to reply anonymously without revealing your real email address.
 helpCategories: [aliases]
 ---
 
-This article guides you through the steps to reply to an email forwarded to you on AnonAddy. This allows you to reply anonymously without revealing your real email address.
+This article guides you through the steps to reply to an email forwarded to you on addy.io. This allows you to reply anonymously without revealing your real email address.
 
 ## An example of how it works
 

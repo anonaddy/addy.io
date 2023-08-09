@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://anonaddy.com/assets/img/extension-v2.png
+image: https://addy.io/assets/img/extension-v2.png
 section: content
 title: A new and improved browser extension
 date: 2021-06-17
@@ -13,7 +13,7 @@ This post provides more details on the updated browser extension and the new inc
 
 ## The updated browser extension
 
-For a long time I've been meaning to update the browser extension so that it included more features than simply the ability to create a new alias. I recently made time to give it a big update that will hopefully come as a huge improvement to AnonAddy users.
+For a long time I've been meaning to update the browser extension so that it included more features than simply the ability to create a new alias. I recently made time to give it a big update that will hopefully come as a huge improvement to addy.io users.
 
 Below is a full list of all the new features in v2 of the browser extension:
 
@@ -33,7 +33,7 @@ You can find the extension on [Firefox](https://addons.mozilla.org/en-GB/firefox
   <img class="shadow" src="/assets/img/browser-extension-v2.png" alt="Browser Extension v2" title="Browser Extension v2">
 </div>
 
-A couple of changes were made to the [GET aliases](https://app.anonaddy.com/docs/#get-all-aliases) and [GET recipients](https://app.anonaddy.com/docs/#get-all-recipients) API endpoints, adding query parameters to filter the response for the extension.
+A couple of changes were made to the [GET aliases](https://app.addy.io/docs/#get-all-aliases) and [GET recipients](https://app.addy.io/docs/#get-all-recipients) API endpoints, adding query parameters to filter the response for the extension.
 
 Down the line I plan to add more features to the browser extension such as:
 

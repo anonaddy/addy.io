@@ -1,10 +1,9 @@
-import hljs from 'highlight.js/lib/core'
-import 'highlight.js/styles/base16/dracula.css'
+const menu = document.getElementById('mobile-menu')
+const menuButtons = [...document.getElementsByClassName('mobile-menu-button')]
 
-// Syntax highlighting
-hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'))
-hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'))
+const mobileMenu = () => {
+  menu.classList.toggle('hidden')
+}
 
-document.querySelectorAll('pre code').forEach((element) => {
-  hljs.highlightElement(element)
-})
+menuButtons.forEach((button) => button.addEventListener('click', mobileMenu))
+document.getElementById('pricing-menu-item').addEventListener('click', mobileMenu)

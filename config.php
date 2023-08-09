@@ -3,11 +3,12 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => 'http://localhost:8000/',
+    'baseUrl' => 'http://localhost:3000/',
+    'appUrl' => 'https://app.addy.io',
     'production' => false,
-    'siteName' => 'AnonAddy',
+    'siteName' => 'addy.io',
     'siteDescription' => 'Create unlimited email aliases for free. Protect your real email from spam by using a different address for each service. Privacy friendly, anonymous replies.',
-    'siteAuthor' => 'AnonAddy',
+    'siteAuthor' => 'addy.io',
 
     // collections
     'collections' => [
@@ -39,6 +40,25 @@ return [
         ],
         'newsletter' => [
             'path' => 'newsletters/{filename}',
+        ],
+    ],
+
+    'menuItems' => [
+        [
+            'title' => 'Help',
+            'href' => '/help/',
+        ],
+        [
+            'title' => 'FAQ',
+            'href' => '/faq/',
+        ],
+        [
+            'title' => 'Blog',
+            'href' => '/blog/',
+        ],
+        [
+            'title' => 'Pricing',
+            'href' => '/#pricing',
         ],
     ],
 

@@ -12,7 +12,7 @@ This post will give a few more details regarding the server migration this morni
 
 ## Why the new server?
 
-Since I started working on AnonAddy I've learnt a great deal more about Postfix and mail servers than I knew at the beginning. I've been testing improved configuration in the background for a few weeks now and decided that the best way to make the change would be to start from scratch and provision a new server.
+Since I started working on addy.io I've learnt a great deal more about Postfix and mail servers than I knew at the beginning. I've been testing improved configuration in the background for a few weeks now and decided that the best way to make the change would be to start from scratch and provision a new server.
 
 The old server was with Vultr and was located in the United Kingdom which is not renowned for having great privacy. Vultr also does not (at the time of writing this) support TLSA records, which meant I could not enable DANE for the mail server unless I used a third party DNS provider.
 
@@ -24,7 +24,7 @@ Their servers are located in Amsterdam, Netherlands and run entirely on Dutch wi
 
 ## The launch of the Pro plan
 
-A few users had voiced their concerns about the longevity of the service and asked how I was able to keep it running for free. The Pro plan will be how this service covers its operating costs, you can find details about pricing and features on the [home page](https://anonaddy.com) of this site.
+A few users had voiced their concerns about the longevity of the service and asked how I was able to keep it running for free. The Pro plan will be how this service covers its operating costs, you can find details about pricing and features on the [home page](https://addy.io) of this site.
 
 I started the open beta to try to iron out any existing bugs and to make the service as stable as I could before officially launching.
 

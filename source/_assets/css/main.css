@@ -114,10 +114,10 @@ hr {
   @apply rounded-full;
 }
 
-li {
+/* li {
   @apply list-inside;
   @apply list-disc;
-}
+} */
 
 li ul,
 li ol {

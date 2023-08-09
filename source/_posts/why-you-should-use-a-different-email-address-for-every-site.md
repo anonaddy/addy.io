@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://anonaddy.com/assets/img/haveibeenpwned.jpg
+image: https://addy.io/assets/img/haveibeenpwned.jpg
 section: content
 title: Why you should use a different email address for every site
 date: 2019-10-07
@@ -75,7 +75,7 @@ It does this by essentially "shielding" your real email address from the outside
 
 This means if your email alias is sold off or involved in a data breach and suddenly starts receiving spam, you can easily turn off or remove the alias in question and the spam will come to a stop.
 
-With AnonAddy, when an alias is deactivated (turned off), all emails sent to it will be silently discarded by the system. The spammer will not realise that the emails haven't reached you. This will also increment the "blocked email counter" for that alias.
+With addy.io, when an alias is deactivated (turned off), all emails sent to it will be silently discarded by the system. The spammer will not realise that the emails haven't reached you. This will also increment the "blocked email counter" for that alias.
 
 When an alias is deleted, any further emails sent to it will bounce back to the sender with the error message:
 
@@ -101,17 +101,17 @@ Using email aliases can be a great way to protect your identity online. Dependin
 
 This can help reduce the chance of them cross-referencing your accounts in the event of a data breach.
 
-If you are using aliases at a subdomain that is unique to you like with 33mail or AnonAddy then I would recommend choosing a username that is not linked to you in any way and that you have not used elsewhere online.
+If you are using aliases at a subdomain that is unique to you like with 33mail or addy.io then I would recommend choosing a username that is not linked to you in any way and that you have not used elsewhere online.
 
 You will then be able to create aliases on the fly e.g. alias@username.anonaddy.com (or .me).
 
 Now some users might not like the fact that it is easy for someone looking at these aliases to be able to link ownership of them together as they all sit at the same subdomain.
 
-AnonAddy also lets you add additional usernames to your account so you can compartmentalise you aliases. This would allow you to have different usernames for work emails, personal emails, etc.
+addy.io also lets you add additional usernames to your account so you can compartmentalise you aliases. This would allow you to have different usernames for work emails, personal emails, etc.
 
 If you would like maximum anonymity, you should consider using a long random local part for your alias and also using a domain name that is shared with other users, allowing you blend into the crowd.
 
-With AnonAddy you can generate UUID (universally unique identifier) aliases that look something like this:
+With addy.io you can generate UUID (universally unique identifier) aliases that look something like this:
 
 **94960540-f914-42e0-9c50-6faa7a385384@anonaddy.me**
 
@@ -123,7 +123,7 @@ Having an email address similar to that shown in the above example makes it impo
 
 The shared domain is beneficial because many other users will have aliases at anonaddy.me which helps to protect your identity.
 
-If you use UUID aliases it is always a good idea to add a short description (a feature that is included in AnonAddy) and save it in your password manager so that you do not forget what you used it for.
+If you use UUID aliases it is always a good idea to add a short description (a feature that is included in addy.io) and save it in your password manager so that you do not forget what you used it for.
 
 ## 4. Quickly and easily update where emails are forwarded
 
@@ -169,15 +169,15 @@ Well, since you've been using a different email for each service, if you receive
 
 Now this feature obviously depends on what service you are using to forward your emails.
 
-With AnonAddy, you can generate a GPG/OpenGPG key pair (or use an existing pair) for your email recipient e.g. you@example.com. You can then add the **public key** to this recipient and enable encryption.
+With addy.io, you can generate a GPG/OpenGPG key pair (or use an existing pair) for your email recipient e.g. you@example.com. You can then add the **public key** to this recipient and enable encryption.
 
 <div class="flex justify-center mb-4">
   <img class="shadow" src="/assets/img/add-public-key.jpg" alt="Add Public Key" title="Add Public Key">
 </div>
 
-Once you have done this, all emails that are forwarded to you@example.com will be encrypted by AnonAddy using your public key.
+Once you have done this, all emails that are forwarded to you@example.com will be encrypted by addy.io using your public key.
 
-They are also signed by the private key for "mailer@anonaddy.me". By adding the [public key](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695) to your keyring, you can verify the email has indeed come from AnonAddy.
+They are also signed by the private key for "mailer@anonaddy.me". By adding the [public key](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695) to your keyring, you can verify the email has indeed come from addy.io.
 
 This is great if you are still using an email provider such as Gmail which has been [known to
 snoop](https://www.bbc.com/news/technology-44699263) on users' inboxes.
@@ -197,7 +197,7 @@ There are of course some potential downsides to using email aliases, which we wi
 
 One of those is the added layer of confusion they might add. If you are not using a password manager to save and keep track of all your different aliases, it could be possible to forget which one you have used to sign up for a particular service, which could leave you unable to login.
 
-If you are using a shared domain, another potential downside could be that certain sites and services may start blocking users from signing up with any email address at these domains. Unfortunately there isn't really a solution to this; however, as AnonAddy allows users to add their own domain names, the problem can be easily avoided. This also protects users from a potential unexpected shutdown of the service you are using. By simply changing your MX records to another email provider, you can continue to receive emails as normal.
+If you are using a shared domain, another potential downside could be that certain sites and services may start blocking users from signing up with any email address at these domains. Unfortunately there isn't really a solution to this; however, as addy.io allows users to add their own domain names, the problem can be easily avoided. This also protects users from a potential unexpected shutdown of the service you are using. By simply changing your MX records to another email provider, you can continue to receive emails as normal.
 
 Whilst there are a couple of potential downsides, the benefits of using an email forwarding service are far greater.
 

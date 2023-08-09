@@ -1,4 +1,4 @@
-If you believe you've found a security issue in the AnonAddy product or service, I encourage you to
+If you believe you've found a security issue in the addy.io product or service, I encourage you to
 notify me. I welcome working with you to resolve the issue promptly. Thanks in advance!
 
 # Disclosure Policy
@@ -15,11 +15,11 @@ notify me. I welcome working with you to resolve the issue promptly. Thanks in a
 
 # Reporting a Vulnerability
 
-To report a vulnerability please send an email to contact@anonaddy.com, you can use the PGP key above if you wish to encrypt it.
+To report a vulnerability please send an email to contact@help.addy.io, you can use the PGP key above if you wish to encrypt it.
 
 # In-scope
 
-- Security issues in any current release of AnonAddy. This includes the web application, browser extension,
+- Security issues in any current release of addy.io (AnonAddy). This includes the web application, browser extension,
   and landing page. Source code is available at https://github.com/anonaddy.
 
 # Exclusions
@@ -42,4 +42,4 @@ While researching, I'd like to ask you to refrain from:
 - Social engineering (including phishing) of AnonAddy emails
 - Any physical attempts against AnonAddy property or data centers
 
-Thank you for helping keep AnonAddy and its users safe!
+Thank you for helping keep addy.io (AnonAddy) and its users safe!

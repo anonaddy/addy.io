@@ -12,9 +12,9 @@ This article describes how voucher codes work and how to go about purchasing or 
 
 ## How do they work?
 
-A voucher code on AnonAddy is simply a code that can be purchased and redeemed at a future date in order to upgrade (or extend) your account's subscription.
+A voucher code on addy.io is simply a code that can be purchased and redeemed at a future date in order to upgrade (or extend) your account's subscription.
 
-To purchase a voucher code visit the [subscription](https://app.anonaddy.com/settings/subscription) page and scroll to the "voucher Codes" section.
+To purchase a voucher code visit the [subscription](https://app.addy.io/settings/subscription) page and scroll to the "voucher Codes" section.
 
 Here you can select a quantity and plan for your voucher codes, payment is made by card and it handled by Stripe.
 

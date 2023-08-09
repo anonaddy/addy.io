@@ -1,15 +1,15 @@
 ---
 extends: _layouts.article
 ogtype: article
-image: https://anonaddy.com/assets/img/help-add-recipient.png
+image: https://addy.io/assets/img/help-add-recipient.png
 section: content
 title: Adding a recipient
 date: 2020-03-03
-description: This article guides you through the steps to add a new email recipient on AnonAddy. This is a real email address where emails can be forwarded to.
+description: This article guides you through the steps to add a new email recipient on addy.io. This is a real email address where emails can be forwarded to.
 helpCategories: [recipients]
 ---
 
-This article guides you through the steps to add a new email recipient on AnonAddy. This is a real email address where emails can be forwarded to.
+This article guides you through the steps to add a new email recipient on addy.io. This is a real email address where emails can be forwarded to.
 
 ## Choosing an email for the recipient
 

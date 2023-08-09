@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://anonaddy.com/assets/img/browser-extension.png
+image: https://addy.io/assets/img/browser-extension.png
 section: content
 title: The new browser extension for Firefox and Chrome
 date: 2019-10-14
@@ -19,9 +19,9 @@ The new extension is [open-source](https://github.com/anonaddy/browser-extension
   <img class="shadow" src="/assets/img/browser-extension.png" alt="Browser extension" title="Browser extension">
 </div>
 
-## Why does AnonAddy need a browser extension?
+## Why does addy.io need a browser extension?
 
-When using AnonAddy you can create standard email aliases on the fly at your own unique username subdomain e.g *@johndoe.anonaddy.com (or .me). However, many users prefer to use the UUID aliases that do not include any username information or link to ownership. These types of aliases cannot be created on the fly and must be **generated beforehand**.
+When using addy.io you can create standard email aliases on the fly at your own unique username subdomain e.g *@johndoe.anonaddy.com (or .me). However, many users prefer to use the UUID aliases that do not include any username information or link to ownership. These types of aliases cannot be created on the fly and must be **generated beforehand**.
 
 I initially experimented with the idea of using a bookmarklet with a simple link to allow users to generate the aliases, however I quickly ran into CORS (Cross-origin resource sharing) issues and realised this was not going to be possible.
 
@@ -37,7 +37,7 @@ In the future I'd like to add other features such as the ability to search, view
 
 ## How do I generate an API access token?
 
-To generate an access token you first need to [register](https://app.anonaddy.com/register) an account with AnonAddy. Next head to the [settings](https://app.anonaddy.com/settings) page and scroll down to the bottom.
+To generate an access token you first need to [register](https://app.addy.io/register) an account with addy.io. Next head to the [settings](https://app.addy.io/settings/api) page and scroll down to the bottom.
 
 Click the "Generate New Token" button and enter a short name for the token e.g. "Firefox". Once generated, the token will be displayed. This is the only time the token will ever be displayed, so please make a note of it in a safe place (e.g. password manager)!
 

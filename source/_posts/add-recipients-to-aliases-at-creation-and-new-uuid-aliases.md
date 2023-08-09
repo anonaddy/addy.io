@@ -4,7 +4,7 @@ ogtype: article
 section: content
 title: Add recipients to aliases at creation and new UUID aliases
 date: 2019-08-01
-description: Some more updates for AnonAddy, you can now add recipients to aliases on the fly as they are created. You can also create UUID aliases to prevent others linking the ownership of aliases together.
+description: Some more updates for addy.io, you can now add recipients to aliases on the fly as they are created. You can also create UUID aliases to prevent others linking the ownership of aliases together.
 categories: [updates]
 ---
 

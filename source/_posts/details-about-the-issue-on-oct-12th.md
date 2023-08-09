@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://anonaddy.com/assets/img/500-server-error.png
+image: https://addy.io/assets/img/500-server-error.png
 section: content
 title: Details about the issue on Oct 12th
 date: 2021-10-13
@@ -17,7 +17,7 @@ At around 9:40 GMT an issue occurred with the DNS resolver on the main mail serv
 
 ## What was affected?
 
-The main mail server was affected which also hosts the web application (app.anonaddy.com) and this is why users were not able to login or use the API during this time.
+The main mail server was affected which also hosts the web application (app.addy.io) and this is why users were not able to login or use the API during this time.
 
 The database server and backup mail server were not affected. The backup mail server continued to deliver messages as normal.
 
@@ -33,7 +33,7 @@ As such, emails will have been delayed but should still have been delivered as n
 
 ## Why didn't the status page reflect the error?
 
-The uptime monitor was still able to reach the web application and receive a 200 OK response even though a 500 error page was being displayed by Laravel (screenshot below). This meant it did not show that there was any problem at [status.anonaddy.com](https://status.anonaddy.com/).
+The uptime monitor was still able to reach the web application and receive a 200 OK response even though a 500 error page was being displayed by Laravel (screenshot below). This meant it did not show that there was any problem at [status.addy.io](https://status.addy.io/).
 
 <div class="flex justify-center mb-4">
   <img class="shadow" src="/assets/img/500-server-error.png" alt="500 server error" title="500 server error">
@@ -41,7 +41,7 @@ The uptime monitor was still able to reach the web application and receive a 200
 
 I have now updated the settings for the uptime monitor to ensure the status page accurately reflects the real status of the web application.
 
-I am still investigating exactly what triggered this issue and working to implement measures to ensure it won't happen again. As always I will keep you updated with any changes and improvements made to AnonAddy and apologise for any inconvenience caused by this.
+I am still investigating exactly what triggered this issue and working to implement measures to ensure it won't happen again. As always I will keep you updated with any changes and improvements made to addy.io and apologise for any inconvenience caused by this.
 
 ## Feedback and suggestions
 

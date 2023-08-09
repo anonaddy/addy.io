@@ -4,7 +4,7 @@ ogtype: article
 section: content
 title: Starting the open beta
 date: 2019-07-17
-description: Starting the open beta for AnonAddy, testing out the anonymous email forwarder. The introduction of GPG/OpenPGP encryption for all forwarded emails.
+description: Starting the open beta for addy.io, testing out the anonymous email forwarder. The introduction of GPG/OpenPGP encryption for all forwarded emails.
 categories: [updates]
 ---
 
@@ -38,7 +38,7 @@ Then all forwarded emails will have the same generic subject line.
 
 If you set a new subject to replace the original then the original will be added to the banner information inside the email body, for example:
 
-This email was sent to alias@johndoe.anonaddy.com from sender@example.com with subject "This is the original email subject" and has been forwarded by AnonAddy.
+This email was sent to alias@johndoe.anonaddy.com from sender@example.com with subject "This is the original email subject" and has been forwarded by addy.io.
 
 ## Multiple alias domains
 

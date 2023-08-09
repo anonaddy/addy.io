@@ -2,7 +2,7 @@
 pagination:
     collection: helpCategories
 title: "Help Centre"
-description: The list of all help articles for AnonAddy. You'll find information about using aliases, adding recipients and much more.
+description: The list of all help articles for addy.io. You'll find information about using aliases, adding recipients and much more.
 width: full
 ---
 
@@ -23,10 +23,10 @@ width: full
         Terminology
     </h2>
     <p>
-        <b>Aliases</b> - Aliases or email aliases are email addresses that are associated with another destination email address. They are simply forwarding email addresses, in the case of AnonAddy all aliases created forward emails to your real recipient email addresses.
+        <b>Aliases</b> - Aliases or email aliases are email addresses that are associated with another destination email address. They are simply forwarding email addresses, in the case of addy.io all aliases created forward emails to your real recipient email addresses.
     </p>
     <p>
-        <b>Standard Alias</b> - A standard alias on AnonAddy is any alias that is created automatically when it receives its first email. If you signed up with a username of johndoe and gave out the following alias - hello@johndoe.anonaddy.com then this would be a standard alias.
+        <b>Standard Alias</b> - A standard alias on addy.io is any alias that is created automatically when it receives its first email. If you signed up with a username of johndoe and gave out the following alias - hello@johndoe.anonaddy.com then this would be a standard alias.
     </p>
     <p>
         <b>Shared Domain Alias</b> - A shared domain alias is any alias that has a domain name that is also shared with other users. For example anyone can generate an alias with the @anonaddy.me domain. Aliases with shared domain names must be pre-generated and cannot be created on-the-fly like standard aliases.
@@ -48,27 +48,27 @@ width: full
     </p>
     <p>
         <b>Forgotten Alias</b> - When an alias is forgotten it is completely disassociated from your account.
-        <p>
+    <p>
         - If the alias is a shared domain alias (e.g. @anonaddy.me) then it can never be restored or used again. Once a shared domain alias is forgotten, it will reject any emails sent to it with the same message as above.
-        </p>
-        <p>
+    </p>
+    <p>
         - If the alias is a standard alias then it can be created again in the future since it will be as if it never existed in the database. Once a standard alias is forgotten, if someone sends an email to it and you have catch-all enabled then it will be created automatically again. If you would like the alias to reject any messages sent to it then you should delete it or disable catch-all for that domain.
-        </p>
+    </p>
     </p>
     <p>
         <b>Recipients</b> - Your recipient email addresses are your real email addresses where aliases are forwarded to. You can set a default recipient for your account in your settings, this is where all aliases will forward emails if they have no other recipients attached. You can also set a default recipient for each custom domain and additional username.
     </p>
     <p>
-        <b>Domains</b> - Domains or custom domains can be added to your account and used to create aliases. You need to own/control a domain name to be able to add it to AnonAddy. You can purchase domain names from registrars such as namesilo.com, namecheap.com or gandi.net.
+        <b>Domains</b> - Domains or custom domains can be added to your account and used to create aliases. You need to own/control a domain name to be able to add it to addy.io. You can purchase domain names from registrars such as namesilo.com, namecheap.com or gandi.net.
     </p>
     <p>
-        <b>Usernames</b> - On AnonAddy the term username can either reference the username that you signed up with or an additional username that you are able to add to compartmentalise your aliases. Usernames and additional usernames are unique across AnonAddy, they cannot be greater than 20 characters and can only contain letters and numbers.
+        <b>Usernames</b> - On addy.io the term username can either reference the username that you signed up with or an additional username that you are able to add to compartmentalise your aliases. Usernames and additional usernames are unique across addy.io, they cannot be greater than 20 characters and can only contain letters and numbers.
     </p>
     <p>
-        <b>Bandwidth</b> - This is the amount of data that can be transmitted in a fixed amount of time. On AnonAddy bandwidth is incremented each time an email is forwarded or a reply is sent (this is the data). Every calendar month (e.g. January, February etc.) your bandwidth is reset to 0. When an alias is deactivated or deleted emails sent to it do not count towards your bandwidth.
+        <b>Bandwidth</b> - This is the amount of data that can be transmitted in a fixed amount of time. On addy.io bandwidth is incremented each time an email is forwarded or a reply is sent (this is the data). Every calendar month (e.g. January, February etc.) your bandwidth is reset to 0. When an alias is deactivated or deleted emails sent to it do not count towards your bandwidth.
     </p>
     <p>
-        <b>GPG/OpenPGP Key</b> - PGP (Pretty Good Privacy) is a public-key encryption program that has become the most popular standard for email encryption. You can add a public key to each recipient on AnonAddy. This public key is then used to encrypt all emails forwarded to that recipient. Only you will be able to decrypt these emails using the corresponding private key.
+        <b>GPG/OpenPGP Key</b> - PGP (Pretty Good Privacy) is a public-key encryption program that has become the most popular standard for email encryption. You can add a public key to each recipient on addy.io. This public key is then used to encrypt all emails forwarded to that recipient. Only you will be able to decrypt these emails using the corresponding private key.
     </p>
     <p>
         <b>Fingerprint</b> - A PGP fingerprint is a shorter version of a public key. It is used as an easy way to identify public keys and veryify that they are correct.

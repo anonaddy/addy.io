@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://anonaddy.com/assets/img/domains-catch-all.jpg
+image: https://addy.io/assets/img/domains-catch-all.jpg
 section: content
 title: Enable or disable catch-all for usernames and domains
 date: 2020-10-09
@@ -49,7 +49,7 @@ The **local part** of an email address is anything before the `@` symbol.
 
 To reflect the above changes, the browser extensions have also been updated to allow you to enter your own custom local part when creating aliases.
 
-A couple of other user requested additions have also been made. For those of you who are self-hosting, you can now change the API instance to point to your own AnonAddy location. To do so you will need to logout of the extension and then click "Change Instance" in the bottom right.
+A couple of other user requested additions have also been made. For those of you who are self-hosting, you can now change the API instance to point to your own addy.io location. To do so you will need to logout of the extension and then click "Change Instance" in the bottom right.
 
 The extension will also now display the alias that was last generated so that you can easily copy it again.
 

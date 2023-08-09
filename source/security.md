@@ -1,6 +1,6 @@
 ---
 title: "Security"
-description: This page contains security details about AnonAddy. Measures are taken to keep your data safe and secure such as HSTS, encryption of sensitive details in the database and strong cipher suite preference.
+description: This page contains security details about addy.io. Measures are taken to keep your data safe and secure such as HSTS, encryption of sensitive details in the database and strong cipher suite preference.
 extends: _layouts.master
 section: body
 ---
@@ -25,7 +25,7 @@ DNS-based Authentification of Named Entities (DANE) helps protect against MiTM (
 
 SMTP MTA Strict Transport Security (MTA-STS) is used on all shared domains, this is similar to DANE in that it is designed to avoid (Man in The Middle) downgrade attacks and verify the destination.
 
-SMTP TLS Reporting (TLS-RPT) is also used. This allows us to receive daily reports from external mail servers that connect to an AnonAddy domain. These reports can be used to detect potential attacks and identify any connection problems. Check out our security report by running a scan on [Hardenize](https://www.hardenize.com/report/anonaddy.me/1619513845) or [Internet.nl](https://internet.nl/mail/anonaddy.me/520920/).
+SMTP TLS Reporting (TLS-RPT) is also used. This allows us to receive daily reports from external mail servers that connect to an addy.io domain. These reports can be used to detect potential attacks and identify any connection problems. Check out our security report by running a scan on [Hardenize](https://www.hardenize.com/report/anonaddy.me/1619513845) or [Internet.nl](https://internet.nl/mail/anonaddy.me/520920/).
 
 At this time it is not possible to enable MTA-STS on username subdomains since this would require a wildcard certificate of the format mta-sts.*.anonaddy.me.
 
@@ -54,7 +54,7 @@ It does this by digitally signing emails with a signature that receiving mail se
 
 ### DMARC
 
-Domain-based Message Authentication (DMARC) allows you to inform cooperating mail servers what they should do with your email message if both SPF and DKIM checks fail. You can tell the mail servers to do nothing, to quarantine (mark/send to spam) or to reject the email. AnonAddy informs other mail servers that they should reject any emails claiming to come from us if they fail both SPF and DKIM checks.
+Domain-based Message Authentication (DMARC) allows you to inform cooperating mail servers what they should do with your email message if both SPF and DKIM checks fail. You can tell the mail servers to do nothing, to quarantine (mark/send to spam) or to reject the email. addy.io informs other mail servers that they should reject any emails claiming to come from us if they fail both SPF and DKIM checks.
 
 ## The web application
 

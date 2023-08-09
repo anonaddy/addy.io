@@ -71,7 +71,7 @@ npm install --no-progress &> /dev/null
 @task("generateAssets", ["on" => "remote"])
 {{ logMessage("🌅  Generating assets...") }}
 cd {{ $newReleaseDir }}
-npm run production --no-progress &> /dev/null
+npm run prod --no-progress &> /dev/null
 
 # Mark release
 cd {{ $newReleaseDir }}

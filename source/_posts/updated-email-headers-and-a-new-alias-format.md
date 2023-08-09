@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://anonaddy.com/assets/img/send-from-alias-modal.png
+image: https://addy.io/assets/img/send-from-alias-modal.png
 section: content
 title: Updated email headers and a new alias format
 date: 2021-01-12
@@ -57,19 +57,19 @@ Clicking that will bring up a modal where you simply need to enter the email des
 
 ## What happened on December 17th?
 
-On Thursday the 17th December AnonAddy's hosting provider Greenhost suffered a large DDoS attack targeting one of their customers. This attack was large enough to also affect other parts of their network and it took AnonAddy offline for roughly 4 hours. I apologise if this downtime affected you in any way.
+On Thursday the 17th December addy.io's hosting provider Greenhost suffered a large DDoS attack targeting one of their customers. This attack was large enough to also affect other parts of their network and it took addy.io offline for roughly 4 hours. I apologise if this downtime affected you in any way.
 
 Greenhost have more details on the incident here - [https://status.greenhost.net/incidents/22](https://status.greenhost.net/incidents/22).
 
 They have taken measures to make their infrastructure more resilient and fault tolerant and added DDoS mitigation.
 
-On the back of this I will be looking into ways to make AnonAddy more resilient too by adding a backup mail server so that emails can continue to be delivered in the event of any downtime with the main mail server.
+On the back of this I will be looking into ways to make addy.io more resilient too by adding a backup mail server so that emails can continue to be delivered in the event of any downtime with the main mail server.
 
 ## A new public roadmap
 
-I've been looking for a good place to start a public roadmap for AnonAddy and was considering Trello/Notion but recently learnt that you could use GitHub projects to create one.
+I've been looking for a good place to start a public roadmap for addy.io and was considering Trello/Notion but recently learnt that you could use GitHub projects to create one.
 
-The roadmap is visible on GitHub here - [AnonAddy Roadmap](https://github.com/anonaddy/anonaddy/projects/1) (there's also a link to it at the bottom of this site). I thought it would be easier to keep things in one place to stay organised.
+The roadmap is visible on GitHub here - [addy.io Roadmap](https://github.com/anonaddy/anonaddy/projects/1) (there's also a link to it at the bottom of this site). I thought it would be easier to keep things in one place to stay organised.
 
 I've also enabled [GitHub discussions](https://github.com/anonaddy/anonaddy/discussions) on the repository where you can add feature requests, ask questions or just chat in general.
 

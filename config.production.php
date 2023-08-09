@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://anonaddy.com',
+    'baseUrl' => 'https://addy.io',
     'production' => true,
 ];

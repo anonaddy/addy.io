@@ -1,21 +1,21 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://anonaddy.com/assets/img/anonaddy-app-stjin.jpeg
+image: https://addy.io/assets/img/anonaddy-app-stjin.jpeg
 section: content
 title: Mobile apps, crypto payments and a new domain
 date: 2021-01-26
-description: This post goes over some recent updates, including the mobile apps available for AnonAddy, the new automatic cryptocurrency payments and a new alias domain for paid plans.
+description: This post goes over some recent updates, including the mobile apps available for addy.io, the new automatic cryptocurrency payments and a new alias domain for paid plans.
 categories: [updates]
 ---
 
-This post goes over some recent updates, including the mobile apps available for AnonAddy, the new automatic cryptocurrency payments and a new alias domain for paid plans.
+This post goes over some recent updates, including the mobile apps available for addy.io, the new automatic cryptocurrency payments and a new alias domain for paid plans.
 
-## Mobile apps for AnonAddy
+## Mobile apps for addy.io
 
 First of all you may be wondering why I haven't created a mobile app myself. The reason is because mobile development is not my area of expertise.
 
-Luckily there are many great mobile developers out there and a couple of awesome developers have even created apps for AnonAddy!
+Luckily there are many great mobile developers out there and a couple of awesome developers have even created apps for addy.io!
 
 Even though these apps are unofficial they are both open-source and I've been speaking with the developers during their development. You can find Exodus privacy reports for both the apps [here](https://reports.exodus-privacy.eu.org/en/reports/host.stjin.anonaddy/latest/) and [here](https://reports.exodus-privacy.eu.org/en/reports/com.khalidwar.anonaddy/latest/).
 

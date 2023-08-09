@@ -1,10 +1,9 @@
 {
     "private": true,
     "scripts": {
-        "local": "mix",
         "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
         "production": "mix --production",
-        "dev": "npm run local",
+        "dev": "mix",
         "prod": "npm run production",
         "watch": "mix watch",
         "format": "prettier --write 'source/_assets/**/*.{css,js,vue}'",
@@ -22,6 +21,7 @@
         "hasbin": "^1.2.3",
         "highlight.js": "^11.0.0",
         "laravel-mix": "^6.0.11",
+        "laravel-mix-jigsaw": "^2.1.1",
         "node-cmd": "^5.0.0",
         "postcss": "^8.4.5",
         "postcss-import": "^15.0.0",

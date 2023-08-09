@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://anonaddy.com/assets/img/send-from-alias.png
+image: https://addy.io/assets/img/send-from-alias.png
 section: content
 title: Sending email from an alias and updated replies
 date: 2020-02-12
@@ -13,7 +13,7 @@ This post gives some more details on the new send from an alias feature and how 
 
 ## The new send from feature
 
-This has probably been one of the most requested features on AnonAddy since I launched the site. The ability to send an email from an alias and initiate an email conversation without having to be forwarded one first.
+This has probably been one of the most requested features on addy.io since I launched the site. The ability to send an email from an alias and initiate an email conversation without having to be forwarded one first.
 
 I took inspiration for this feature from the way VERP (Variable Envelope Return Path) works. When VERP is enabled each recipient has a different return path (also referred to as "envelope sender"). For example an email sent to recipient@example.com would have a return path like this mailer+recipient=example.com@anonaddy.me.
 
@@ -49,7 +49,7 @@ Just enter the extension too!
 
 ## Updating the way email replies work
 
-Email replies have definitely been the thing that have caused the most confusion on AnonAddy so far, this is partly due to the fact that I don't think I've explained them very well and partly because of the confusing "hash" value used.
+Email replies have definitely been the thing that have caused the most confusion on addy.io so far, this is partly due to the fact that I don't think I've explained them very well and partly because of the confusing "hash" value used.
 
 I've decided to update the way that email replies work to function in the same way as the above send from feature.
 

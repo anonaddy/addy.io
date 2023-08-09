@@ -12,9 +12,9 @@ description: This policy (together with our Terms and Conditions) sets out the b
 
 <p class="text-sm text-grey-400 mb-4">Last Updated: 13th November 2022</p>
 
-This policy (together with our Terms and Conditions) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. It applies to anonaddy.com and any subdomains e.g. app.anonaddy.com.
+This policy (together with our Terms and Conditions) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. It applies to addy.io and any subdomains e.g. app.addy.io.
 
-In order to ensure confidentiality and lawful processing of its, Visitors personal data, AnonAddy in its capacity of a data controller and of a processor, conducts its activities in strict compliance with the requirements set in GDPR - Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of this data.
+In order to ensure confidentiality and lawful processing of its, Visitors personal data, addy.io in its capacity of a data controller and of a processor, conducts its activities in strict compliance with the requirements set in GDPR - Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of this data.
 
 ## Information We May Collect From You
 
@@ -73,4 +73,4 @@ Any changes we may make to our privacy policy in the future will be posted on th
 
 ## Contact
 
-Questions, comments and requests regarding this privacy policy are welcomed and should be directed to the Data Protection Officer [contact@anonaddy.com](mailto:contact@anonaddy.com) ([GPG Key](/anonaddy-contact-public-key.asc))
+Questions, comments and requests regarding this privacy policy are welcomed and should be directed to the Data Protection Officer [contact@help.addy.io](mailto:contact@help.addy.io) ([GPG Key](/contact-public-key.asc))
