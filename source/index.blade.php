@@ -137,7 +137,7 @@ width: full
                         <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Browser Extension</h3>
                         <p class="text-grey-600 mb-4">Generate new aliases in a couple of clicks straight from your
                             browser using the <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a> browser extension.</p>
-                        <p class="text-grey-600 b-4">The extension is available for download on <a href="https://addons.mozilla.org/en-GB/firefox/addon/addy_io/" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Firefox</a> and <a href="https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Chrome</a>!</p>
+                        <p class="text-grey-600 b-4">The extension is available for download on <a href="https://addons.mozilla.org/en-GB/firefox/addon/addy_io/" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Firefox</a> and <a href="https://chrome.google.com/webstore/detail/addyio-anonymous-email-fo/iadbdpnoknmbdeolbapdackdcogdmjpe" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Chrome</a>!</p>
                         <p class="text-grey-600 mb-4">Also available on other chromium based browsers such as Brave and
                             Vivaldi.</p>
                     </div>

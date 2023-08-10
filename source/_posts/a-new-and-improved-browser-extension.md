@@ -27,7 +27,7 @@ Below is a full list of all the new features in v2 of the browser extension:
 - Use the "send from address constructor" for an alias
 - Choose recipient(s) when creating a new alias
 
-You can find the extension on [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/addy_io/) and [Chrome](https://chrome.google.com/webstore/detail/anonaddy/iadbdpnoknmbdeolbapdackdcogdmjpe). If you find the extension useful I'd really appreciate it if you could leave a quick review.
+You can find the extension on [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/addy_io/) and [Chrome](https://chrome.google.com/webstore/detail/addyio-anonymous-email-fo/iadbdpnoknmbdeolbapdackdcogdmjpe). If you find the extension useful I'd really appreciate it if you could leave a quick review.
 
 <div class="flex justify-center mb-4">
   <img class="shadow" src="/assets/img/browser-extension-v2.png" alt="Browser Extension v2" title="Browser Extension v2">
