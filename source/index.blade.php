@@ -1007,7 +1007,7 @@ width: full
                     Product News & Updates</h2>
                 <p class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-grey-100">Sign up for our
                     newsletter.</p>
-                <form action="https://news.anonaddy.com/subscribe" method="POST" accept-charset="utf-8" class="mx-auto mt-10 flex max-w-md gap-x-4">
+                <form action="https://news.addy.io/subscribe" method="POST" accept-charset="utf-8" class="mx-auto mt-10 flex max-w-md gap-x-4">
                     <label for="email-address" class="sr-only">Email address</label>
                     <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6" placeholder="Enter your email">
                     <div class="hidden">

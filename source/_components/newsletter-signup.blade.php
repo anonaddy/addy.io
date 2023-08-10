@@ -1,6 +1,6 @@
 <div class="flex justify-center lg:-mx-12 my-12 p-6 md:px-12 bg-grey-50 border border-grey-400 text-sm md:rounded shadow">
 
-    <form action="https://news.anonaddy.com/subscribe" method="POST" accept-charset="utf-8">
+    <form action="https://news.addy.io/subscribe" method="POST" accept-charset="utf-8">
         <h2>Sign up for our newsletter</h2>
 
         <div class="flex flex-col items-center">
