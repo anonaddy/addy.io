@@ -86,4 +86,4 @@ We may revise these terms of use at any time by amending this page. You are expe
 
 ## Contact
 
-Questions, comments and requests regarding these terms of service are welcomed and should be directed to [contact@help.addy.io](mailto:contact@help.addy.io) ([GPG Key](/contact-public-key.asc))
+Questions, comments and requests regarding these terms of service are welcomed and should be directed to - <span class="e-mail"></span> ([GPG Key](/contact-public-key.asc))

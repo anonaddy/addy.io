@@ -73,4 +73,4 @@ Any changes we may make to our privacy policy in the future will be posted on th
 
 ## Contact
 
-Questions, comments and requests regarding this privacy policy are welcomed and should be directed to the Data Protection Officer [contact@help.addy.io](mailto:contact@help.addy.io) ([GPG Key](/contact-public-key.asc))
+Questions, comments and requests regarding this privacy policy are welcomed and should be directed to the Data Protection Officer - <span class="e-mail"></span> ([GPG Key](/contact-public-key.asc))

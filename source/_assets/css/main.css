@@ -23,6 +23,14 @@ body {
   margin-left: 75%;
 }
 
+.e-mail:before {
+  content: '\0063\006F\006E\0074\0061\0063\0074\0040';
+}
+
+.e-mail:after {
+  content: '\0068\0065\006C\0070\002E\0061\0064\0064\0079\002E\0069\006F';
+}
+
 a {
   @apply no-underline;
   @apply text-indigo-600;
