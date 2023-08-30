@@ -311,6 +311,12 @@ width: full
                                 </svg>
                                 <span> <b>1</b> Recipient (real email address) </span>
                             </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                </svg>
+                                <span> <b>2</b> Available Alias Domains </span>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -319,7 +325,7 @@ width: full
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                 </svg>
-                                <span> <b>10Mb</b> Monthly Bandwidth Limit </span>
+                                <span> <b>10MB</b> Monthly Bandwidth Limit </span>
                             </li>
                         </ul>
                     </li>
@@ -353,6 +359,12 @@ width: full
                                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                 </svg>
                                 <span> <b>5</b> Recipients (real email addresses) </span>
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                </svg>
+                                <span> <b>5 (soon to be 6)</b> Available Alias Domains </span>
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -416,12 +428,6 @@ width: full
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                 </svg>
-                                <span> <b>3 (soon to be 4)</b> Additional Alias Domains </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
                                 <span> <b>100MB</b> Monthly Bandwidth Limit </span>
                             </li>
                         </ul>
@@ -468,6 +474,12 @@ width: full
                                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                 </svg>
                                 <span> <b>30</b> Recipient (real email addresses) </span>
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                </svg>
+                                <span> <b>7</b> Available Alias Domains </span>
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -526,12 +538,6 @@ width: full
                                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                 </svg>
                                 <span> Option to Disable Catch-All </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>3 (soon to be 5)</b> Additional Alias Domains </span>
                             </li>
                             <li class="flex gap-x-3">
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -688,6 +694,24 @@ width: full
                             </td>
                             <td class="px-6 py-4 xl:px-8">
                                 <div class="text-center text-sm leading-6 text-grey-800 font-bold">30</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
+                                Available Alias Domains
+                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
+                            </th>
+                            <td class="px-6 py-4 xl:px-8">
+                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">2
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 xl:px-8">
+                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">5 (soon to be 6)
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 xl:px-8">
+                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">7
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -895,26 +919,6 @@ width: full
                                     </g>
                                 </svg>
                                 <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Additional Alias Domains
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">3 (soon to be 4)
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">3 (soon to be 5)
-                                </div>
                             </td>
                         </tr>
                         <tr>
