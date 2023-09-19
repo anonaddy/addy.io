@@ -5,7 +5,7 @@ image: https://addy.io/assets/img/addy-io-square.jpg
 section: content
 title: AnonAddy has rebranded as addy.io
 date: 2023-08-09
-description: This post gives some more details on the API provider update from Laravel Passport to Laravel Sanctum, what motivated the change and what action needs to be taken now that the update is live.
+description: AnonAddy is now addy.io! This post gives some details on what motivated the rebrand, what's actually changed and what features have been added.
 categories: [updates]
 ---
 
