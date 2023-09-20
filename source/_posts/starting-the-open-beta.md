@@ -18,11 +18,11 @@ With encryption on all emails forwarded to that recipient will be encrypted with
 
 This could be a great option for people still using Google Mail, Microsoft Outlook etc. who are known to scan the contents of emails received.
 
-All forwarded emails will also be signed using our mailer@anonaddy.me private key.
+All forwarded emails will also be signed using our no-reply@addy.io private key.
 
 You can add our public key to your own keyring so that you can verify emails have come from us.
 
-The fingerprint of the mailer@anonaddy.me key is <span class="break-words">"26A987650243B28802524E2F809FD0D502E2F695"</span> you can find the key on [https://keys.openpgp.org](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695).
+The fingerprint of the no-reply@addy.io key is <span class="break-words">"26A987650243B28802524E2F809FD0D502E2F695"</span> you can find the key on [https://keys.openpgp.org](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695).
 
 It works extremely well if you are using [Mozilla Thunderbird](https://www.thunderbird.net) with the [Enigmail](https://enigmail.net) Add-on.
 

@@ -177,7 +177,7 @@ With addy.io, you can generate a GPG/OpenGPG key pair (or use an existing pair) 
 
 Once you have done this, all emails that are forwarded to you@example.com will be encrypted by addy.io using your public key.
 
-They are also signed by the private key for "mailer@anonaddy.me". By adding the [public key](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695) to your keyring, you can verify the email has indeed come from addy.io.
+They are also signed by the private key for "no-reply@addy.io". By adding the [public key](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695) to your keyring, you can verify the email has indeed come from addy.io.
 
 This is great if you are still using an email provider such as Gmail which has been [known to
 snoop](https://www.bbc.com/news/technology-44699263) on users' inboxes.

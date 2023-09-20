@@ -173,11 +173,11 @@ Yes attachments are part of the email body and are also encrypted if you have it
 
 ## Are forwarded emails signed when encryption is enabled? {#are-forwarded-emails-signed-when-encryption-is-enabled}
 
-Yes when you have encryption enabled all forwarded emails are signed using our mailer@anonaddy.me private key.
+Yes when you have encryption enabled all forwarded emails are signed using our no-reply@addy.io private key.
 
 You can add this key to your own keyring so that you can verify emails have come from us.
 
-The fingerprint of the mailer@anonaddy.me key is <span class="break-words">"26A987650243B28802524E2F809FD0D502E2F695"</span> you can find the key on [https://keys.openpgp.org](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695).
+The fingerprint of the no-reply@addy.io key is <span class="break-words">"26A987650243B28802524E2F809FD0D502E2F695"</span> you can find the key on [https://keys.openpgp.org](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695).
 
 ## What if I don't want anyone to link ownership of my aliases together? {#what-if-i-dont-want-anyone-to-link-ownership-of-my-aliases-together}
 
@@ -365,7 +365,7 @@ Yes, you can login with any of your usernames. You can add 1 additional username
 
 ## I'm not receiving any emails, what's wrong? {#im-not-receiving-any-emails-whats-wrong}
 
-Please make sure to add mailer@anonaddy.me, mailer@anonaddy.com and any other aliases you use to your address book and also to check your spam folder. Make sure to mark emails from addy.io as safe if they turn up in spam.
+Please make sure to add no-reply@addy.io and any aliases you use to your address book and also to check your spam folder. Make sure to mark emails from addy.io as safe if they turn up in spam.
 
 If an alias has been deleted and you try to send email to it, the emails will be rejected with an error message - "550 5.1.1 Recipient address rejected: Address does not exist".
 
