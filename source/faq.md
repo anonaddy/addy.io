@@ -445,4 +445,4 @@ My name is Will Browning, I'm a web developer from the UK and an advocate for on
 
 ## I couldn't find an answer to my question, how can I contact you? {#i-couldnt-find-an-answer-to-my-question-how-can-i-contact-you}
 
-For any other questions just send an email to - <span class="e-mail"></span> ([GPG Key](/contact-public-key.asc))
+For any other questions just send an email to - <span class="e-mail"></span> ([GPG Key](/contact-public-key.asc) - E652C2DB43859328F35575DEBF7B93C6497510D0)

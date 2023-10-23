@@ -58,7 +58,9 @@ Domain-based Message Authentication (DMARC) allows you to inform cooperating mai
 
 ## The web application
 
-Our site uses modern security features such as; HSTS (HTTP Strict Transport Security), a strict CSP (Content Security Policy), Subresource Integrity, no mixed content, DANE, Expect CT and XSS Protection.
+The web application is hosted on its own server with UpCloud in the Netherlands. Our site uses modern security features such as; HSTS (HTTP Strict Transport Security), a strict CSP (Content Security Policy), Subresource Integrity, no mixed content, DANE, Expect CT and XSS Protection.
+
+addy.io also passed an [independent security audit](/blog/addy-io-passes-independent-security-audit/) carried out by Securitum in September 2023 - no significant vulnerabilities were identified.
 
 <a href="https://internet.nl/" target="_blank" rel="nofollow noreferrer noopener" title="Internet.nl 100% badge">
     <img src="/assets/img/embed-badge-websitetest.svg" alt="Badge with text: 100% score in website test">

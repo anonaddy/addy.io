@@ -10,7 +10,7 @@ description: Can't find your answer on the FAQ page or in the help centre? Get i
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-You should be able to find the answers to most questions on the [FAQ](/faq/) page or in the [Help Centre](/help/). If you still can't find an answer there then please send your email to <span class="e-mail"></span> (<a href="/contact-public-key.asc">GPG Key</a>).
+You should be able to find the answers to most questions on the [FAQ](/faq/) page or in the [Help Centre](/help/). If you still can't find an answer there then please send your email to <span class="e-mail"></span> (<a href="/contact-public-key.asc">GPG Key</a> - E652C2DB43859328F35575DEBF7B93C6497510D0).
 
 ## Feature requests
 
