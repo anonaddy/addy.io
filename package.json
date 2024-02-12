@@ -8,7 +8,7 @@
         "watch": "mix watch",
         "format": "prettier --write 'source/_assets/**/*.{css,js,vue}'",
         "pre-commit": "lint-staged",
-        "prepare": "husky install"
+        "prepare": "husky"
     },
     "dependencies": {
         "autoprefixer": "^10.4.1",
@@ -24,7 +24,7 @@
         "laravel-mix-jigsaw": "^2.1.1",
         "node-cmd": "^5.0.0",
         "postcss": "^8.4.5",
-        "postcss-import": "^15.0.0",
+        "postcss-import": "^16.0.0",
         "tailwindcss": "^3.0.11",
         "vue": "^3.0.0",
         "vue-loader": "^17.0.0",
@@ -33,7 +33,7 @@
     },
     "devDependencies": {
         "css-loader": "^6.5.1",
-        "husky": "^8.0.0",
+        "husky": "^9.0.0",
         "lint-staged": "^15.0.0",
         "prettier": "^3.0.0"
     },
