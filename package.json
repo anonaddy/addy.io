@@ -13,8 +13,8 @@
     "dependencies": {
         "autoprefixer": "^10.4.1",
         "axios": "^1.0.0",
-        "browser-sync": "^2.27.9",
-        "browser-sync-webpack-plugin": "^2.3.0",
+        "browser-sync": "^3.0.0",
+        "browser-sync-v3-webpack-plugin": "^0.1.0",
         "cross-env": "^7.0.3",
         "extra-watch-webpack-plugin": "^1.0.3",
         "fuse.js": "^7.0.0",
