@@ -3,7 +3,7 @@ let bin = require('./bin');
 let command = require('node-cmd');
 
 let BrowserSync = require('browser-sync');
-let BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+let BrowserSyncPlugin = require('browser-sync-v3-webpack-plugin');
 let ExtraWatchWebpackPlugin = require('extra-watch-webpack-plugin');
 
 let browserSyncInstance;
