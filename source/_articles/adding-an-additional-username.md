@@ -9,7 +9,7 @@ description: This article guides you through the steps to add an additional user
 helpCategories: [usernames]
 ---
 
-This article guides you through the steps to add an additional username on addy.io. This allows you to compartmenatlise your aliases in order to prevent anyone from linking them together.
+This article guides you through the steps to add an additional username on addy.io. This allows you to compartmentalise your aliases in order to prevent anyone from linking them together.
 
 ## Choosing a username
 
