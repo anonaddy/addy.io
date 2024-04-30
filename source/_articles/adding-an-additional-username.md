@@ -5,7 +5,7 @@ image: https://addy.io/assets/img/help-add-username.png
 section: content
 title: Adding an additional username
 date: 2020-03-03
-description: This article guides you through the steps to add an additional username on addy.io. This allows you to compartmenatlise your aliases in order to prevent anyone from linking them together.
+description: This article guides you through the steps to add an additional username on addy.io. This allows you to compartmentalise your aliases in order to prevent anyone from linking them together.
 helpCategories: [usernames]
 ---
 
