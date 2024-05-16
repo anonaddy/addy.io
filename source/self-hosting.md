@@ -29,6 +29,7 @@ section: body
 - [Enabling DANE by implementing DNSSEC and adding a TLSA record](#enabling-dane-by-implementing-dnssec-and-adding-a-tlsa-record)
 - [Adding Certification Authority Authorization](#adding-certification-authority-authorization)
 - [Updating](#updating)
+- [Troubleshooting](#troubleshooting)
 
 ## Assumptions {#assumptions}
 
@@ -1366,7 +1367,7 @@ npm install
 npm run production
 
 # Run any database migrations
-php artisan migrate
+php artisan migrate --force
 
 # Clear cache
 php artisan config:cache
@@ -1377,6 +1378,20 @@ php artisan event:cache
 # Restart queue workers to reflect changes
 php artisan queue:restart
 ```
+
+## Troubleshooting {#troubleshooting}
+
+If you run into any problems then please check the following logs which should provide more information:
+
+- `/var/www/anonaddy/storage/logs/laravel*.log` - Web application error logs (any errors relating to issues with the web application)
+- `/var/log/mail.log` - Postfix mail logs (details of received and sent emails)
+- `/var/log/mail.err` - Postfix errors (errors relating to Postfix configuration)
+- `/var/log/php8.2-fpm.log` - PHP logs (logs relating to PHP FastCGI Process Manager)
+- `/var/log/nginx/access.log` - Nginx access logs (log of client requests)
+- `/var/log/nginx/error.log` - Nginx error logs (log of any server or request errors)
+- `/var/log/supervisor/*.log` - Supervisor logs (log of any web application queue issues)
+
+If a queued job (e.g. forwarding an email) fails, it is stored in the `failed_jobs` table in the database and can be [retried](https://laravel.com/docs/11.x/queues#retrying-failed-jobs).
 
 ## Credits
 
