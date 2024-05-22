@@ -5,7 +5,7 @@ image: https://addy.io/assets/img/haveibeenpwned.jpg
 section: content
 title: Why you should use a different email address for every site
 date: 2019-10-07
-description: This post goes over the benefits of using a different unique email address for every site/service that you use. From preventing spam to protecting your identify online.
+description: This post goes over the benefits of using a different unique email address for every site/service. From preventing spam to protecting your identify online.
 categories: [guides]
 ---
 

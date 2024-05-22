@@ -1,6 +1,6 @@
 ---
-title: "FAQ"
-description: Frequently asked questions. Why did you make this site? I made the code open-source to show everyone what was going on behind the scenes and to allow others to help improve the application.
+title: "Frequently Asked Questions - FAQ"
+description: Frequently asked questions. This page answers the most commonly asked questions about addy.io.
 extends: _layouts.master
 section: body
 ---

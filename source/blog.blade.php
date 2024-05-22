@@ -2,7 +2,7 @@
 pagination:
     collection: posts
     perPage: 10
-title: "Blog"
+title: "Blog Posts"
 description: The list of all blog posts for addy.io. You'll find information about site updates, announcements and how to guides.
 ---
 
