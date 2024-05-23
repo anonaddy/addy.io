@@ -35,9 +35,9 @@ iOS app created by [KhalidWar](https://github.com/KhalidWar) available on the [A
 
 ## New automatic cryptocurrency payments
 
-Up until now, if you wanted to subscribe using cryptocurrency, the subscription would have to be added manually. I have finally added support for automatic crypto payments using [Globee](https://globee.com/) to process them.
+Up until now, if you wanted to subscribe using cryptocurrency, the subscription would have to be added manually. I have finally added support for automatic crypto payments using [NOWPayments](https://nowpayments.io) to process them.
 
-Globee supports the following cryptocurrencies:
+NOWPayments supports the following cryptocurrencies:
 
 - BTC (Bitcoin)
 - XMR (Monero)
@@ -46,6 +46,7 @@ Globee supports the following cryptocurrencies:
 - DCR (Decred)
 - ETH (Ethereum)
 - LNBT (Bitcoin Lightning)
+- and many more [full list here](https://nowpayments.io/supported-coins)
 
 There are some limitations such as a minimum invoice value of $10, so at the moment you can only pay with cryptocurrency for a yearly plan. The integration is currently quite basic so you cannot automatically swap plans yet, so please contact me if you wish to upgrade.
 
