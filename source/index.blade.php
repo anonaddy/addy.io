@@ -15,9 +15,8 @@ width: full
                 <div class="mx-auto max-w-2xl">
                     <div class="max-w-lg">
                         <div class="mt-24 sm:mt-32 lg:mt-16">
-                            <a href="/blog/anonaddy-has-rebranded-as-addy-io" class="inline-flex items-center space-x-2">
-                                <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">AnonAddy
-                                    is now addy.io →</span>
+                            <a href="/blog/addy-io-passes-independent-security-audit/" class="inline-flex items-center space-x-2">
+                                <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">addy.io passes independent security audit →</span>
                             </a>
                         </div>
                         <h1 class="mt-10 text-4xl font-bold tracking-tight text-grey-900">Anonymous Email Forwarding

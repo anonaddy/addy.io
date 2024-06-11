@@ -12,7 +12,7 @@ class GenerateHelpIndex
             return [
                 'title' => $page->title,
                 'categories' => $page->helpCategories,
-                'link' => rightTrimPath($jigsaw->getConfig('baseUrl')).$page->getPath(),
+                'link' => rightTrimPath($jigsaw->getConfig('baseUrl')).$page->getPath().'/', // add trailing slash
                 'snippet' => $page->description,
             ];
         })->values());
