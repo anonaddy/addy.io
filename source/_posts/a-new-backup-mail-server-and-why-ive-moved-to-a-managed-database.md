@@ -37,7 +37,7 @@ I chose UpCloud's Amsterdam data centre in order to have the lowest latency for 
 
 It felt like a huge weight off my shoulders when I'd finished the migration and no longer had to worry about the database, and I could then finish provisioning the backup mail server and make that live too.
 
-Now I'll be able to spend more time focusing on new features for addy.io that are on the [roadmap](https://github.com/anonaddy/anonaddy/projects/1) which is the thing I enjoy doing the most.
+Now I'll be able to spend more time focusing on new features for addy.io that are on the [roadmap](https://github.com/orgs/anonaddy/projects/1/views/1) which is the thing I enjoy doing the most.
 
 ## The new status page
 

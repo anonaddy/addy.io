@@ -69,7 +69,7 @@ On the back of this I will be looking into ways to make addy.io more resilient t
 
 I've been looking for a good place to start a public roadmap for addy.io and was considering Trello/Notion but recently learnt that you could use GitHub projects to create one.
 
-The roadmap is visible on GitHub here - [addy.io Roadmap](https://github.com/anonaddy/anonaddy/projects/1) (there's also a link to it at the bottom of this site). I thought it would be easier to keep things in one place to stay organised.
+The roadmap is visible on GitHub here - [addy.io Roadmap](https://github.com/orgs/anonaddy/projects/1/views/1) (there's also a link to it at the bottom of this site). I thought it would be easier to keep things in one place to stay organised.
 
 I've also enabled [GitHub discussions](https://github.com/anonaddy/anonaddy/discussions) on the repository where you can add feature requests, ask questions or just chat in general.
 

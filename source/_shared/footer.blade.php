@@ -8,7 +8,7 @@
                 <a href="/privacy/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/privacy') ? 'active font-bold' : '' }}" title="Privacy">Privacy</a>
                 <a href="/terms/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/terms') ? 'active font-bold' : '' }}" title="Terms">Terms</a>
                 <a href="/brand/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/brand') ? 'active font-bold' : '' }}" title="Brand">Brand</a>
-                <a href="https://github.com/anonaddy/anonaddy/projects/1" target="_blank" rel="nofollow noreferrer noopener" class="no-underline text-grey-600 my-1" title="Roadmap">Roadmap</a>
+                <a href="https://github.com/orgs/anonaddy/projects/1/views/1" target="_blank" rel="nofollow noreferrer noopener" class="no-underline text-grey-600 my-1" title="Roadmap">Roadmap</a>
                 <a href="https://status.addy.io/" class="no-underline text-grey-600 my-1" title="Status">Status</a>
             </div>
             <div class="flex flex-col mx-4 my-4 md:my-0">

@@ -93,7 +93,7 @@ If the subject contains "Spam" then block the email.
 
 **• More to come**
 
-Check the [roadmap](https://github.com/anonaddy/anonaddy/projects/1) to stay up-to-date with even more new features that are on the way.
+Check the [roadmap](https://github.com/orgs/anonaddy/projects/1/views/1) to stay up-to-date with even more new features that are on the way.
 
 ## Do I need to do anything?
 

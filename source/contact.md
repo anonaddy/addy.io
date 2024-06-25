@@ -14,7 +14,7 @@ You should be able to find the answers to most questions on the [FAQ](/faq/) pag
 
 ## Feature requests
 
-If you have a feature that you'd like to see added to addy.io then please feel free to post it on [GitHub discussions](https://github.com/anonaddy/anonaddy/discussions). Make sure to check the [Roadmap](https://github.com/anonaddy/anonaddy/projects/1) first to see if it isn't already in the pipeline.
+If you have a feature that you'd like to see added to addy.io then please feel free to post it on [GitHub discussions](https://github.com/anonaddy/anonaddy/discussions). Make sure to check the [Roadmap](https://github.com/orgs/anonaddy/projects/1/views/1) first to see if it isn't already in the pipeline.
 
 ## Bug reports
 
