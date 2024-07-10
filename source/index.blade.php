@@ -173,6 +173,7 @@ width: full
                             like your username subdomain aliases e.g. <b>alias@example.com</b>.</p>
                         <p class="text-grey-600 b-4">You can also enable or disable the <b>catch-all</b> functionality
                             for each of your domains.</p>
+                        <p class="text-grey-600 b-4">Don't want to enable catch-all? You can still create aliases on-the-fly by <b>matching a regular expression</b>!</p>
                         <p class="text-grey-600 mb-4">You can then manage your aliases and deactivate/delete any that
                             start receiving spam!</p>
                     </div>
@@ -891,6 +892,38 @@ width: full
                         <tr>
                             <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
                                 Option to Disable Catch-All
+                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
+                            </th>
+                            <td class="px-6 py-4 xl:px-8">
+                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="sr-only">Not included in Free</span>
+                            </td>
+                            <td class="px-6 py-4 xl:px-8">
+                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
+                                        </circle>
+                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
+                                    </g>
+                                </svg>
+                                <span class="sr-only">Included in Lite</span>
+                            </td>
+                            <td class="px-6 py-4 xl:px-8">
+                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
+                                        </circle>
+                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
+                                    </g>
+                                </svg>
+                                <span class="sr-only">Included in Pro</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
+                                Alias Auto Creation with Regex
                                 <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
                             </th>
                             <td class="px-6 py-4 xl:px-8">
