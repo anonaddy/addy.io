@@ -4,7 +4,7 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $userAndServer = explode(',', $_ENV["ENVOY_USER_AND_SERVER"]);
-$repository = "anonaddy/anonaddy.com";
+$repository = "anonaddy/addy.io";
 $baseDir = $_ENV["ENVOY_BASE_DIR"];
 $releasesDir = "{$baseDir}/releases";
 $currentDir = "{$baseDir}/current";
