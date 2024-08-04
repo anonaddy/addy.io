@@ -787,10 +787,10 @@ width: full
                                 <span class="sr-only">Not included in Free</span>
                             </td>
                             <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">20</div>
+                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">50</div>
                             </td>
                             <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">100</div>
+                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">200</div>
                             </td>
                         </tr>
                         <tr>
