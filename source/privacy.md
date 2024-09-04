@@ -10,7 +10,7 @@ description: This policy (together with our Terms and Conditions) sets out the b
   <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 </div>
 
-<p class="text-sm text-grey-400 mb-4">Last Updated: 13th November 2022</p>
+<p class="text-sm text-grey-400 mb-4">Last Updated: 4th September 2024</p>
 
 This policy (together with our Terms and Conditions) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. It applies to addy.io and any subdomains e.g. app.addy.io.
 
@@ -26,7 +26,7 @@ We may collect the following data from you:
 * If you start a subscription we may ask you to provide us with information such as your name and payment information. Your name and card details will not be stored in our database.
 * We use a self-hosted instance of [Umami](https://umami.is/), an open-source, privacy-focused and lightweight option for website analytics. All the site measurement is carried out absolutely anonymously. Cookies are not used and no personal data is collected. There are no persistent identifiers. No cross-site or cross-device tracking either. You can find out more on [Umami's](https://umami.is/) website.
 
-Our site does not store/save any emails that are forwarded or replied to through the service. You can check the source code to see what happens when an email is piped to our application by Postfix.
+Emails are only ever stored in the event of a failed delivery, and only if you have this option enabled in your account settings. You can check the source code to see what happens when an email is piped to our application by Postfix.
 
 Our server uses Postfix as the mail server software and Nginx as the web server. Nginx access and error logs are kept which do record IP addresses. Default log settings are used for Postfix. All log files are rotated daily and retained for 3 days, old log files are deleted.
 
@@ -65,7 +65,9 @@ You have the right to require us to correct any inaccuracies in your data, free 
 
 ## Third party services
 
-The only third party services that we use are [Stripe](https://stripe.com) and [NOWPayments](https://nowpayments.io/) to process payments for subscriptions. Any payment transactions will be carried out by Stripe and NOWPayments over encrypted connections. Your card information never touches our server. If you are subscribed to our newsletter then we will also use [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/) to deliver email campaigns.
+We use [Stripe](https://stripe.com) and [NOWPayments](https://nowpayments.io/) to process payments for subscriptions. Any payment transactions will be carried out by Stripe and NOWPayments over encrypted connections. Your card information never touches our server. If you are subscribed to our newsletter then we will also use [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/) to deliver email campaigns.
+
+We also use [Cloudflare Turnstile](https://www.cloudflare.com/en-gb/products/turnstile/), a privacy friendly captcha solution on our login, register and reset password pages to protect against bots and abuse.
 
 ## Changes To Our Privacy Policy
 
