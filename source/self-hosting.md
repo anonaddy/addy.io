@@ -1369,11 +1369,8 @@ npm run production
 # Run any database migrations
 php artisan migrate --force
 
-# Clear cache
-php artisan config:cache
-php artisan view:cache
-php artisan route:cache
-php artisan event:cache
+# Cache config, events, routes and views
+php artisan optimize
 
 # Restart queue workers to reflect changes
 php artisan queue:restart

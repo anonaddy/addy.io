@@ -8,7 +8,7 @@
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
             @foreach($page->menuItems as $item)
-            <a title="{{ $item->title }}" href="{{ $item->href }}" class="text-grey-900 font-semibold hover:text-grey-700 {{ $page->isActive($item->href) ? 'active font-bold' : '' }}">{{ $item->title }}</a>
+            <a title="{{ $item->title }}" href="{{ $item->href }}" id="{{ strtolower($item->title) }}-nav-link" class="text-grey-900 font-semibold hover:text-grey-700 {{ $page->isActive($item->href) ? 'active font-bold' : '' }}">{{ $item->title }}</a>
             @endforeach
         </div>
         <div class="flex flex-1 items-center justify-end gap-x-6">
