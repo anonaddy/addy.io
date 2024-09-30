@@ -22,4 +22,5 @@ if (params.ref === 'appstore') {
   document.getElementById('faq-menu-item').href = '/faq/?ref=appstore'
   document.getElementById('blog-nav-link').href = '/blog/?ref=appstore'
   document.getElementById('blog-menu-item').href = '/blog/?ref=appstore'
+  document.getElementById('addy-io-logo-link').href = '/?ref=appstore'
 }
