@@ -47,13 +47,12 @@ The extension is available for download on [Firefox](https://addons.mozilla.org/
 
 Mobile apps for Android:
 
-- addy.io by [Stjin](https://twitter.com/Stjinchan) on the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) (paid)
-- addy.io by [Stjin](https://twitter.com/Stjinchan) on the [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy) (free)
-- AddyManager by [KhalidWar](https://github.com/KhalidWar) on the [Play Store](https://play.google.com/store/apps/details?id=com.khalidwar.anonaddy)
+- addy.io by [Stjin](https://x.com/Stjinchan) on the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy)
+- addy.io by [Stjin](https://x.com/Stjinchan) on the [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy)
 
 Mobile apps for iOS:
 
-- AddyManager by [KhalidWar](https://github.com/KhalidWar) on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270)
+- addy.io by [Stjin](https://x.com/Stjinchan) on the [App Store]()
 
 
 You can deactivate an alias by following the instructions on each app.

@@ -15,8 +15,8 @@ width: full
                 <div class="mx-auto max-w-2xl">
                     <div class="max-w-lg">
                         <div class="mt-24 sm:mt-32 lg:mt-16">
-                            <a href="/blog/addy-io-passes-independent-security-audit/" class="inline-flex items-center space-x-2">
-                                <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">addy.io passes independent security audit →</span>
+                            <a href="/blog/say-hello-to-the-new-official-addy-io-mobile-apps/" class="inline-flex items-center space-x-2">
+                                <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">Say Hello to the New Official Mobile Apps! →</span>
                             </a>
                         </div>
                         <h1 class="mt-10 text-4xl font-bold tracking-tight text-grey-900">Anonymous Email Forwarding
@@ -125,6 +125,21 @@ width: full
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Features You'll Love</h1>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+
+            <div class="flex flex-wrap">
+                <div class="w-full sm:w-1/2 p-6">
+                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Mobile Apps</h3>
+                    <p class="text-grey-600 mb-4">Beautiful native mobile apps with a buttery smooth user experience to manage your account on the go.
+                    </p>
+
+                    <p class="text-grey-600 mb-4">Completely free to use whether you are using addy.io or your own self-hosted instance.</p>
+
+                    <p class="text-grey-600">The mobile apps are availalbe on <a href="https://apps.apple.com/app/addy-io/id6563138633" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">iOS</a> and <a href="https://play.google.com/store/apps/details?id=host.stjin.anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Android</a> and are both <a href="https://github.com/anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a>!</p>
+                </div>
+                <div class="w-full sm:w-1/2 p-6">
+                    <img class="w-full sm:h-72 mx-auto" src="/assets/img/aliases-mobile.svg" alt="Mobile Apps">
+                </div>
             </div>
 
             <div class="flex flex-wrap flex-col-reverse sm:flex-row">

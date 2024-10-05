@@ -33,6 +33,7 @@ section: body
 - [Can I use aliases to create multiple accounts on other websites and services?](#can-i-use-aliases-to-create-multiple-accounts-on-other-websites-and-services)
 - [Can I have multiple Free accounts?](#can-i-have-multiple-free-accounts)
 - [What if I don't want anyone to link ownership of my aliases together?](#what-if-i-dont-want-anyone-to-link-ownership-of-my-aliases-together)
+- [An alias has appeared in my account that I didn't create, how?](#an-alias-has-appeared-in-my-account-that-i-didnt-create-how)
 - [Where is the server located?](#where-is-the-server-located)
 - [What if I don't trust you?](#what-if-i-dont-trust-you)
 - [What is the maximum number of recipients I can add to an alias?](#what-is-the-maximum-number-of-recipients-i-can-add-to-an-alias)
@@ -158,13 +159,11 @@ Yes there is an [open-source](https://github.com/anonaddy/browser-extension) bro
 
 ## Is there an Android app? {#is-there-an-android-app}
 
-Yes, there is an excellent [open-source](https://gitlab.com/Stjin/anonaddy-android) Android app created by [Stjin](https://twitter.com/Stjinchan) that is available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) (paid) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy) (free). The developer of this app has put in a lot of time and effort so if you would like to support him please purchase the Play Store version.
-
-There is also another [open-source](https://github.com/KhalidWar/anonaddy) Android app created by [KhalidWar](https://github.com/KhalidWar) available on the [Play Store](https://play.google.com/store/apps/details?id=com.khalidwar.anonaddy).
+Yes, there's the official [open-source](https://gitlab.com/Stjin/anonaddy-android) Android app created by [Stjin](https://x.com/Stjinchan) that is available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy).
 
 ## Is there an iOS app? {#is-there-an-ios-app}
 
-Yes, [KhalidWar's](https://github.com/KhalidWar) [open-source](https://github.com/KhalidWar/anonaddy) app from above is also available on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270).
+Yes, there's the official [open-source](https://gitlab.com/Stjin/anonaddy-android) iOS app created by [Stjin](https://x.com/Stjinchan) that is available to download from the [App Store](https://apps.apple.com/app/addy-io/id6563138633).
 
 ## Is there a Raycast extension? {#is-there-a-raycast-extension}
 
@@ -218,6 +217,14 @@ If you're concerned that your aliases are all linked by your username e.g. @john
 
 1. You can generate random character or random word aliases instead, these are all under a shared domain and cannot be linked to a user.
 2. You can add additional usernames and separate your aliases under each of them. e.g. you could have one username for personal stuff, another for work, another for hobbies etc.
+
+## An alias has appeared in my account that I didn't create, how? {#an-alias-has-appeared-in-my-account-that-i-didnt-create-how}
+
+By default your custom domains and username subdomains (e.g. @johndoe.anonddy.com) have catch-all enabled. This means that they will automatically create any alias the first time an email is sent to it, for example the alias `does-not-exist@johndoe.anonaddy.com` would be automatically created and show up in your account if the username `johndoe` had catch-all enabled.
+
+Spammers and bots often try random email addresses such as `contact@example.com` or `admin@example.com` etc. which would be created automatically if your custom domain has catch-all enabled. It does not mean that your account has been compromised if you see an alias that you do not recognise in your account.
+
+If you do not want aliases to be automatically created in this way you can disable catch-all for your custom domain or username. You can also set a regular expression pattern for your custom domain or username that will only create aliases automatically if it is matched.
 
 ## Where is the server located? {#where-is-the-server-located}
 

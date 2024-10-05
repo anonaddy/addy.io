@@ -21,7 +21,7 @@ Even though these apps are unofficial they are both open-source and I've been sp
 
 ### Android
 
-Android app created by [Stjin](https://twitter.com/Stjinchan), available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) (paid) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy) (free). The developer of this app has put in a lot of time and effort so if you would like to support him please do so by purchasing the Play Store version. ([source code](https://gitlab.com/Stjin/anonaddy-android))
+Android app created by [Stjin](https://x.com/Stjinchan), available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) (paid) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy) (free). The developer of this app has put in a lot of time and effort so if you would like to support him please do so by purchasing the Play Store version. ([source code](https://gitlab.com/Stjin/anonaddy-android))
 
 Android app created by [KhalidWar](https://github.com/KhalidWar) available on the [Play Store](https://play.google.com/store/apps/details?id=com.khalidwar.anonaddy). ([source code](https://github.com/KhalidWar/anonaddy))
 
