@@ -39,7 +39,7 @@ As part of our continued effort to make addy.io more accessible, the browser ext
 
 ## What Does This Mean for You?
 
-Whether you’re a long-time addy.io user or just getting started, here’s a quick recap of the key features across both apps, as detailed by [Stjin](redditlink):
+Whether you’re a long-time addy.io user or just getting started, here’s a quick recap of the key features across both apps, as detailed by [Stjin](https://old.reddit.com/r/addy_io/comments/1fwlegb/addyio_for_ios_ipados_is_here/):
 
 - **Free of Charge**: Both the Android and iOS Official addy.io apps will be available for free for all users.
 
