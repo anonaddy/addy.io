@@ -17,17 +17,15 @@ First of all you may be wondering why I haven't created a mobile app myself. The
 
 Luckily there are many great mobile developers out there and a couple of awesome developers have even created apps for addy.io!
 
-Even though these apps are unofficial they are both open-source and I've been speaking with the developers during their development. You can find Exodus privacy reports for both the apps [here](https://reports.exodus-privacy.eu.org/en/reports/host.stjin.anonaddy/latest/) and [here](https://reports.exodus-privacy.eu.org/en/reports/com.khalidwar.anonaddy/latest/).
+You can find Exodus privacy reports for the app [here](https://reports.exodus-privacy.eu.org/en/reports/host.stjin.anonaddy/latest/).
 
 ### Android
 
-Android app created by [Stjin](https://x.com/Stjinchan), available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) (paid) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy) (free). The developer of this app has put in a lot of time and effort so if you would like to support him please do so by purchasing the Play Store version. ([source code](https://gitlab.com/Stjin/anonaddy-android))
-
-Android app created by [KhalidWar](https://github.com/KhalidWar) available on the [Play Store](https://play.google.com/store/apps/details?id=com.khalidwar.anonaddy). ([source code](https://github.com/KhalidWar/anonaddy))
+Official Android app created by [Stjin](https://x.com/Stjinchan), available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy).
 
 ### iOS
 
-iOS app created by [KhalidWar](https://github.com/KhalidWar) available on the [App Store](https://apps.apple.com/us/app/addymanager/id1547461270). ([source code](https://github.com/KhalidWar/anonaddy) )
+Official iOS app created by [Stjin](https://x.com/Stjinchan), available to download from the [App Store](https://apps.apple.com/app/addy-io/id6563138633).
 
 <div class="flex justify-center">
   <img class="shadow" src="/assets/img/anonaddy-app-stjin.jpeg" alt="Stjin mobile app" title="Stjin mobile app">

@@ -270,7 +270,6 @@ smtpd_recipient_restrictions =
    reject_rhsbl_reverse_client dbl.spamhaus.org,
    reject_rhsbl_sender dbl.spamhaus.org,
    reject_rbl_client zen.spamhaus.org
-   reject_rbl_client dul.dnsbl.sorbs.net
 
 # Block clients that speak too early.
 smtpd_data_restrictions = reject_unauth_pipelining
