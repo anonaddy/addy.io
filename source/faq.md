@@ -159,11 +159,11 @@ Yes there is an [open-source](https://github.com/anonaddy/browser-extension) bro
 
 ## Is there an Android app? {#is-there-an-android-app}
 
-Yes, there's the official [open-source](https://gitlab.com/Stjin/anonaddy-android) Android app created by [Stjin](https://x.com/Stjinchan) that is available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy).
+Yes, there's the official [open-source](https://github.com/anonaddy/addy-android) Android app created by [Stjin](https://x.com/Stjinchan) that is available to download from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) and [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy).
 
 ## Is there an iOS app? {#is-there-an-ios-app}
 
-Yes, there's the official [open-source](https://gitlab.com/Stjin/anonaddy-android) iOS app created by [Stjin](https://x.com/Stjinchan) that is available to download from the [App Store](https://apps.apple.com/app/addy-io/id6563138633).
+Yes, there's the official [open-source](https://github.com/anonaddy/addy-ios) iOS app created by [Stjin](https://x.com/Stjinchan) that is available to download from the [App Store](https://apps.apple.com/app/addy-io/id6563138633).
 
 ## Is there a Raycast extension? {#is-there-a-raycast-extension}
 
