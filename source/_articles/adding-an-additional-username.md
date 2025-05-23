@@ -33,6 +33,6 @@ You can use the additional username exactly like you would the one you signed up
 
 Creating unlimited aliases under *@**janedoe**.anonaddy.com or *@**janedoe**.anonaddy.me (or use the paid-only domain).
 
-You can add 1 additional username as a Lite user and up to 3 additional usernames as a Pro user for totals of 2 and 4 respectively (including the one you signed up with). You can currently only login with the one that you originally signed up with.
+You can add 5 additional username as a Lite user and up to 20 additional usernames as a Pro user for totals of 6 and 21 respectively (including the one you signed up with). You can login with the any of your usernames (unless you have set the "Can Be Used To Login" toggle to OFF).
 
 You can also use the API to add a new username.
