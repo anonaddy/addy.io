@@ -376,7 +376,7 @@ width: full
             <figcaption class="mt-6 flex items-center gap-x-4">
               <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/roke.jpeg" alt="">
               <div>
-                <div class="font-semibold">`Roke Beedell</div>
+                <div class="font-semibold">Roke Beedell</div>
                 @include('_components.stars')
               </div>
             </figcaption>
