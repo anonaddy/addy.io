@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
     @if($page->production)
-    <script src="{{ mix('js/app.js', 'assets/build') }}"></script>
+    {{-- <script src="{{ mix('js/app.js', 'assets/build') }}"></script> --}}
     @endif
 </head>
 
