@@ -18,4 +18,4 @@ If you have a feature that you'd like to see added to addy.io then please feel f
 
 ## Bug reports
 
-If you notice any issues or bugs with AnonAddy you can file an issue on [GitHub](https://github.com/anonaddy/anonaddy/issues). Before opening an issue, please check to make sure a duplicate issue doesn't already exist.
+If you notice any issues or bugs with addy.io you can file an issue on [GitHub](https://github.com/anonaddy/anonaddy/issues). Before opening an issue, please check to make sure a duplicate issue doesn't already exist.

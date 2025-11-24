@@ -14,8 +14,9 @@ section: body
 
 - mail.anonaddy.me (Greenhost.net, Netherlands)
 - mail2.anonaddy.me (UpCloud.com, Poland)
+- app.addy.io (UpCloud.com, Netherlands)
 
-Both mail servers have the following in place:
+All of the mail servers have the following in place:
 
 ### TLS encryption
 
