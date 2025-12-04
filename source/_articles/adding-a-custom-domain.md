@@ -21,7 +21,7 @@ The TXT record will look something like the below:
   <img class="shadow" src="/assets/img/help-add-domain.png" alt="Add custom domain" title="Add custom domain">
 </div>
 
-> **Note**: If you are adding a subdomain make sure to change the host from **@** to **mail** (e.g. if the subdomain was **mail**.example.com)
+> **Note**: If you are adding a subdomain make sure to change the host from **@** to **mysub** (e.g. if the subdomain was **mysub**.example.com)
 
 ## Verifying records for sending from the domain
 
@@ -45,17 +45,21 @@ The SPF record authorises the addy.io server to send email on your behalf. The D
 
 The CNAME records point to addy.io DKIM (DomainKeys Identified Mail) keys. The reason there are two is so that we can easily rotate keys in the future for security reasons.
 
-> **Note**: If you are adding a **subdomain** e.g. mail.example.com please change the host values to the following
+> **Note**: If you are using **Cloudflare** to manage your DNS records make sure the proxy status is turned OFF (orange cloud is turned grey) for all of the records.
 
-For the MX record: from **@** to **mail**
+## Adding a subdomain
 
-For the TXT SPF record: from **@** to **mail**
+> **Note**: If you are adding a **subdomain** e.g. **mysub.example.com** please change the host values to the following
 
-For the first CNAME record: from **dk1._domainkey** to **dk1._domainkey.mail**
+For the MX record: from **@** to **mysub**
 
-For the second CNAME record: from **dk2._domainkey** to **dk2._domainkey.mail**
+For the TXT SPF record: from **@** to **mysub**
 
-For the TXT DMARC record: from **_dmarc** to **_dmarc.mail**
+For the first CNAME record: from **dk1._domainkey** to **dk1._domainkey.mysub**
+
+For the second CNAME record: from **dk2._domainkey** to **dk2._domainkey.mysub**
+
+For the TXT DMARC record: from **_dmarc** to **_dmarc.mysub**
 
 If you've added the records but it still isn't verifying please wait a little while, it is likely because the changes have not yet propagated.
 
