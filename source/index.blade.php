@@ -298,7 +298,7 @@ width: full
             <p>“I've been using Addy.io for a few years now and it's been absolutely brilliant. Well worth the small amount of money for additional premium features which it seems are being increased and improved on a regular basis. This extension just makes the service even better. Great work!”</p>
         </div>
         <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-grey-900/10 px-6 py-4 sm:flex-nowrap">
-          <img class="h-10 w-10 flex-none rounded-full bg-grey-50" src="/assets/img/reviews/grant.png" alt="">
+          <img class="h-10 w-10 flex-none rounded-full bg-grey-50" src="/assets/img/reviews/grant.png" alt="Grant Marshall">
           <div class="flex-auto">
             <div class="font-semibold">Grant Marshall</div>
             @include('_components.stars')
@@ -312,7 +312,7 @@ width: full
                 <p>“Great service. Efficient, customer services fast and easy to use. Kudos.”</p>
             </div>
             <figcaption class="mt-6 flex items-center gap-x-4">
-            <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/lorenzo.png" alt="">
+            <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/lorenzo.png" alt="Lorenzo">
               <div>
                 <div class="font-semibold">Lorenzo</div>
                 @include('_components.stars')
@@ -325,7 +325,7 @@ width: full
               <p>“Great for protecting your real email address. Browser extension works perfectly.”</p>
             </div>
             <figcaption class="mt-6 flex items-center gap-x-4">
-              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/kieran.jpg" alt="">
+              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/kieran.jpg" alt="Kieran Colfer">
               <div>
                 <div class="font-semibold">Kieran Colfer</div>
                 @include('_components.stars')
@@ -340,7 +340,7 @@ width: full
               <p>“This is a must have tool for all privacy conscious people on the web.”</p>
             </div>
             <figcaption class="mt-6 flex items-center gap-x-4">
-              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/jurgen.webp" alt="">
+              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/jurgen.webp" alt="Jürgen V.">
               <div>
                 <div class="font-semibold">Jürgen V.</div>
                 @include('_components.stars')
@@ -358,7 +358,7 @@ width: full
               <p>“Smooth and easy in use. No missing emails. I became a happy paying customer.”</p>
             </div>
             <figcaption class="mt-6 flex items-center gap-x-4">
-              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/dan.png" alt="">
+              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/dan.png" alt="Dan">
               <div>
                 <div class="font-semibold">Dan</div>
                 @include('_components.stars')
@@ -374,7 +374,7 @@ width: full
               <p>“Powerful, and has a gorgeous GUI.”</p>
             </div>
             <figcaption class="mt-6 flex items-center gap-x-4">
-              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/roke.jpeg" alt="">
+              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/roke.jpeg" alt="Roke Beedell">
               <div>
                 <div class="font-semibold">Roke Beedell</div>
                 @include('_components.stars')
@@ -387,7 +387,7 @@ width: full
               <p>“I love this service. Solved my whole spam problem. The developer seems dedicated and passionate about security and privacy.”</p>
             </div>
             <figcaption class="mt-6 flex items-center gap-x-4">
-            <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/R.png" alt="">
+            <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/R.png" alt="Richard">
               <div>
                 <div class="font-semibold">Richard</div>
                 @include('_components.stars')
