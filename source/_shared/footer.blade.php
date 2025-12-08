@@ -5,11 +5,14 @@
         <div class="w-full flex flex-row flex-wrap justify-between py-6">
             <div class="flex flex-col mx-4 my-4 md:my-0">
                 <div class="text-grey-600 font-semibold mb-1">Company</div>
+                <a href="https://github.com/orgs/anonaddy/projects/1/views/1" target="_blank" rel="nofollow noreferrer noopener" class="no-underline text-grey-600 my-1" title="Roadmap">Roadmap</a>
+                <a href="/brand/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/brand') ? 'active font-bold' : '' }}" title="Brand">Brand</a>
+                <div class="flex items-center">
+                    <a href="/perks/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/perks') ? 'active font-bold' : '' }}" title="Perks">Perks</a>
+                    <span class="size-min ml-1.5 inline-flex items-center rounded-md bg-green-50 px-1 py-0.5 text-xs font-medium text-green-700">New</span>
+                </div>
                 <a href="/privacy/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/privacy') ? 'active font-bold' : '' }}" title="Privacy">Privacy</a>
                 <a href="/terms/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/terms') ? 'active font-bold' : '' }}" title="Terms">Terms</a>
-                <a href="/brand/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/brand') ? 'active font-bold' : '' }}" title="Brand">Brand</a>
-                <a href="https://github.com/orgs/anonaddy/projects/1/views/1" target="_blank" rel="nofollow noreferrer noopener" class="no-underline text-grey-600 my-1" title="Roadmap">Roadmap</a>
-                <a href="https://status.addy.io/" class="no-underline text-grey-600 my-1" title="Status">Status</a>
             </div>
             <div class="flex flex-col mx-4 my-4 md:my-0">
                 <div class="text-grey-600 font-semibold mb-1">Development</div>
@@ -23,6 +26,7 @@
                 <a href="/faq/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/faq') ? 'active font-bold' : '' }}" title="FAQ">FAQ</a>
                 <a href="/help/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/help') ? 'active font-bold' : '' }}" title="Help Centre">Help Centre</a>
                 <a href="/contact/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/contact') ? 'active font-bold' : '' }}" title="contact">Contact</a>
+                <a href="https://status.addy.io/" class="no-underline text-grey-600 my-1" title="Status">Status</a>
             </div>
             <div class="flex items-center mx-4 my-4 md:my-0">
                 <a href="https://github.com/anonaddy" target="_blank" rel="nofollow noreferrer noopener" class="no-underline text-grey-600 mr-4" title="addy.io GitHub">
