@@ -4,6 +4,7 @@
         "samdark/sitemap": "^2.2"
     },
     "require-dev": {
+        "laravel/envoy": "^2.10",
         "laravel/pint": "^1.2"
     },
     "autoload": {
