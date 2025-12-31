@@ -2,14 +2,14 @@
 Hash: SHA256
 
 Contact: mailto:contact@help.addy.io
-Expires: 2026-01-01T00:00:00.000Z
+Expires: 2027-01-01T00:00:00.000Z
 Encryption: https://addy.io/contact-public-key.asc
 Preferred-Languages: en
 Canonical: https://addy.io/.well-known/security.txt
 -----BEGIN PGP SIGNATURE-----
 
-iIsEARYIADMWIQTmUsLbQ4WTKPNVdd6/e5PGSXUQ0AUCZ3OsGhUcY29udGFjdEBo
-ZWxwLmFkZHkuaW8ACgkQv3uTxkl1ENCnqAD+JeXzLSxWVRyd/GdVoIsTUAGtc5OT
-67W+kJHQYpXc44QBAJWKpgs64KFAeUTn5+N6Q+1zsLgIr1Zzr+VNlThps7QP
-=6S/t
+iIsEARYIADMWIQTmUsLbQ4WTKPNVdd6/e5PGSXUQ0AUCaVWC7BUcY29udGFjdEBo
+ZWxwLmFkZHkuaW8ACgkQv3uTxkl1ENBd5gEA6dTBP8tySesM/AGsA87mgrYrvp1A
+s7I15n3bwOVzoWcBAJuo8JBQZIE0nfeYllUxFt4sAqFbDez+8hu9bPQseSsK
+=+JwZ
 -----END PGP SIGNATURE-----
