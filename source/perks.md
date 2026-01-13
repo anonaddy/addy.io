@@ -12,7 +12,7 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
 </div>
 
 <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
-    <ul role="list" class="mx-auto grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-1 lg:gap-8">
+    <ul role="list" class="mx-auto grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-8">
         <li class="rounded-2xl bg-grey-50 px-8 py-10">
             <div class="flex items-center justify-center gap-2.5 mb-4">
                 <img src="/assets/img/notesnook.svg" alt="Notesnook Logo" class="max-h-12 object-contain" />
@@ -20,6 +20,17 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
             </div>
             <p class="text-sm/6 text-grey-600">An end-to-end encrypted, open source note-taking application focused on user privacy and ease of use.</p>
             <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off your first year.</p>
+            <div class="mt-6">
+                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
+            </div>
+        </li>
+        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+            <div class="flex items-center justify-center gap-2.5 mb-4">
+                <img src="/assets/img/windscribe.svg" alt="Windscribe Logo" class="max-h-12 object-contain" />
+                <a href="https://windscribe.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer">Windscribe</a>
+            </div>
+            <p class="text-sm/6 text-grey-600">Court-proven, audited no-logs VPN service with post-quantum safe encryption.</p>
+            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get a 3 month Pro trial, then the annual Pro plan for 49 USD per year.</p>
             <div class="mt-6">
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>

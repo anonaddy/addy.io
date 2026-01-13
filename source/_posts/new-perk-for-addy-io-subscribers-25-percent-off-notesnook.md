@@ -15,7 +15,7 @@ categories: [updates]
 
 ## addy.io has partnered with Notesnook
 
-We’re excited to share that addy.io has partnered with Notesnook, the fully open-source and end-to-end encrypted note-taking app.
+We’re excited to share that addy.io has partnered with [Notesnook](https://notesnook.com/), the fully open-source and end-to-end encrypted note-taking app.
 
 addy.io Lite and Pro subscribers can now get 25% off the first year of Notesnook Pro — a secure, private place for your notes, tasks, and ideas.
 
@@ -27,6 +27,8 @@ How to claim your discount
     <li>3. Find the Notesnook offer and click “Redeem code”</li>
     <li>4. Use the code at notesnook.com when subscribing</li>
 </ol>
+
+Read Notenooks's announcement [here](https://blog.notesnook.com/notesnook-and-addyio/).
 
 ## The new Perks page
 
