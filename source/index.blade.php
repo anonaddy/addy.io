@@ -473,6 +473,7 @@ width: full
                     <span class="text-4xl font-bold"><span class="currency-symbol">$</span>1</span>
                     <span class="text-sm font-semibold">/month</span>
                 </p>
+                <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly</p>
                 <a href="{{ $page->appUrl }}/register" aria-describedby="tier-lite" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Sign
                     Up</a>
                 <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-grey-900">
@@ -758,9 +759,12 @@ width: full
                             </td>
                         </tr>
                         <tr>
-                            <th scope="colgroup" colspan="3" class="pb-4 text-sm font-semibold leading-6 text-grey-900 pt-8">
+                            <th scope="colgroup" colspan="2" class="pb-4 text-sm font-semibold leading-6 text-grey-900 pt-8">
                                 Features
                                 <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/10"></div>
+                            </th>
+                            <th>
+                                <p class="text-xs text-grey-500 mb-0 text-center font-normal">Billed Yearly</p>
                             </th>
                             <th>
                                 <p class="text-xs text-grey-500 mb-0 text-center font-normal">Billed Yearly, <span class="currency-symbol">$</span>4 Billed Monthly</p>
