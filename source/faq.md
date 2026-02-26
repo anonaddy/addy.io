@@ -52,6 +52,7 @@ section: body
 - [If I subscribe will Stripe see my real email address?](#if-i-subscribe-will-stripe-see-my-real-email-address)
 - [Do you offer student discount?](#do-you-offer-student-discount)
 - [How do you prevent spammers?](#how-do-you-prevent-spammers)
+- [Do you provide SMTP credentials for aliases?](#do-you-provide-smtp-credentials-for-aliases)
 - [What do you use to do DNS lookups on domain names?](#what-do-you-use-to-do-dns-lookups-on-domain-names)
 - [Is there a limit to how many emails I can forward?](#is-there-a-limit-to-how-many-emails-i-can-forward)
 - [Is there a limit to how many aliases I can create per hour?](#is-there-a-limit-to-how-many-aliases-i-can-create-per-hour)
@@ -363,6 +364,7 @@ A few days before your billing cycle ends you will receive an email letting you 
 * Any aliases using paid plan only domains will be **deactivated**
 * If you have any more than 10 aliases using a shared domain e.g. anonaddy.me they will be **deactivated**
 * If your account username has catch-all disabled then it will be enabled
+* Any entries in your **blocklist** will no longer block emails
 
 You will not be able to activate any of the above again until you resubscribe.
 
@@ -384,6 +386,10 @@ The following is in place to help prevent spam:
 * DMARC - to check for email spoofing and reject emails that fail
 * FQDN - the sender must be using a valid fully qualified domain name
 * PTR record check - if the sender has no valid PTR record it is rejected
+
+## Do you provide SMTP credentials for aliases? {#do-you-provide-smtp-credentials-for-aliases}
+
+No, you cannot send directly from your aliases using SMTP credentials in your email client. Please see the [replying from aliases](/help/replying-to-email-using-an-alias/) and [sending from aliases](/help/sending-email-from-an-alias/) help articles.
 
 ## What do you use to do DNS lookups on domain names? {#what-do-you-use-to-do-dns-lookups-on-domain-names}
 
