@@ -5,7 +5,7 @@ image: https://addy.io/assets/img/addy.io-windscribe.png
 section: content
 title: addy.io has partnered with Windscribe
 date: 2026-01-13
-description: We’re excited to share that addy.io has partnered with Windscribe, the Court-proven, audited no-logs VPN service with post-quantum safe encryption.
+description: We're excited to share that addy.io has partnered with Windscribe, the Court-proven, audited no-logs VPN service with post-quantum safe encryption.
 categories: [updates]
 ---
 

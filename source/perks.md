@@ -56,6 +56,17 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
+        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+            <div class="flex items-center justify-center gap-2.5 mb-4">
+                <a href="https://www.easyoptouts.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer"><img src="/assets/img/easyoptoutslogo.svg" alt="EasyOptOuts Logo" class="max-h-12 object-contain" /></a>
+            </div>
+            <p class="text-sm/6 text-grey-600">EasyOptOuts is an automated data removal service that scrubs your name, address, and phone number from 200+ data brokers and people-search sites.</p>
+            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off for life. Each coupon covers 5 sign-ups, so you can protect yourself and the people you care about.</p>
+            <div class="mt-6">
+                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
+            </div>
+            <p class="mt-6 mb-0 text-xs text-grey-400">US customers only.</p>
+        </li>
     </ul>
 </div>
 

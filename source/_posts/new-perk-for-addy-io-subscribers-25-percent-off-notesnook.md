@@ -5,7 +5,7 @@ image: https://addy.io/assets/img/addy.io-notesnook.png
 section: content
 title: New Perk for addy.io subscribers - 25% off Notesnook
 date: 2025-12-08
-description: We’re excited to share that addy.io has partnered with Notesnook, the fully open-source and end-to-end encrypted note-taking app.
+description: We're excited to share that addy.io has partnered with Notesnook, the fully open-source and end-to-end encrypted note-taking app.
 categories: [updates]
 ---
 

@@ -5,7 +5,7 @@ image: https://addy.io/assets/img/addy.io-kagi.png
 section: content
 title: addy.io has partnered with Kagi
 date: 2026-02-10
-description: We’re excited to share that addy.io has partnered with Kagi, a premium, privacy-focused, ad-free search engine that prioritises user experience over advertising revenue.
+description: We're excited to share that addy.io has partnered with Kagi, a premium, privacy-focused, ad-free search engine that prioritises user experience over advertising revenue.
 categories: [updates]
 ---
 

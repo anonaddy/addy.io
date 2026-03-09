@@ -5,7 +5,7 @@ image: https://addy.io/assets/img/addy.io-tuta.png
 section: content
 title: addy.io has partnered with Tuta
 date: 2026-03-05
-description: We’re excited to share that addy.io has partnered with Tuta, so that you can take back your data with Tuta's encrypted email, calendar and contacts.
+description: We're excited to share that addy.io has partnered with Tuta, so that you can take back your data with Tuta's encrypted email, calendar and contacts.
 categories: [updates]
 ---
 
