@@ -19,13 +19,13 @@ width: full
                                 <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">addy.io has partnered with Tuta! →</span>
                             </a>
                         </div>
-                        <h1 class="mt-10 text-4xl font-bold tracking-tight text-grey-900">Anonymous Email Forwarding
+                        <h1 class="mt-10 text-4xl font-bold tracking-tight text-grey-900">A different email address for every website
                         </h1>
-                        <p class="mt-6 text-lg leading-8 text-grey-600">Protect your real email address using email
-                            aliases</p>
+                        <p class="mt-6 text-lg leading-8 text-grey-600">addy.io creates <strong>aliases</strong> that forward to your real inbox. Share an alias instead of your main email address - then switch one off if it leaks or starts spamming you.
+                        </p>
                         <div class="mt-10 flex items-center space-x-4">
-                            <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
-                                Started Now</a>
+                            <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" data-umami-event="signup-button" data-umami-event-source="hero-cta">Get
+                                started free</a>
                             <a href="https://github.com/anonaddy/anonaddy" target="_blank" rel="nofollow noreferrer noopener" class="inline-flex items-center">
                                 Open-source
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" height="20" preserveAspectRatio="xMinYMin" class="fill-current inline-block align-top ml-1.5">
@@ -58,23 +58,19 @@ width: full
 
 <section class="bg-white py-8">
     <div class="container max-w-5xl mx-auto m-8 border-b border-grey-100">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">How Does It Work?</h1>
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">How does it work?</h2>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
 
             <div class="flex flex-wrap">
                 <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">1. Register Your Username</h3>
-                    <p class="text-grey-600 mb-4">Let's say your username is <b>johndoe</b>. You can now use
-                        *@johndoe.anonaddy.com (or .me) as your email. Where * denotes any valid local part for an email
-                        address.</p>
+                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">1. Choose a username</h3>
+                    <p class="text-grey-600 mb-4">Pick a username (for example <b>johndoe</b>). You can then use an email address like <b>anything@johndoe.addy.io</b> - the bit before the @ sign can be whatever you like.</p>
 
-                    <p class="text-grey-600 mb-4">If you would like to remain anonymous choose a username that is not
-                        linked to your real name or identity and that you haven't used anywhere else.</p>
+                    <p class="text-grey-600 mb-4">Want to stay anonymous? Pick a username that is not tied to your real name and that you have not used elsewhere online.</p>
 
-                    <p class="text-grey-600">You can also create aliases at <b>shared domains</b> if you are concerned
-                        about others linking alias ownership to you.</p>
+                    <p class="text-grey-600">You can also use <b>shared domains</b> (e.g. @addy.io) so your addresses do not all contain the same username.</p>
                 </div>
                 <div class="w-full sm:w-1/2 p-6">
                     <img class="w-full sm:h-64 mx-auto" src="/assets/img/register.svg" alt="Register">
@@ -87,14 +83,10 @@ width: full
                 </div>
                 <div class="w-full sm:w-1/2 p-6 mt-6">
                     <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">2. Create Aliases</h3>
-                        <p class="text-grey-600 mb-4">Either <b>on the fly</b> or <b>generated</b> beforehand. Next time
-                            you are signing up to a website or newsletter, simply make up a new alias and enter that
-                            instead of your real email address.</p>
-                        <p class="text-grey-600 mb-4">For example, if you are on vuejs.org and you want to sign up to
-                            their newsletter you could simply enter <b>vuejs@johndoe.anonaddy.com</b> (or .me).</p>
-                        <p class="text-grey-600 mb-4">We'll automatically create the alias in your dashboard as soon as
-                            it receives its first email. You can reply to emails and send from aliases anonymously too!
+                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">2. Give each site its own email</h3>
+                        <p class="text-grey-600 mb-4">When you sign up somewhere, invent a new alias instead of typing your real email address. You can think one up on the spot or generate one in advance - either way works.</p>
+                        <p class="text-grey-600 mb-4">Example: for a Groupon newsletter you might use <b>groupon@johndoe.addy.io</b>.</p>
+                        <p class="text-grey-600 mb-4">We add the alias to your dashboard when the first message arrives. You can reply and send from aliases without exposing your real email address.
                         </p>
                     </div>
                 </div>
@@ -103,14 +95,10 @@ width: full
 
             <div class="flex flex-wrap">
                 <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">3. Manage Aliases</h3>
-                    <p class="text-grey-600 mb-4">Let's say a spammer gets hold of one of your aliases and starts
-                        sending unsolicited email to it. You can simply toggle a switch in your dashboard and deactivate
-                        that alias.</p>
-                    <p class="text-grey-600 mb-4">Our system will then silently <b>discard</b> any further emails and
-                        you won't be forwarded anything else for that alias.</p>
-                    <p class="text-grey-600 mb-4">You can also delete the alias. Then our system will <b>reject</b> any
-                        emails and respond with an error.</p>
+                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">3. Turn off what you do not want</h3>
+                    <p class="text-grey-600 mb-4">If an address starts getting junk mail, open your dashboard and <b>deactivate</b> that alias.</p>
+                    <p class="text-grey-600 mb-4">We then <b>silently discard</b> new mail to it - nothing reaches your inbox for that alias.</p>
+                    <p class="text-grey-600 mb-4"><b>Delete</b> an alias if you prefer senders to get a bounce instead of a quiet drop.</p>
                 </div>
                 <div class="w-full sm:w-1/2 p-6">
                     <img class="w-full sm:h-64 mx-auto" src="/assets/img/dashboard.svg" alt="Manage Aliases">
@@ -122,20 +110,20 @@ width: full
 
 <section class="bg-white py-8">
     <div class="container max-w-5xl mx-auto m-8 border-b border-grey-100">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Features You'll Love</h1>
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Features you will love</h1>
             <div class="w-full mb-4">
                 <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
 
             <div class="flex flex-wrap">
                 <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Mobile Apps</h3>
-                    <p class="text-grey-600 mb-4">Beautiful native mobile apps with a buttery smooth user experience to manage your account on the go.
+                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Mobile apps</h3>
+                    <p class="text-grey-600 mb-4">Beautiful mobile apps with a buttery smooth user experience to manage your account on the go.
                     </p>
 
                     <p class="text-grey-600 mb-4">Completely free to use whether you are using addy.io or your own self-hosted instance.</p>
 
-                    <p class="text-grey-600">The mobile apps are availalbe on <a href="https://apps.apple.com/app/addy-io/id6563138633" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">iOS</a> and <a href="https://play.google.com/store/apps/details?id=host.stjin.anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Android</a> and are both <a href="https://github.com/anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a>!</p>
+                    <p class="text-grey-600">The mobile apps are availalbe on <a href="https://apps.apple.com/app/addy-io/id6563138633" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">iOS</a> and <a href="https://play.google.com/store/apps/details?id=host.stjin.anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Android</a> and are both <a href="https://github.com/anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a>.</p>
                 </div>
                 <div class="w-full sm:w-1/2 p-6">
                     <img class="w-full sm:h-72 mx-auto" src="/assets/img/aliases-mobile.svg" alt="Mobile Apps">
@@ -148,19 +136,16 @@ width: full
                 </div>
                 <div class="w-full sm:w-1/2 p-6 mt-6">
                     <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Browser Extension</h3>
-                        <p class="text-grey-600 mb-4">Generate new aliases in a couple of clicks straight from your
-                            browser using the <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a> browser extension.</p>
-                        <p class="text-grey-600 b-4">The extension is available for download on <a href="https://addons.mozilla.org/en-GB/firefox/addon/addy_io/" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/addyio-anonymous-email-fo/iadbdpnoknmbdeolbapdackdcogdmjpe" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Chrome</a>, <a href="https://microsoftedge.microsoft.com/addons/detail/addyio-anonymous-email/ohjlgpcfncgkijjfmabldlgnccmgcehl" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Edge</a> and <a href="https://apps.apple.com/app/addy-io-extension/id6670220050" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Safari</a>!</p>
-                        <p class="text-grey-600 mb-4">Also available on other chromium based browsers such as Brave and
-                            Vivaldi.</p>
+                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Browser extension</h3>
+                        <p class="text-grey-600 mb-4">Create a new alias in a couple of clicks while you browse, using our <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a> extension.</p>
+                        <p class="text-grey-600 mb-4">Available in <a href="https://addons.mozilla.org/en-GB/firefox/addon/addy_io/" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/addyio-anonymous-email-fo/iadbdpnoknmbdeolbapdackdcogdmjpe" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Chrome</a>, <a href="https://microsoftedge.microsoft.com/addons/detail/addyio-anonymous-email/ohjlgpcfncgkijjfmabldlgnccmgcehl" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Edge</a>, <a href="https://apps.apple.com/app/addy-io-extension/id6670220050" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Safari</a>, and other Chromium-based browsers such as Brave and Vivaldi.</p>
                     </div>
                 </div>
             </div>
 
             <div class="flex flex-wrap">
                 <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">GPG/OpenPGP Encryption</h3>
+                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">GPG / OpenPGP encryption</h3>
                     <p class="text-grey-600 mb-4">Bring your own GPG/OpenPGP public keys and add them per recipient.
                     </p>
 
@@ -183,27 +168,22 @@ width: full
                 </div>
                 <div class="w-full sm:w-1/2 p-6 mt-6">
                     <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Custom Domains</h3>
-                        <p class="text-grey-600 mb-4">If you have your own domain you can add it and use it exactly
-                            like your username subdomain aliases e.g. <b>alias@example.com</b>.</p>
-                        <p class="text-grey-600 b-4">You can also enable or disable the <b>catch-all</b> functionality
+                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Your own domain</h3>
+                        <p class="text-grey-600 mb-4">Bring a domain you control and create addresses like <b>anything@example.com</b>, the same way you do with your username subdomain.</p>
+                        <p class="text-grey-600 mb-4">You can also enable or disable the <b>catch-all</b> functionality
                             for each of your domains.</p>
-                        <p class="text-grey-600 b-4">Don't want to enable catch-all? You can still create aliases on-the-fly by <b>matching a regular expression</b>!</p>
-                        <p class="text-grey-600 mb-4">You can then manage your aliases and deactivate/delete any that
-                            start receiving spam!</p>
+                        <p class="text-grey-600 mb-4">Prefer not to use catch-all? You can still create aliases on the fly with a <b>regular expression</b> match.</p>
+                        <p class="text-grey-600 mb-4">If an address starts attracting spam, deactivate or delete it from your dashboard.</p>
                     </div>
                 </div>
             </div>
 
             <div class="flex flex-wrap">
                 <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Blend Into The Crowd</h3>
-                    <p class="text-grey-600 mb-4">If you don't like the fact that all your aliases contain your
-                        username then you can generate random unique aliases from your dashboard.</p>
-                    <p class="text-grey-600 mb-4">The generated aliases will look something like this
-                        <b>x481n904@anonaddy.me</b> or <b>circus.waltz449@anonaddy.me</b>
-                    </p>
-                    <p class="text-grey-600 mb-4">This prevents anyone linking ownership of the alias to you.</p>
+                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Random aliases</h3>
+                    <p class="text-grey-600 mb-4">Don't want your username in every address? Generate one-off aliases from your dashboard.</p>
+                    <p class="text-grey-600 mb-4">They look like <b>x481n904@anonaddy.me</b> or <b>weekly-warning694@addy.io</b> - harder for anyone to tie back to you.</p>
+                    <p class="text-grey-600 mb-4">Useful when you want separation without a recognisable pattern.</p>
                 </div>
                 <div class="w-full sm:w-1/2 p-6">
                     <img class="w-full sm:h-64 mx-auto" src="/assets/img/anonymous.svg" alt="UUID Aliases">
@@ -216,7 +196,7 @@ width: full
                 </div>
                 <div class="w-full sm:w-1/2 p-6 mt-6">
                     <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Reply To And Send From Aliases
+                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Reply and send from aliases
                         </h3>
                         <p class="text-grey-600 mb-4">Reply <b>anonymously</b> to forwarded emails, the sender will
                             receive the email as if it has come from the alias.</p>
@@ -230,13 +210,10 @@ width: full
 
             <div class="flex flex-wrap">
                 <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Add Additional Usernames</h3>
-                    <p class="text-grey-600 mb-4">You can add additional usernames to your account and use them exactly
-                        like the one you signed up with.</p>
-                    <p class="text-grey-600 mb-4">So if you signed up as johndoe you can add johnsmith as an additional
-                        username and then use <b>anyalias@johnsmith.anonaddy.com</b> too.</p>
-                    <p class="text-grey-600 mb-4">This can be used to compartmentalise your aliases. You could have a
-                        username for work emails a different one for personal emails etc.</p>
+                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Add additional usernames</h3>
+                    <p class="text-grey-600 mb-4">Add more usernames to the same account and use them like your first one.</p>
+                    <p class="text-grey-600 mb-4">Example: if you signed up as <b>johndoe</b>, add <b>johnsmith</b> and you can use <b>anything@johnsmith.addy.io</b> as well.</p>
+                    <p class="text-grey-600 mb-4">Handy for separating work, personal, or any other life area without juggling multiple accounts.</p>
                 </div>
                 <div class="w-full sm:w-1/2 p-6">
                     <img class="w-full sm:h-64 mx-auto" src="/assets/img/usernames.svg" alt="Additional Usernames">
@@ -249,15 +226,11 @@ width: full
                 </div>
                 <div class="w-full sm:w-1/2 p-6 mt-6">
                     <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Multiple Recipients Per Alias
+                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Multiple recipients per alias
                         </h3>
-                        <p class="text-grey-600 mb-4">If you'd like an alias to go to more than one recipient you can
-                            easily add multiple recipients from your dashboard.</p>
-                        <p class="text-grey-600 mb-4">You can even add recipients to an alias as it is created by doing
-                            <b>alias+2.3.4@user.anonaddy.com</b>
-                        </p>
-                        <p class="text-grey-600 mb-4">Where 2,3 and 4 are the keys for existing recipients in your
-                            account.</p>
+                        <p class="text-grey-600 mb-4">Route one alias to multiple real email addresses from your dashboard.</p>
+                        <p class="text-grey-600 mb-4">You can send bills or service alerts to you and your partner, forward support emails to a team inbox, or keep a backup address so important messages are still delivered if one mailbox is unavailable.</p>
+                        <p class="text-grey-600 mb-4">For example, <b>waterbills@yourdomain.com</b> can forward to both your personal inbox and your partner's inbox at the same time.</p>
                     </div>
                 </div>
             </div>
@@ -265,10 +238,9 @@ width: full
             <div class="flex flex-wrap">
                 <div class="w-full sm:w-1/2 p-6 mt-6">
                     <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">API Access</h3>
-                        <p class="text-grey-600 mb-4">Manage your aliases, recipients, domains and additional usernames
-                            using the addy.io API.</p>
-                        <p class="text-grey-600 mb-4">In order to use the API you first need to generate an API Key in your account settings.</p>
+                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Developer API</h3>
+                        <p class="text-grey-600 mb-4">Automate aliases, recipients, domains, additional usernames and other account resources with the addy.io API.</p>
+                        <p class="text-grey-600 mb-4">Create an API key in your account settings to get started.</p>
                         <p class="text-grey-600 mb-4"><a href="{{ $page->appUrl }}/docs/" class="text-indigo-700 font-bold">View API documentation</a></p>
                     </div>
                 </div>
@@ -290,7 +262,7 @@ width: full
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-xl text-center">
       <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Don't just take our word for it!</h2>
-      <p class="mt-2 text-3xl font-bold tracking-tight text-grey-900 sm:text-4xl">Join thousands of happy users</p>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-grey-900 sm:text-4xl">Trusted by thousands of users</p>
     </div>
     <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-grey-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
       <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-grey-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
@@ -405,7 +377,7 @@ width: full
 <section id="pricing" class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-4xl text-center">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Pricing</h1>
+            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Pricing</h2>
                 <div class="w-full mb-4">
                     <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
@@ -420,7 +392,7 @@ width: full
                     <span class="text-4xl font-bold"><span class="currency-symbol">$</span>0</span>
                     <span class="text-sm font-semibold">/month</span>
                 </p>
-                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-free" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Sign
+                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-free" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-free-mobile-cta">Sign
                     Up</a>
                 <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-grey-900 list-none">
                     <li>
@@ -474,7 +446,7 @@ width: full
                     <span class="text-sm font-semibold">/month</span>
                 </p>
                 <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly</p>
-                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-lite" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Sign
+                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-lite" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-lite-mobile-cta">Sign
                     Up</a>
                 <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-grey-900">
                     <li>
@@ -585,6 +557,16 @@ width: full
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <ul role="list" class="space-y-4">
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                </svg>
+                                <span> Access to <a href="/perks/" class="inline-flex items-center">exclusive discounts</a> </span>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
             <section class="p-8 rounded-xl bg-grey-400/5 ring-1 ring-inset ring-grey-200">
@@ -595,7 +577,7 @@ width: full
                 </p>
                 <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly, <span class="currency-symbol">$</span>4
                     Billed Monthly</p>
-                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-pro" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500">Sign
+                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-pro" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500" data-umami-event="signup-button" data-umami-event-source="pricing-pro-mobile-cta">Sign
                     Up</a>
                 <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-grey-900">
                     <li>
@@ -706,6 +688,16 @@ width: full
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <ul role="list" class="space-y-4">
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                                </svg>
+                                <span> Access to <a href="/perks/" class="inline-flex items-center">exclusive discounts</a> </span>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
         </div>
@@ -750,7 +742,7 @@ width: full
                                     <span class="text-4xl font-bold"><span class="currency-symbol">$</span>0</span>
                                     <span class="text-sm font-semibold leading-6">/month</span>
                                 </div>
-                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Sign
+                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-free-cta">Sign
                                     Up</a>
                             </td>
                             <td class="px-6 pt-2 xl:px-8">
@@ -758,7 +750,7 @@ width: full
                                     <span class="text-4xl font-bold"><span class="currency-symbol">$</span>1</span>
                                     <span class="text-sm font-semibold leading-6">/month</span>
                                 </div>
-                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Sign
+                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-lite-cta">Sign
                                     Up</a>
                             </td>
                             <td class="px-6 pt-2 xl:px-8">
@@ -766,7 +758,7 @@ width: full
                                     <span class="text-4xl font-bold"><span class="currency-symbol">$</span>3</span>
                                     <span class="text-sm font-semibold leading-6">/month</span>
                                 </div>
-                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500">Sign
+                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500" data-umami-event="signup-button" data-umami-event-source="pricing-pro-cta">Sign
                                     Up</a>
                             </td>
                         </tr>
@@ -1191,6 +1183,45 @@ width: full
                                 <span class="sr-only">Included in Pro</span>
                             </td>
                         </tr>
+
+                        <tr>
+                            <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-grey-900 pt-16">
+                                Perks
+                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/10"></div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
+                                Access to <a href="/perks/" class="inline-flex items-center">exclusive discounts</a>
+                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
+                            </th>
+                            <td class="px-6 py-4 xl:px-8">
+                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="sr-only">Not included in Free</span>
+                            </td>
+                            <td class="px-6 py-4 xl:px-8">
+                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
+                                        </circle>
+                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
+                                    </g>
+                                </svg>
+                                <span class="sr-only">Included in Lite</span>
+                            </td>
+                            <td class="px-6 py-4 xl:px-8">
+                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
+                                        </circle>
+                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
+                                    </g>
+                                </svg>
+                                <span class="sr-only">Included in Pro</span>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -1201,13 +1232,13 @@ width: full
 <div class="bg-white">
     <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-            <h2 class="text-3xl font-bold tracking-tight text-grey-900 sm:text-4xl">Protect Your Privacy.<br>Eliminate
-                Spam.</h2>
+            <h2 class="text-3xl font-bold tracking-tight text-grey-900 sm:text-4xl">Protect your privacy.<br>Eliminate
+                spam.</h2>
             <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-grey-600">Join thousands of others who are already
                 protecting their privacy online and keeping their inboxes tidy.</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Secure
-                    Your Inbox Today
+                <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" data-umami-event="signup-button" data-umami-event-source="newsletter-cta">Secure
+                    your inbox today
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block ml-1">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
@@ -1223,10 +1254,9 @@ width: full
             <img src="/assets/img/cover.jpg" alt="addy.io Newsletter Background" class="absolute inset-0 -z-10 brightness-[0.35] w-full h-full object-none">
 
             <div class="">
-                <h2 class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">Get
-                    Product News & Updates</h2>
-                <p class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-grey-100">Sign up for our
-                    newsletter.</p>
+                <h2 class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">Product
+                    news and updates</h2>
+                <p class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-grey-100">Occasional emails - no spam. Unsubscribe any time.</p>
                 <form action="https://news.addy.io/subscribe" method="POST" accept-charset="utf-8" class="mx-auto mt-10 flex max-w-md gap-x-4">
                     <label for="email-address" class="sr-only">Email address</label>
                     <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6" placeholder="Enter your email">
@@ -1238,7 +1268,7 @@ width: full
                     <input type="hidden" name="subform" value="yes" />
                     <label for="gdpr" class="hidden">GDPR</label>
                     <input class="hidden" type="checkbox" name="gdpr" id="gdpr" checked />
-                    <button type="submit" class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-grey-900 shadow-sm hover:bg-grey-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Notify
+                    <button type="submit" class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-grey-900 shadow-sm hover:bg-grey-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" data-umami-event="newsletter-submit" data-umami-event-source="newsletter-form-home">Notify
                         me</button>
                 </form>
             </div>

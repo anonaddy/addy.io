@@ -8,12 +8,12 @@
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
             @foreach($page->menuItems as $item)
-            <a title="{{ $item->title }}" href="{{ $item->href }}" id="{{ strtolower($item->title) }}-nav-link" class="text-grey-900 font-semibold hover:text-grey-700 {{ $page->isActive($item->href) ? 'active font-bold' : '' }}">{{ $item->title }}</a>
+            <a title="{{ $item->title }}" href="{{ $item->href }}" id="{{ strtolower($item->title) }}-nav-link" class="text-grey-900 font-semibold hover:text-grey-700 {{ $page->isActive($item->href) ? 'active font-bold' : '' }}" @if($item->href === '/#pricing') data-umami-event="pricing-click" data-umami-event-source="header-nav" @endif>{{ $item->title }}</a>
             @endforeach
         </div>
         <div class="flex flex-1 items-center justify-end gap-x-6">
             <a href="{{ $page->appUrl }}/login" class="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-grey-900">Log in</a>
-            <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign up</a>
+            <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" data-umami-event="signup-button" data-umami-event-source="header-nav">Sign up</a>
         </div>
         <div class="flex lg:hidden">
             <button type="button" class="mobile-menu-button -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-grey-700">
@@ -44,7 +44,7 @@
                 <div class="-my-6 divide-y divide-grey-500/10">
                     <div class="space-y-2 py-6">
                         @foreach($page->menuItems as $item)
-                        <a id="{{ strtolower($item->title).'-menu-item' }}" title="{{ $item->title }}" href="{{ $item->href }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-grey-900 hover:bg-grey-50 {{ $page->isActive($item->href) ? 'active font-bold' : '' }}">{{ $item->title }}</a>
+                        <a id="{{ strtolower($item->title).'-menu-item' }}" title="{{ $item->title }}" href="{{ $item->href }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-grey-900 hover:bg-grey-50 {{ $page->isActive($item->href) ? 'active font-bold' : '' }}" @if($item->href === '/#pricing') data-umami-event="pricing-click" data-umami-event-source="header-nav" @endif>{{ $item->title }}</a>
                         @endforeach
                     </div>
                     <div class="py-6">
