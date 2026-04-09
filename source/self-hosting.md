@@ -905,6 +905,111 @@ Restart Rspamd to reflect the changes.
 sudo service rspamd restart
 ```
 
+Now add support for the user blocklist feature by creating `/etc/rspamd/lua.local.d/addy_blocklist.lua`:
+
+```bash
+sudo nano /etc/rspamd/lua.local.d/addy_blocklist.lua
+```
+
+```lua
+--[[
+  Rspamd Lua script: user blocklist check via Laravel HTTP API.
+
+  Deploy this on each mail server that runs Rspamd. Point blocklist_api_url
+  at your Laravel app.
+
+  Required: rspamd_http (built-in). Symbol BLOCKLIST_USER is set when the
+  API returns block=true; map this symbol to an action (reject/discard) in
+  your Rspamd actions config.
+--]]
+
+local blocklist_api_url = 'https://your-addy-instance.com/api/blocklist-check'
+local blocklist_secret = ''  -- same as BLOCKLIST_API_SECRET in .env, or leave '' if unset
+
+-- Simple percent-encode for query parameter values (rspamd_http has no escape)
+local function url_encode(s)
+  if s == nil or s == '' then return '' end
+  s = tostring(s)
+  return (s:gsub('[^%w%-_.~ ]', function(c)
+    return string.format('%%%02X', string.byte(c))
+  end):gsub(' ', '%%20'))
+end
+
+local logger = require "rspamd_logger"
+local rspamd_http = require 'rspamd_http'
+
+rspamd_config:register_symbol({
+  name = 'BLOCKLIST_USER',
+  callback = function(task)
+    local rcpts = task:get_recipients('smtp')
+    local from_env = task:get_from('smtp')
+    if not rcpts or #rcpts == 0 then
+      logger.infox('blocklist: skip - missing recipient')
+      return false
+    end
+    local recipient = (rcpts[1].addr and rcpts[1].addr:lower()) or ''
+
+    local sender = ''
+    if from_env and from_env.addr then
+      sender = from_env.addr:lower()
+    end
+
+    local from_email = ''
+    local from_hdr = task:get_header('From')
+    if from_hdr then
+      local raw = (type(from_hdr) == 'table') and (from_hdr[1] or from_hdr) or from_hdr
+      raw = tostring(raw)
+      from_email = raw:match('<([^>]+)>') or raw:match('%S+@%S+') or ''
+      from_email = from_email:lower()
+    end
+    if from_email == '' then
+      from_email = sender
+    end
+
+    if recipient == '' or (sender == '' and from_email == '') then
+      logger.infox('blocklist: skip - missing recipient or from (recipient=%1, sender=%2, from_email=%3)', recipient, sender, from_email)
+      return false
+    end
+
+    local url = blocklist_api_url
+      .. '?recipient=' .. url_encode(recipient)
+      .. '&from_email=' .. url_encode(from_email)
+
+    local req_headers = {}
+    if blocklist_secret ~= '' then
+      req_headers['X-Blocklist-Secret'] = blocklist_secret
+    end
+
+    rspamd_http.request({
+      url = url,
+      headers = req_headers,
+      timeout = 2.0,
+      task = task,
+      callback = function(err_message, code, body, _headers)
+        if err_message then
+          logger.warnx('blocklist: HTTP error - %1', err_message)
+          return
+        end
+        if code == 200 and body and body:match('"block"%s*:%s*true') then
+          task:set_pre_result('reject', '550 5.1.1 Address not found')
+          task:insert_result(true, 'BLOCKLIST_USER', 1000.0, '550 5.1.1 Address not found')
+          logger.infox('blocklist: BLOCKLIST_USER set for recipient=%1 from_email=%2', recipient, from_email)
+        end
+      end,
+    })
+
+    return false
+  end,
+  score = 1000.0,
+})
+```
+
+Restart Rspamd again after creating the file:
+
+```bash
+sudo service rspamd restart
+```
+
 You can view the Rspamd web interface by creating an SSH tunnel by running the following command on your local pc:
 
 ```bash
@@ -969,7 +1074,7 @@ fi
 
 Make sure node is installed (`node -v`) if not then install it using NVM - [https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-3-installing-node-using-the-node-version-manager](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-3-installing-node-using-the-node-version-manager)
 
-At the time of writing this I'm using the latest LTS - v18.18.2
+You should use Node `20.19+` (required for Vite 8).
 
 Next copy the .env.example file and update it with correct values (database password, app url, redis password etc.) then install the dependencies.
 
@@ -984,6 +1089,16 @@ npm run production
 ```
 
 Make sure to update the database settings, redis password and the AnonAddy variables. You can use Redis for queue, sessions and cache.
+
+Also add the blocklist API variables to your `.env`:
+
+```bash
+# Blocklist API (Rspamd): comma-separated IPs allowed to call /api/blocklist-check; optional shared secret
+BLOCKLIST_API_ALLOWED_IPS=127.0.0.1
+BLOCKLIST_API_SECRET=
+```
+
+Make sure `BLOCKLIST_API_ALLOWED_IPS` includes the actual IP address(es) of your mail server(s). If you set a secret here, it must match `blocklist_secret` in `/etc/rspamd/lua.local.d/addy_blocklist.lua`.
 
 We'll set `ANONADDY_SIGNING_KEY_FINGERPRINT` shortly.
 
