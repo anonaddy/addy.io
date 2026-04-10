@@ -317,6 +317,37 @@ Making sure to replace `johndoe` with the username of the user who will run the 
 
 This command will pipe the email through to our application so that we can determine who the alias belongs to and who to forward the email to.
 
+In order to parse the Postfix log files and display inbound rejections to your aliases you will need to give your `johndoe` user permission to view the mail log:
+
+```bash
+sudo setfacl -m u:johndoe:r /var/log/mail.log
+```
+
+Run `sudo apt install acl` if the above command fails.
+
+You may also need to add the following to the `postrotate` hook of logrotate so that this is reapplied when you mail log is rotated:
+
+```bash
+sudo vim /etc/logrotate.d/rsyslog
+```
+
+```
+/var/log/mail.log
+{
+        ...
+        postrotate
+                /usr/lib/rsyslog/rsyslog-rotate
+                [ -f /var/log/mail.log ] && setfacl -m u:johndoe:r /var/log/mail.log
+        endscript
+}
+```
+
+If your mail log is at a location other than `/var/log/mail.log` you can set this in your `.env` file:
+
+```
+POSTFIX_LOG_PATH=/path/to/mail.log
+```
+
 ## Installing Nginx {#installing-nginx}
 
 To install Nginx first add the prerequisites add then add the following signing key and repo (instructions taken from [nginx.org](https://nginx.org/en/linux_packages.html#Ubuntu)).
