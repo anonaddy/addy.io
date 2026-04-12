@@ -1,6 +1,15 @@
 const mix = require('laravel-mix');
 require('laravel-mix-jigsaw');
 const build = require('./tasks/build.js');
+const WebpackBarPlugin = require('webpackbar');
+
+// Webpack 5.106+ validates ProgressPlugin options strictly. webpackbar stores its own
+// settings on the same object and fails that validation; drop the bar until upstream fixes.
+mix.override((webpackConfig) => {
+    webpackConfig.plugins = (webpackConfig.plugins || []).filter(
+        (plugin) => !(plugin instanceof WebpackBarPlugin)
+    );
+});
 
 mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build/');

@@ -123,7 +123,7 @@ width: full
 
                     <p class="text-grey-600 mb-4">Completely free to use whether you are using addy.io or your own self-hosted instance.</p>
 
-                    <p class="text-grey-600">The mobile apps are availalbe on <a href="https://apps.apple.com/app/addy-io/id6563138633" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">iOS</a> and <a href="https://play.google.com/store/apps/details?id=host.stjin.anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Android</a> and are both <a href="https://github.com/anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a>.</p>
+                    <p class="text-grey-600">The mobile apps are available on <a href="https://apps.apple.com/app/addy-io/id6563138633" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">iOS</a> and <a href="https://play.google.com/store/apps/details?id=host.stjin.anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Android</a> and are both <a href="https://github.com/anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a>.</p>
                 </div>
                 <div class="w-full sm:w-1/2 p-6">
                     <img class="w-full sm:h-72 mx-auto" src="/assets/img/aliases-mobile.svg" alt="Mobile Apps">

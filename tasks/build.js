@@ -1,4 +1,4 @@
-let argv = require('yargs').argv;
+let argv = require('yargs-parser')(process.argv.slice(2));
 let bin = require('./bin');
 let command = require('node-cmd');
 
