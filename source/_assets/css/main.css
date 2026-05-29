@@ -127,6 +127,10 @@ body {
     @apply text-2xl;
   }
 
+  h3.faq-category {
+    @apply underline decoration-grey-400 decoration-2 underline-offset-4;
+  }
+
   h4 {
     @apply font-normal;
     @apply text-xl;
