@@ -12,7 +12,7 @@ order: 4
 
 Each alias forwards incoming mail to one or more [recipients](/help/adding-a-recipient/) (your real email addresses). You can change which recipients an alias uses at any time-for example, to send an alias' mail to a different inbox or to add a second address. This article explains how to change the recipients for an alias on addy.io.
 
-## Changing the recipients of an email alias on addy.io
+<h2 id="changing-the-recipients-of-an-email-alias-on-addy-io">Changing the recipients of an email alias on addy.io</h2>
 
 1. [Log in](https://app.addy.io) and go to **Aliases** in the navigation bar.
 2. Find the alias whose recipients you want to change and click the "pencil" edit icon (as shown in the red box below) to open the modal.

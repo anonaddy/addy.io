@@ -12,7 +12,7 @@ order: 2
 
 If you have more than one [username](/help/adding-an-additional-username/) (your sign-up username plus additional usernames), you can set a **default username** for your account. The default is often used when you first log in or when the app needs to show a single “main” username. This article explains where to change it. You might wish to change your default username if you plan to delete the old one.
 
-## Where to change the default username
+<h2 id="where-to-change-the-default-username">Where to change the default username</h2>
 
 1. [Log in](https://app.addy.io) and go to **Usernames** in the navigation bar.
 2. Find the username you want as the new default and click **Make Default** underneath it (as shown by the red box below).

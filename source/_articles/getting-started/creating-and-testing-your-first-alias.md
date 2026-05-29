@@ -12,7 +12,7 @@ order: 7
 
 Once you have [created an account](/help/creating-an-account/) and [logged in](/help/logging-into-your-account/), the next step is to create and test your first email alias. This article walks you through the simplest method-creating an alias on the fly by using it when you sign up somewhere-and shows you how to confirm that emails are being forwarded correctly.
 
-## Create your first alias on the fly
+<h2 id="create-your-first-alias-on-the-fly">Create your first alias on the fly</h2>
 
 The easiest way to create an alias is to use it as soon as you need it. You do not have to generate it in addy.io first.
 
@@ -26,7 +26,7 @@ The easiest way to create an alias is to use it as soon as you need it. You do n
 
 4. **Complete sign-up or submit the form** as usual. addy.io will create the alias automatically when the first email is sent to that address and forward it to your [recipient](/help/adding-a-recipient/) (the real email you added to your account).
 
-## See your new alias in the dashboard
+<h2 id="see-your-new-alias-in-the-dashboard">See your new alias in the dashboard</h2>
 
 After the first email is sent to your new alias (e.g. the verification email from the site you signed up with), the alias will appear in your addy.io [dashboard](/help/navigating-the-web-application/). Go to **Aliases** in the navigation bar to see it listed there. You can use the same alias again anytime for that service, or create more aliases the same way for other sites.
 
@@ -34,7 +34,7 @@ After the first email is sent to your new alias (e.g. the verification email fro
   <img class="shadow max-w-full h-auto" src="/assets/img/help/getting-started/first-alias-in-dashboard.png" alt="New alias visible in the addy.io Aliases list after receiving its first email" title="Your first alias in the dashboard">
 </div>
 
-## Test that forwarding works
+<h2 id="test-that-forwarding-works">Test that forwarding works</h2>
 
 To confirm that forwarding is working:
 
@@ -47,7 +47,7 @@ If the email arrived at your recipient address, your first alias is set up and w
   <img class="shadow max-w-full h-auto" src="/assets/img/help/getting-started/first-alias-forwarded-email.png" alt="Forwarded email in your inbox showing it was sent to your alias" title="Forwarded email in your inbox">
 </div>
 
-## What next?
+<h2 id="what-next">What next?</h2>
 
 - Add more [recipients](/help/adding-a-recipient/) if you want to send different aliases to different addresses.
 - Use the [browser extension](/help/installing-the-browser-extension/) or [mobile app](/help/downloading-and-using-the-mobile-app/) to create and manage aliases on the go.

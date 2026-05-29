@@ -12,7 +12,7 @@ order: 1
 
 If you see addy.io [aliases](/help/what-are-the-different-kinds-of-aliases/) or the service being used for **abuse** (e.g. spam, phishing, or other prohibited use), you can report it. addy.io does not permit abusive behaviour and may suspend or terminate accounts that violate the terms. This article explains what counts as abuse and how to report it. For sites that block addy.io domains, see [Report a website that is blocking addy.io alias domains](/help/report-a-website-that-is-blocking-addy-io-alias-domains/).
 
-## Examples of abuse that are not permitted
+<h2 id="examples-of-abuse-that-are-not-permitted">Examples of abuse that are not permitted</h2>
 
 - **Bulk, scripted or bot signups** - Creating many accounts or aliases automatically to abuse services.
 - **Coupon or discount code harvesting** - Using aliases solely to collect one-time codes or offers at scale.
@@ -25,7 +25,7 @@ If you see addy.io [aliases](/help/what-are-the-different-kinds-of-aliases/) or 
 
 This list is not exhaustive. addy.io's terms of use and anti-abuse measures apply to all users.
 
-## How to report abuse
+<h2 id="how-to-report-abuse">How to report abuse</h2>
 
 1. Gather details that will help addy.io investigate: the addy.io **alias or domain** involved, **sample emails** or headers (if you received abuse), **dates**, and a short description of the behaviour.
 2. [Contact](/contact/) addy.io using the email shown.

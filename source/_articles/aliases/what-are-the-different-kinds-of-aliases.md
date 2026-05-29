@@ -12,7 +12,7 @@ order: 1
 
 addy.io supports different types of email aliases depending on the domain. The two main kinds are **standard aliases** (unique to you) and **shared domain aliases** (on a domain used by many users). This article explains what each type is and how they behave. For formats like random characters or random words, see [Terminology](/help/terminology/).
 
-## What is an email alias?
+<h2 id="what-is-an-email-alias">What is an email alias?</h2>
 
 An **email alias** is an address that forwards mail to another address-in addy.io's case, to one or more [recipients](/help/adding-a-recipient/) you have added. When someone emails your alias, addy.io receives it and forwards it to your real inbox. You can [reply](/help/replying-to-email-using-an-alias/) or [send](/help/sending-email-from-an-alias/) from the alias so the other person sees the alias address, not your real one.
 
@@ -20,7 +20,7 @@ An **email alias** is an address that forwards mail to another address-in addy.i
   <img class="shadow max-w-full h-auto" src="/assets/img/help/aliases/view-all-aliases.png" alt="View all aliases" title="View all aliases">
 </div>
 
-## Standard aliases
+<h2 id="standard-aliases">Standard aliases</h2>
 
 A **standard alias** uses a domain that belongs only to you. Examples:
 
@@ -30,7 +30,7 @@ A **standard alias** uses a domain that belongs only to you. Examples:
 
 Because the domain is unique to you, standard aliases can be **created on the fly**: as soon as the first email is sent to that address, addy.io creates the alias and forwards the message. You do not need to generate them in the dashboard first. This behaviour is called **catch-all**. You can also create them in advance via [Creating new email aliases](/help/creating-new-email-aliases/) (**Create Alias** on the website), the [browser extension](/help/installing-the-browser-extension/) or [mobile app](/help/downloading-and-using-the-mobile-app/).
 
-## Shared domain aliases
+<h2 id="shared-domain-aliases">Shared domain aliases</h2>
 
 A **shared domain alias** uses a domain that many addy.io users share. The most common example is **@anonaddy.me** (e.g. **circus.waltz449@anonaddy.me**). Other shared domains are available depending on your plan.
 

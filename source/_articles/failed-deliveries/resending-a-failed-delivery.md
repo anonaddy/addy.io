@@ -12,14 +12,14 @@ order: 3
 
 When a message to one of your [aliases](/help/what-are-the-different-kinds-of-aliases/) could not be delivered to your [recipient](/help/adding-a-recipient/), addy.io records it as a [failed delivery](/help/what-is-a-failed-delivery-and-why-do-they-occur/). Some failed deliveries can be resent after you fix the issue. In practice, resend is available for **stored outbound forward** failures (not inbound rejections, and not quarantined entries). This article explains how resend works.
 
-## Before you resend
+<h2 id="before-you-resend">Before you resend</h2>
 
 - **Fix the underlying issue** - Resending will fail again if the recipient is still invalid, the mailbox is still full, or the receiving server is still rejecting mail. Update the [recipient](/help/changing-the-recipients-for-an-alias/) or destination mailbox as needed, then resend.
 - **Check the failed delivery** - [View or download](/help/downloading-and-viewing-a-failed-delivery/) the failed delivery to confirm the error and that you have addressed it.
 
 Failed deliveries can only be resent once.
 
-## How to resend a failed delivery
+<h2 id="how-to-resend-a-failed-delivery">How to resend a failed delivery</h2>
 
 1. [Log in](https://app.addy.io) and go to **Failed Deliveries** in the navigation bar.
 2. Find a failed delivery entry with a **Resend** action (as shown in the red box below).
@@ -30,7 +30,7 @@ Failed deliveries can only be resent once.
   <img class="shadow max-w-full h-auto" src="/assets/img/help/failed-deliveries/resend-failed-delivery.png" alt="Resend failed delivery in addy.io" title="Resending a failed delivery">
 </div>
 
-## Why can't I resend or release a quarantined message?
+<h2 id="why-cant-i-resend-or-release-a-quarantined-message">Why can't I resend or release a quarantined message?</h2>
 
 Quarantined messages are usually classified as spam because the sender's IP address or domain appears on one or more blocklists (including Spamhaus), or because the message failed DMARC authentication checks.
 

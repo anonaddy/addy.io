@@ -14,7 +14,7 @@ order: 1
 
 For privacy, consider a dedicated inbox at a privacy-focused provider (e.g. Proton Mail or Tuta).
 
-## How to add a recipient
+<h2 id="how-to-add-a-recipient">How to add a recipient</h2>
 
 1. [Log in](https://app.addy.io) and go to **Recipients** in the navigation bar.
 2. Click **Add Recipient**.
@@ -25,7 +25,7 @@ For privacy, consider a dedicated inbox at a privacy-focused provider (e.g. Prot
   <img class="shadow max-w-full h-auto" src="/assets/img/help/recipients/adding-a-recipient.png" alt="Add a new recipient in addy.io" title="Adding a recipient">
 </div>
 
-## If you do not receive the verification email
+<h2 id="if-you-do-not-receive-the-verification-email">If you do not receive the verification email</h2>
 
 - Check your **spam** or junk folder.
 - On the **Recipients** page, click **Resend email** in the **Verified** column for that address.

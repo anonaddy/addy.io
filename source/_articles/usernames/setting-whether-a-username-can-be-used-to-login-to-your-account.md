@@ -12,7 +12,7 @@ order: 6
 
 By default, every [username](/help/adding-an-additional-username/) on your account (your sign-up username and additional usernames) can be used to [log in](/help/logging-into-your-account/) with your account password. You can turn off **Can Be Used To Login** for a username so that it can no longer be used to sign in; the username and its aliases stay active for receiving and sending mail. This is useful if you want to use a username only for aliases and not as a login option (e.g. on a shared or less secure device). This article explains how to change this setting.
 
-## How to allow or disallow login for a username
+<h2 id="how-to-allow-or-disallow-login-for-a-username">How to allow or disallow login for a username</h2>
 
 1. [Log in](https://app.addy.io) and go to **Usernames** in the navigation bar.
 2. Find the username you want to change and click "Edit" on the right-hand side of the table.

@@ -12,7 +12,7 @@ order: 3
 
 Each [custom domain](/help/adding-a-custom-domain/) (and [subdomain](/help/adding-a-custom-subdomain/)) can have its own **default recipient**. New [aliases](/help/what-are-the-different-kinds-of-aliases/) at that domain will forward to this address until you [change the recipients](/help/changing-the-recipients-for-an-alias/) for the alias. This overrides your account’s [global default recipient](/help/changing-the-default-recipient-on-your-account/) for aliases at this domain. This article explains how to set or change the default recipient for a domain.
 
-## Where to change the default recipient for a domain
+<h2 id="where-to-change-the-default-recipient-for-a-domain">Where to change the default recipient for a domain</h2>
 
 1. [Log in](https://app.addy.io) and go to **Domains** in the navigation bar.
 2. Find the domain you want to edit and click the plus icon in the **Default Recipient** column (as shown in the red box below).

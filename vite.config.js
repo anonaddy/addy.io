@@ -45,6 +45,7 @@ export default defineConfig(() => {
           highlight: "source/_assets/js/highlight.js",
           search: "source/_assets/js/search.js",
           "help-search": "source/_assets/js/help-search.js",
+          "article-heading-links": "source/_assets/js/article-heading-links.js",
           styles: "source/_assets/css/main.css",
           "hero-animation": "source/_assets/js/hero-animation.js",
         },

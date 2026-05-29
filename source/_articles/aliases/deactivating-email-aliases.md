@@ -12,7 +12,7 @@ order: 3
 
 Deactivating an alias stops it from forwarding mail. Messages sent to it are **silently discarded** and the sender is not notified. You can turn the alias back on at any time. This article explains how to deactivate an alias from the dashboard, a forwarded email, the [browser extension](/help/installing-the-browser-extension/), [mobile app](/help/downloading-and-using-the-mobile-app/), or [API](https://app.addy.io/docs).
 
-## Option 1: From your dashboard
+<h2 id="option-1-from-your-dashboard">Option 1: From your dashboard</h2>
 
 1. [Log in](https://app.addy.io) and go to **Aliases** in the navigation bar.
 2. Find the alias you want to pause and turn **Active** off using the toggle in the **Active** column (as shown below).
@@ -21,7 +21,7 @@ Deactivating an alias stops it from forwarding mail. Messages sent to it are **s
   <img class="shadow max-w-full h-auto" src="/assets/img/help/aliases/deactivating-an-alias.png" alt="Deactivate an alias using the Active toggle in addy.io" title="Deactivating an alias">
 </div>
 
-## Option 2: From a forwarded email
+<h2 id="option-2-from-a-forwarded-email">Option 2: From a forwarded email</h2>
 
 Each forwarded email includes a banner (unless you have turned it off under **Settings** > **General**). Click the deactivate link in that banner.
 
@@ -31,7 +31,7 @@ Each forwarded email includes a banner (unless you have turned it off under **Se
 
 You must be [logged in](https://app.addy.io) (or log in after clicking the link) for deactivation to succeed. This protects you if you reply to a forwarded message and might expose the deactivation link to the other party.
 
-## Option 3: From the browser extension
+<h2 id="option-3-from-the-browser-extension">Option 3: From the browser extension</h2>
 
 1. Open the addy.io extension ([Firefox](https://addons.mozilla.org/en-GB/firefox/addon/addy_io/) or [Chrome](https://chrome.google.com/webstore/detail/addyio-anonymous-email-fo/iadbdpnoknmbdeolbapdackdcogdmjpe)).
 2. Click an alias, then choose **Deactivate alias**.
@@ -40,7 +40,7 @@ You must be [logged in](https://app.addy.io) (or log in after clicking the link)
   <img class="shadow max-w-full h-auto" src="/assets/img/extension-alias-details.png" alt="Deactivate an alias from the browser extension" title="Deactivating an alias from the extension">
 </div>
 
-## Option 4: From the mobile apps
+<h2 id="option-4-from-the-mobile-apps">Option 4: From the mobile apps</h2>
 
 - [Google Play](https://play.google.com/store/apps/details?id=host.stjin.anonaddy)
 - [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy)
@@ -48,11 +48,11 @@ You must be [logged in](https://app.addy.io) (or log in after clicking the link)
 
 Open the alias in the app and use the deactivate option. See [Downloading and using the mobile app](/help/downloading-and-using-the-mobile-app/) for more.
 
-## Option 5: Using the API
+<h2 id="option-5-using-the-api">Option 5: Using the API</h2>
 
 Create an [API key](/help/api-settings/) under **Settings** > **API**, then use the deactivate endpoint. See [API documentation](https://app.addy.io/docs/#deactivate-a-specific-alias).
 
-## Deactivate vs delete vs forget
+<h2 id="deactivate-vs-delete-vs-forget">Deactivate vs delete vs forget</h2>
 
 - **[Deactivate](/help/deactivating-email-aliases/)** - Pause forwarding; alias stays on your account.
 - **[Delete](/help/deleting-an-alias/)** - Remove the alias; mail is rejected; you can [restore](/help/restoring-a-deleted-alias/) it later.

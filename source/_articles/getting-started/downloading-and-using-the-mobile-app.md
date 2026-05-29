@@ -12,7 +12,7 @@ order: 5
 
 The addy.io mobile app lets you manage your aliases, recipients, and other account features from your phone or tablet. This article explains where to download the app for Android or iOS, how to sign in with your addy.io account, and how to use the main features on mobile.
 
-## Where to download the app
+<h2 id="where-to-download-the-app">Where to download the app</h2>
 
 The official addy.io mobile app is available for both Android and Apple devices.
 
@@ -25,7 +25,7 @@ The official addy.io mobile app is available for both Android and Apple devices.
 
 - [addy.io on the App Store](https://apps.apple.com/app/addy-io/id1535634360)
 
-## Logging in to the app
+<h2 id="logging-in-to-the-app">Logging in to the app</h2>
 
 After you install the app, open it and sign in with the same **username** and **password** you use for [app.addy.io](https://app.addy.io). If you have [two-factor authentication](/help/security-settings/) enabled on your account, you will be asked for your authenticator code when you log in.
 
@@ -33,7 +33,7 @@ After you install the app, open it and sign in with the same **username** and **
   <img class="shadow w-[500px] max-w-full h-auto" src="/assets/img/help/getting-started/mobile-app-login.png" alt="addy.io mobile app login screen with username and password fields" title="Log in to the addy.io app">
 </div>
 
-## What you can do in the app
+<h2 id="what-you-can-do-in-the-app">What you can do in the app</h2>
 
 The mobile app gives you access to the main parts of your addy.io account:
 
@@ -47,6 +47,6 @@ The layout may differ slightly from the website, but the same account data and s
   <img class="shadow w-[500px] max-w-full h-auto" src="/assets/img/help/getting-started/mobile-app-dashboard.png" alt="addy.io mobile app main screen showing alias list or dashboard" title="addy.io mobile app main screen">
 </div>
 
-## Need help?
+<h2 id="need-help">Need help?</h2>
 
 If you have trouble logging in, see [What to do if you have forgotten your username or password](/help/what-to-do-if-you-have-forgotten-your-username-or-password/). For more ways to manage your aliases (including from the app), see [Deactivating email aliases](/help/deactivating-email-aliases/).

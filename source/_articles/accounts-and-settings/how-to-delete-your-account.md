@@ -12,13 +12,13 @@ order: 5
 
 Deleting your addy.io account permanently removes your account, aliases, recipients, and related data. This article explains how to delete your account, what happens to your data when you do, and whether deletion can be undone. Before you delete, consider [exporting your data](/help/importing-and-exporting-account-data/) so you have a backup.
 
-## Before you delete your account
+<h2 id="before-you-delete-your-account">Before you delete your account</h2>
 
 - **Export your data** - Use [Importing and exporting account data](/help/importing-and-exporting-account-data/) to download a copy of your aliases and account data. After deletion you will not be able to access this information.
 - **Cancel your subscription** - If you have a paid subscription, cancel it in your account or subscription settings.
 - **Use a device you trust** - You will need to log in and confirm the deletion. Use a secure device and a private connection.
 
-## Deleting your account
+<h2 id="deleting-your-account">Deleting your account</h2>
 
 1. [Log in](https://app.addy.io) to your addy.io account.
 2. Go to **Settings** in the navigation bar.
@@ -32,7 +32,7 @@ Deleting your addy.io account permanently removes your account, aliases, recipie
 
 > **Warning:** Account deletion is **permanent**. You cannot undo it or recover your aliases, recipients, or settings. Export your data first if you might need it later.
 
-## What happens to my data when I delete my account?
+<h2 id="what-happens-to-my-data-when-i-delete-my-account">What happens to my data when I delete my account?</h2>
 
 When you delete your account, the following happens:
 
@@ -46,7 +46,7 @@ When you delete your account, the following happens:
 
 If you need a record of your aliases or settings, [export your data](/help/importing-and-exporting-account-data/) before deleting.
 
-## Can a deleted account be restored?
+<h2 id="can-a-deleted-account-be-restored">Can a deleted account be restored?</h2>
 
 **No.** Once your account is deleted, it cannot be restored. Your username and any additional usernames cannot be used to sign up again on addy.io.
 

@@ -12,7 +12,7 @@ order: 4
 
 You can enable **encryption** for a [recipient](/help/adding-a-recipient/) so that forwarded emails are encrypted (e.g. with your PGP public key) before they are sent to that address. Only someone with the matching private key (you, in your mail client) can decrypt them. This article explains how to add your public key and turn on encryption for a recipient. For terminology, see [GPG/OpenPGP Key](/help/terminology/) in Terminology.
 
-## Adding your public PGP key
+<h2 id="adding-your-public-pgp-key">Adding your public PGP key</h2>
 
 1. [Log in](https://app.addy.io) and go to **Recipients** in the navigation bar.
 2. Click **Add PGP key** in the "Encryption" column for the recipient you wish to add the key to.
@@ -23,17 +23,17 @@ You can enable **encryption** for a [recipient](/help/adding-a-recipient/) so th
   <img class="shadow max-w-full h-auto" src="/assets/img/help/recipients/add-pgp-key.png" alt="Adding a PGP public key for a recipient in addy.io" title="Adding your public PGP key">
 </div>
 
-## Hiding the email subject (protected headers)
+<h2 id="hiding-the-email-subject-protected-headers">Hiding the email subject (protected headers)</h2>
 
 When encryption is enabled, you can often choose to **hide the subject** by using **protected headers** so the subject line is also encrypted (or removed) instead of being sent in plain text. This avoids revealing the topic of the email to anyone who can see the message in transit. Click "Edit" next to the recipient and then look for the **Hide Email Subject** option and enable it if you want subject protection.
 
-## Inline PGP encryption
+<h2 id="inline-pgp-encryption">Inline PGP encryption</h2>
 
 addy.io supports **inline PGP** encryption: the body is encrypted with your public key, and the message is sent in a format that standard PGP-capable mail clients (e.g. Thunderbird with OpenPGP, or ProtonMail) can decrypt. Ensure your mail client is set up to use the **private key** that matches the public key you added.
 
 Please Note: This will **ONLY encrypt and forward the plain text content**. Do not enable this if you wish to receive attachments or message with HTML content.
 
-## Warnings
+<h2 id="warnings">Warnings</h2>
 
 - **Back up your private key** - If you lose the private key, you will not be able to decrypt past or future emails encrypted with that key. Back it up securely.
 - **Key expiry** - If your key has an expiry date, renew it and update the public key on addy.io before it expires so new mail can still be encrypted.

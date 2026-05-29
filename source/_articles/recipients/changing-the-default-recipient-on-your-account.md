@@ -12,7 +12,7 @@ order: 2
 
 The **default recipient** is the address where new aliases forward mail when you have not chosen a different recipient for that alias. You can set one in your [general settings](/help/general-settings/) so that every new alias uses your preferred inbox by default. You can still [change the recipients](/help/changing-the-recipients-for-an-alias/) for any alias later. This article explains how to change your account’s default recipient.
 
-## Where to change the default recipient
+<h2 id="where-to-change-the-default-recipient">Where to change the default recipient</h2>
 
 1. [Log in](https://app.addy.io) and go to **Recipients** in the navigation bar.
 2. Find the recipient you want as the new default and click **Make Default** underneath it (as shown in the red box below).

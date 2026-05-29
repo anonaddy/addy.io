@@ -12,7 +12,7 @@ order: 2
 
 Deleting a blocklist entry removes that sender restriction from your account. Once removed, emails from that address or domain can reach your [aliases](/help/what-are-the-different-kinds-of-aliases/) again, unless another rule or blocklist entry still blocks them.
 
-## Delete a blocklist entry
+<h2 id="delete-a-blocklist-entry">Delete a blocklist entry</h2>
 
 1. [Log in](https://app.addy.io) and go to **Blocklist** in the navigation sidebar.
 2. Find the email address or domain entry you want to remove.
@@ -23,7 +23,7 @@ Deleting a blocklist entry removes that sender restriction from your account. On
   <img class="shadow max-w-full h-auto" src="/assets/img/help/blocklist/delete-blocklist-entry.png" alt="Delete blocklist entry in addy.io" title="Deleting an entry from your blocklist">
 </div>
 
-## Before you delete an entry
+<h2 id="before-you-delete-an-entry">Before you delete an entry</h2>
 
 - If spam from that sender is still ongoing, keep the entry blocked.
 - If the sender is legitimate and was blocked by mistake, deleting the entry restores normal delivery.

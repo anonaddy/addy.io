@@ -14,7 +14,7 @@ order: 13
 
 You can encrypt a [reply](/help/replying-to-email-using-an-alias/) or a [new send](/help/sending-email-from-an-alias/) from an alias using the **addy.io public key**. The message is encrypted before it arrives at addy.io and is **automatically decrypted** on the addy.io mail server before being forwarded on to the correct destination. This gives an extra layer of privacy for the message content. This article describes the idea and how to use this option; exact steps may depend on your mail client.
 
-## How it works
+<h2 id="how-it-works">How it works</h2>
 
 - addy.io provides a **public key** ([available here](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695)) that you (or your mail client) use to encrypt the reply/send.
 - The message is sent **encrypted** to the addy.io mail server and is then automatically decrypted.
@@ -22,7 +22,7 @@ You can encrypt a [reply](/help/replying-to-email-using-an-alias/) or a [new sen
 
 This is an **advanced** feature that is useful if you wish to hide the contents of your reply/send from your email provider such as Gmail. You need a mail client or workflow that can encrypt with the addy.io public key such as Mozilla Thunderbird.
 
-## Using the addy.io public key to encrypt
+<h2 id="using-the-addy-io-public-key-to-encrypt">Using the addy.io public key to encrypt</h2>
 
 1. When [sending from an alias](/help/sending-email-from-an-alias/) (new conversation) or replying, compose the message as usual.
 2. If the option is offered, enable **Encrypt** or select the addy.io public key before sending.
@@ -53,13 +53,13 @@ Here's an example config that you can use for your `openpgp_alias_to_keys.json`:
 
 This will allow you to encrypt all messages sent to aliases `*@anonaddy.me` using the `no-reply@addy.io` public key. Add or modify the alias domains as required.
 
-## Encrypting a reply/send using FairEmail (Android)
+<h2 id="encrypting-a-reply-send-using-fairemail-android">Encrypting a reply/send using FairEmail (Android)</h2>
 
 [FairEmail](https://email.faircode.eu/) on Android uses **OpenKeychain** for PGP. Import the addy.io public key once, then encrypt each [reply](/help/replying-to-email-using-an-alias/) or [new send](/help/sending-email-from-an-alias/) before it leaves your device.
 
 You need **FairEmail**, **OpenKeychain**, and OpenKeychain set as the encryption provider in FairEmail. If the padlock never appears when composing, check FairEmail **Settings** > **Encryption** first.
 
-### Import the addy.io public key (one-time)
+<h3 id="import-the-addy-io-public-key-one-time">Import the addy.io public key (one-time)</h3>
 
 1. In FairEmail, open **Settings** (gear icon) > **Encryption**.
 2. In the **PGP** section, tap **Import key +**.
@@ -77,7 +77,7 @@ You need **FairEmail**, **OpenKeychain**, and OpenKeychain set as the encryption
 
 You only need to do this once per device.
 
-### Encrypt and send a reply or new message
+<h3 id="encrypt-and-send-a-reply-or-new-message">Encrypt and send a reply or new message</h3>
 
 1. Compose your message as usual. For a reply, use the address addy.io gave you in the forwarded email. For a new send, use the send-from address from [Sending email from an alias](/help/sending-email-from-an-alias/).
 2. Check that the **green padlock** is visible on the compose screen. If it is grey or missing, PGP is not available. Check that OpenKeychain is installed and enabled in FairEmail encryption settings.

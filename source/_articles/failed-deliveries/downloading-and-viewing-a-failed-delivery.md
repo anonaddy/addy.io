@@ -12,12 +12,12 @@ order: 2
 
 When addy.io records a [failed delivery](/help/what-is-a-failed-delivery-and-why-do-they-occur/), you can open it in your account to see why it failed and, in many cases, download the stored message. Not every failure is stored (for example, **inbound rejections** are not). This article explains how to find, inspect, and download failed deliveries.
 
-## Where to find failed deliveries
+<h2 id="where-to-find-failed-deliveries">Where to find failed deliveries</h2>
 
 1. [Log in](https://app.addy.io) and go to **Failed Deliveries** in the navigation bar.
 2. Review the list. Each entry shows the date, [alias](/help/what-are-the-different-kinds-of-aliases/), recipient, failure type, and a short error reason.
 
-## Download a failed delivery
+<h2 id="download-a-failed-delivery">Download a failed delivery</h2>
 
 1. Find the entry you want to inspect.
 2. Click **Download** (as shown below) to save the raw message or report as an `.eml` file.

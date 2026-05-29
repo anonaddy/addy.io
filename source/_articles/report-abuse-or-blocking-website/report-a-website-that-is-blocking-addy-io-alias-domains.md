@@ -12,14 +12,14 @@ order: 2
 
 Some websites or services **block** or reject signups that use addy.io [alias](/help/what-are-the-different-kinds-of-aliases/) domains (e.g. @anonaddy.com, @anonaddy.me, or [custom domains](/help/adding-a-custom-domain/) used with addy.io). That can happen when a site wrongly treats addy.io as a "disposable" or throwaway email provider. addy.io is **not** a disposable email service-see [Why addy.io is not a disposable email service](/help/why-addy-io-is-not-a-disposable-email-service/). If you find a site that blocks addy.io domains, you can report it so addy.io can try to have the block removed or corrected. This article explains how to report a blocking website.
 
-## What to include when you report
+<h2 id="what-to-include-when-you-report">What to include when you report</h2>
 
 - **Name or URL of the website or service** that is blocking addy.io (e.g. example.com or "Example App").
 - **What happened** - e.g. "Signup form says 'disposable emails not allowed'" or "Error when entering my @anonaddy.com address".
 - **Screenshot or exact error message** if you have one (helps addy.io when contacting the site).
 - **Your addy.io alias or domain** that was blocked.
 
-## How to report a blocking website
+<h2 id="how-to-report-a-blocking-website">How to report a blocking website</h2>
 
 1. Collect the details above.
 2. [Contact](/contact/) addy.io using the email shown. Use a subject like "Website blocking addy.io domains".

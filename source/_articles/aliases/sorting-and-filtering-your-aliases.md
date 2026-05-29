@@ -12,7 +12,7 @@ order: 10
 
 As your alias list grows, you can **sort** and **filter** it to find specific aliases quickly. You can search by name or address, show only active or inactive aliases, or filter by domain. This article describes the main options on the [web application](/help/navigating-the-web-application/), the [mobile app](/help/downloading-and-using-the-mobile-app/), and the [browser extension](/help/installing-the-browser-extension/).
 
-## Sorting and filtering aliases on the web application
+<h2 id="sorting-and-filtering-aliases-on-the-web-application">Sorting and filtering aliases on the web application</h2>
 
 1. [Log in](https://app.addy.io) and go to **Aliases** in the navigation bar.
 2. **Search** - Use the search box to find aliases by address, description, or other text.
@@ -25,7 +25,7 @@ As your alias list grows, you can **sort** and **filter** it to find specific al
   <img class="shadow max-w-full h-auto" src="/assets/img/help/aliases/sort-filter-web.png" alt="Sorting and filtering aliases on the addy.io web app" title="Sort and filter on web">
 </div>
 
-## Sorting and filtering aliases on the mobile app
+<h2 id="sorting-and-filtering-aliases-on-the-mobile-app">Sorting and filtering aliases on the mobile app</h2>
 
 1. Open the addy.io [mobile app](/help/downloading-and-using-the-mobile-app/) and go to **Aliases**.
 2. Use the **search** field to find aliases by address or description.
@@ -35,7 +35,7 @@ As your alias list grows, you can **sort** and **filter** it to find specific al
   <img class="shadow max-w-full h-auto" src="/assets/img/help/aliases/sort-filter-mobile.png" alt="Sorting and filtering aliases in the addy.io mobile app" title="Sort and filter on mobile">
 </div>
 
-## Sorting and filtering aliases on the browser extension
+<h2 id="sorting-and-filtering-aliases-on-the-browser-extension">Sorting and filtering aliases on the browser extension</h2>
 
 1. Click the addy.io icon in your [browser extension](/help/installing-the-browser-extension/) to open the alias list.
 2. Use the **search** box to find an alias by address or description.

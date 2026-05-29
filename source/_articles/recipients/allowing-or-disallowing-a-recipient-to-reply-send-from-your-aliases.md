@@ -12,11 +12,11 @@ order: 3
 
 By default, [recipients](/help/adding-a-recipient/) can both **receive** forwarded mail and **reply or send** from your [aliases](/help/what-are-the-different-kinds-of-aliases/) when they use that recipient address. You can turn off reply/send for a recipient so they only receive forwards and cannot send or reply as the alias. This article explains how to allow or disallow a recipient to reply and send from your aliases.
 
-## Why control reply/send per recipient?
+<h2 id="why-control-reply-send-per-recipient">Why control reply/send per recipient?</h2>
 
 If you use several recipients (e.g. different inboxes for different aliases), you may want one address only for receiving and another allowed to reply and send. Disallowing reply/send keeps that recipient as a “receive only” inbox.
 
-## How to allow or disallow reply/send for a recipient
+<h2 id="how-to-allow-or-disallow-reply-send-for-a-recipient">How to allow or disallow reply/send for a recipient</h2>
 
 1. [Log in](https://app.addy.io) and go to **Recipients** in the navigation bar.
 2. Find the recipient you want to change and click "Edit" on the right-hand side of the table.

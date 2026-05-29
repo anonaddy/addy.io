@@ -12,7 +12,7 @@ order: 5
 
 For a [custom domain](/help/adding-a-custom-domain/) (or [subdomain](/help/adding-a-custom-subdomain/)), **catch-all** lets addy.io create [standard aliases](/help/what-are-the-different-kinds-of-aliases/) automatically when the first email arrives at an address on that domain. You can optionally use an **alias auto create regex** to allow only certain local-parts (the part before the @). This article explains how to enable catch-all and use the regex for a domain. The same concepts apply to [usernames](/help/understanding-catch-all-and-alias-auto-create-regex-for-a-username/).
 
-## What is catch-all?
+<h2 id="what-is-catch-all">What is catch-all?</h2>
 
 When **catch-all** is enabled for a domain (e.g. **yourdomain.com**), any email sent to **anything@yourdomain.com** will **create that alias automatically** when it receives its first message. You do not need to pre-create the alias. If catch-all is **disabled**, only addresses for aliases that already exist are accepted; all others are rejected. See [Terminology](/help/terminology/#catch-all) for more.
 
@@ -22,7 +22,7 @@ Catch-all is useful if you want to give out many addresses (e.g. `shop@yourdomai
   <img class="shadow max-w-full h-auto" src="/assets/img/help/domains/catch-all-domain.png" alt="Catch-all for a domain in addy.io" title="Catch-all for a domain">
 </div>
 
-## Alias auto create regex
+<h2 id="alias-auto-create-regex">Alias auto create regex</h2>
 
 The **alias auto create regex** lets you allow only certain local-parts to be auto-created when **catch-all is off**. You enter a **regular expression** that the local part (the part before `@`) must match. Only matching addresses will create a new alias; others are rejected. **Catch-all must be disabled** before you can use auto create regex (configure both on the domain **Edit** page).
 
@@ -38,7 +38,7 @@ If you leave the regex empty (and catch-all is off), then no local-parts are all
   <img class="shadow max-w-full h-auto" src="/assets/img/help/domains/domain-auto-create-regex.png" alt="Auto create regex for a domain" title="Auto create regex for a domain">
 </div>
 
-## Summary
+<h2 id="summary">Summary</h2>
 
 - **Catch-all on** - Any address at the domain can receive mail; new aliases are created on first email.
 - **Catch-all off** - Only pre-existing aliases at that domain receive mail.

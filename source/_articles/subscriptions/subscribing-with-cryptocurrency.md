@@ -12,7 +12,7 @@ order: 2
 
 addy.io accepts **cryptocurrency** for subscriptions (e.g. Bitcoin, Monero, Ethereum). Payments are processed via [NOWPayments](https://nowpayments.io/). There may be a minimum invoice value (e.g. $10) and only yearly plans may be available when paying with crypto. This article explains how it works and how to subscribe with cryptocurrency. For card or PayPal, see [Subscribing with a card or PayPal](/help/subscribing-with-a-card-or-paypal/).
 
-## How it works
+<h2 id="how-it-works">How it works</h2>
 
 1. [Log in](https://app.addy.io) and go to **Subscription** in the navigation menu (or the [subscription page](https://app.addy.io/settings/subscription)).
 2. Choose the **yearly** plan (crypto may not be offered for monthly) and then click the **Proceed To Cryptocurrency Payment** button to be redirected to NOWPayments.
@@ -32,6 +32,6 @@ You can choose to purchase upto 3 years when subscribing with cryptocurrency.
   <img class="shadow max-w-full h-auto" src="/assets/img/help/subscriptions/subscribe-cryptocurrency.png" alt="Subscribe with cryptocurrency in addy.io" title="Subscribing with cryptocurrency">
 </div>
 
-## Manual cryptocurrency payment
+<h2 id="manual-cryptocurrency-payment">Manual cryptocurrency payment</h2>
 
 If you prefer your cryptocurrency payment to be processed manually (e.g. for a custom amount), [contact](/contact/) addy.io for further instructions.

@@ -12,13 +12,13 @@ order: 1
 
 Additional usernames let you create more subdomains (e.g. `shop@**janedoe**.anonaddy.com`) so you can keep aliases separate and harder to link together. Each username can have its own [default recipient](/help/changing-the-default-recipient-for-a-username/) and you can control whether it can be used to [log in](/help/logging-into-your-account/). This article explains how to add an additional username and how many you can have.
 
-## Before you add a username
+<h2 id="before-you-add-a-username">Before you add a username</h2>
 
 - Choose a username **unrelated** to the one you signed up with and not used elsewhere online.
 - **Plan limits** - Lite allows **5** additional usernames (6 total including your sign-up username); Pro allows **20** additional (21 total). See [pricing](/#pricing).
 - If you delete a username immediately after adding it, that username **cannot be used again**.
 
-## How to add an additional username
+<h2 id="how-to-add-an-additional-username">How to add an additional username</h2>
 
 1. [Log in](https://app.addy.io) and go to **Usernames** in the navigation bar.
 2. Click **Add Username** (or the equivalent button on the page).
@@ -31,7 +31,7 @@ Additional usernames let you create more subdomains (e.g. `shop@**janedoe**.anon
 4. Optionally add a description and set a [default recipient](/help/changing-the-default-recipient-for-a-username/) for this username (overrides your account default for aliases at that username).
 5. Use **Can Be Used To Login** if you want to sign in with this username. See [Setting whether a username can be used to login](/help/setting-whether-a-username-can-be-used-to-login-to-your-account/).
 
-## Using your new username
+<h2 id="using-your-new-username">Using your new username</h2>
 
 You can use an additional username like your main one:
 

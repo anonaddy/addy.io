@@ -12,7 +12,7 @@ order: 3
 
 Some websites or blocklists wrongly treat addy.io as a **disposable**, **throwaway** or **temporary** email service. addy.io is not one: it is an **alias and forwarding** service where you keep long-term [aliases](/help/what-are-the-different-kinds-of-aliases/) that forward to your real [recipient](/help/adding-a-recipient/) inbox. This article explains why addy.io should not be classified as disposable. You can use it when [reporting a website that blocks addy.io](/help/report-a-website-that-is-blocking-addy-io-alias-domains/) or when asking a site to allow addy.io addresses.
 
-## addy.io should not be classified as disposable
+<h2 id="addy-io-should-not-be-classified-as-disposable">addy.io should not be classified as disposable</h2>
 
 - **Account required** - You must [create an account](/help/creating-an-account/) and sign in. There is no one-click "throwaway public inbox" without authentication. Aliases are tied to your account and [recipients](/help/adding-a-recipient/).
 - **Unique, account-bound aliases** - Aliases are not shared or recycled. Each alias belongs to one account and forwards only to that account's verified recipients. They are not public or temporary inboxes.

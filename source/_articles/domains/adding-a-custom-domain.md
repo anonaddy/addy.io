@@ -14,7 +14,7 @@ A [custom domain](/help/terminology/#domains) lets you use [standard aliases](/h
 
 For a **subdomain** (e.g. `mail.example.com`), use the same process but different DNS **host** values - see [Adding a custom subdomain](/help/adding-a-custom-subdomain/).
 
-## Before you start
+<h2 id="before-you-start">Before you start</h2>
 
 - **Plan** - Custom domains require a **Lite** or **Pro** subscription (free accounts cannot add domains). Lite allows **1** custom domain; Pro allows **20** (see [pricing](/#pricing)).
 - **DNS access** - You need to add records at your domain registrar or DNS host (Cloudflare, Namecheap, etc.).
@@ -23,7 +23,7 @@ For a **subdomain** (e.g. `mail.example.com`), use the same process but differen
 
 ---
 
-## Step 1: Prove ownership (TXT record)
+<h2 id="step-1-prove-ownership-txt-record">Step 1: Prove ownership (TXT record)</h2>
 
 1. [Log in](https://app.addy.io) and go to **Domains** in the navigation bar.
 2. Click **Add Domain**.
@@ -48,7 +48,7 @@ addy.io checks that the TXT record exists before the domain is added. If verific
 
 ---
 
-## Step 2: Add mail records (MX and sending)
+<h2 id="step-2-add-mail-records-mx-and-sending">Step 2: Add mail records (MX and sending)</h2>
 
 After the domain appears in your **Domains** list, add the remaining records so mail can be received and (if you want) sent from the domain.
 
@@ -59,7 +59,7 @@ After the domain appears in your **Domains** list, add the remaining records so 
   <img class="shadow max-w-full h-auto" src="/assets/img/help/domains/checking-dns-records-for-a-domain.png" alt="Check DNS records dialog for a custom domain in addy.io" title="Checking DNS records for a domain">
 </div>
 
-### Records for an apex domain (`example.com`)
+<h3 id="records-for-an-apex-domain-example-com">Records for an apex domain (`example.com`)</h3>
 
 | Type | Host | Value/Points to |
 |------|------|-----------------|
@@ -72,7 +72,7 @@ After the domain appears in your **Domains** list, add the remaining records so 
 
 3. After propagation, click **Check Records** again in the dialog.
 
-### Receiving only vs receiving and sending
+<h3 id="receiving-only-vs-receiving-and-sending">Receiving only vs receiving and sending</h3>
 
 | Goal | Records required |
 |------|------------------|
@@ -87,7 +87,7 @@ If you only need forwarding and will never [send from an alias](/help/sending-em
 
 ---
 
-## Step 3: Confirm verification status
+<h2 id="step-3-confirm-verification-status">Step 3: Confirm verification status</h2>
 
 In the **Verified Records** column:
 
@@ -101,7 +101,7 @@ addy.io re-checks MX records periodically. If records are removed or changed, va
 
 ---
 
-## After your domain is set up
+<h2 id="after-your-domain-is-set-up">After your domain is set up</h2>
 
 - **Catch-all** is **enabled by default** for new domains - unknown addresses like `anything@yourdomain.com` can be [created on the fly](/help/creating-new-email-aliases/) when the first email arrives. You can turn this off or use [alias auto create regex](/help/understanding-catch-all-and-alias-auto-create-regex-for-a-domain/) (paid plans) from the domain **Edit** page.
 - Set a [default recipient](/help/changing-the-default-recipient-for-a-domain/) for the domain so new aliases forward to the right inbox.
@@ -110,7 +110,7 @@ addy.io re-checks MX records periodically. If records are removed or changed, va
 
 ---
 
-## Tips and troubleshooting
+<h2 id="tips-and-troubleshooting">Tips and troubleshooting</h2>
 
 - **Cloudflare** - Turn the proxy **off** (grey cloud, DNS only) for **all** addy.io-related records. Orange-cloud proxied records often break verification.
 - **Propagation** - Use [MXToolbox](https://mxtoolbox.com/) or your DNS provider’s lookup tool if **Check Records** still fails after you have waited.
@@ -118,6 +118,6 @@ addy.io re-checks MX records periodically. If records are removed or changed, va
 - **Each new domain** - The `aa-verify` value can change when you add another domain; use the TXT value shown in the dialog for that specific add.
 - **Deactivate or remove** - See [Deactivating a domain](/help/deactivating-a-domain/) and [Deleting a domain](/help/deleting-a-domain/).
 
-## Adding a subdomain
+<h2 id="adding-a-subdomain">Adding a subdomain</h2>
 
 For **`mail.example.com`** or similar, follow [Adding a custom subdomain](/help/adding-a-custom-subdomain/) for the correct **host** values for MX, TXT, CNAME, and DMARC.

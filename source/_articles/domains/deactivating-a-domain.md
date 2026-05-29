@@ -12,7 +12,7 @@ order: 6
 
 **Deactivating** a [custom domain](/help/adding-a-custom-domain/) stops it from receiving mail through addy.io. Messages sent to any alias at that domain (e.g. *@yourdomain.com) will be **silently discarded**; senders will not receive a bounce. The domain and its aliases remain on your account so you can **reactivate** the domain later and use it again. This is useful if you want to pause mail for a domain without removing it or [deleting](/help/deleting-a-domain/) it. This article explains how to deactivate and reactivate a domain.
 
-## How to deactivate a domain
+<h2 id="how-to-deactivate-a-domain">How to deactivate a domain</h2>
 
 1. [Log in](https://app.addy.io) and go to **Domains** in the navigation bar.
 2. Find the domain you want to deactivate and turn **Active** off using the toggle in the **Active** column (as shown in the red box below).
@@ -22,11 +22,11 @@ order: 6
   <img class="shadow max-w-full h-auto" src="/assets/img/help/domains/deactivate-domain.png" alt="Deactivate domain option in addy.io" title="Deactivating a domain">
 </div>
 
-## Reactivating a domain
+<h2 id="reactivating-a-domain">Reactivating a domain</h2>
 
 Find the same domain in **Domains** and turn back ON the toggle switch. Once reactivated, the domain will receive mail again and aliases at that domain will work as before. Your DNS records do not need to be changed for deactivation or reactivation.
 
-## Deactivate vs delete
+<h2 id="deactivate-vs-delete">Deactivate vs delete</h2>
 
 - **Deactivate** - Mail to the domain is discarded; the domain and its aliases stay on your account. You can reactivate later.
 - **Delete** - The domain is removed from your account. Aliases at that domain are removed. See [Deleting a domain](/help/deleting-a-domain/).

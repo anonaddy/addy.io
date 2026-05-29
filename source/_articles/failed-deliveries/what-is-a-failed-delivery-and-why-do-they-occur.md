@@ -12,7 +12,7 @@ order: 1
 
 A **failed delivery** is any email event where addy.io cannot complete normal delivery-processing, either because forwarding to your [recipient](/help/adding-a-recipient/) fails (**outbound bounce**), an inbound message is rejected before acceptance (**inbound rejection**), or an inbound message is accepted but quarantined as spam (**inbound quarantined**). addy.io records these so you can review the reason, [view or download](/help/downloading-and-viewing-a-failed-delivery/) stored messages when available, and fix the issue-for example by updating a recipient address, freeing mailbox space, or resolving sender authentication problems. See [Terminology](/help/terminology/#failed-deliveries) for the short definition. This article explains each failed delivery type and common reasons they occur.
 
-## The different types of failed deliveries
+<h2 id="the-different-types-of-failed-deliveries">The different types of failed deliveries</h2>
 
 There are **three different types** of failed deliveries on addy.io:
 
@@ -26,7 +26,7 @@ The failed deliveries page shows all three types and the reason each one failed.
 
 **Inbound rejections** are not stored because they are never accepted by the addy.io mail servers.
 
-## Common causes of failed deliveries
+<h2 id="common-causes-of-failed-deliveries">Common causes of failed deliveries</h2>
 
 - **Recipient mailbox full** - The destination mailbox has exceeded its storage limit. The receiving server rejects the message. Free up space in that inbox or [change the alias’s recipient](/help/changing-the-recipients-for-an-alias/) to another address.
 - **Invalid or typo’d recipient** - The [recipient](/help/adding-a-recipient/) address is wrong, was closed, or has a typo. Update the recipient in addy.io or add a new verified recipient and attach it to the alias.

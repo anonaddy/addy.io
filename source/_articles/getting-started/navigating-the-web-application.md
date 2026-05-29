@@ -12,7 +12,7 @@ order: 4
 
 This article gives an overview of the addy.io web application so you can find your way around after [logging in](/help/logging-into-your-account/). The main areas; aliases, recipients, domains, usernames, rules, and account settings are available from the navigation bar.
 
-## After you log in
+<h2 id="after-you-log-in">After you log in</h2>
 
 When you sign in at [https://app.addy.io](https://app.addy.io), you are taken to your **dashboard**. Use the navigation bar shown in dark blue on the left hand side of the screenshot below to move between pages.
 
@@ -20,7 +20,7 @@ When you sign in at [https://app.addy.io](https://app.addy.io), you are taken to
   <img class="shadow max-w-full h-auto" src="/assets/img/help/getting-started/navigating-the-web-application.png" alt="addy.io dashboard showing the navigation bar with Aliases, Recipients, Domains, and other sections" title="addy.io dashboard and navigation">
 </div>
 
-## Main navigation areas
+<h2 id="main-navigation-areas">Main navigation areas</h2>
 
 The navigation bar gives you access to the main parts of your account:
 
@@ -42,6 +42,6 @@ The navigation bar gives you access to the main parts of your account:
 
 - **Subscription** - Subscribe, manage or cancel your subscription. See the [Subscriptions](/help/category/subscriptions/) category for related articles.
 
-## Getting help from the dashboard
+<h2 id="getting-help-from-the-dashboard">Getting help from the dashboard</h2>
 
 From all screens you can access **Help** link in the header by clicking on your username in the top right-hand corner. There you can search articles or browse by category. If you are unsure what a term means, see [Terminology](/help/terminology/) for definitions used across addy.io.

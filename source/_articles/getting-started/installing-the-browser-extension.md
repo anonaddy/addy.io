@@ -12,7 +12,7 @@ order: 6
 
 The addy.io browser extension lets you create and manage email aliases without leaving the site you are on. This article explains where to download the extension for Firefox, Chrome, Edge, or Safari, how to install it, and how to sign in so you can generate and manage aliases from your browser toolbar.
 
-## Where to get the extension
+<h2 id="where-to-get-the-extension">Where to get the extension</h2>
 
 The addy.io extension is available for the main desktop browsers:
 
@@ -27,7 +27,7 @@ The extension also works in other Chromium-based browsers (e.g. Brave, Vivaldi) 
   <img class="shadow w-[500px] max-w-full h-auto" src="/assets/img/browsers.svg" alt="addy.io extension listing on Firefox Add-ons, Chrome Web Store, Edge Add-ons, or App Store" title="Download the addy.io browser extension">
 </div>
 
-## How to install
+<h2 id="how-to-install">How to install</h2>
 
 **Firefox**
 
@@ -53,7 +53,7 @@ The extension also works in other Chromium-based browsers (e.g. Brave, Vivaldi) 
 2. After installation, open Safari and go to **Safari > Settings > Extensions** (or **Preferences > Extensions**). Enable the addy.io extension.
 3. The addy.io icon should appear in the Safari toolbar when the extension is enabled.
 
-## Signing in to the extension
+<h2 id="signing-in-to-the-extension">Signing in to the extension</h2>
 
 After the extension is installed, click the addy.io icon in your toolbar. You will be asked to sign in with your addy.io **username** and **password**, the same credentials you use for [app.addy.io](https://app.addy.io). If you have [two-factor authentication](/help/security-settings/) enabled, enter your code when prompted. You can also sign in by using an [API key that you've created on you account](http://localhost:3000/help/api-settings/).
 
@@ -65,7 +65,7 @@ Once signed in, the extension can create and manage aliases for your account.
   <img class="shadow max-w-full h-auto" src="/assets/img/help/getting-started/browser-extension-login.png" alt="addy.io extension login or popup screen" title="Sign in to the addy.io extension">
 </div>
 
-## What you can do with the extension
+<h2 id="what-you-can-do-with-the-extension">What you can do with the extension</h2>
 
 With the extension installed and signed in, you can:
 
@@ -79,6 +79,6 @@ The extension uses the same account as the [web application](/help/navigating-th
   <img class="shadow max-w-full h-auto" src="/assets/img/help/getting-started/browser-extension-popup.png" alt="addy.io extension popup showing alias list or generate alias option" title="addy.io extension popup">
 </div>
 
-## Need help?
+<h2 id="need-help">Need help?</h2>
 
 If you have trouble logging in, see [What to do if you have forgotten your username or password](/help/what-to-do-if-you-have-forgotten-your-username-or-password/). For deactivating aliases from the extension, see [Deactivating email aliases](/help/deactivating-email-aliases/).

@@ -12,7 +12,7 @@ order: 2
 
 You can create addy.io [aliases](/help/what-are-the-different-kinds-of-aliases/) in two main ways: **on the fly** (give out an address and let the first email create it) or **in advance** (generate the alias in the dashboard, [browser extension](/help/installing-the-browser-extension/), [mobile app](/help/downloading-and-using-the-mobile-app/), or [API](https://app.addy.io/docs)). Which method applies depends on the domain. For a gentle first walkthrough, see [Creating and testing your first alias](/help/creating-and-testing-your-first-alias/).
 
-## Standard vs shared domain (quick reference)
+<h2 id="standard-vs-shared-domain-quick-reference">Standard vs shared domain (quick reference)</h2>
 
 | | **Standard alias** | **Shared domain alias** |
 |---|-------------------|-------------------------|
@@ -22,7 +22,7 @@ You can create addy.io [aliases](/help/what-are-the-different-kinds-of-aliases/)
 
 ---
 
-## Option 1: Create standard aliases on the fly
+<h2 id="option-1-create-standard-aliases-on-the-fly">Option 1: Create standard aliases on the fly</h2>
 
 For [standard aliases](/help/what-are-the-different-kinds-of-aliases/), you do not need to open the create dialog first. Make up an address on **your** domain and use it wherever you would normally enter your email.
 
@@ -38,7 +38,7 @@ The alias then appears under **Aliases** in the dashboard, usually with the desc
 
 This works the same way for [custom domains](/help/adding-a-custom-domain/) and [additional usernames](/help/adding-an-additional-username/): the alias is created when it receives its first email, as long as **catch-all** is enabled for that username or domain.
 
-### When on-the-fly creation does not work
+<h3 id="when-on-the-fly-creation-does-not-work">When on-the-fly creation does not work</h3>
 
 - **Shared domains** (e.g. `@anonaddy.me`) - you must use [Option 2](#option-2-create-an-alias-in-the-dashboard) below. Giving out a random `@anonaddy.me` address that was never generated will not work.
 - **Catch-all disabled** - mail to unknown local parts on that username or domain is rejected unless you use [alias auto create regex](/help/understanding-catch-all-and-alias-auto-create-regex-for-a-username/) (paid plans; catch-all must be off while regex is in use).
@@ -48,11 +48,11 @@ If an alias receives spam, you can [deactivate](/help/deactivating-email-aliases
 
 ---
 
-## Option 2: Create an alias in the dashboard
+<h2 id="option-2-create-an-alias-in-the-dashboard">Option 2: Create an alias in the dashboard</h2>
 
 Use this for **all shared-domain aliases** and whenever you want a specific format (random characters, UUID, random words, and so on) before you give the address out.
 
-### Open the create dialog
+<h3 id="open-the-create-dialog">Open the create dialog</h3>
 
 1. [Log in](https://app.addy.io) and go to **Aliases**.
 2. Click **Create Alias** (top of the page).
@@ -62,7 +62,7 @@ Use this for **all shared-domain aliases** and whenever you want a specific form
   <img class="shadow max-w-full h-auto" src="/assets/img/help/aliases/create-new-alias.png" alt="Create new alias dialog with Alias Domain, Alias Format, Description, and Recipients fields" title="Create new alias">
 </div>
 
-### Choose options
+<h3 id="choose-options">Choose options</h3>
 
 | Field | What to set |
 |-------|-------------|
@@ -76,7 +76,7 @@ Use this for **all shared-domain aliases** and whenever you want a specific form
 
 If you have reached your **shared-domain alias limit** on a free or Lite plan, the button may show **Subscribe To Add More** or **Upgrade To Add More** instead - see [pricing](/#pricing).
 
-### Your new address
+<h3 id="your-new-address">Your new address</h3>
 
 A **Your New Alias is:** dialog shows the full address. Use **Copy**, then give that alias out. Examples:
 
@@ -90,7 +90,7 @@ Shared-domain aliases are useful when you do not want your **username** in the a
 
 You can [change recipients](/help/changing-the-recipients-for-an-alias/) for the alias later if needed.
 
-### Alias formats
+<h3 id="alias-formats">Alias formats</h3>
 
 | Format | Typical use | Plan |
 |--------|-------------|------|
@@ -104,7 +104,7 @@ On a **shared domain**, free plans are limited to **Random Characters** and **UU
 
 ---
 
-## Browser extension, mobile app, and API
+<h2 id="browser-extension-mobile-app-and-api">Browser extension, mobile app, and API</h2>
 
 The [browser extension](/help/installing-the-browser-extension/) and [mobile app](/help/downloading-and-using-the-mobile-app/) create aliases using the same rules as the dashboard. Connect them with an [API key](/help/api-settings/) from **Settings** > **API**.
 
@@ -112,7 +112,7 @@ To automate creation, use **`POST /api/v1/aliases`** with `domain`, `format`, op
 
 ---
 
-## What next?
+<h2 id="what-next">What next?</h2>
 
 - [Sort and filter](/help/sorting-and-filtering-your-aliases/) aliases as your list grows.
 - [Deactivate](/help/deactivating-email-aliases/) aliases you want to pause without deleting.

@@ -14,7 +14,7 @@ You can **send** a new email from an alias, not only [reply](/help/replying-to-e
 
 This article explains what you need before sending, how the address format works, how to use **Send from** in the web app, how to confirm a message was sent, and what to do if something goes wrong.
 
-## Before you send
+<h2 id="before-you-send">Before you send</h2>
 
 Make sure the following are in place:
 
@@ -22,7 +22,7 @@ Make sure the following are in place:
 - **Reply/send allowed** - That recipient must be allowed to [reply and send](/help/allowing-or-disallowing-a-recipient-to-reply-send-from-your-aliases/) from your aliases. This is enabled by default.
 - **Alias exists (or can be created)** - The alias must already exist, or you must be able to create it when the message is sent (see [Standard vs shared-domain aliases](#standard-vs-shared-domain-aliases) below). If the alias has been [deactivated](/help/deactivating-email-aliases/) or [deleted](/help/deleting-an-alias/), sending will fail until you restore or reactivate it.
 
-## How to send a new email
+<h2 id="how-to-send-a-new-email">How to send a new email</h2>
 
 1. Compose a **new** email in your email client or webmail (not a reply to a forwarded message).
 2. Set **From** to your verified recipient address (the inbox you use with addy.io).
@@ -31,7 +31,7 @@ Make sure the following are in place:
 
 addy.io receives the message, sends it from your alias, and delivers it to the recipient. They see your alias in the **From** field, not your recipient address.
 
-## How the send address works
+<h2 id="how-the-send-address-works">How the send address works</h2>
 
 The **To** address encodes which alias you are sending from and who should receive the email. It uses the same format as [replying](/help/replying-to-email-using-an-alias/).
 
@@ -50,13 +50,13 @@ addy.io decodes the address and delivers your email to **hello@example.com** fro
   <img class="shadow max-w-full h-auto" src="/assets/img/send-from-alias-construction.jpg" alt="Diagram showing how addy.io encodes the alias and recipient in a send-from address" title="How send-from-alias addressing works">
 </div>
 
-### Addresses with a plus extension
+<h3 id="addresses-with-a-plus-extension">Addresses with a plus extension</h3>
 
 If the destination address contains a plus extension (for example **hello+whatever@example.com**), include it in the encoded address:
 
 <span class="break-words"><first+hello+whatever=example.com@johndoe.anonaddy.com></span>
 
-### Standard vs shared-domain aliases
+<h3 id="standard-vs-shared-domain-aliases">Standard vs shared-domain aliases</h3>
 
 | Alias type | Sending behaviour |
 |------------|-------------------|
@@ -65,7 +65,7 @@ If the destination address contains a plus extension (for example **hello+whatev
 
 This also applies to [additional usernames](/help/adding-an-additional-username/) and custom domains. See [What are the different kinds of aliases?](/help/what-are-the-different-kinds-of-aliases/) for more.
 
-## Using Send from in the web app
+<h2 id="using-send-from-in-the-web-app">Using Send from in the web app</h2>
 
 You do not have to build the address yourself. In the addy.io [dashboard](/help/navigating-the-web-application/), go to **Aliases**, click **Send from** next to an alias, enter the destination email address, and addy.io shows the correct **To** address to use in your email client.
 
@@ -81,43 +81,43 @@ You can use **Send from** to create a **standard** alias on the fly when catch-a
 
 You can also get the correct address to send to in the browser extension or mobile app.
 
-## Will the recipient see my real email?
+<h2 id="will-the-recipient-see-my-real-email">Will the recipient see my real email?</h2>
 
 No. The message is sent from your alias; your verified recipient address is not shown to them. Avoid putting identifying details in the message body or signature (such as your real name or personal email) if you want to stay anonymous. See the [FAQ](/faq/#will-people-see-my-real-email-if-i-reply-to-a-forwarded-one) (the same applies to sends and replies).
 
-## Check that your email was sent
+<h2 id="check-that-your-email-was-sent">Check that your email was sent</h2>
 
 In the addy.io dashboard, go to **Aliases** and find the alias you sent from. If the message was handled successfully, the **sent count** for that alias will increase.
 
 If the count does not change, see [Having trouble sending?](#having-trouble-sending) below.
 
-## Attachments and size limits
+<h2 id="attachments-and-size-limits">Attachments and size limits</h2>
 
 You can include attachments when sending from an alias. Attachments count towards your bandwidth. The maximum message size is **25 MB** including attachments. See the [FAQ](/faq/#can-emails-have-attachments) and [FAQ](/faq/#what-is-the-max-email-size-limit).
 
-## Encrypted sends
+<h2 id="encrypted-sends">Encrypted sends</h2>
 
 If you use GPG/OpenPGP, you can encrypt messages you send from an alias. See [Sending an encrypted reply/send from an alias](/help/sending-an-encrypted-reply-send-from-an-alias/) and [Encrypting a reply/send with the addy.io public key](/help/encrypting-a-reply-send-from-an-alias-with-the-addy-io-public-key-to-be-automatically-decrypted/). addy.io removes attached public keys and signatures from outbound messages so you do not accidentally expose your real identity.
 
-## Having trouble sending?
+<h2 id="having-trouble-sending">Having trouble sending?</h2>
 
 The same issues can affect **sends** and **replies**. See [Having trouble replying?](/help/replying-to-email-using-an-alias/#having-trouble-replying) for full detail, or the summaries below.
 
-### The message comes back to me instead of the recipient
+<h3 id="the-message-comes-back-to-me-instead-of-the-recipient">The message comes back to me instead of the recipient</h3>
 
 You are probably sending from an address that is **not** a verified recipient on your account. Check your email client's **Sent** folder and confirm which address it used. See the [FAQ](/faq/#im-trying-to-reply-send-from-an-alias-but-the-email-keeps-coming-back-to-me-whats-wrong).
 
-### The message is rejected
+<h3 id="the-message-is-rejected">The message is rejected</h3>
 
 If you see `550 5.1.1 Recipient address rejected: Address does not exist`, the alias may have been [deleted](/help/deleting-an-alias/) or does not exist yet (and catch-all is not enabled). [Restore](/help/restoring-a-deleted-alias/) or [create](/help/creating-new-email-aliases/) the alias before sending.
 
 If you receive **"Attempted reply/send from alias has failed"**, your **verified recipient's domain** may not pass DMARC checks. See the [FAQ](/faq/#im-trying-to-reply-send-from-an-alias-but-it-is-rejected-whats-wrong).
 
-### I used Send from but my client changed the To address
+<h3 id="i-used-send-from-but-my-client-changed-the-to-address">I used Send from but my client changed the To address</h3>
 
 Some email clients rewrite or "correct" unusual addresses. Paste the address from addy.io exactly into **To**, and check **Sent** to confirm what was actually used.
 
-## Related articles
+<h2 id="related-articles">Related articles</h2>
 
 - [Replying to email using an alias](/help/replying-to-email-using-an-alias/) - reply to a forwarded message instead of starting a new one
 - [Creating new email aliases](/help/creating-new-email-aliases/) - generate shared-domain aliases before sending

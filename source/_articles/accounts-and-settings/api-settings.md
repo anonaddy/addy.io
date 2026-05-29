@@ -12,7 +12,7 @@ order: 3
 
 The addy.io API lets you manage aliases, recipients, and other account data from your own apps or scripts. To use the API, you create an **API key** in your account settings and send it with each request. This article explains how to create, use, and delete API keys. For full endpoint details and examples, see the [API documentation](https://app.addy.io/docs) at app.addy.io/docs.
 
-## Where to find API Settings
+<h2 id="where-to-find-api-settings">Where to find API Settings</h2>
 
 After [logging in](https://app.addy.io), go to **Settings** in the navigation bar and click on the **API** tab. Here you can create new API keys and see or revoke existing ones.
 
@@ -20,7 +20,7 @@ After [logging in](https://app.addy.io), go to **Settings** in the navigation ba
   <img class="shadow max-w-full h-auto" src="/assets/img/help/accounts-and-settings/api-settings-page.png" alt="addy.io API Settings page showing API keys" title="API Settings page">
 </div>
 
-## Creating an API key
+<h2 id="creating-an-api-key">Creating an API key</h2>
 
 An API key acts like a password for the API: you use it to authenticate your requests. Create a separate key for each app or script, and give it a clear name so you can recognise it later.
 
@@ -38,7 +38,7 @@ To create a new API key:
 
 > **Important:** Treat your API key like a password. Do not share it or commit it to public code. If a key is exposed, [delete it](#deleting-an-api-key) in API settings and create a new one.
 
-## Using the API and your key
+<h2 id="using-the-api-and-your-key">Using the API and your key</h2>
 
 Send your API key with each API request so addy.io can identify your account. You do this by adding an **Authorization** header, for example:
 
@@ -48,7 +48,7 @@ The base URL for the API is **https://app.addy.io/api/v1/** (or as stated in the
 
 Full API documentation: **[https://app.addy.io/docs](https://app.addy.io/docs)**
 
-## Deleting an API key
+<h2 id="deleting-an-api-key">Deleting an API key</h2>
 
 If you stop using an app or script, or you think an API key has been compromised, you should revoke (delete) it so it can no longer be used.
 

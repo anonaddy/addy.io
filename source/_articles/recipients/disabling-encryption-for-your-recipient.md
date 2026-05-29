@@ -12,7 +12,7 @@ order: 5
 
 If you have [enabled encryption](/help/enabling-encryption-for-your-recipient/) for a recipient, you can turn it off so that forwarded emails are sent in plain text again, or remove the stored public key. You might do this if you no longer use PGP for that inbox, if you lost the private key, or if you are troubleshooting delivery. This article explains how to temporarily disable encryption or delete the PGP key.
 
-## Toggle off to temporarily disable
+<h2 id="toggle-off-to-temporarily-disable">Toggle off to temporarily disable</h2>
 
 1. [Log in](https://app.addy.io) and go to **Recipients** in the navigation bar.
 2. Find the recipient in the table and turn the switch in the encryption column to **OFF** (as shown in the red box below).
@@ -23,7 +23,7 @@ If you have [enabled encryption](/help/enabling-encryption-for-your-recipient/) 
 
 Use this when you want to stop encrypting for a while but keep the key on file (e.g. for a new client that does not support PGP yet).
 
-## Delete the PGP key
+<h2 id="delete-the-pgp-key">Delete the PGP key</h2>
 
 To **permanently** stop using encryption for this recipient and remove the key from addy.io:
 

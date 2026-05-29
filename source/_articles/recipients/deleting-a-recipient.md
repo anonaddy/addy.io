@@ -12,11 +12,11 @@ order: 6
 
 Deleting a recipient removes that email address from your addy.io account. Aliases that were forwarding to it will instead use the account default recipient. This article explains how to delete a recipient and what to do first if aliases are using it.
 
-## Before you delete a recipient
+<h2 id="before-you-delete-a-recipient">Before you delete a recipient</h2>
 
 - **Default recipient** - If this recipient is your account’s [default recipient](/help/changing-the-default-recipient-on-your-account/), set a different default before deleting.
 
-## How to delete a recipient
+<h2 id="how-to-delete-a-recipient">How to delete a recipient</h2>
 
 1. [Log in](https://app.addy.io) and go to **Recipients** in the navigation bar.
 2. Find the recipient you want to remove and click **Delete** (as shown in the red box below).

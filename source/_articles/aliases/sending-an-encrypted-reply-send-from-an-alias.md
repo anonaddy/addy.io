@@ -14,20 +14,20 @@ order: 12
 
 You can optionally **encrypt** replies and new sends from an alias so that the message is encrypted (e.g. with the addy.io public key or the public key of the destination address) before it is delivered. This is an advanced feature for users who want an extra layer of privacy. This article gives an overview of sending and replying with encryption enabled.
 
-## When encryption is used
+<h2 id="when-encryption-is-used">When encryption is used</h2>
 
 Encryption for a reply/send from an alias can happen in two ways:
 
 1. When you have imported and encrypt your reply/send with the [no-reply@addy.io](https://keys.openpgp.org/search?q=26A987650243B28802524E2F809FD0D502E2F695) public key, (this will be automatically decrypted and forwarded on to the correct destination).
 2. When you have imported and use the destination's public key, for example **hello@example.com**'s public key if sending to `alias+hello=example.com@addy.io` (this message will remain encrypted and pass through the addy.io mail servers and can only be decrypted by the receiver `hello@example.com`).
 
-## Sending an encrypted reply
+<h2 id="sending-an-encrypted-reply">Sending an encrypted reply</h2>
 
 1. When [replying](/help/replying-to-email-using-an-alias/) to a forwarded email, use the normal reply flow.
 2. If encryption is available, you may see an option to **Encrypt** or to use the addy.io public key (or the email you are sending to key). Enable it before sending.
 3. Send the reply. The message will be encrypted so that only the intended recipient (or addy.io for automatic decryption, depending on setup) can read it.
 
-## Sending a new encrypted email from an alias
+<h2 id="sending-a-new-encrypted-email-from-an-alias">Sending a new encrypted email from an alias</h2>
 
 1. When [sending from an alias](/help/sending-email-from-an-alias/) (new conversation), compose the message as usual.
 2. If the option is offered, enable **Encrypt** or select the addy.io public key (or the recipient’s key) before sending.
@@ -58,7 +58,7 @@ Here's an example config that you can use for your `openpgp_alias_to_keys.json`:
 
 This will allow you to encrypt all messages sent to aliases `*@anonaddy.me` using the `no-reply@addy.io` public key. Add or modify the alias domains as required.
 
-## Encrypting a reply/send using FairEmail (Android)
+<h2 id="encrypting-a-reply-send-using-fairemail-android">Encrypting a reply/send using FairEmail (Android)</h2>
 
 If using FairEmail then follow the instructions at the bottom of [this article](/help/encrypting-a-reply-send-from-an-alias-with-the-addy-io-public-key-to-be-automatically-decrypted/) but import the PGP key of the destination address and select that instead.
 

@@ -12,7 +12,7 @@ order: 4
 
 You can set a **default display from name** for all [aliases](/help/what-are-the-different-kinds-of-aliases/) under a [custom domain](/help/adding-a-custom-domain/). When you [send](/help/sending-email-from-an-alias/) or [reply](/help/replying-to-email-using-an-alias/) from an alias at that domain, the recipient will see this name in the **From** field (e.g. "Support" in **Support** &lt;alias@yourdomain.com&gt;) unless you have overridden it for a specific alias. This article explains how to set or change the display from name for a domain.
 
-## Where to change the display from name for a domain
+<h2 id="where-to-change-the-display-from-name-for-a-domain">Where to change the display from name for a domain</h2>
 
 1. [Log in](https://app.addy.io) and go to **Domains** in the navigation bar.
 2. Find the domain you want to edit and click "Edit" on the right-hand side of the table.

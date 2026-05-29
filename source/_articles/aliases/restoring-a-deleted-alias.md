@@ -12,7 +12,7 @@ order: 6
 
 If you [deleted](/help/deleting-an-alias/) an alias by mistake or want to use it again, you can restore it so it starts forwarding emails again. Restored aliases behave like normal active aliases. This article explains how to restore a deleted alias. You cannot restore an alias that has been [forgotten](/help/forgetting-an-alias/) (unless it is a standard alias), it is permanent for [shared domain](/help/what-are-the-different-kinds-of-aliases/) aliases.
 
-## How to restore an email alias on addy.io
+<h2 id="how-to-restore-an-email-alias-on-addy-io">How to restore an email alias on addy.io</h2>
 
 1. [Log in](https://app.addy.io) and go to **Aliases** in the navigation bar.
 2. Switch the view or filter to show **Deleted** aliases (as shown in the red box below).

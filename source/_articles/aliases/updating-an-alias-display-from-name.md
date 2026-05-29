@@ -12,7 +12,7 @@ order: 11
 
 The **display from name** (or "from name") is the name that appears in the **From** field when you [send](/help/sending-email-from-an-alias/) or [reply](/help/replying-to-email-using-an-alias/) using an alias, e.g. "John Smith" in **John Smith** &lt;alias@example.com&gt;. You can set a different display name for each alias so recipients see a friendly or descriptive name instead of only the alias address. This article explains how to update it on the web and in the mobile app.
 
-## Updating the from name in the web application
+<h2 id="updating-the-from-name-in-the-web-application">Updating the from name in the web application</h2>
 
 1. [Log in](https://app.addy.io) and go to **Aliases** in the navigation bar.
 2. Open the alias you want to change (click **Edit** on the right-hand side of the table).
@@ -26,7 +26,7 @@ The **display from name** (or "from name") is the name that appears in the **Fro
 
 Changing the alias "From Name" requires a paid subscription. You can leave the field blank to show only the alias email address.
 
-## Updating the from name in the mobile app
+<h2 id="updating-the-from-name-in-the-mobile-app">Updating the from name in the mobile app</h2>
 
 1. Open the addy.io [mobile app](/help/downloading-and-using-the-mobile-app/) and sign in.
 2. Go to **Aliases** and open the alias you want to edit.

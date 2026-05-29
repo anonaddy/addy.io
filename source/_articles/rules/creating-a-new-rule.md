@@ -12,13 +12,13 @@ order: 1
 
 [Rules](/help/terminology/#rules) let you automate what happens to incoming mail. You define **conditions** (e.g. sender address, subject, which [alias](/help/what-are-the-different-kinds-of-aliases/) received the email) and **actions** (e.g. block the email, disable encryption, forward to a specific [recipient](/help/adding-a-recipient/)). When a message matches a rule's conditions, its actions are applied before the message is forwarded. This article explains how to create a new rule.
 
-## Where to create a rule
+<h2 id="where-to-create-a-rule">Where to create a rule</h2>
 
 1. [Log in](https://app.addy.io) and go to **Rules** in the navigation bar.
 2. Click **Create rule** as shown in the red box below.
 3. Give the rule a name (e.g. "Block newsletter senders") so you can recognise it later.
 
-## Setting conditions
+<h2 id="setting-conditions">Setting conditions</h2>
 
 Choose when the rule should run. Typical options include:
 
@@ -32,7 +32,7 @@ You can combine conditions (e.g. sender contains "newsletter" **and**/**or** ali
   <img class="shadow max-w-full h-auto" src="/assets/img/help/rules/create-new-rule.png" alt="Rule conditions in addy.io" title="Setting rule conditions">
 </div>
 
-## Setting actions
+<h2 id="setting-actions">Setting actions</h2>
 
 Choose what happens when an email matches the conditions. Common actions include:
 
