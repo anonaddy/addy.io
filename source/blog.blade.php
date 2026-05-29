@@ -47,5 +47,5 @@ description: The list of all blog posts for addy.io. You'll find information abo
 @stop
 
 @push('scripts')
-<script src="{{ mix('js/search.js', 'assets/build') }}"></script>
+<script type="module" src="{{ $page->vite('source/_assets/js/search.js') }}"></script>
 @endpush

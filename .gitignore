@@ -9,3 +9,8 @@
 .DS_Store
 .php-cs-fixer.cache
 .env
+# Auto-generated paginated blog category source pages (keep index.blade.php tracked)
+/source/blog/category/**/[0-9]*.blade.php
+# Vite build outputs
+/source/assets/build/manifest.json
+/source/assets/build/assets/

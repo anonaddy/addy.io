@@ -17,14 +17,6 @@ return [
             'sort' => '-date',
             'path' => 'blog/{filename}',
         ],
-        'categories' => [
-            'path' => '/blog/category/{filename}',
-            'posts' => function ($page, $allPosts) {
-                return $allPosts->filter(function ($post) use ($page) {
-                    return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
-                });
-            },
-        ],
         'articles' => [
             'author' => 'Will Browning', // Default author, if not provided in a post
             'sort' => 'title',
@@ -92,5 +84,56 @@ return [
         }
 
         return false;
+    },
+    'vite' => function ($page, $entry) {
+        $manifestPath = __DIR__.'/source/assets/build/manifest.json';
+
+        $readManifest = function () use ($manifestPath) {
+            if (! file_exists($manifestPath)) {
+                return [];
+            }
+
+            $decoded = json_decode(file_get_contents($manifestPath), true);
+
+            return is_array($decoded) ? $decoded : [];
+        };
+
+        $manifest = $readManifest();
+
+        // During watch builds Vite may rewrite the manifest while Jigsaw reads it.
+        // Retry once to avoid failing on a transient partial read.
+        if (! isset($manifest[$entry]['file'])) {
+            usleep(100000);
+            $manifest = $readManifest();
+        }
+
+        if (! isset($manifest[$entry]['file'])) {
+            throw new RuntimeException("Vite manifest entry not found for: {$entry}");
+        }
+
+        return '/assets/build/'.$manifest[$entry]['file'];
+    },
+    'viteCss' => function ($page, $entry) {
+        $manifestPath = __DIR__.'/source/assets/build/manifest.json';
+
+        if (! file_exists($manifestPath)) {
+            return [];
+        }
+
+        $manifest = json_decode(file_get_contents($manifestPath), true);
+
+        if (! is_array($manifest) || ! isset($manifest[$entry])) {
+            usleep(100000);
+            $manifest = json_decode(file_get_contents($manifestPath), true);
+        }
+
+        if (! is_array($manifest) || ! isset($manifest[$entry])) {
+            return [];
+        }
+
+        return array_map(
+            fn ($css) => '/assets/build/'.$css,
+            $manifest[$entry]['css'] ?? []
+        );
     },
 ];

@@ -49,7 +49,7 @@
 
               <span
                 class="block font-normal text-grey-700 text-sm my-1"
-                v-html="result.item.snippet"
+                v-html="getHighlightedSnippet(result)"
               ></span>
             </a>
 
@@ -91,7 +91,7 @@ export default {
   },
   computed: {
     results() {
-      return this.query ? this.fuse.search(this.query) : []
+      return this.query && this.fuse ? this.fuse.search(this.query) : []
     },
   },
   methods: {
@@ -105,12 +105,96 @@ export default {
       this.query = ''
       this.searching = false
     },
+    getHighlightedSnippet(result) {
+      const queryLower = this.query.toLowerCase().trim()
+      const content = result.item.content || ''
+      const snippet = result.item.snippet || ''
+
+      let bestMatchIndex = -1
+      let bestMatchLength = 0
+
+      const exactIndex = content.toLowerCase().indexOf(queryLower)
+      if (exactIndex !== -1) {
+        bestMatchIndex = exactIndex
+        bestMatchLength = queryLower.length
+      } else {
+        const words = queryLower.split(/\s+/).filter((w) => w.length >= 2)
+        for (const word of words) {
+          const wordIndex = content.toLowerCase().indexOf(word)
+          if (wordIndex !== -1 && (bestMatchIndex === -1 || wordIndex < bestMatchIndex)) {
+            bestMatchIndex = wordIndex
+            bestMatchLength = word.length
+          }
+        }
+      }
+
+      if (bestMatchIndex !== -1 && content.length > 0) {
+        const snippetStart = Math.max(0, bestMatchIndex - 120)
+        const snippetEnd = Math.min(content.length, bestMatchIndex + bestMatchLength + 120)
+        let extractedSnippet = content.substring(snippetStart, snippetEnd)
+
+        if (snippetStart > 0) {
+          const wordBoundaryStart = extractedSnippet.search(/\s/)
+          if (wordBoundaryStart > 0 && wordBoundaryStart < 30) {
+            extractedSnippet = extractedSnippet.substring(wordBoundaryStart + 1)
+          }
+        }
+        if (snippetEnd < content.length) {
+          const lastSpace = extractedSnippet.lastIndexOf(' ')
+          if (lastSpace > extractedSnippet.length - 30 && lastSpace > 0) {
+            extractedSnippet = extractedSnippet.substring(0, lastSpace)
+          }
+        }
+
+        if (snippetStart > 0) extractedSnippet = '...' + extractedSnippet
+        if (snippetEnd < content.length) extractedSnippet = extractedSnippet + '...'
+
+        const words = queryLower.split(/\s+/).filter((w) => w.length >= 2)
+        let highlighted = extractedSnippet
+        for (const word of words) {
+          const regex = new RegExp(`(${this.escapeRegex(word)})`, 'gi')
+          highlighted = highlighted.replace(
+            regex,
+            '<strong class="font-semibold text-grey-900">$1</strong>'
+          )
+        }
+
+        return highlighted
+      }
+
+      if (snippet) {
+        const words = queryLower.split(/\s+/).filter((w) => w.length >= 2)
+        let highlighted = snippet
+        for (const word of words) {
+          const regex = new RegExp(`(${this.escapeRegex(word)})`, 'gi')
+          highlighted = highlighted.replace(
+            regex,
+            '<strong class="font-semibold text-grey-900">$1</strong>'
+          )
+        }
+        return highlighted
+      }
+
+      return snippet
+    },
+    escapeRegex(str) {
+      return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    },
   },
   created() {
     axios('/index.json').then((response) => {
       this.fuse = new Fuse(response.data, {
-        minMatchCharLength: 3,
-        keys: ['title', 'snippet', 'categories'],
+        minMatchCharLength: 2,
+        keys: [
+          { name: 'title', weight: 0.4 },
+          { name: 'snippet', weight: 0.3 },
+          { name: 'content', weight: 0.3 },
+          { name: 'categories', weight: 0.1 },
+        ],
+        threshold: 0.3,
+        ignoreLocation: true,
+        includeScore: true,
+        includeMatches: true,
       })
     })
   },

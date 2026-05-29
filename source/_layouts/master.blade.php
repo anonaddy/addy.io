@@ -34,10 +34,10 @@
 
     <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
-    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+    <link rel="stylesheet" href="{{ $page->vite('source/_assets/css/main.css') }}">
 
     @if($page->production)
-    <script src="{{ mix('js/app.js', 'assets/build') }}"></script>
+    <script type="module" src="{{ $page->vite('source/_assets/js/app.js') }}"></script>
     @endif
 </head>
 
@@ -51,9 +51,12 @@
     @include('_shared.footer')
 
     @stack('scripts')
-    <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
-    @if($page->isActive('/self-hosting'))
-    <script src="{{ mix('js/highlight.js', 'assets/build') }}"></script>
+    <script type="module" src="{{ $page->vite('source/_assets/js/main.js') }}"></script>
+    @if($page->isActive('/self-hosting') || ($page->highlightCode ?? false))
+    @foreach($page->viteCss('source/_assets/js/highlight.js') as $css)
+    <link rel="stylesheet" href="{{ $css }}">
+    @endforeach
+    <script type="module" src="{{ $page->vite('source/_assets/js/highlight.js') }}"></script>
     @endif
 </body>
 

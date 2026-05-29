@@ -1,5 +1,6 @@
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss';
+@config "../../../tailwind.config.js";
+@source "../../../source/**/*.{blade.php,blade.md,md,html,vue,js}";
 
 html {
   scroll-behavior: smooth;
@@ -52,150 +53,178 @@ body {
   content: '\0068\0065\006C\0070\002E\0061\0064\0064\0079\002E\0069\006F';
 }
 
-a {
-  @apply no-underline;
-  @apply text-indigo-600;
-}
+@layer base {
+  a {
+    @apply no-underline;
+    @apply text-indigo-600;
+  }
 
-blockquote {
-  @apply border-indigo-400;
-  @apply border-l-4;
-  @apply font-normal;
-  @apply italic;
-  @apply my-8;
-  @apply pl-6;
-  @apply text-grey-800;
-  @apply text-lg;
-}
+  blockquote {
+    @apply border-indigo-400;
+    @apply border-l-4;
+    @apply font-normal;
+    @apply italic;
+    @apply my-8;
+    @apply pl-6;
+    @apply text-grey-800;
+    @apply text-lg;
+  }
 
-code {
-  @apply bg-cyan-100;
-  @apply text-cyan-900;
-  @apply px-2;
-  @apply py-px;
-  @apply rounded;
-  @apply text-sm;
-}
+  code {
+    @apply bg-cyan-100;
+    @apply text-cyan-900;
+    @apply px-2;
+    @apply py-px;
+    @apply rounded;
+    @apply text-sm;
+  }
 
-code.hljs {
-  @apply bg-transparent;
-  @apply p-0;
-}
+  code.hljs {
+    @apply bg-transparent;
+    @apply p-0;
+  }
 
-code.hljs .hljs-comment,
-code.hljs .hljs-keyword,
-code.hljs .hljs-meta {
-  @apply font-normal;
-  @apply not-italic;
-}
+  code.hljs .hljs-comment,
+  code.hljs .hljs-keyword,
+  code.hljs .hljs-meta {
+    @apply font-normal;
+    @apply not-italic;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply leading-tight;
-  @apply mb-4;
-  @apply mt-8;
-  @apply text-grey-900;
-}
-
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child,
-h6:first-child {
-  @apply mt-0;
-}
-
-h1 {
-  @apply font-extrabold;
-  @apply text-5xl;
-}
-
-h2 {
-  @apply font-bold;
-  @apply text-3xl;
-}
-
-h3 {
-  @apply font-bold;
-  @apply text-2xl;
-}
-
-h4 {
-  @apply font-normal;
-  @apply text-xl;
-}
-
-h5 {
-  @apply font-normal;
-  @apply text-lg;
-}
-
-h6 {
-  @apply font-light;
-  @apply text-base;
-}
-
-hr {
-  @apply border-b;
-  @apply border-indigo-200;
-  @apply my-12;
-  @apply rounded-full;
-}
-
-/* li {
-  @apply list-inside;
-  @apply list-disc;
-} */
-
-li ul,
-li ol {
-  @apply my-0;
-}
-
-nav li {
-  @apply list-none;
-}
-
-ol,
-ul {
-  @apply my-4;
-}
-
-p {
-  @apply mb-3;
-}
-
-@screen md {
-  p {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply leading-tight;
     @apply mb-4;
+    @apply mt-8;
+    @apply text-grey-900;
+  }
+
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child,
+  h5:first-child,
+  h6:first-child {
+    @apply mt-0;
+  }
+
+  h1 {
+    @apply font-extrabold;
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply font-bold;
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply font-bold;
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply font-normal;
+    @apply text-xl;
+  }
+
+  h5 {
+    @apply font-normal;
+    @apply text-lg;
+  }
+
+  h6 {
+    @apply font-light;
+    @apply text-base;
+  }
+
+  hr {
+    @apply border-b;
+    @apply border-indigo-200;
+    @apply my-12;
+    @apply rounded-full;
+  }
+
+  li ul,
+  li ol {
+    @apply my-0;
+  }
+
+  nav li {
+    @apply list-none;
+  }
+
+  ol,
+  ul {
+    @apply my-4;
+  }
+
+  /* Restore ordered list numbers inside help articles (Tailwind Preflight removes them) */
+  .article-with-heading-links ol {
+    list-style-type: decimal;
+    padding-left: 1.625rem;
+  }
+
+  .article-with-heading-links ol li {
+    @apply pl-1;
+  }
+
+  .article-with-heading-links table {
+    @apply my-6 w-full border-collapse text-sm;
+    border: 1px solid theme('colors.grey.200');
+  }
+
+  .article-with-heading-links th,
+  .article-with-heading-links td {
+    @apply border border-grey-200 px-4 py-2 align-top text-left;
+  }
+
+  .article-with-heading-links thead th {
+    @apply bg-grey-50 font-semibold text-grey-900;
+  }
+
+  p {
+    @apply mb-3;
+  }
+
+  @media (min-width: 768px) {
+    p {
+      @apply mb-4;
+    }
+  }
+
+  pre {
+    background-color: #242b3d;
+    @apply leading-loose;
+    @apply my-6;
+    @apply overflow-x-auto;
+    @apply p-4;
+    @apply rounded;
+    @apply shadow-md;
+    @apply text-base;
+  }
+
+  pre code {
+    @apply bg-transparent;
+    @apply block;
+    @apply p-0;
+  }
+
+  ::selection {
+    @apply bg-indigo-500;
+    @apply text-white;
   }
 }
 
-pre {
-  background-color: #242b3d;
-  @apply leading-loose;
-  @apply my-6;
-  @apply overflow-x-auto;
-  @apply p-4;
-  @apply rounded;
-  @apply shadow-md;
-  @apply text-base;
-}
-
-pre code {
-  @apply bg-transparent;
-  @apply block;
-  @apply p-0;
-}
-
-::selection {
-  @apply bg-indigo-500;
-  @apply text-white;
+@layer components {
+  /* Keep small CTA/button height consistent with pre-Vite build output */
+  .rounded-md.text-sm.font-semibold {
+    @apply leading-normal;
+  }
 }
 
 .mobile-nav-menu {
@@ -256,4 +285,15 @@ input[name='search'].transition-border {
   opacity: 0;
 }
 
-@tailwind utilities;
+.hero-animation-panel {
+  background: radial-gradient(circle at 50% 50%, #183f50 0%, #161938 55%, #161938 100%);
+}
+
+#hero-lottie svg,
+.hero-lottie-fallback {
+  display: block;
+  width: 108%;
+  max-width: none;
+  margin-left: -4%;
+  height: auto;
+}

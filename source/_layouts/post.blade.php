@@ -46,7 +46,3 @@
 
     @include('_components.newsletter-signup')
 @endsection
-
-@push('scripts')
-{{-- <script src="{{ mix('js/main.js', 'assets/build') }}"></script> --}}
-@endpush

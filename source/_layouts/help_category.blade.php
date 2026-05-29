@@ -1,37 +1,108 @@
 @extends('_layouts.help_centre')
 
 @section('helpContent')
-    <h2>{{ $page->title }}</h2>
+    <!-- Breadcrumbs -->
+    <nav class="mb-6" aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2 text-sm text-grey-600">
+            <li>
+                <a href="/help/" class="hover:text-indigo-600 transition-colors">All Categories</a>
+            </li>
+            <li>
+                <svg class="w-4 h-4 text-grey-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </li>
+            <li class="text-grey-900 font-medium" aria-current="page">
+                {{ $page->title }}
+            </li>
+        </ol>
+    </nav>
 
-    <div>
-        @yield('content')
+    <!-- Category Header -->
+    <div class="mb-8">
+        <h2 class="text-3xl font-bold text-grey-900 mb-3">{{ $page->title }}</h2>
     </div>
 
-    <div class="w-12 h-1 bg-indigo-900 my-8"></div>
+    <!-- Category Description -->
+    @hasSection('content')
+        <div class="mb-10 text-lg text-grey-600 leading-relaxed">
+            @yield('content')
+        </div>
+    @elseif($page->description)
+        <div class="mb-10 text-lg text-grey-600 leading-relaxed">
+            {{ $page->description }}
+        </div>
+    @endif
 
+    <!-- Articles List -->
     @if(count($page->articles($articles)))
+        @php
+            $sortedArticles = collect($page->articles($articles))->sortBy(function($article) {
+                return [
+                    $article->order ?? 999,
+                    $article->title ?? ''
+                ];
+            })->values();
+        @endphp
 
-        @foreach ($page->articles($articles) as $article)
-            <div class="flex flex-col">
-                <h2 class="text-xl {{ $loop->last ? 'my-0' : 'mt-0' }}">
-                    <a
-                        href="{{ $article->getUrl() }}/"
-                        title="Read more - {{ $article->title }}"
-                        class="text-indigo-600 font-extrabold"
-                    >{{ $article->title }}</a>
-                </h2>
-            </div>
-        @endforeach
+        <div class="space-y-4">
+            @foreach ($sortedArticles as $article)
+                <a
+                    href="{{ $article->getUrl() }}/"
+                    title="Read more - {{ $article->title }}"
+                    class="group block bg-white border border-grey-200 rounded-lg p-6 hover:border-indigo-300 hover:shadow-md transition-all duration-200"
+                >
+                    <div class="flex items-start justify-between">
+                        <div class="flex-1">
+                            <h4 class="text-lg font-semibold text-grey-900 group-hover:text-indigo-600 transition-colors mb-2">
+                                {{ $article->title }}
+                            </h4>
+                            @if($article->description)
+                                <p class="text-grey-600 text-sm line-clamp-2">
+                                    {{ $article->description }}
+                                </p>
+                            @endif
+                            <div class="flex items-center flex-wrap gap-3 mt-3">
+                                <div class="flex items-center text-sm text-grey-500">
+                                    <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <span>Last updated: {{ date('F j, Y', $article->date) }}</span>
+                                </div>
+                                @if($article->advanced)
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-700">
+                                        Advanced
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        <svg class="w-5 h-5 text-grey-400 group-hover:text-indigo-600 transition-colors flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </div>
+                </a>
+            @endforeach
+        </div>
 
     @else
 
-        <div class="text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Layer 1" width="101.75" height="97.25" viewBox="0 0 814 778.22" class="mx-auto" alt="Documents"><defs><linearGradient id="29b91a8c-5031-4728-9934-4de601869dbd" x1="253.26" y1="778.22" x2="253.26" y2="105.1" gradientUnits="userSpaceOnUse"><stop offset="0.01" stop-color="gray" stop-opacity="0.25"></stop><stop offset="0.54" stop-color="gray" stop-opacity="0.12"></stop><stop offset="1" stop-color="gray" stop-opacity="0.1"></stop></linearGradient><linearGradient id="1256144c-81fa-4390-be21-e94fb20836e2" x1="49.76" y1="202.38" x2="49.76" y2="112.93" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b3b3b3" stop-opacity="0.25"></stop><stop offset="0.54" stop-color="#b3b3b3" stop-opacity="0.1"></stop><stop offset="1" stop-color="#b3b3b3" stop-opacity="0.05"></stop></linearGradient><linearGradient id="8f0ddb95-6166-4bb1-9b4d-46cd9e3d30e6" x1="408.68" y1="722.31" x2="408.68" y2="49.2" xlink:href="#29b91a8c-5031-4728-9934-4de601869dbd"></linearGradient><linearGradient id="2acd927f-116a-42d0-926b-2e100ad401a0" x1="205.18" y1="146.48" x2="205.18" y2="57.02" xlink:href="#1256144c-81fa-4390-be21-e94fb20836e2"></linearGradient><linearGradient id="dd98f1d5-faf2-451f-bb12-7f13808eec29" x1="560.74" y1="673.12" x2="560.74" y2="0" xlink:href="#29b91a8c-5031-4728-9934-4de601869dbd"></linearGradient><linearGradient id="523444de-12f9-4e88-a28a-f69f2aefc1da" x1="357.24" y1="97.28" x2="357.24" y2="7.83" xlink:href="#1256144c-81fa-4390-be21-e94fb20836e2"></linearGradient></defs><title>files1</title><polygon points="506.51 778.22 0 778.22 0 189.97 76.53 105.1 506.51 105.1 506.51 778.22" fill="url(#29b91a8c-5031-4728-9934-4de601869dbd)"></polygon><polygon points="498.69 760.33 8.95 760.33 8.95 194.56 82.94 112.93 498.69 112.93 498.69 760.33" fill="#fafafa"></polygon><rect x="56.76" y="182.81" width="238.59" height="40.25" fill="#e0e0e0"></rect><rect x="57.24" y="292.95" width="174.84" height="40.25" fill="#e0e0e0"></rect><rect x="57.24" y="458.43" width="392.18" height="147.59" fill="#0fb5ba"></rect><rect x="360.55" y="183.37" width="88.87" height="40.25" fill="#f5f5f5"></rect><rect x="360.55" y="245.99" width="88.87" height="40.25" fill="#f5f5f5"></rect><polygon points="90.57 112.93 90.57 202.38 8.95 202.38 8.95 194.56 82.74 112.93 90.57 112.93" fill="url(#1256144c-81fa-4390-be21-e94fb20836e2)"></polygon><polygon points="8.75 194.56 82.74 112.93 82.74 194.56 8.75 194.56" fill="#eee"></polygon><polygon points="661.93 722.31 155.42 722.31 155.42 134.06 231.95 49.2 661.93 49.2 661.93 722.31" fill="url(#8f0ddb95-6166-4bb1-9b4d-46cd9e3d30e6)"></polygon><polygon points="654.11 704.42 164.37 704.42 164.37 138.65 238.36 57.02 654.11 57.02 654.11 704.42" fill="#fafafa"></polygon><rect x="212.18" y="126.91" width="238.59" height="40.25" fill="#e0e0e0"></rect><rect x="212.66" y="237.04" width="174.84" height="40.25" fill="#e0e0e0"></rect><rect x="212.66" y="402.53" width="392.18" height="147.59" fill="#0fb5ba"></rect><rect x="515.97" y="127.47" width="88.87" height="40.25" fill="#f5f5f5"></rect><rect x="515.97" y="190.08" width="88.87" height="40.25" fill="#f5f5f5"></rect><polygon points="245.99 57.02 245.99 146.47 164.37 146.47 164.37 138.65 238.16 57.02 245.99 57.02" fill="url(#2acd927f-116a-42d0-926b-2e100ad401a0)"></polygon><polygon points="164.17 138.65 238.16 57.02 238.16 138.65 164.17 138.65" fill="#eee"></polygon><polygon points="814 673.12 307.49 673.12 307.49 84.87 384.01 0 814 0 814 673.12" fill="url(#dd98f1d5-faf2-451f-bb12-7f13808eec29)"></polygon><polygon points="806.17 655.23 316.43 655.23 316.43 89.45 390.43 7.83 806.17 7.83 806.17 655.23" fill="#fff"></polygon><rect x="364.25" y="77.71" width="238.59" height="40.25" fill="#e0e0e0"></rect><rect x="364.73" y="187.85" width="174.84" height="40.25" fill="#e0e0e0"></rect><rect x="364.73" y="353.33" width="392.18" height="147.59" fill="#0fb5ba"></rect><rect x="668.04" y="78.27" width="88.87" height="40.25" fill="#e0e0e0"></rect><rect x="668.04" y="140.88" width="88.87" height="40.25" fill="#e0e0e0"></rect><rect x="668.04" y="203.5" width="88.87" height="40.25" fill="#e0e0e0"></rect><polygon points="398.06 7.83 398.06 97.28 316.43 97.28 316.43 89.45 390.23 7.83 398.06 7.83" fill="url(#523444de-12f9-4e88-a28a-f69f2aefc1da)"></polygon><polygon points="316.23 89.45 390.23 7.83 390.23 89.45 316.23 89.45" fill="#eee"></polygon></svg>
-
-            <p class="text-lg font-semibold mt-4 mb-1">
+        <div class="text-center py-16">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-grey-100 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Layer 1" width="60" height="60" viewBox="0 0 814 778.22" class="text-grey-400" alt="Documents">
+                    <defs>
+                        <linearGradient id="29b91a8c-5031-4728-9934-4de601869dbd" x1="253.26" y1="778.22" x2="253.26" y2="105.1" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.01" stop-color="gray" stop-opacity="0.25"></stop>
+                            <stop offset="0.54" stop-color="gray" stop-opacity="0.12"></stop>
+                            <stop offset="1" stop-color="gray" stop-opacity="0.1"></stop>
+                        </linearGradient>
+                    </defs>
+                    <polygon points="506.51 778.22 0 778.22 0 189.97 76.53 105.1 506.51 105.1 506.51 778.22" fill="url(#29b91a8c-5031-4728-9934-4de601869dbd)"></polygon>
+                </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-grey-900 mb-2">
                 Work in progress!
-            </p>
-            <p>
+            </h3>
+            <p class="text-grey-600">
                 Articles will be added here shortly, please check back soon.
             </p>
         </div>

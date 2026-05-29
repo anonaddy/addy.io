@@ -5,6 +5,7 @@ import 'highlight.js/styles/base16/dracula.css'
 hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'))
 hljs.registerLanguage('lua', require('highlight.js/lib/languages/lua'))
 hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'))
+hljs.registerLanguage('json', require('highlight.js/lib/languages/json'))
 
 document.querySelectorAll('pre code').forEach((element) => {
   hljs.highlightElement(element)

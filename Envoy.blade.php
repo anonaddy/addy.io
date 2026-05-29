@@ -11,6 +11,28 @@ $currentDir = "{$baseDir}/current";
 $newReleaseName = date("Ymd-His");
 $newReleaseDir = "{$releasesDir}/{$newReleaseName}";
 
+// Non-interactive SSH does not source ~/.bashrc
+// Prefer ENVOY_NODE_BIN_PREPEND (absolute path to the bin directory that contains node and npm).
+$nodeVersion = $_ENV['ENVOY_NODE_VERSION'] ?? '';
+$nodeBinPrepend = $_ENV['ENVOY_NODE_BIN_PREPEND'] ?? null;
+if ($nodeBinPrepend !== null && trim($nodeBinPrepend) !== '') {
+    $remoteNodeInit = 'export PATH=' . escapeshellarg(rtrim($nodeBinPrepend, '/')) . ':$PATH' . "\n";
+} else {
+    $nvmDir = $_ENV['ENVOY_NVM_DIR'] ?? '';
+    if ($nvmDir !== '') {
+        $remoteNodeInit =
+            'export NVM_DIR=' . escapeshellarg($nvmDir) . "\n" .
+            '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' . "\n" .
+            'nvm use ' . escapeshellarg($nodeVersion) . "\n";
+    } else {
+        // Explicit newlines
+        $remoteNodeInit =
+            'export NVM_DIR="$HOME/.nvm"' . "\n" .
+            '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' . "\n" .
+            'nvm use ' . escapeshellarg($nodeVersion) . "\n";
+    }
+}
+
 function logMessage($message) {
   return "echo '\033[32m" .$message. "\033[0m';\n";
 }
@@ -64,12 +86,14 @@ composer install --prefer-dist --no-scripts --no-dev -q -o
 
 @task("runNpm", ["on" => "remote"])
 {{ logMessage("📦  Running Npm...") }}
+{{ $remoteNodeInit }}
 cd {{ $newReleaseDir }}
 npm install --no-progress &> /dev/null
 @endtask
 
 @task("generateAssets", ["on" => "remote"])
 {{ logMessage("🌅  Generating assets...") }}
+{{ $remoteNodeInit }}
 cd {{ $newReleaseDir }}
 npm run prod --no-progress &> /dev/null
 

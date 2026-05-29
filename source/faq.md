@@ -361,7 +361,7 @@ A few days before your billing cycle ends you will receive an email letting you 
 * Any additional usernames will be **deactivated**
 * If you have any more than **1 recipient** they will be **deleted**
 * Paid account settings will be reverted to default values
-* Any aliases using paid plan only domains will be **deactivated**
+* Any aliases using paid plan only domains will be **deactivated** (the only alias domains available on the Free plan are `anonaddy.me` and `anonaddy.com`)
 * If you have any more than 10 aliases using a shared domain e.g. anonaddy.me they will be **deactivated**
 * If your account username has catch-all disabled then it will be enabled
 * Any entries in your **blocklist** will no longer block emails

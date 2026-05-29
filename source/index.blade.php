@@ -10,11 +10,11 @@ width: full
 <!--Hero-->
 <div class="bg-white">
     <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
-        <div class="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-48">
+        <div class="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-[minmax(0,28rem)_minmax(0,1fr)] lg:items-center lg:gap-x-10 lg:px-8 lg:py-48 xl:max-w-[90rem] xl:grid-cols-[minmax(0,32rem)_minmax(0,1fr)]">
             <div class="px-6 lg:px-0 lg:pt-4">
                 <div class="mx-auto max-w-2xl">
                     <div class="max-w-lg">
-                        <div class="mt-24 sm:mt-32 lg:mt-16">
+                        <div class="mt-24 lg:mt-0">
                             <a href="/blog/addy-io-has-partnered-with-tuta/" class="inline-flex items-center space-x-2">
                                 <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">addy.io has partnered with Tuta! →</span>
                             </a>
@@ -37,16 +37,26 @@ width: full
                     </div>
                 </div>
             </div>
-            <div class="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
-                <div class="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 md:-mr-20 lg:-mr-36" aria-hidden="true"></div>
-                <div class="shadow-lg md:rounded-3xl">
-                    <div class="bg-indigo-600 [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
-                        <div class="absolute -inset-y-px left-1/2 -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-inset ring-white md:ml-20 lg:ml-36" aria-hidden="true"></div>
-                        <div class="relative px-6 pt-8 sm:pt-16 md:pl-16 md:pr-0">
-                            <div class="mx-auto max-w-2xl md:mx-0 md:max-w-none">
-                                <img class="-mr-6" src="/assets/img/addy-app.svg" alt="Web Application">
+            <div class="mt-20 sm:mt-24 md:mx-auto md:max-w-3xl lg:mx-0 lg:mt-0 lg:max-w-none lg:w-full xl:-mr-8 xl:w-[calc(100%+2rem)]">
+                <div class="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white ring-1 ring-indigo-50 md:-mr-20 lg:-mr-36" aria-hidden="true"></div>
+                <div class="overflow-hidden md:rounded-3xl">
+                    <div class="hero-animation-panel relative [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
+                        <div class="absolute -inset-y-px left-1/2 -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-white/5 ring-1 ring-inset ring-white/10 md:ml-20 lg:ml-36" aria-hidden="true"></div>
+                        <div class="relative overflow-hidden pt-4 pb-2 sm:pt-6 sm:pb-4">
+                            <div
+                                id="hero-lottie"
+                                class="hero-lottie w-full aspect-[1920/1000] lg:min-h-[22rem] xl:min-h-[26rem]"
+                            >
+                                <img
+                                    src="/assets/img/hero/addy-hero.svg"
+                                    alt="Illustration of email aliases forwarding messages to your inbox"
+                                    class="hero-lottie-fallback"
+                                    width="1920"
+                                    height="1000"
+                                    decoding="async"
+                                />
                             </div>
-                            <div class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 md:rounded-3xl" aria-hidden="true"></div>
+                            <div class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10 md:rounded-3xl" aria-hidden="true"></div>
                         </div>
                     </div>
                 </div>
@@ -1280,6 +1290,7 @@ width: full
 @stop
 
 @push('scripts')
+<script type="module" src="{{ $page->vite('source/_assets/js/hero-animation.js') }}"></script>
 <script>
     fetch("{{ $page->appUrl }}/default-currency").then((e => e.json())).then((e => {
         [...document.getElementsByClassName("currency-symbol")].forEach((n => n.innerText = e.currency))

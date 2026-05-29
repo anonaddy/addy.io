@@ -1,5 +1,10 @@
 <?php
 
+use App\Listeners\GenerateCategoryPagination;
+use App\Listeners\GenerateHelpIndex;
+use App\Listeners\GenerateIndex;
+use App\Listeners\GenerateSitemap;
+
 // @var $container \Illuminate\Container\Container
 // @var $events \TightenCo\Jigsaw\Events\EventBus
 
@@ -14,6 +19,7 @@
  * });
  */
 
-$events->afterBuild(App\Listeners\GenerateSitemap::class);
-$events->afterBuild(App\Listeners\GenerateIndex::class);
-$events->afterBuild(App\Listeners\GenerateHelpIndex::class);
+$events->afterCollections(GenerateCategoryPagination::class);
+$events->afterBuild(GenerateSitemap::class);
+$events->afterBuild(GenerateIndex::class);
+$events->afterBuild(GenerateHelpIndex::class);

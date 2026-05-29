@@ -38,10 +38,12 @@ class GenerateSitemap
             ->reject(function ($path) {
                 return $this->isExcluded($path);
             })->each(function ($path) use ($baseUrl, $sitemap) {
+                $normalizedPath = Str::startsWith($path, '/') ? $path : '/'.$path;
+
                 if ($path && ! Str::endsWith($path, ['.txt', '.xml', '.pdf'])) { // Prevent it adding a trailing slash to security.txt and pdfs
-                    $sitemap->addItem(rtrim($baseUrl, '/').$path.'/', time(), Sitemap::DAILY);
+                    $sitemap->addItem(rtrim($baseUrl, '/').$normalizedPath.'/', time(), Sitemap::DAILY);
                 } else {
-                    $sitemap->addItem(rtrim($baseUrl, '/').$path, time(), Sitemap::DAILY);
+                    $sitemap->addItem(rtrim($baseUrl, '/').$normalizedPath, time(), Sitemap::DAILY);
                 }
             });
 

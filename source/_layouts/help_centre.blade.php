@@ -1,46 +1,37 @@
 @extends('_layouts.master')
 
 @section('body')
-    <div class="flex flex-1 items-center relative">
-        <h1 class="mb-0">Help Centre</h1>
-        <div id="vue-help-search" class="flex flex-1">
+    <!-- Header Section -->
+    <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-grey-900 mb-4">Help Centre</h1>
+        <p class="text-lg text-grey-600 mb-8">Find answers to common questions and learn how to get the most out of addy.io</p>
+
+        <!-- Search Bar -->
+        <div id="vue-help-search" class="w-full">
             <search></search>
         </div>
     </div>
 
-    <hr class="border-b mt-6 mb-10">
-
+    <!-- Main Content -->
     <div class="flex flex-wrap -mx-4">
-        <div class="w-full md:w-1/5 px-4">
-            <p class="block mb-4 text-sm uppercase text-grey-400 tracking-wide">
-                Categories
-            </p>
-
-            <ul>
-                @foreach ($helpCategories as $category)
-                    <li class="list-none">
-                        <a href="{{ $category->getUrl() }}/" class="block px-3 py-2  x rounded-sm {{ $page->isActive($category->getPath()) ? 'text-indigo-900 bg-indigo-50' : 'hover:bg-grey-50' }}">
-                            {{ $category->title }}
-                        </a>
-                    </li>
-                @endforeach
-            </ul>
-
-        </div>
-        <div class="w-full md:w-4/5 px-4">
+        <!-- Content Area -->
+        <div class="w-full px-4">
             @yield('helpContent')
-            <hr class="border-b my-10">
-            <div class="flex flex-wrap justify-center items-center">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -5 24 24" width="48" height="48" preserveAspectRatio="xMinYMin" class="text-indigo-600 fill-current"><path d="M18.572.083L10.676 7.12a1 1 0 0 1-1.331 0L1.416.087A2 2 0 0 1 2 0h16a2 2 0 0 1 .572.083zm1.356 1.385c.047.17.072.348.072.532v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2c0-.185.025-.364.072-.534l7.942 7.148a3 3 0 0 0 3.992 0l7.922-7.146z"></path></svg>
-                </div>
-                <div class="text-center md:text-left px-4">
-                    <h3 class="text-lg">
+
+            <!-- Contact Section -->
+            <div class="mt-16 pt-12 border-t border-grey-200">
+                <div class="bg-grey-50 rounded-xl p-8 text-center">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-indigo-100 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -5 24 24" width="32" height="32" preserveAspectRatio="xMinYMin" class="text-indigo-600 fill-current">
+                            <path d="M18.572.083L10.676 7.12a1 1 0 0 1-1.331 0L1.416.087A2 2 0 0 1 2 0h16a2 2 0 0 1 .572.083zm1.356 1.385c.047.17.072.348.072.532v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2c0-.185.025-.364.072-.534l7.942 7.148a3 3 0 0 0 3.992 0l7.922-7.146z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-grey-900 mb-2">
                         Couldn't find what you were looking for?
                     </h3>
-                    <h4 class="my-0 text-base">
-                        Visit the <a href="/contact/">contact</a> page to get in touch.
-                    </h4>
+                    <p class="text-grey-600 mb-4">
+                        We're here to help! Visit our <a href="/contact/" class="text-indigo-600 hover:text-indigo-700 font-medium underline">contact page</a> to get in touch with our support team.
+                    </p>
                 </div>
             </div>
         </div>
@@ -48,5 +39,5 @@
 @stop
 
 @push('scripts')
-<script src="{{ mix('js/help-search.js', 'assets/build') }}"></script>
+<script type="module" src="{{ $page->vite('source/_assets/js/help-search.js') }}"></script>
 @endpush

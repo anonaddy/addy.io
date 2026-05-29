@@ -67,7 +67,7 @@ You have the right to require us to correct any inaccuracies in your data, free 
 
 We use [Stripe](https://stripe.com) and [NOWPayments](https://nowpayments.io/) to process payments for subscriptions. Any payment transactions will be carried out by Stripe and NOWPayments over encrypted connections. Your card information never touches our server. If you are subscribed to our newsletter then we will also use [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/) to deliver email campaigns.
 
-We also use [Cloudflare Turnstile](https://www.cloudflare.com/en-gb/products/turnstile/), a privacy friendly captcha solution on our login, register and reset password pages to protect against bots and abuse.
+We also use [Cloudflare Turnstile](https://www.cloudflare.com/products/turnstile/), a privacy friendly captcha solution on our login, register and reset password pages to protect against bots and abuse.
 
 ## Changes To Our Privacy Policy
 
