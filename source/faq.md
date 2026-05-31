@@ -55,6 +55,7 @@ For step-by-step guides, see the [Help Centre](/help/).
 
 <h3 class="faq-category">Subscriptions</h3>
 
+- [Why are some features paid only?](#why-are-some-features-paid-only)
 - [What happens if I have a subscription but then cancel it?](#what-happens-if-i-have-a-subscription-but-then-cancel-it)
 - [If I subscribe will Stripe see my real email address?](#if-i-subscribe-will-stripe-see-my-real-email-address)
 - [Do you offer student discount?](#do-you-offer-student-discount)
@@ -323,6 +324,20 @@ If neither of the above options work then please try changing to another recipie
 If you still aren't receiving emails please contact me.
 
 <h3 class="faq-category">Subscriptions</h3>
+
+## Why are some features paid only? {#why-are-some-features-paid-only}
+
+addy.io offers a generous **Free plan** so you can use email aliases to protect your real address without paying anything. The Free plan includes unlimited standard aliases (within your monthly bandwidth limit), forwarding to your recipient, and some shared-domain aliases.
+
+Some features are more expensive to operate or are more likely to be abused, so they are available on **Lite** and **Pro** plans only. Paid subscriptions help cover server costs and keep addy.io running for everyone.
+
+addy.io is independently run and open-source; there is no venture capital funding, so subscriptions are what keep the service online rather than ads or selling user data.
+
+The most common example is **replying to and sending from an alias** (anonymous replies and new outbound mail from your alias address). These are **not included on the Free plan**. If you try to reply or send from an alias on a Free account, the message will not be delivered and you will receive an email notification that the feature requires a paid plan.
+
+Other paid-only features include **custom domains**, **additional usernames**, **rules**, **blocklist**, access to some **alias domains**, higher **bandwidth**, and more **shared-domain aliases**. A full comparison is on the [pricing section](/#pricing) of the home page.
+
+**Why not allow free users to reply or send even once a day or once a week?** Outbound mail from aliases is frequently abused for spam, phishing, and bulk signups. Even a small free allowance would attract bad actors and could damage the reputation of addy.io mail servers, which would affect email delivery for all users.
 
 ## What happens if I have a subscription but then cancel it? {#what-happens-if-i-have-a-subscription-but-then-cancel-it}
 

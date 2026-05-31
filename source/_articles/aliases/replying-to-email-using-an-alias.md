@@ -12,12 +12,15 @@ order: 8
 
 When addy.io forwards an email to you, the message is set up so you can **reply** and the original sender will see your **alias** address, not your real email. In most cases you simply click **Reply** in your email client; the correct address is already in the message. This article explains how that works, what you need before replying, how to confirm a reply was sent, and what to do if something goes wrong.
 
+**Replying from an alias requires a Lite or Pro subscription.** It is not included on the Free plan.
+
 To start a **new** conversation (without replying to a forwarded message), see [Sending email from an alias](/help/sending-email-from-an-alias/) instead.
 
 <h2 id="before-you-reply">Before you reply</h2>
 
 Make sure the following are in place:
 
+- **Plan** - Replying from an alias requires a **Lite** or **Pro** subscription (not available on the Free plan). See [pricing](/#pricing) and [Why are some features paid only?](/faq/#why-are-some-features-paid-only).
 - **Verified recipient** - You must send the reply from a [verified recipient](/help/adding-a-recipient/) address on your addy.io account (the inbox that received the forwarded email). If you send from another address, the message will not be sent from your alias and will instead be forwarded back to you as if from an external sender.
 - **Reply/send allowed** - That recipient must be allowed to [reply and send](/help/allowing-or-disallowing-a-recipient-to-reply-send-from-your-aliases/) from your aliases. This is enabled by default.
 - **Active alias** - The alias must exist and be active. If it has been [deactivated](/help/deactivating-email-aliases/) or [deleted](/help/deleting-an-alias/), replies will fail until you restore or reactivate it.

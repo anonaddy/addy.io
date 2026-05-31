@@ -12,12 +12,15 @@ order: 9
 
 You can **send** a new email from an alias, not only [reply](/help/replying-to-email-using-an-alias/) to a forwarded message. That lets you start a conversation without receiving mail first. You compose the email in your usual email client, send it from a [verified recipient](/help/adding-a-recipient/), and put a special address in the **To** field so addy.io knows which alias to use and who should receive the message.
 
+**Sending from an alias requires a Lite or Pro subscription.** It is not included on the Free plan.
+
 This article explains what you need before sending, how the address format works, how to use **Send from** in the web app, how to confirm a message was sent, and what to do if something goes wrong.
 
 <h2 id="before-you-send">Before you send</h2>
 
 Make sure the following are in place:
 
+- **Plan** - Sending from an alias requires a **Lite** or **Pro** subscription (not available on the Free plan). See [pricing](/#pricing) and [Why are some features paid only?](/faq/#why-are-some-features-paid-only).
 - **Verified recipient** - You must send the email from a [verified recipient](/help/adding-a-recipient/) address on your addy.io account. If you send from another address, the message will not be sent from your alias and will instead be forwarded back to you as if from an external sender.
 - **Reply/send allowed** - That recipient must be allowed to [reply and send](/help/allowing-or-disallowing-a-recipient-to-reply-send-from-your-aliases/) from your aliases. This is enabled by default.
 - **Alias exists (or can be created)** - The alias must already exist, or you must be able to create it when the message is sent (see [Standard vs shared-domain aliases](#standard-vs-shared-domain-aliases) below). If the alias has been [deactivated](/help/deactivating-email-aliases/) or [deleted](/help/deleting-an-alias/), sending will fail until you restore or reactivate it.
