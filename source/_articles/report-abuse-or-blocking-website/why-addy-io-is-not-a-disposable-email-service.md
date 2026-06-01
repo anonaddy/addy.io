@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/aliases/view-all-aliases.png
 section: content
 title: Why addy.io is not a disposable email service
-date: 2026-05-28
+date: 2026-06-01
 description: Why addy.io should not be classified as disposable or throwaway email. Account required, unique aliases, forwarding, anti-abuse measures and permanent addresses.
 helpCategories: [report-abuse-or-blocking-website]
 order: 3
@@ -20,9 +20,5 @@ Some websites or blocklists wrongly treat addy.io as a **disposable**, **throwaw
 - **Anti-abuse measures** - addy.io has [terms of use](/help/report-abuse/) and anti-abuse measures. Bulk signups, spam, phishing and similar misuse are not permitted and can lead to account suspension. Disposable services typically allow anonymous, one-off use without such enforcement.
 - **Permanent email addresses** - Aliases can be used for as long as you keep your account and the alias active. Many users use the same aliases for years. They are not designed to be "one-time" addresses that disappear after a single use.
 - **No multiple free accounts** - The terms do not allow creating multiple free accounts to circumvent limits. This supports serious, long-term use rather than throwaway behaviour.
-
-<div class="flex justify-center my-8">
-  <img class="shadow max-w-full h-auto" src="/assets/img/help/aliases/view-all-aliases.png" alt="addy.io account and aliases are long-term, not disposable" title="Why addy.io is not a disposable email service">
-</div>
 
 If a website or blocklist has incorrectly categorised addy.io as disposable, you can [report it](/help/report-a-website-that-is-blocking-addy-io-alias-domains/) so addy.io can request a correction. Using a [custom domain](/help/adding-a-custom-domain/) with addy.io also avoids many blocklists that only target known alias domains.

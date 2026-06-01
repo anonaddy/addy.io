@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/report-abuse-or-blocking-website/contact-report-abuse.png
 section: content
 title: Report a website that is blocking addy.io alias domains
-date: 2026-05-28
+date: 2026-06-01
 description: How to report a website or service that blocks addy.io alias domains. Includes an email template you can send to the site, and how to report to addy.io for follow-up.
 helpCategories: [report-abuse-or-blocking-website]
 order: 2
