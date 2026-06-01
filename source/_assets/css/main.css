@@ -216,6 +216,13 @@ body {
     @apply bg-transparent;
     @apply block;
     @apply p-0;
+    @apply px-0;
+    @apply py-0;
+    @apply rounded-none;
+  }
+
+  pre code:not(.hljs) {
+    @apply text-grey-100;
   }
 
   ::selection {

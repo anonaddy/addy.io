@@ -5,12 +5,12 @@ image: https://addy.io/assets/img/help/report-abuse-or-blocking-website/contact-
 section: content
 title: Report a website that is blocking addy.io alias domains
 date: 2026-05-28
-description: How to report a website or service that blocks addy.io alias domains. Help addy.io request delisting or correction so legitimate users can sign up.
+description: How to report a website or service that blocks addy.io alias domains. Includes an email template you can send to the site, and how to report to addy.io for follow-up.
 helpCategories: [report-abuse-or-blocking-website]
 order: 2
 ---
 
-Some websites or services **block** or reject signups that use addy.io [alias](/help/what-are-the-different-kinds-of-aliases/) domains (e.g. @anonaddy.com, @anonaddy.me, or [custom domains](/help/adding-a-custom-domain/) used with addy.io). That can happen when a site wrongly treats addy.io as a "disposable" or throwaway email provider. addy.io is **not** a disposable email service-see [Why addy.io is not a disposable email service](/help/why-addy-io-is-not-a-disposable-email-service/). If you find a site that blocks addy.io domains, you can report it so addy.io can try to have the block removed or corrected. This article explains how to report a blocking website.
+Some websites or services **block** or reject signups that use addy.io [alias](/help/what-are-the-different-kinds-of-aliases/) domains (e.g. @anonaddy.com, @anonaddy.me, or [custom domains](/help/adding-a-custom-domain/) used with addy.io). That can happen when a site wrongly treats addy.io as a "disposable" or throwaway email provider. addy.io is **not** a disposable email service. See [Why addy.io is not a disposable email service](/help/why-addy-io-is-not-a-disposable-email-service/). If you find a site that blocks addy.io domains, you can email the site using the template below, [report it to addy.io](#how-to-report-a-blocking-website), or both. This article explains what to include and how to report.
 
 <h2 id="what-to-include-when-you-report">What to include when you report</h2>
 
@@ -18,6 +18,39 @@ Some websites or services **block** or reject signups that use addy.io [alias](/
 - **What happened** - e.g. "Signup form says 'disposable emails not allowed'" or "Error when entering my @anonaddy.com address".
 - **Screenshot or exact error message** if you have one (helps addy.io when contacting the site).
 - **Your addy.io alias or domain** that was blocked.
+
+<h2 id="email-template-to-contact-the-website">Email template to contact the website</h2>
+
+You can email the website's support or abuse team yourself. Many sites adjust their filters when users explain that addy.io is a legitimate alias service, not a disposable inbox provider. Copy the template below, replace the placeholders in square brackets, and send it to the contact address shown on their site.
+
+```text
+Subject: Please allow addy.io email addresses for signup
+
+Hello,
+
+I am trying to sign up at [Website URL] using my email address [your full alias address, e.g. you@johndoe.anonaddy.com], but it is rejected. [Describe what happened, e.g. "The form says disposable email addresses are not allowed" or paste the exact error message.]
+
+I use addy.io (https://addy.io), an email alias and forwarding service. It is not a disposable or throwaway email provider. I have an account with addy.io, and mail sent to my alias is forwarded to my personal inbox. I use this address for ongoing communication with services I trust, including yours.
+
+Key points about addy.io:
+
+- An account and verified recipient are required; there is no anonymous public inbox.
+- Each alias belongs to one account and is not shared or recycled.
+- Mail is forwarded to my own mailbox; addy.io is not a temporary inbox I discard after one use.
+- addy.io enforces terms of use and anti-abuse measures (spam, phishing, bulk signups, etc.).
+
+Could you please review your email validation or blocklist settings and allow addy.io domains (such as anonaddy.com, anonaddy.me, and custom domains used legitimately with addy.io)?
+
+More detail on why addy.io should not be classified as disposable email:
+https://addy.io/help/why-addy-io-is-not-a-disposable-email-service/
+
+Thank you for your time.
+
+Kind regards,
+[Your name]
+```
+
+If they ask for more information, you can link them to the article above or [report the site to addy.io](#how-to-report-a-blocking-website) so the addy.io team can follow up directly.
 
 <h2 id="how-to-report-a-blocking-website">How to report a blocking website</h2>
 
