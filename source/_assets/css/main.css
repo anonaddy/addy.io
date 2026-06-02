@@ -173,7 +173,17 @@ body {
     padding-left: 1.625rem;
   }
 
+  /* Restore unordered list bullets inside help articles */
+  .article-with-heading-links ul {
+    list-style-type: disc;
+    padding-left: 1.625rem;
+  }
+
   .article-with-heading-links ol li {
+    @apply pl-1;
+  }
+
+  .article-with-heading-links ul li {
     @apply pl-1;
   }
 
