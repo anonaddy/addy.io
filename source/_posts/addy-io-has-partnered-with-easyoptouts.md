@@ -23,7 +23,7 @@ How to claim your discount
 
 <ol>
     <li>1. Log in to your addy.io dashboard</li>
-    <li>2. Click your username (top-right) → “addy.io Perks”</li>
+    <li>2. Click your username (top-right) > “addy.io Perks”</li>
     <li>3. Find the EasyOptOuts offer and click “Redeem code”</li>
     <li>4. Use the code at easyoptouts.com when subscribing</li>
 </ol>

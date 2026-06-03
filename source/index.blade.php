@@ -211,9 +211,10 @@ width: full
                         <p class="text-grey-600 mb-4">Reply <b>anonymously</b> to forwarded emails, the sender will
                             receive the email as if it has come from the alias.</p>
                         <p class="text-grey-600 mb-4">You can even initiate an email conversation by sending an email
-                            from one of your aliases.</b></p>
+                            from one of your aliases.</p>
                         <p class="text-grey-600 mb-4">Your real email address is <b>not revealed</b> when replying or
                             sending from an alias.</p>
+                        <p class="text-grey-600 mb-4">This is a paid-only feature. <a href="#pricing" class="text-indigo-700 font-bold">Compare plans</a>.</p>
                     </div>
                 </div>
             </div>
