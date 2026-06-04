@@ -36,6 +36,7 @@ These happen after addy.io has accepted inbound mail and then tries to forward i
 - **Recipient address invalid** - The recipient address on your account is incorrect, no longer exists, or has a typo.
 - **Recipient server policy rejection** - The destination provider may apply local policies (content, attachment type, rate limits, temporary blocks, or strict filtering) and reject the message.
 - **Temporary server issue** - The destination provider may be temporarily unavailable or overloaded, causing a temporary bounce.
+- **Temporary rate limiting** - Your email provider may **defer** forwards with a **421 4.7.28** response while addy.io retries. The message can arrive hours later and may not appear as a failed delivery if it eventually succeeds. See [Why are forwarded emails delayed?](/help/why-are-forwarded-emails-delayed/).
 
 What to do:
 

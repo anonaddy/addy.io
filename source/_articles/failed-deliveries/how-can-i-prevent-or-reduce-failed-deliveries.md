@@ -25,6 +25,7 @@ order: 4
 <h2 id="check-the-receiving-server-and-spam">Check the receiving server and spam</h2>
 
 - Some providers or work servers **reject** or **quarantine** forwarded mail. If you see failures to one recipient only, check that provider’s documentation or support for forwarding and allowlisting. Adding addy.io's sending details to an allowlist (if the provider supports it) can help.
+- **Delays** - Your email provider may temporarily **rate limit** forwards (error **421 4.7.28**) so mail arrives hours later even though addy.io already shows it as forwarded. See [Why are forwarded emails delayed?](/help/why-are-forwarded-emails-delayed/).
 - Check the **spam/junk** folder of your recipient address; occasionally the message is delivered but filtered. Mark as "not spam" if needed so future forwards are less likely to be filtered.
 
 <h2 id="try-these-account-settings">Try these account settings</h2>
