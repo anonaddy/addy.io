@@ -33,6 +33,10 @@ return [
         'newsletter' => [
             'path' => 'newsletters/{filename}',
         ],
+        'changelogs' => [
+            'sort' => '-date',
+            'path' => 'changelog/{filename}',
+        ],
     ],
 
     'menuItems' => [

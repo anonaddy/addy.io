@@ -45,6 +45,7 @@ startDeployment
 cloneRepository
 runComposer
 runNpm
+mergeHelpArticles
 generateAssets
 cleanOldReleases
 finishDeploy
@@ -89,6 +90,12 @@ composer install --prefer-dist --no-scripts --no-dev -q -o
 {{ $remoteNodeInit }}
 cd {{ $newReleaseDir }}
 npm install --no-progress &> /dev/null
+@endtask
+
+@task("mergeHelpArticles", ["on" => "remote"])
+{{ logMessage("📚  Merging help articles by category...") }}
+cd {{ $newReleaseDir }}
+bash scripts/merge-help-articles.sh
 @endtask
 
 @task("generateAssets", ["on" => "remote"])

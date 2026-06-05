@@ -16,6 +16,7 @@
             </div>
             <div class="flex flex-col mx-4 my-4 md:my-0">
                 <div class="text-grey-600 font-semibold mb-1">Development</div>
+                <a href="/changelog/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/changelog') ? 'active font-bold' : '' }}" title="Changelog">Changelog</a>
                 <a href="/security/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/security') ? 'active font-bold' : '' }}" title="Security">Security</a>
                 <a href="{{ $page->appUrl }}/docs/" class="no-underline text-grey-600 mt-1" title="Terms">API</a>
                 <a href="/self-hosting/" class="no-underline text-grey-600 my-1 {{ $page->isActive('/self-hosting') ? 'active font-bold' : '' }}" title="Self-hosting">Self-hosting</a>
