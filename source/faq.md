@@ -140,14 +140,16 @@ Here are a few reasons I can think of:
 * Open-source application code
 * No limitation on the number of aliases that can be created
 * Generous monthly bandwidth
-* Multiple domains to choose for aliases (currently anonaddy.com, anonaddy.me and another 3 for paid plan users)
-* Ability to generate random character and random word aliases at shared domains
+* Multiple domains to choose for aliases (currently anonaddy.com, anonaddy.me and other premium domains for paid plan users)
+* Ability to generate random character, random word, random noun, random male/female name aliases at shared domains
 * Ability to add additional usernames to compartmentalise aliases
+* Download and view failed deliveries
+* Rules for custom email flows
 * New features added regularly
 
 ## Who's behind addy.io? {#whos-behind-addy-io}
 
-My name is Will Browning, I'm a web developer from the UK and an advocate for online privacy and open-source software. You can find me on [Twitter](https://twitter.com/willbrowningme) although I don't tweet that much!
+My name is Will Browning, I'm a web developer from the UK and an advocate for online privacy and open-source software. You can find me on [X](https://x.com/willbrowningme) although I don't tweet that much!
 
 <h3 class="faq-category">Domains</h3>
 
@@ -455,7 +457,7 @@ I am very passionate about this project. I use it myself every day and will be k
 
 I do have someone in place who can keep the service running in the event of me not being here. They are able to continue paying for the servers that host addy.io and the domains that it uses. All addy.io domains also always have over 5 years until they expire.
 
-They would make a Twitter announcement informing all users that they would be keeping the service running. You would then be able to decide whether you'd like to continue using addy.io or start to update your email addresses.
+They would make an X announcement informing all users that they would be keeping the service running. You would then be able to decide whether you'd like to continue using addy.io or start to update your email addresses.
 
 ## Is the application tested? {#is-the-appliction-tested}
 
@@ -471,4 +473,4 @@ For those who prefer using Docker there is an image you can use here - [github.c
 
 ## I couldn't find an answer to my question, how can I contact you? {#i-couldnt-find-an-answer-to-my-question-how-can-i-contact-you}
 
-For any other questions just send an email to - <span class="e-mail"></span> ([GPG Key](/contact-public-key.asc) - E652C2DB43859328F35575DEBF7B93C6497510D0)
+For any other questions just send an email to the address shown on the [contact page](/contact).

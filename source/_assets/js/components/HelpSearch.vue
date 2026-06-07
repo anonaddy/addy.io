@@ -11,7 +11,7 @@
         :class="{ 'transition-border': query }"
         autocomplete="off"
         name="search"
-        placeholder="Search for help articles..."
+        placeholder="Search help articles and FAQ..."
         type="text"
         style="font-size: 16px"
         @keyup.esc="reset"
@@ -75,7 +75,7 @@
         alt="search icon"
         class="h-4 w-4 max-w-none mr-2"
       />
-      <span class="text-grey-600">Search for help articles...</span>
+      <span class="text-grey-600">Search help articles and FAQ...</span>
     </button>
   </div>
 </template>
