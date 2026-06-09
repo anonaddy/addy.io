@@ -14,8 +14,8 @@
         "watch:reload": "chokidar \"build_local/**/*.html\" \"build_local/**/*.xml\" --debounce 750 -c \"browser-sync reload --port 3000\"",
         "vite:build": "vite build",
         "jigsaw:local": "./vendor/bin/jigsaw build -q local",
-        "jigsaw:staging": "cross-env NODE_ENV=staging ./vendor/bin/jigsaw build -q staging",
-        "jigsaw:production": "cross-env NODE_ENV=production ./vendor/bin/jigsaw build -q production",
+        "jigsaw:staging": "./vendor/bin/jigsaw build -q staging",
+        "jigsaw:production": "./vendor/bin/jigsaw build -q production",
         "format": "prettier --write 'source/_assets/**/*.{css,js,vue}'",
         "optimize:help-images": "bash scripts/optimize-help-screenshots.sh",
         "optimize:help-images:list": "bash scripts/optimize-help-screenshots.sh --list-only",
@@ -27,20 +27,17 @@
         "axios": "^1.16.0",
         "browser-sync": "^3.0.0",
         "concurrently": "^9.2.1",
-        "cross-env": "^10.0.0",
         "fuse.js": "^7.0.0",
         "highlight.js": "^11.0.0",
         "lottie-web": "^5.13.0",
         "postcss": "^8.5.6",
         "tailwindcss": "^4.1.12",
         "vite": "^8.0.10",
-        "vue": "^3.0.0",
-        "vue-template-compiler": "^2.6.12"
+        "vue": "^3.0.0"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^6.0.6",
         "chokidar-cli": "^3.0.0",
-        "css-loader": "^7.0.0",
         "husky": "^9.0.0",
         "lint-staged": "^17.0.0",
         "prettier": "^3.0.0"
