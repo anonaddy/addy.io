@@ -345,7 +345,7 @@ Other paid-only features include **custom domains**, **additional usernames**, *
 
 If you cancel your subscription it will remain active until the end of your current billing cycle, you will still be able to use your paid plan features until the billing cycle ends.
 
-A few days before your billing cycle ends you will receive an email letting you know the steps you need to take to prevent the loss of any emails. Shortly after ending the following will happen:
+A few days before your billing cycle ends you will receive an email letting you know the steps you need to take to prevent the loss of any emails. Shortly after your subscription ends the following will happen:
 
 * Any custom domains will be **deactivated**
 * Any additional usernames will be **deactivated**
@@ -356,7 +356,11 @@ A few days before your billing cycle ends you will receive an email letting you 
 * If your account username has catch-all disabled then it will be enabled
 * Any entries in your **blocklist** will no longer block emails
 
+You are sent an email informing you that your account has been downgraded to the Free plan.
+
 You will not be able to activate any of the above again until you resubscribe.
+
+If you resubscribe within 90 days, all of the above changes will be automatically reverted.
 
 ## If I subscribe will Stripe see my real email address? {#if-i-subscribe-will-stripe-see-my-real-email-address}
 
