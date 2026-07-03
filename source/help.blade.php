@@ -1,6 +1,4 @@
 ---
-pagination:
-    collection: helpCategories
 title: "Help Centre"
 description: The list of all help articles for addy.io. You'll find information about using aliases, adding recipients and much more.
 ---
