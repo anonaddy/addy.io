@@ -80,7 +80,25 @@ return [
             : $cleaned;
     },
     'isActive' => function ($page, $path) {
-        return Str::endsWith($page->getUrl(), $path);
+        if (Str::contains($path, '#')) {
+            return false;
+        }
+
+        $url = rtrim(parse_url($page->getUrl(), PHP_URL_PATH) ?: '/', '/');
+        if ($url === '') {
+            $url = '/';
+        }
+
+        $path = rtrim($path, '/');
+        if ($path === '') {
+            $path = '/';
+        }
+
+        if ($path === '/') {
+            return $url === '/';
+        }
+
+        return $url === $path || Str::startsWith($url, $path.'/');
     },
     'startsWith' => function ($page, $needle) {
         if ($needle !== '' && substr($page->getUrl(), 0, strlen($needle)) === (string) $needle) {

@@ -9,7 +9,7 @@ description: Use the addy.io public key to encrypt replies and new sends from an
 helpCategories: [aliases]
 advanced: true
 highlightCode: true
-order: 13
+order: 14
 ---
 
 You can encrypt a [reply](/help/replying-to-email-using-an-alias/) or a [new send](/help/sending-email-from-an-alias/) from an alias using the **addy.io public key**. The message is encrypted before it arrives at addy.io and is **automatically decrypted** on the addy.io mail server before being forwarded on to the correct destination. This gives an extra layer of privacy for the message content. This article describes the idea and how to use this option; exact steps may depend on your mail client.

@@ -9,7 +9,7 @@ description: How to send or reply from an addy.io alias with encryption so the m
 helpCategories: [aliases]
 advanced: true
 highlightCode: true
-order: 12
+order: 13
 ---
 
 You can optionally **encrypt** replies and new sends from an alias so that the message is encrypted (e.g. with the addy.io public key or the public key of the destination address) before it is delivered. This is an advanced feature for users who want an extra layer of privacy. This article gives an overview of sending and replying with encryption enabled.
