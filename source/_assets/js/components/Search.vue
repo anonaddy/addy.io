@@ -1,8 +1,11 @@
 <template>
-  <div class="flex flex-1 justify-end items-center text-right pl-4">
+  <div
+    class="flex flex-1 justify-end items-center text-right"
+    :class="searching ? 'basis-full w-full pl-0 md:basis-auto md:pl-4' : 'pl-4'"
+  >
     <div
-      class="absolute md:relative w-full justify-end left-0 top-0 z-10 mt-1 md:mt-0"
-      :class="{ 'hidden md:flex': !searching }"
+      class="relative w-full justify-end z-10"
+      :class="{ 'hidden md:flex': !searching, flex: searching }"
     >
       <label for="search" class="hidden">Search</label>
 
@@ -34,7 +37,7 @@
           class="absolute left-0 right-0 md:inset-auto w-full lg:w-3/4 text-left mb-4 md:mt-10"
         >
           <div
-            class="flex flex-col bg-white border border-b-0 border-t-0 border-indigo-400 rounded-b-lg shadow-lg mx-4 md:mx-0"
+            class="flex flex-col bg-white border border-b-0 border-t-0 border-indigo-400 rounded-b-lg shadow-lg"
           >
             <a
               v-for="(result, index) in results"
@@ -67,6 +70,7 @@
     </div>
 
     <button
+      v-if="!searching"
       title="Start searching"
       type="button"
       class="flex md:hidden bg-grey-50 hover:bg-indigo-100 justify-center items-center border border-grey-500 rounded-full focus:outline-none h-10 px-3"

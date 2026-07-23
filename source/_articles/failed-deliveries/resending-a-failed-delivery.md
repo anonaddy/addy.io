@@ -32,10 +32,12 @@ Failed deliveries can only be resent once.
 
 <h2 id="why-cant-i-resend-or-release-a-quarantined-message">Why can't I resend or release a quarantined message?</h2>
 
-Quarantined messages are usually classified as spam because the sender's IP address or domain appears on one or more blocklists (including Spamhaus), or because the message failed DMARC authentication checks.
+Quarantined messages are usually classified as spam because the sender's IP address or domain appears on one or more blocklists (including Spamhaus), or because other spam or authentication signals are strong. A message can still be quarantined even when SPF, DKIM, or DMARC appear to pass.
 
 The sender must resolve those issues before future messages can be forwarded successfully.
 
-To protect the sending reputation of addy.io mail servers, quarantined messages cannot be released or forwarded to recipients. If quarantined spam were forwarded, addy.io servers could also be placed on blocklists, which would affect email delivery for all users.
+To protect the sending reputation of addy.io mail servers, quarantined messages cannot be released, "marked as safe", or forwarded to recipients. If quarantined spam were forwarded, addy.io servers could also be placed on blocklists, which would affect email delivery for all users.
 
-You can [delete](/help/deleting-a-failed-delivery/) a failed delivery from the list if you do not want to resend it. To reduce future failures, see [How can I prevent or reduce failed deliveries?](/help/how-can-i-prevent-or-reduce-failed-deliveries/).
+You can still [view or download](/help/downloading-and-viewing-a-failed-delivery/) a stored quarantined message when that option is enabled. For a fuller explanation, see [Why can't quarantined emails be released or marked as safe?](/help/what-is-a-failed-delivery-and-why-do-they-occur/#why-cant-quarantined-emails-be-released-or-marked-as-safe).
+
+You can [delete](/help/deleting-a-failed-delivery/) a failed delivery from the list if you no longer need it. To reduce future failures, see [How can I prevent or reduce failed deliveries?](/help/how-can-i-prevent-or-reduce-failed-deliveries/).

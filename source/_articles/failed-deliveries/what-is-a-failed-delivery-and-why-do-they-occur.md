@@ -4,8 +4,8 @@ ogtype: article
 image: https://addy.io/assets/img/help/failed-deliveries/failed-deliveries.png
 section: content
 title: What is a failed delivery and why do they occur?
-date: 2026-06-02
-description: What a failed delivery is on addy.io and why they happen. Email reached your alias but could not be delivered to your recipient; common causes and what to do.
+date: 2026-07-23
+description: What a failed delivery is on addy.io and why they happen. Covers outbound bounces, inbound rejections, quarantine (including blocklists), and why quarantined mail cannot be released.
 helpCategories: [failed-deliveries]
 order: 1
 ---
@@ -72,19 +72,38 @@ Who can fix this:
 These messages are accepted by addy.io but classified as spam by filtering and placed in quarantine.
 
 - **High spam score** - Message content, headers, links, or sending patterns score as likely spam.
-- **Sender listed on blocklists** - The sending IP or domain appears on one or more reputation blocklists.
+- **Sender listed on blocklists** - The sending IP or domain appears on one or more reputation blocklists (for example Spamhaus). This is a common reason for quarantine notices that mention a listed sending IP.
 - **Authentication failures** - SPF, DKIM, or DMARC checks fail or look suspicious in context.
 - **Reputation or policy signals** - Sender behaviour matches known abuse patterns (bulk signups, phishing-like content, malicious links, or poor sending reputation).
 
+**Passing SPF, DKIM, or DMARC does not guarantee delivery.** Authentication checks whether a message is allowed to use a domain. Blocklists and spam scores measure reputation and risk. A message can authenticate successfully and still be quarantined if the sending IP is listed or other spam signals are strong. That can also affect legitimate transactional or security emails (order confirmations, one-time codes, account recovery) when the sender's mail infrastructure is listed or misconfigured.
+
 What to do:
 
-- Review the failed delivery details to identify the rejection or filtering reason.
-- For legitimate senders, ask them to verify SPF, DKIM, DMARC, PTR, and HELO/EHLO setup on their mail server.
+- Review the failed delivery details to identify the filtering reason (for example a listed sending IP).
+- [View or download](/help/downloading-and-viewing-a-failed-delivery/) the stored message if you need the content (for example a purchase receipt or verification code). Treat downloaded quarantined mail carefully - it may still contain malicious links or attachments.
+- For legitimate senders, ask them (or their mail provider) to fix the listed IP, improve reputation, and verify SPF, DKIM, DMARC, PTR, and HELO/EHLO setup.
+- Do not contact support asking to "mark as safe" or force-forward quarantined mail. See [Why can't quarantined emails be released or marked as safe?](#why-cant-quarantined-emails-be-released-or-marked-as-safe) below.
 - Do not whitelist obviously abusive senders. If needed, report abuse using [Report abuse](/help/report-abuse/).
-- Quarantined messages cannot be resent or released to protect addy.io mail-server reputation. See [Why can't I resend or release a quarantined message?](/help/resending-a-failed-delivery/#why-cant-i-resend-or-release-a-quarantined-message).
+
+There is no account setting to disable inbound quarantine. Filtering protects shared addy.io mail servers and delivery for every user.
+
+<h2 id="why-cant-quarantined-emails-be-released-or-marked-as-safe">Why can't quarantined emails be released or marked as safe?</h2>
+
+addy.io is an email forwarding service, but it also operates mail servers that send on behalf of many users. Quarantined messages are held because filtering judged them high risk. They cannot be released, "marked as safe", or resent through addy.io for the following reasons:
+
+- **Sending reputation** - When addy.io forwards mail, recipient providers (and blocklist operators) judge the **addy.io sending IPs**, not only the original sender. Forwarding mail that was already flagged as spam - including messages from IPs listed on Spamhaus or similar lists - can cause addy.io mail server IPs to also be listed.
+- **Impact on all users** - A listing or reputation hit on addy.io servers would reduce deliverability for everyone, not only the person who wanted one quarantined message released.
+- **False positives are still high risk to forward** - Occasional false positives happen. Legitimate emails can be quarantined when a sender's IP is listed. That is frustrating, but releasing those messages through addy.io would still mean transmitting mail that spam filters and blocklists have already associated with abuse risk.
+- **No per-user override** - Allowing users to force-forward or permanently trust quarantined senders would create a path for spam and phishing to leave addy.io servers under user control. That path is not offered, because it would undermine the reputation protection above.
+
+What you can do instead:
+
+- [Download or view](/help/downloading-and-viewing-a-failed-delivery/) the quarantined message from **Failed Deliveries** when storage is enabled, so you can still read important content without addy.io forwarding it.
+- Contact the sender or their provider so they can delist / repair their mail setup. Once their IP or domain is no longer listed and reputation improves, future messages are more likely to forward normally.
 
 <div class="flex justify-center my-8">
   <img class="shadow max-w-full h-auto" src="/assets/img/help/failed-deliveries/failed-deliveries.png" alt="Failed deliveries list in addy.io" title="Failed deliveries">
 </div>
 
-addy.io stores failed deliveries so you can inspect the error and the message. You can [download and view](/help/downloading-and-viewing-a-failed-delivery/) them, [resend](/help/resending-a-failed-delivery/) after fixing the issue, or [delete](/help/deleting-a-failed-delivery/) them from the list. To reduce future failures, see [How can I prevent or reduce failed deliveries?](/help/how-can-i-prevent-or-reduce-failed-deliveries/).
+addy.io stores failed deliveries so you can inspect the error and the message. You can [download and view](/help/downloading-and-viewing-a-failed-delivery/) them, [resend](/help/resending-a-failed-delivery/) after fixing the issue (outbound bounces only), or [delete](/help/deleting-a-failed-delivery/) them from the list. To reduce future failures, see [How can I prevent or reduce failed deliveries?](/help/how-can-i-prevent-or-reduce-failed-deliveries/).

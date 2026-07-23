@@ -9,9 +9,9 @@ description: The list of all blog posts for addy.io. You'll find information abo
 @extends('_layouts.master')
 
 @section('body')
-    <div class="flex flex-1 items-center relative">
+    <div class="flex flex-1 flex-wrap items-center relative gap-y-3">
         <h1 class="mb-0">Blog</h1>
-        <div id="vue-search" class="flex flex-1">
+        <div id="vue-search" class="contents">
             <search :index="/index.json"></search>
         </div>
     </div>
