@@ -149,7 +149,7 @@ Here are a few reasons I can think of:
 
 ## Who's behind addy.io? {#whos-behind-addy-io}
 
-My name is Will Browning, I'm a web developer from the UK and an advocate for online privacy and open-source software. You can find me on [X](https://x.com/willbrowningme) although I don't tweet that much!
+My name is Will Browning, I'm a web developer from the UK and an advocate for online privacy and open-source software. You can find me on [X](https://x.com/willbrowningme) although I don't post that much!
 
 <h3 class="faq-category">Domains</h3>
 

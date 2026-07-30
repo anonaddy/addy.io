@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/recipients/add-pgp-key.png
 section: content
 title: Enabling encryption for your recipient
-date: 2026-05-27
+date: 2026-07-30
 description: How to enable PGP encryption for an addy.io recipient. Add your public key so forwarded emails are encrypted before delivery to your inbox.
 helpCategories: [recipients]
 order: 4
@@ -38,5 +38,17 @@ Please Note: This will **ONLY encrypt and forward the plain text content**. Do n
 - **Back up your private key** - If you lose the private key, you will not be able to decrypt past or future emails encrypted with that key. Back it up securely.
 - **Key expiry** - If your key has an expiry date, renew it and update the public key on addy.io before it expires so new mail can still be encrypted.
 - **Testing** - After enabling encryption, send a test email to one of your aliases and confirm that the forwarded message arrives encrypted and that you can decrypt it in your client.
+
+<h2 id="uncertain-digital-signature-warnings">Uncertain digital signature warnings</h2>
+
+Some email clients (such as Thunderbird) may show a warning like **"Uncertain digital signature"** on encrypted forwards from addy.io. This happens because the client compares the signing key identity (`no-reply@addy.io`) with the message **From:** header, which is set to your **alias** address.
+
+That mismatch is expected. addy.io signs with the shared `no-reply@addy.io` key, while the **From:** address remains the alias so filters and reply behaviour keep working. It is not practical to add every alias as an identity on that key, or to create a separate signing key per alias.
+
+The message can still be encrypted correctly with your public key and decrypted normally. The warning is about identity matching for the signature, not about whether encryption itself failed.
+
+<div class="flex justify-center my-8">
+  <img class="shadow max-w-full h-auto" src="/assets/img/help/recipients/uncertain-digital-signature.png" alt="Thunderbird Uncertain digital signature warning for an addy.io forwarded message" title="Uncertain digital signature warning">
+</div>
 
 To turn encryption off for a recipient (temporarily or permanently), see [Disabling encryption for your recipient](/help/disabling-encryption-for-your-recipient/).
