@@ -27,9 +27,15 @@ description: Product and documentation updates for addy.io.
                 </h2>
 
                 <div class="flex flex-col md:items-end items-start gap-1.5 text-xs">
+                    @if($entry->new > 0)
                     <span class="inline-flex items-center rounded-full bg-indigo-100 text-indigo-800 ring-1 ring-inset ring-indigo-200 px-2 py-0.5 font-medium whitespace-nowrap">{{ $entry->new }} new</span>
+                    @endif
+                    @if($entry->improved > 0)
                     <span class="inline-flex items-center rounded-full bg-cyan-100 text-cyan-900 ring-1 ring-inset ring-cyan-300 px-2 py-0.5 font-medium whitespace-nowrap">{{ $entry->improved }} {{ $entry->improved == 1 ? 'improvement' : 'improvements' }}</span>
+                    @endif
+                    @if($entry->fixed > 0)
                     <span class="inline-flex items-center rounded-full bg-green-100 text-green-800 ring-1 ring-inset ring-green-200 px-2 py-0.5 font-medium whitespace-nowrap">{{ $entry->fixed }} {{ $entry->fixed == 1 ? 'fix' : 'fixes' }}</span>
+                    @endif
                 </div>
             </div>
         </article>
