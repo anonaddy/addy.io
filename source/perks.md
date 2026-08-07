@@ -21,7 +21,7 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
             <p class="text-sm/6 text-grey-600">An end-to-end encrypted, open source note-taking application focused on user privacy and ease of use.</p>
             <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off your first year.</p>
             <div class="mt-6">
-                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
+                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
         <li class="rounded-2xl bg-grey-50 px-8 py-10">
@@ -32,7 +32,7 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
             <p class="text-sm/6 text-grey-600">Court-proven, audited no-logs VPN service with post-quantum safe encryption.</p>
             <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get a 3 month Pro trial, then the annual Pro plan for 49 USD per year.</p>
             <div class="mt-6">
-                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
+                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
         <li class="rounded-2xl bg-grey-50 px-8 py-10">
@@ -43,7 +43,7 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
             <p class="text-sm/6 text-grey-600">A premium, privacy-focused, ad-free search engine that prioritises user experience over advertising revenue.</p>
             <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 3 months of Kagi's Professional plan for free.</p>
             <div class="mt-6">
-                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
+                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
         <li class="rounded-2xl bg-grey-50 px-8 py-10">
@@ -53,7 +53,7 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
             <p class="text-sm/6 text-grey-600">Take back your data with Tuta's encrypted email, calendar and contacts.</p>
             <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off your first year.</p>
             <div class="mt-6">
-                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
+                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
         <li class="rounded-2xl bg-grey-50 px-8 py-10">
@@ -63,7 +63,7 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
             <p class="text-sm/6 text-grey-600">EasyOptOuts is an automated data removal service that scrubs your name, address, and phone number from 200+ data brokers and people-search sites.</p>
             <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off for life. Each coupon covers 5 sign-ups, so you can protect yourself and the people you care about.</p>
             <div class="mt-6">
-                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
+                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
             <p class="mt-6 mb-0 text-xs text-grey-400">US customers only.</p>
         </li>
