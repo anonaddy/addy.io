@@ -82,6 +82,9 @@ Owners on a card/PayPal subscription can change plan (for example Pro to Duo, or
 **Can members see each other's aliases?**
 No. Accounts stay independent.
 
+**Can members share a custom domain?**
+Not yet. Optional sharing (for example letting others on your Duo or Family plan use a custom domain you own) is coming soon. For now each member adds and manages their own domains.
+
 **Can I invite someone who is still on Free?**
 Yes. They only need an existing addy.io account. Free users can accept without cancelling anything.
 

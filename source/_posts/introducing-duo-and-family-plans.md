@@ -64,6 +64,8 @@ Compared with separate yearly Pro subscriptions ($36 each):
     <li><b>Family</b> yearly is <b>$90</b> instead of <b>$180</b> for five Pro plans (<b>50%</b> saving)</li>
 </ul>
 
+Optional sharing between members (for example letting others on your plan use a custom domain you own) is not available yet, but it is coming soon. Until then, each account manages its own domains and aliases separately.
+
 ## How it works
 
 <ol class="list-decimal pl-6">
