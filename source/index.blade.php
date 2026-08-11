@@ -15,8 +15,8 @@ width: full
                 <div class="mx-auto max-w-2xl">
                     <div class="max-w-lg">
                         <div class="mt-24 lg:mt-0">
-                            <a href="/blog/addy-io-has-partnered-with-tuta/" class="inline-flex items-center space-x-2">
-                                <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">addy.io has partnered with Tuta! →</span>
+                            <a href="/blog/introducing-duo-and-family-plans/" class="inline-flex items-center space-x-2">
+                                <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">Introducing Duo &amp; Family plans →</span>
                             </a>
                         </div>
                         <h1 class="mt-10 text-4xl font-bold tracking-tight text-grey-900">A different email address for every website
@@ -24,7 +24,7 @@ width: full
                         <p class="mt-6 text-lg leading-8 text-grey-600">addy.io creates <strong>aliases</strong> that forward to your real inbox. Share an alias instead of your main email address - then switch one off if it leaks or starts spamming you.
                         </p>
                         <div class="mt-10 flex items-center space-x-4">
-                            <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" data-umami-event="signup-button" data-umami-event-source="hero-cta">Get
+                            <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" data-umami-event="signup-button" data-umami-event-source="hero-cta">Get
                                 started free</a>
                             <a href="https://github.com/anonaddy/anonaddy" target="_blank" rel="nofollow noreferrer noopener" class="inline-flex items-center">
                                 Open-source
@@ -403,7 +403,7 @@ width: full
                     <span class="text-4xl font-bold"><span class="currency-symbol">$</span>0</span>
                     <span class="text-sm font-semibold">/month</span>
                 </p>
-                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-free" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-free-mobile-cta">Sign
+                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-free" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-free-mobile-cta">Sign
                     Up</a>
                 <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-grey-900 list-none">
                     <li>
@@ -457,7 +457,7 @@ width: full
                     <span class="text-sm font-semibold">/month</span>
                 </p>
                 <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly</p>
-                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-lite" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-lite-mobile-cta">Sign
+                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-lite" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-lite-mobile-cta">Sign
                     Up</a>
                 <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-grey-900">
                     <li>
@@ -588,7 +588,7 @@ width: full
                 </p>
                 <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly, <span class="currency-symbol">$</span>4
                     Billed Monthly</p>
-                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-pro" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500" data-umami-event="signup-button" data-umami-event-source="pricing-pro-mobile-cta">Sign
+                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-pro" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500" data-umami-event="signup-button" data-umami-event-source="pricing-pro-mobile-cta">Sign
                     Up</a>
                 <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-grey-900">
                     <li>
@@ -753,7 +753,7 @@ width: full
                                     <span class="text-4xl font-bold"><span class="currency-symbol">$</span>0</span>
                                     <span class="text-sm font-semibold leading-6">/month</span>
                                 </div>
-                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-free-cta">Sign
+                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-free-cta">Sign
                                     Up</a>
                             </td>
                             <td class="px-6 pt-2 xl:px-8">
@@ -761,7 +761,7 @@ width: full
                                     <span class="text-4xl font-bold"><span class="currency-symbol">$</span>1</span>
                                     <span class="text-sm font-semibold leading-6">/month</span>
                                 </div>
-                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-lite-cta">Sign
+                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-lite-cta">Sign
                                     Up</a>
                             </td>
                             <td class="px-6 pt-2 xl:px-8">
@@ -769,7 +769,7 @@ width: full
                                     <span class="text-4xl font-bold"><span class="currency-symbol">$</span>3</span>
                                     <span class="text-sm font-semibold leading-6">/month</span>
                                 </div>
-                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500" data-umami-event="signup-button" data-umami-event-source="pricing-pro-cta">Sign
+                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500" data-umami-event="signup-button" data-umami-event-source="pricing-pro-cta">Sign
                                     Up</a>
                             </td>
                         </tr>
@@ -1237,6 +1237,91 @@ width: full
                 </table>
             </div>
         </div>
+
+        <div class="mx-auto mt-20 max-w-4xl border-t border-grey-900/10 pt-16 sm:mt-24">
+            <div class="mx-auto max-w-2xl text-center">
+                <h3 class="text-3xl font-bold tracking-tight text-grey-900 sm:text-4xl">Duo &amp; Family</h3>
+                <p class="mt-4 text-lg leading-8 text-grey-600">Share Pro with people you trust. One person pays, each member gets full Pro on their own independent account.</p>
+            </div>
+
+            <div class="mx-auto mt-12 grid max-w-lg grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-2">
+                <section class="flex flex-col rounded-xl p-8 ring-1 ring-inset ring-grey-200">
+                    <h4 id="tier-duo" class="text-sm font-semibold leading-6 text-grey-900">Duo</h4>
+                    <p class="mt-1 text-sm text-grey-600">2 members total (you + 1)</p>
+                    <p class="mt-4 flex items-baseline gap-x-1 text-grey-900">
+                        <span class="text-4xl font-bold"><span class="currency-symbol">$</span>4.50</span>
+                        <span class="text-sm font-semibold">/month</span>
+                    </p>
+                    <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly, <span class="currency-symbol">$</span>6 Billed Monthly</p>
+                    <a href="{{ $page->appUrl }}/register" aria-describedby="tier-duo" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-duo-cta">Sign
+                        Up</a>
+                    <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-grey-900">
+                        <li class="flex gap-x-3">
+                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                            <span> Everything in <b>Pro</b> for each member </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                            <span> Independent accounts </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                            <span> Invite by existing addy.io username </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                            <span> One subscription </span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="flex flex-col rounded-xl p-8 ring-1 ring-inset ring-grey-200">
+                    <h4 id="tier-family" class="text-sm font-semibold leading-6 text-grey-900">Family</h4>
+                    <p class="mt-1 text-sm text-grey-600">5 members total (you + 4)</p>
+                    <p class="mt-4 flex items-baseline gap-x-1 text-grey-900">
+                        <span class="text-4xl font-bold"><span class="currency-symbol">$</span>7.50</span>
+                        <span class="text-sm font-semibold">/month</span>
+                    </p>
+                    <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly, <span class="currency-symbol">$</span>10 Billed Monthly</p>
+                    <a href="{{ $page->appUrl }}/register" aria-describedby="tier-family" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-family-cta">Sign
+                        Up</a>
+                    <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-grey-900">
+                        <li class="flex gap-x-3">
+                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                            <span> Everything in <b>Pro</b> for each member </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                            <span> Independent accounts </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                            <span> Invite by existing addy.io username </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                            <span> One subscription </span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -1248,7 +1333,7 @@ width: full
             <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-grey-600">Join thousands of others who are already
                 protecting their privacy online and keeping their inboxes tidy.</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" data-umami-event="signup-button" data-umami-event-source="newsletter-cta">Secure
+                <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" data-umami-event="signup-button" data-umami-event-source="newsletter-cta">Secure
                     your inbox today
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block ml-1">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -1279,7 +1364,7 @@ width: full
                     <input type="hidden" name="subform" value="yes" />
                     <label for="gdpr" class="hidden">GDPR</label>
                     <input class="hidden" type="checkbox" name="gdpr" id="gdpr" checked />
-                    <button type="submit" class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-grey-900 shadow-sm hover:bg-grey-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" data-umami-event="newsletter-submit" data-umami-event-source="newsletter-form-home">Notify
+                    <button type="submit" class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-grey-900 shadow-sm hover:bg-grey-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" data-umami-event="newsletter-submit" data-umami-event-source="newsletter-form-home">Notify
                         me</button>
                 </form>
             </div>

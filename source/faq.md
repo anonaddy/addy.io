@@ -59,6 +59,7 @@ For step-by-step guides, see the [Help Centre](/help/).
 - [What happens if I have a subscription but then cancel it?](#what-happens-if-i-have-a-subscription-but-then-cancel-it)
 - [If I subscribe will Stripe see my real email address?](#if-i-subscribe-will-stripe-see-my-real-email-address)
 - [Do you offer student discount?](#do-you-offer-student-discount)
+- [Do you offer Duo or Family plans?](#do-you-offer-duo-or-family-plans)
 
 <h3 class="faq-category">Plans & limits</h3>
 
@@ -369,6 +370,14 @@ When you subscribe you can choose which email to provide to Stripe, feel free to
 ## Do you offer student discount? {#do-you-offer-student-discount}
 
 Currently, addy.io does not offer any student discounts.
+
+## Do you offer Duo or Family plans? {#do-you-offer-duo-or-family-plans}
+
+Yes. **Duo** (2 members total, including the owner) and **Family** (5 members total, including the owner) let one person pay for **full Pro** on each member's own independent account. Accounts stay separate - aliases, recipients and usernames are not shared.
+
+You invite existing addy.io accounts by username. Members who already have their own paid subscription need to cancel it before accepting an invite. You can pay with card / PayPal (monthly or yearly) or cryptocurrency (yearly only). Duo and Family are not available through the App Store or Play Store.
+
+See the [pricing section](/#pricing) on the home page for current prices, and [Duo and Family plans](/help/duo-and-family-plans/) in the Help Centre for how to subscribe, invite members and manage seats.
 
 <h3 class="faq-category">Plans & limits</h3>
 

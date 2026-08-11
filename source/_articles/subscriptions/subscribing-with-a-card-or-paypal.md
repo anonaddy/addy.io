@@ -12,12 +12,14 @@ order: 1
 
 You can subscribe to addy.io with a **credit or debit card** or **PayPal**. Payment is processed by Stripe. Subscriptions renew automatically until you [cancel or change](/help/managing-your-subscription/) them. This article explains how to subscribe with a card or PayPal and where to manage the subscription. For other options, see [cryptocurrency](/help/subscribing-with-cryptocurrency/), [voucher codes](/help/voucher-codes/), [Apple App Store](/help/subscribing-through-the-apple-app-store/) or [Google Play](/help/subscribing-through-the-google-play-store/).
 
+You can also subscribe to **Duo** and **Family** (multi-seat Pro plans) with card or PayPal. Yearly Duo and Family are also available with [cryptocurrency](/help/subscribing-with-cryptocurrency/). See [Duo and Family plans](/help/duo-and-family-plans/) for inviting members and managing seats.
+
 <h2 id="how-to-subscribe-with-a-card-or-paypal">How to subscribe with a card or PayPal</h2>
 
 1. [Log in](https://app.addy.io) and go to **Subscription** in the navigation menu (or open the [subscription page](https://app.addy.io/settings/subscription) directly).
-2. Choose your plan (e.g. Lite or Pro) and billing period (monthly or yearly if available) by clicking the plan name (as shown by the red arrow below).
+2. Choose your plan (e.g. Lite, Pro, Duo or Family) and billing period (monthly or yearly if available) by clicking the plan name (as shown by the red arrow below).
 3. Click **Proceed To Card / PayPal Payment** to open Stripe checkout. Enter your card details or sign in to PayPal as prompted.
-4. After payment succeeds, your account is upgraded. The subscription renews automatically until you cancel. Use **Manage Current Subscription** on the same page to [manage your subscription](/help/managing-your-subscription/) later.
+4. After payment succeeds, your account is upgraded. The subscription renews automatically until you cancel. Use **Manage Current Subscription** on the same page to [manage your subscription](/help/managing-your-subscription/) later. If you chose Duo or Family, open the [family plan page](https://app.addy.io/settings/family-plan) to invite members.
 
 <div class="flex justify-center my-8">
   <img class="shadow max-w-full h-auto" src="/assets/img/help/subscriptions/subscribe-card-paypal.png" alt="Subscribe with card or PayPal in addy.io" title="Subscribing with a card or PayPal">

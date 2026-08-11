@@ -7,10 +7,12 @@ title: Subscribing through the Apple App Store
 date: 2026-05-28
 description: How to subscribe to addy.io through the Apple App Store. In-app subscription, managing payment and subscription (upgrade, downgrade, cancel) via Apple.
 helpCategories: [subscriptions]
-order: 5
+order: 6
 ---
 
 You can subscribe to addy.io through the **Apple App Store** when using the [addy.io mobile app](/help/downloading-and-using-the-mobile-app/) on an iPhone or iPad. Payment and renewal are handled by Apple; your Apple ID is charged and you manage the subscription (update payment method, upgrade, downgrade, cancel) in **Settings** > **Apple ID** > **Subscriptions** (or the App Store subscription management). This article explains how to subscribe via the App Store and how to manage that subscription.
+
+**Duo** and **Family** plans are not currently available through the App Store. To share Pro with other accounts, subscribe on the web with [card or PayPal](/help/subscribing-with-a-card-or-paypal/) or [cryptocurrency](/help/subscribing-with-cryptocurrency/) (yearly) and see [Duo and Family plans](/help/duo-and-family-plans/).
 
 <h2 id="how-to-subscribe-via-the-apple-app-store">How to subscribe via the Apple App Store</h2>
 

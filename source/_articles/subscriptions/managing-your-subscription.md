@@ -4,13 +4,15 @@ ogtype: article
 image: https://addy.io/assets/img/help/subscriptions/managing-subscription.png
 section: content
 title: Managing your subscription
-date: 2026-05-27
+date: 2026-08-11
 description: How to manage your addy.io subscription. Update payment method, upgrade, downgrade or cancel depending on how you pay - card, crypto, App Store, Play.
 helpCategories: [subscriptions]
 order: 4
 ---
 
 You can **manage** your addy.io subscription from the [subscription page](https://app.addy.io/settings/subscription) in your account: update your payment method, upgrade or downgrade your plan, or cancel. How you do each of these depends on **how you pay**: card/PayPal (Stripe), [cryptocurrency](/help/subscribing-with-cryptocurrency/), [Apple App Store](/help/subscribing-through-the-apple-app-store/) or [Google Play](/help/subscribing-through-the-google-play-store/). This article gives an overview; follow the links for payment-specific steps.
+
+If you are on a **Duo** or **Family** plan (or are a member of one), see [Duo and Family plans](/help/duo-and-family-plans/) for inviting people, managing seats, leaving, or removing members. Owners manage billing here; seats are managed on the [family plan page](https://app.addy.io/settings/family-plan).
 
 <h2 id="where-to-manage-your-subscription">Where to manage your subscription</h2>
 
@@ -31,6 +33,14 @@ You can **manage** your addy.io subscription from the [subscription page](https:
 <div class="flex justify-center my-8">
   <img class="shadow max-w-full h-auto" src="/assets/img/help/subscriptions/managing-subscription-stripe.png" alt="Managing subscription in Stripe" title="Managing subscription in Stripe">
 </div>
+
+<h2 id="updating-your-billing-email">Updating your billing email</h2>
+
+If you pay with **card or PayPal**, Stripe uses a **billing email** for payment receipts, failed payment notices, and other billing notifications. This can be an alias and does not have to be the same as your addy.io recipient address.
+
+To change it, open the Stripe billing portal with **Manage Current Subscription** (as above), then update the email under your billing details. Future receipts and Stripe notifications will go to the new address.
+
+This only applies to Stripe (card/PayPal) subscriptions. Cryptocurrency, App Store and Play Store billing emails are handled by those providers, not through the addy.io Stripe portal.
 
 <h2 id="upgrading">Upgrading</h2>
 
