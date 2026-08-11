@@ -39,7 +39,7 @@ Duo and Family fix that. One owner pays, invites the others by username, and eve
     <li>Ideal for households or a small group of people you trust</li>
 </ul>
 
-Prices are the same face amount in USD, EUR, and GBP. Full details are on the [pricing section](/#pricing) of the home page.
+Full pricing details are on the [pricing section](/#pricing) of the home page.
 
 ## Benefits
 
