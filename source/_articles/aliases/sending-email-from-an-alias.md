@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/send-from-alias-construction.jpg
 section: content
 title: Sending email from an alias
-date: 2026-05-26
+date: 2026-08-13
 description: How to send a new email from an addy.io alias. Use the send-from address format or the Send from tool in the web app so recipients see your alias, not your real email.
 helpCategories: [aliases]
 order: 9
@@ -38,16 +38,16 @@ addy.io receives the message, sends it from your alias, and delivers it to the r
 
 The **To** address encodes which alias you are sending from and who should receive the email. It uses the same format as [replying](/help/replying-to-email-using-an-alias/).
 
-For example, if your alias is **first@johndoe.anonaddy.com** and you want to email **hello@example.com**, enter this in the **To** field:
+For example, if your alias is **shop@johndoe.addy.io** and you want to email **hello@store.com**, enter this in the **To** field:
 
-<span class="break-words"><first+hello=example.com@johndoe.anonaddy.com></span>
+<span class="break-words"><shop+hello=store.com@johndoe.addy.io></span>
 
 In this example:
 
-- **first@johndoe.anonaddy.com** is the alias you are sending from
-- **hello@example.com** is the person who will receive your message
+- **shop@johndoe.addy.io** is the alias you are sending from
+- **hello@store.com** is the person who will receive your message
 
-addy.io decodes the address and delivers your email to **hello@example.com** from **first@johndoe.anonaddy.com**.
+addy.io decodes the address and delivers your email to **hello@store.com** from **shop@johndoe.addy.io**.
 
 <div class="flex justify-center my-8">
   <img class="shadow max-w-full h-auto" src="/assets/img/send-from-alias-construction.jpg" alt="Diagram showing how addy.io encodes the alias and recipient in a send-from address" title="How send-from-alias addressing works">
@@ -86,7 +86,11 @@ You can also get the correct address to send to in the browser extension or mobi
 
 <h2 id="will-the-recipient-see-my-real-email">Will the recipient see my real email?</h2>
 
-No. The message is sent from your alias; your verified recipient address is not shown to them. Avoid putting identifying details in the message body or signature (such as your real name or personal email) if you want to stay anonymous. See the [FAQ](/faq/#will-people-see-my-real-email-if-i-reply-to-a-forwarded-one) (the same applies to sends and replies).
+No. The message is sent from your alias; your verified recipient address is not shown to them.
+
+Your email client's **Sent** folder will still show your real (verified recipient) address as the **From** address. This is normal. You send the message from that inbox to the addy.io mail server. addy.io then sends it on from your alias to the destination. The person who receives the email sees only your alias in the **From** field, not your real address.
+
+Avoid putting identifying details in the message body or signature (such as your real name or personal email) if you want to stay anonymous. See the [FAQ](/faq/#will-people-see-my-real-email-if-i-reply-to-a-forwarded-one) (the same applies to sends and replies).
 
 <h2 id="check-that-your-email-was-sent">Check that your email was sent</h2>
 
