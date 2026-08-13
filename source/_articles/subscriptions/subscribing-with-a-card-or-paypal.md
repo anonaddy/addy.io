@@ -12,7 +12,7 @@ order: 1
 
 You can subscribe to addy.io with a **credit or debit card** or **PayPal**. Payment is processed by Stripe. Subscriptions renew automatically until you [cancel or change](/help/managing-your-subscription/) them. This article explains how to subscribe with a card or PayPal and where to manage the subscription. For other options, see [cryptocurrency](/help/subscribing-with-cryptocurrency/), [voucher codes](/help/voucher-codes/), [Apple App Store](/help/subscribing-through-the-apple-app-store/) or [Google Play](/help/subscribing-through-the-google-play-store/).
 
-You can also subscribe to **Duo** and **Family** (multi-seat Pro plans) with card or PayPal. Yearly Duo and Family are also available with [cryptocurrency](/help/subscribing-with-cryptocurrency/). See [Duo and Family plans](/help/duo-and-family-plans/) for inviting members and managing seats.
+You can also subscribe to **Duo** and **Family** (multi-seat Pro plans) with card or PayPal. Yearly Duo and Family are also available with [cryptocurrency](/help/subscribing-with-cryptocurrency/). See [Duo and Family plans](/help/duo-and-family-plans/) for inviting members, sharing custom domains and managing seats.
 
 <h2 id="how-to-subscribe-with-a-card-or-paypal">How to subscribe with a card or PayPal</h2>
 

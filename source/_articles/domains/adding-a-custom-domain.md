@@ -16,7 +16,7 @@ For a **subdomain** (e.g. `mail.example.com`), use the same process but differen
 
 <h2 id="before-you-start">Before you start</h2>
 
-- **Plan** - Custom domains require a **Lite** or **Pro** subscription (free accounts cannot add domains). Lite allows **1** custom domain; Pro allows **20** (see [pricing](/#pricing)).
+- **Plan** - Custom domains require a **Lite** or **Pro** subscription (free accounts cannot add domains). Lite allows **1** custom domain; Pro, Duo and Family allow **20** (see [pricing](/#pricing)).
 - **DNS access** - You need to add records at your domain registrar or DNS host (Cloudflare, Namecheap, etc.).
 - **Domain format** - Enter `example.com` only. Do not include `http://`, `https://`, or paths.
 - **Not a recipient domain** - The domain must not already be used as a [verified recipient](/help/adding-a-recipient/) address on your account.
@@ -107,6 +107,7 @@ addy.io re-checks MX records periodically. If records are removed or changed, va
 - Set a [default recipient](/help/changing-the-default-recipient-for-a-domain/) for the domain so new aliases forward to the right inbox.
 - Create aliases at your domain from **Aliases** > **Create Alias**, on the fly, or via the [browser extension](/help/installing-the-browser-extension/) / [API](https://app.addy.io/docs).
 - Optional: set a domain **From Name** on the domain **Edit** page (Lite/Pro).
+- On a **Duo** or **Family** plan, you can optionally share a verified custom domain so members can create their own aliases on it. See [Sharing custom domains](/help/duo-and-family-plans/#sharing-custom-domains).
 
 ---
 

@@ -1241,7 +1241,7 @@ width: full
         <div class="mx-auto mt-20 max-w-4xl border-t border-grey-900/10 pt-16 sm:mt-24">
             <div class="mx-auto max-w-2xl text-center">
                 <h3 class="text-3xl font-bold tracking-tight text-grey-900 sm:text-4xl">Duo &amp; Family</h3>
-                <p class="mt-4 text-lg leading-8 text-grey-600">Share Pro with people you trust. One person pays, each member gets full Pro on their own independent account.</p>
+                <p class="mt-4 text-lg leading-8 text-grey-600">Share Pro with people you trust. One person pays, each member gets full Pro on their own independent account. Optionally share a custom domain so everyone can create aliases on a domain you own.</p>
             </div>
 
             <div class="mx-auto mt-12 grid max-w-lg grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-2">
@@ -1267,6 +1267,12 @@ width: full
                                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                             </svg>
                             <span> Independent accounts </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                            <span> Optionally <b>share custom domains</b> </span>
                         </li>
                         <li class="flex gap-x-3">
                             <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -1305,6 +1311,12 @@ width: full
                                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                             </svg>
                             <span> Independent accounts </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                            <span> Optionally <b>share custom domains</b> </span>
                         </li>
                         <li class="flex gap-x-3">
                             <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

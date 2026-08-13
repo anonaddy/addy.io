@@ -64,7 +64,9 @@ Compared with separate yearly Pro subscriptions ($36 each):
     <li><b>Family</b> yearly is <b>$90</b> instead of <b>$180</b> for five Pro plans (<b>50%</b> saving)</li>
 </ul>
 
-Optional sharing between members (for example letting others on your plan use a custom domain you own) is not available yet, but it is coming soon. Until then, each account manages its own domains and aliases separately.
+#### Optionally share custom domains
+
+Accounts stay independent, but the owner can turn on sharing for a verified custom domain they own. Members can then create their own aliases on that domain (for example a household using <b>@yourdomain.com</b>) without sharing inboxes, recipients or settings. Sharing is optional and controlled per domain. Catch-all, auto-create and DNS stay with the owner. See [Duo and Family plans](/help/duo-and-family-plans/#sharing-custom-domains) for how to turn it on.
 
 ## How it works
 
@@ -89,7 +91,7 @@ New to addy.io? [Create a free account](https://app.addy.io/register), then choo
 
 Already subscribed? You can switch to Duo or Family from your subscription settings when you are ready.
 
-Compare all plans on the [home page pricing section](/#pricing). For step-by-step invites and seat management, see [Duo and Family plans](/help/duo-and-family-plans/) in the Help Centre.
+Compare all plans on the [home page pricing section](/#pricing). For step-by-step invites, custom domain sharing and seat management, see [Duo and Family plans](/help/duo-and-family-plans/) in the Help Centre.
 
 ## Feedback and suggestions
 

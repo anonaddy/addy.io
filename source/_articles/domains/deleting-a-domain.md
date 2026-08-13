@@ -15,6 +15,7 @@ order: 7
 <h2 id="before-you-delete-a-domain">Before you delete a domain</h2>
 
 - **Aliases at this domain** - All aliases that use this domain will be removed and stop working. If you need to keep using any of those addresses, consider [deactivating](/help/deactivating-a-domain/) the domain instead (mail is discarded but you can reactivate), or [deactivating](/help/deactivating-email-aliases/) or [deleting](/help/deleting-an-alias/) individual aliases. You cannot "move" a domain's aliases to another domain; you would need to recreate aliases elsewhere.
+- **Family plan members** - If this domain is [shared with a Duo or Family plan](/help/duo-and-family-plans/#sharing-custom-domains), you cannot delete it while members still have aliases on it. Stop sharing first and wait for the 14-day grace period to end, or ask members to delete their aliases.
 - **Default recipient** - If this domain had a [default recipient](/help/changing-the-default-recipient-for-a-domain/) set, it is only used for that domain; deleting the domain does not affect your account’s [global default recipient](/help/changing-the-default-recipient-on-your-account/). No need to change it for deletion.
 - **DNS records** - After deletion, you can remove the MX, SPF, DKIM (CNAME) and DMARC records for this domain from your DNS if you no longer use it for email. Leaving them in place does not cause problems but may point to addy.io for a domain you no longer use there.
 
