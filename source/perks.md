@@ -77,7 +77,7 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
       <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
         <dt class="text-base/7 font-semibold text-grey-900 lg:col-span-5">Who can take advantage of these offers?</dt>
         <dd class="mt-4 lg:col-span-7 lg:mt-0">
-          <p class="text-base/7 text-grey-600">All addy.io paid subscribers (Lite or Pro plans) can claim these offers.</p>
+          <p class="text-base/7 text-grey-600">All addy.io paid subscribers (Lite, Pro, Duo or Family, including family plan members) can claim these offers.</p>
         </dd>
       </div>
       <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
