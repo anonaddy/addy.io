@@ -5,7 +5,7 @@ image: https://addy.io/assets/img/help/rules/create-new-rule.png
 section: content
 title: Creating a new rule
 date: 2026-05-27
-description: How to create a new rule on addy.io. Define conditions (sender, subject, alias) and actions (block, disable encryption, move to recipient) to automate incoming mail.
+description: How to create a new rule on addy.io. Define conditions (sender, subject, alias) and actions (block, disable encryption, forward to a recipient) to automate incoming mail.
 helpCategories: [rules]
 order: 1
 ---
@@ -38,6 +38,6 @@ Choose what happens when an email matches the conditions. Common actions include
 
 - **Block** - Discard the email (sender is not notified).
 - **Disable encryption** - Forward without [encryption](/help/enabling-encryption-for-your-recipient/) for this message.
-- **Move to recipient** - Send to a specific recipient instead of the alias’s default.
+- **Forward to** - Send to a specific recipient instead of the alias's default.
 
 Add one or more actions, then save the rule. The rule will be applied to incoming mail in the [order](/help/changing-the-order-that-your-rules-are-applied-in/) you have set. You can [deactivate](/help/deactivating-a-rule/) or [delete](/help/deleting-a-rule/) it later if needed.
