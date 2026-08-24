@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/aliases/view-all-aliases.png
 section: content
 title: Creating and managing alias labels
-date: 2026-07-21
+date: 2026-08-24
 description: How to create, assign, filter, edit, and delete labels for your addy.io aliases. Use labels to organise aliases like Shopping, Banking, Work, and more.
 helpCategories: [aliases]
 order: 12
@@ -15,10 +15,10 @@ Alias labels let you organise your [aliases](/help/what-are-the-different-kinds-
 <h2 id="create-labels">Create labels</h2>
 
 1. [Log in](https://app.addy.io) and go to **Aliases**.
-2. Open either:
-   - **Update Alias Labels** for a single alias, or
-   - **Update Labels for Aliases** after selecting multiple aliases.
-3. Click **Click here to manage labels**.
+2. Either:
+   - For a single alias - Click the pencil icon in the `Labels` column.
+   - For multiple aliases - Select your chosen aliases then click **Edit Labels** at the top of the table.
+3. Click **Click here to manage labels** in the popup modal that appeared.
 4. In **Manage labels**, enter a **Name**, choose a **Colour**, then click **Create**.
 
 You can create labels once and reuse them across many aliases.

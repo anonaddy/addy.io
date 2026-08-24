@@ -70,6 +70,14 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
     </ul>
 </div>
 
+<div class="mx-auto max-w-3xl px-6 pt-24 text-center lg:px-8">
+    <h2 class="text-3xl font-semibold tracking-tight text-grey-900">Want to partner with addy.io?</h2>
+    <p class="mt-6 text-base/7 text-grey-600">If you run a privacy-first company and would like to offer a perk to addy.io subscribers, get in touch. Partnerships are usually reciprocal discounts for each other's customers, and addy.io does not take a commission.</p>
+    <div class="mt-8">
+        <a href="/contact/" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get in touch</a>
+    </div>
+</div>
+
 <div class="bg-white">
   <div class="mx-auto max-w-7xl px-6 pt-24 lg:px-8">
     <h2 class="text-3xl font-semibold tracking-tight text-grey-900 text-center">Frequently asked questions</h2>
