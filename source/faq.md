@@ -397,13 +397,19 @@ I don't use rolling 30 day total as the only way to do this would be to log the 
 
 Blocked emails do not count towards your bandwidth (e.g. if an alias is inactive or deleted).
 
+On Lite you can also reset this month's usage mid-month (one free reset per calendar year, then a paid one-off). See [What happens if I go over my bandwidth limit](#what-happens-if-i-go-over-my-bandwidth-limit-in-a-given-month).
+
 ## How many emails can I receive before I go over my bandwidth limit? {#how-many-emails-can-i-receive-before-i-go-over-my-bandwidth-limit}
 
 The average email is about 76800 bytes (75KB), this is roughly equivalent to 7,000 words in plain text. So the 10MB monthly allowance would be around 140 emails and the Lite plan's 100MB would be almost 1,400 emails.
 
 ## What happens if I go over my bandwidth limit in a given month? {#what-happens-if-i-go-over-my-bandwidth-limit-in-a-given-month}
 
-If you get close to your limit (over 80%) you'll be sent an email letting you know. If you continue and go over your limit the server will respond to any delivery attempts to your aliases with the following: `552 5.2.2 Recipient address rejected: User over quota` until your bandwidth resets the next month or you upgrade your plan.
+If you get close to your limit (over 80%) you'll be sent an email letting you know. What happens after you go over depends on your plan:
+
+* **Free** - the server will respond to any delivery attempts to your aliases with `552 5.2.2 Recipient address rejected: User over quota` until your bandwidth resets the next calendar month, or you [upgrade](https://app.addy.io/settings/subscription) to Lite or Pro.
+* **Lite** - the first time you hit the 100MB limit in a calendar year, your usage for that month is automatically reset to 0 and forwarding continues. You get **one free reset per calendar year**. If you hit the limit again in the same year, you can buy a one-off reset for $5 / €5 / £5 from the [subscription page](https://app.addy.io/settings/subscription), wait until the next calendar month, or upgrade to Pro. A reset only zeros this month's usage; your monthly 100MB limit stays the same.
+* **Pro** - there is no monthly bandwidth limit.
 
 <h3 class="faq-category">Apps & extensions</h3>
 
