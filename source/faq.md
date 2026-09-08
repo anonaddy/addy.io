@@ -85,6 +85,7 @@ For step-by-step guides, see the [Help Centre](/help/).
 
 <h3 class="faq-category">Privacy & trust</h3>
 
+- [Does addy.io block tracking pixels?](#does-addy-io-block-tracking-pixels)
 - [Where is the server located?](#where-is-the-server-located)
 - [What if I don't trust you?](#what-if-i-dont-trust-you)
 - [How do I know this site won't disappear next month?](#how-do-i-know-this-site-wont-disappear-next-month)
@@ -459,6 +460,14 @@ The following is in place to help prevent spam:
 * PTR record check - if the sender has no valid PTR record it is rejected
 
 <h3 class="faq-category">Privacy & trust</h3>
+
+## Does addy.io block tracking pixels? {#does-addy-io-block-tracking-pixels}
+
+Yes. On Lite and Pro, addy.io can remove known tracking pixels from forwarded HTML emails so senders cannot tell when you opened a message. This is enabled by default. You can turn it off in **Settings > General**.
+
+If pixels are removed, the email banner includes a **View report** link. The report data is encoded in the URL and is not stored in the database.
+
+For details, limits, and how to change the setting, see [Blocking tracking pixels in forwarded emails](/help/blocking-tracking-pixels-in-forwarded-emails/).
 
 ## Where is the server located? {#where-is-the-server-located}
 

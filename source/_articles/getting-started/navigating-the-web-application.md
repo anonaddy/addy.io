@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/getting-started/navigating-the-web-application.png
 section: content
 title: Navigating the web application
-date: 2026-04-24
+date: 2026-09-08
 description: A guide to the addy.io web app layout and navigation. Learn where to find your aliases, recipients, domains, usernames, rules, and account settings after you log in.
 helpCategories: [getting-started]
 order: 4
@@ -38,7 +38,7 @@ The navigation bar gives you access to the main parts of your account:
 
 - **Blocklist** - Prevent certain senders from being able to reach your aliases by adding them to your blocklist. See the [Blocklist](/help/category/blocklist/) category for related articles.
 
-- **Settings** - Access [general settings](/help/general-settings/), [security settings](/help/security-settings/) (including two-factor authentication), and [API settings](/help/api-settings/) for your account.
+- **Settings** - Access [general settings](/help/general-settings/) (including [Block Tracking Pixels](/help/blocking-tracking-pixels-in-forwarded-emails/)), [security settings](/help/security-settings/) (including two-factor authentication), and [API settings](/help/api-settings/) for your account.
 
 - **Subscription** - Subscribe, manage or cancel your subscription. See the [Subscriptions](/help/category/subscriptions/) category for related articles.
 

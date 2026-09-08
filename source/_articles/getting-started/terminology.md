@@ -4,8 +4,8 @@ ogtype: article
 image: https://addy.io/assets/img/help/getting-started/mobile-app-login.png
 section: content
 title: Terminology
-date: 2026-08-28
-description: Definitions for common terms used throughout addy.io, including aliases, recipients, domains, and more.
+date: 2026-09-08
+description: Definitions for common terms used throughout addy.io, including aliases, recipients, domains, tracking pixels, and more.
 helpCategories: [getting-started]
 order: 1
 ---
@@ -95,6 +95,10 @@ Rules let you automate what happens to incoming mail. You define conditions (e.g
 <h3 id="failed-deliveries">Failed Deliveries</h3>
 
 A failed delivery is when an email sent to one of your aliases cannot be delivered to your recipient (e.g. the recipient mailbox is full, the address is invalid, or the receiving server rejects it). addy.io records these so you can see them in your account and fix the issue (such as updating the recipient address or checking the destination mailbox).
+
+<h3 id="tracking-pixel">Tracking pixel</h3>
+
+A tracking pixel is a tiny image in an HTML email. When your email app loads it, the sender can tell that you opened the message. On Lite and Pro, addy.io can [remove known tracking pixels](/help/blocking-tracking-pixels-in-forwarded-emails/) from forwarded HTML emails.
 
 <h3 id="display-name-from-name">Display name (From name)</h3>
 

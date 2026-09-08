@@ -7,7 +7,7 @@ title: How to delete your addy.io account
 date: 2026-05-26
 description: Step-by-step guide to permanently deleting your addy.io account. Learn what happens to your aliases and data, and whether a deleted account can be restored.
 helpCategories: [accounts-and-settings]
-order: 5
+order: 6
 ---
 
 Deleting your addy.io account permanently removes your account, aliases, recipients, and related data. This article explains how to delete your account, what happens to your data when you do, and whether deletion can be undone. Before you delete, consider [exporting your data](/help/importing-and-exporting-account-data/) so you have a backup.

@@ -7,7 +7,7 @@ title: API Settings
 date: 2026-05-26
 description: How to create, use, and delete addy.io API keys. Manage your API keys in account settings and find links to the full API documentation.
 helpCategories: [accounts-and-settings]
-order: 3
+order: 4
 ---
 
 The addy.io API lets you manage aliases, recipients, and other account data from your own apps or scripts. To use the API, you create an **API key** in your account settings and send it with each request. This article explains how to create, use, and delete API keys. For full endpoint details and examples, see the [API documentation](https://app.addy.io/docs) at app.addy.io/docs.

@@ -7,7 +7,7 @@ title: Security Settings
 date: 2026-05-19
 description: How to manage addy.io security settings - change your password, log out of other sessions, enable two-factor authentication (2FA) with an authenticator app or passkey, and generate backup codes to keep your account secure.
 helpCategories: [accounts-and-settings]
-order: 2
+order: 3
 ---
 
 Security settings help you protect your addy.io account: you can change your password, sign out of other devices or browsers, turn on two-factor authentication (2FA) with an authenticator app or a device/passkey, and generate backup codes in case you lose access to your authenticator app. This article walks you through each option. You can find them under **Settings** in the navigation bar, then the  **Security** tab.

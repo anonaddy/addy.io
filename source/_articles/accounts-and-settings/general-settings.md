@@ -4,13 +4,13 @@ ogtype: article
 image: https://addy.io/assets/img/help/accounts-and-settings/general-settings-page.png
 section: content
 title: General Settings
-date: 2026-05-26
-description: A guide to addy.io general settings. Learn how to update your account email, set your default recipient, and choose default alias domains and formats when generating new aliases.
+date: 2026-09-08
+description: A guide to addy.io general settings. Learn how to update your account email, choose default alias domains and formats, and manage Block Tracking Pixels for forwarded emails.
 helpCategories: [accounts-and-settings]
 order: 1
 ---
 
-General settings control your account-wide preferences, such as the web app theme, updating your email address and which domain and format are used when you create a new alias. This article explains where to find these options and how to change them. For password and two-factor authentication, see [Security settings](/help/security-settings/); for API keys, see [API Settings](/help/api-settings/).
+General settings control your account-wide preferences, such as the web app theme, updating your email address, which domain and format are used when you create a new alias, and whether addy.io [blocks tracking pixels](/help/blocking-tracking-pixels-in-forwarded-emails/) in forwarded emails. This article explains where to find these options and how to change them. For password and two-factor authentication, see [Security settings](/help/security-settings/); for API keys, see [API Settings](/help/api-settings/).
 
 <h2 id="where-to-find-general-settings">Where to find General Settings</h2>
 
@@ -52,6 +52,19 @@ The next time you generate an alias, the modal will pre-fill with these defaults
 <div class="flex justify-center my-8">
   <img class="shadow max-w-full h-auto" src="/assets/img/help/accounts-and-settings/default-alias-options.png" alt="Default alias domain and format options in General Settings" title="Default alias domain and format">
 </div>
+
+<h2 id="block-tracking-pixels">Block Tracking Pixels</h2>
+
+On Lite and Pro, **Block Tracking Pixels** removes known tracking pixels from forwarded HTML emails so senders cannot tell when you opened a message. The setting is enabled by default.
+
+To turn it on or off:
+
+1. Open **Settings**.
+2. Stay on the **General** tab and scroll to **Block Tracking Pixels**.
+3. Select **Enabled** or **Disabled**.
+4. Click **Update Block Tracking Pixels**.
+
+If anything is blocked, the forwarded email banner includes a **View report** link. For what is removed, plan limits, and how the report works, see [Blocking tracking pixels in forwarded emails](/help/blocking-tracking-pixels-in-forwarded-emails/).
 
 <h2 id="other-general-options">Other general options</h2>
 

@@ -38,6 +38,7 @@ Please Note: This will **ONLY encrypt and forward the plain text content**. Do n
 - **Back up your private key** - If you lose the private key, you will not be able to decrypt past or future emails encrypted with that key. Back it up securely.
 - **Key expiry** - If your key has an expiry date, renew it and update the public key on addy.io before it expires so new mail can still be encrypted.
 - **Testing** - After enabling encryption, send a test email to one of your aliases and confirm that the forwarded message arrives encrypted and that you can decrypt it in your client.
+- **Tracking pixels** - addy.io does not change encrypted content, so [Block Tracking Pixels](/help/blocking-tracking-pixels-in-forwarded-emails/) does not run on encrypted forwards.
 
 <h2 id="uncertain-digital-signature-warnings">Uncertain digital signature warnings</h2>
 

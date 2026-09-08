@@ -7,7 +7,7 @@ title: Importing and exporting account data
 date: 2026-05-26
 description: How to export your addy.io aliases and account data to CSV, and how to import aliases for your custom domain. Backup your data or bulk-add aliases from a list.
 helpCategories: [accounts-and-settings]
-order: 4
+order: 5
 ---
 
 You can export your addy.io account data (such as your aliases) to a CSV file for backup or use in other tools, and you can import a list of aliases for a [custom domain](/help/adding-a-custom-domain/) so you do not have to create them one by one. This article explains where to find these options and how to export and import your data safely.
