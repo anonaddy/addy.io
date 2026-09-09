@@ -15,8 +15,8 @@ width: full
                 <div class="mx-auto max-w-2xl">
                     <div class="max-w-lg">
                         <div class="mt-24 lg:mt-0">
-                            <a href="/blog/introducing-duo-and-family-plans/" class="inline-flex items-center space-x-2">
-                                <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">Introducing Duo &amp; Family plans →</span>
+                            <a href="/blog/addy-io-now-blocks-tracking-pixels/" class="inline-flex items-center space-x-2">
+                                <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">addy.io now blocks tracking pixels →</span>
                             </a>
                         </div>
                         <h1 class="mt-10 text-4xl font-bold tracking-tight text-grey-900">A different email address for every website
