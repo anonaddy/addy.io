@@ -335,6 +335,8 @@ addy.io offers a generous **Free plan** so you can use email aliases to protect 
 
 Some features are more expensive to operate or are more likely to be abused, so they are available on **Lite** and **Pro** plans only. Paid subscriptions help cover server costs and keep addy.io running for everyone.
 
+For example, to block tracking pixels addy has to scan the HTML of each forwarded email to find and remove matching images. Doing that for every Free account as well would add a lot of extra processing on every forward.
+
 addy.io is independently run and open-source; there is no venture capital funding, so subscriptions are what keep the service online rather than ads or selling user data.
 
 The most common example is **replying to and sending from an alias** (anonymous replies and new outbound mail from your alias address). These are **not included on the Free plan**. If you try to reply or send from an alias on a Free account, the message will not be delivered and you will receive an email notification that the feature requires a paid plan.
