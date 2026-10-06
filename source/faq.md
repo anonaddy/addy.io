@@ -376,11 +376,11 @@ Currently, addy.io does not offer any student discounts.
 
 ## Do you offer Duo or Family plans? {#do-you-offer-duo-or-family-plans}
 
-Yes. **Duo** (2 members total, including the owner) and **Family** (5 members total, including the owner) let one person pay for **full Pro** on each member's own independent account. Accounts stay separate - aliases, recipients and usernames are not shared. The owner can optionally share a custom domain so members can create their own aliases on a domain the household already uses.
+Yes. **Duo** (2 members total, including the owner) and **Family** (5 members total, including the owner) let one person pay for **full Pro** on each member's own independent account. Accounts stay separate - aliases, recipients and usernames are not shared. The owner can optionally share a custom domain so members can create their own aliases on a domain the household already uses. Any member can also deliver one of their aliases to another member, without seeing that person's email address.
 
 You invite existing addy.io accounts by username. Members who already have their own paid subscription need to cancel it before accepting an invite. You can pay with card / PayPal (monthly or yearly) or cryptocurrency (yearly only). Duo and Family are not available through the App Store or Play Store.
 
-See the [pricing section](/#pricing) on the home page for current prices, and [Duo and Family plans](/help/duo-and-family-plans/) in the Help Centre for how to subscribe, invite members, share custom domains and manage seats.
+See the [pricing section](/#pricing) on the home page for current prices, and [Duo and Family plans](/help/duo-and-family-plans/) in the Help Centre for how to subscribe, invite members, share custom domains, deliver aliases to each other and manage seats.
 
 <h3 class="faq-category">Plans & limits</h3>
 

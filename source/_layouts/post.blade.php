@@ -7,8 +7,12 @@
 
     <h1 class="leading-none mb-2">{{ $page->title }}</h1>
 
-    <div class="text-grey-700 text-xl mb-1 md:mt-0 flex items-center">
+    <div class="text-grey-700 text-xl mb-1 md:mt-0 flex flex-wrap items-center">
         {{ date('F j, Y', $page->date) }}
+        @if ($page->author)
+            <span class="mx-2">•</span>
+            <span>{{ $page->author }}</span>
+        @endif
         <span class="mx-2">•</span>
         @if ($page->categories)
             @foreach ($page->categories as $i => $category)

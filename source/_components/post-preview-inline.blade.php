@@ -1,6 +1,10 @@
 <div class="flex flex-col mb-4">
-    <div class="text-grey-700 font-medium my-2 flex items-center">
+    <div class="text-grey-700 font-medium my-2 flex flex-wrap items-center">
         {{ $post->getDate()->format('F j, Y') }}
+        @if ($post->author)
+            <span class="mx-2">•</span>
+            <span>{{ $post->author }}</span>
+        @endif
         <span class="mx-2">•</span>
         @foreach ($post->categories as $i => $category)
             <a

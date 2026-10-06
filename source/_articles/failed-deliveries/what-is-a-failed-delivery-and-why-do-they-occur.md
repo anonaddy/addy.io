@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/failed-deliveries/failed-deliveries.png
 section: content
 title: What is a failed delivery and why do they occur?
-date: 2026-07-23
+date: 2026-10-04
 description: What a failed delivery is on addy.io and why they happen. Covers outbound bounces, inbound rejections, quarantine (including blocklists), and why quarantined mail cannot be released.
 helpCategories: [failed-deliveries]
 order: 1
@@ -20,7 +20,7 @@ There are **three different types** of failed deliveries on addy.io:
 - **Inbound rejections** - These occur when the addy.io mail servers reject inbound email from senders that fail basic security checks (e.g. the sender's email provider could not prove the message was genuine).
 - **Inbound quarantined** - These are emails detected as spam by filtering software on the addy.io mail servers (e.g. blacklisted sending IP address, high spam score).
 
-The failed deliveries page shows all three types and the reason each one failed.
+The failed deliveries page shows all three types and the reason each one failed. You can hide some expected inbound rejections. See [Hiding rejections you already chose](#hiding-rejections-you-already-chose).
 
 **Outbound bounces** and **inbound quarantined** messages are temporarily stored if you have this setting enabled in your account.
 
@@ -66,6 +66,20 @@ Who can fix this:
 
 - These are sender-side issues. The sender's mail provider or server administrator must fix hostnames and DNS records.
 - As an addy.io user, you cannot correct these from your account settings.
+
+<h3 id="hiding-rejections-you-already-chose">Hiding rejections you already chose</h3>
+
+Some inbound rejections are expected. You already stopped the email. These include:
+
+- A deactivated alias, username, or custom domain
+- A deleted alias
+- A sender on your blocklist
+
+**Show Intentional Failed Deliveries** in [General settings](/help/general-settings/) controls whether those rows appear. The default is **Shown**. Choose **Hidden** to remove them from the Failed Deliveries page, the API list, and the dashboard chart.
+
+addy.io still rejects the emails. The rows are kept for 7 days, so you can show them again. A direct link to one row still opens it.
+
+This setting does not hide outbound bounces, inbound quarantine, or the sender security checks above.
 
 <h3 id="inbound-quarantined-common-causes">Inbound quarantined - common causes</h3>
 

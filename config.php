@@ -14,12 +14,10 @@ return [
     // collections
     'collections' => [
         'posts' => [
-            'author' => 'Will Browning', // Default author, if not provided in a post
             'sort' => '-date',
             'path' => 'blog/{filename}',
         ],
         'articles' => [
-            'author' => 'Will Browning', // Default author, if not provided in a post
             'sort' => 'title',
             'path' => 'help/{filename}',
         ],

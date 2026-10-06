@@ -5,12 +5,12 @@ image: https://addy.io/assets/img/help/subscriptions/managing-duo-and-family-pla
 section: content
 title: Duo and Family plans
 date: 2026-08-13
-description: How Duo and Family plans work on addy.io. Share full Pro with 2 or 5 independent accounts, invite members by username, optionally share custom domains, and manage seats.
+description: How Duo and Family plans work on addy.io. Share full Pro with 2 or 5 independent accounts, invite members by username, optionally share custom domains, deliver aliases to each other, and manage seats.
 helpCategories: [subscriptions]
 order: 5
 ---
 
-**Duo** and **Family** let one person pay for **full Pro** on more than one addy.io account. Each member keeps their own independent account (aliases, recipients, usernames and settings are not shared by default). One owner manages a single subscription and invites others by username. The owner can also optionally share [custom domains](/help/adding-a-custom-domain/) so members can create their own aliases on a domain the household already uses.
+**Duo** and **Family** let one person pay for **full Pro** on more than one addy.io account. Each member keeps their own independent account (aliases, recipients, usernames and settings are not shared by default). One owner manages a single subscription and invites others by username. The owner can also optionally share [custom domains](/help/adding-a-custom-domain/) so members can create their own aliases on a domain the household already uses, and any member can [deliver an alias to another member](#delivering-aliases-to-family-members) without sharing their email address.
 
 See the [pricing section](/#pricing) on the home page for current prices, or the [blog post](/blog/introducing-duo-and-family-plans/) for an overview of the plans.
 
@@ -37,6 +37,8 @@ For payment steps, see [Subscribing with a card or PayPal](/help/subscribing-wit
 Duo and Family are **not** a shared inbox. Each member has their own addy.io account and their own aliases, recipients, usernames and settings. The owner pays; members do not need their own paid subscription while they remain on the plan.
 
 You can optionally share a custom domain (see [Sharing custom domains](#sharing-custom-domains)) so the household can use one brand or domain. Aliases created on that domain still belong to each member.
+
+If two people want mail from the same alias, the alias owner can also deliver it to another member (see [Delivering aliases to family members](#delivering-aliases-to-family-members)). The alias still belongs to one account.
 
 <h2 id="inviting-members">Inviting members</h2>
 
@@ -121,10 +123,70 @@ Members cannot create new aliases on that domain immediately. Existing member al
 
 You cannot [delete the domain](/help/deleting-a-domain/) while family members still have aliases on it. Stop sharing first and wait for the grace period to end, or ask members to delete their aliases.
 
+<h2 id="delivering-aliases-to-family-members">Delivering aliases to family members</h2>
+
+Any person on a Duo or Family plan (the owner or a member) can have one of their aliases also delivered to another person on the plan. For example, a couple can both receive mail sent to `utilities@yourdomain.com`.
+
+You do not need to add the other person's email address as a recipient on your account. addy.io does not let two accounts use the same recipient address, so if you try this you get an error that the recipient already exists. Deliver the alias to them instead.
+
+The copy goes to the other person's **default recipient**. Their email address stays hidden from you, and your aliases and settings stay hidden from them.
+
+<h3 id="how-to-deliver-an-alias-to-a-family-member">How to deliver an alias to a family member</h3>
+
+1. Go to **Aliases**.
+2. Open the recipients for an alias: when you click **Create Alias**, when you click the "pencil" edit icon to [change the recipients](/help/changing-the-recipients-for-an-alias/), or when you select up to 25 aliases to edit them all at once.
+3. In the recipients list, choose the person by their **username**. Other people on your plan show below your own recipients.
+4. Save your changes.
+
+The other person gets one email that tells them which aliases now deliver to them. If you add them to many aliases at once, the email lists all of them.
+
+If you edit the recipients for more than one alias at once, the recipients you choose replace the recipients on every selected alias.
+
+<h3 id="forwarding-with-a-rule">Forwarding with a rule</h3>
+
+You can also send only some emails to a family member, instead of every email to an alias.
+
+1. Go to **Rules** and create a rule. See [Creating a new rule](/help/creating-a-new-rule/).
+2. Set the conditions for the emails you want to send on.
+3. Add a **Forward to** action and choose the person by their **username**.
+4. Turn on **Forwards** and save the rule.
+
+A matching email goes to the people you select in that action, instead of the alias recipients. Their email address stays hidden. The limit of 25 aliases does not apply to a rule.
+
+If the person leaves the plan, or they change their default recipient, the rule stops sending to them until you choose them again. You can do this only in the web app.
+
+<h3 id="limits-for-family-delivery">Limits</h3>
+
+- One alias can have at most **10** recipients in total. Family members count towards this limit.
+- One person can receive copies of at most **25** aliases from the other people on the plan.
+- The other person must have a **verified** default recipient.
+- At this time, you can choose family members only in the [web app](https://app.addy.io/aliases). The mobile apps show them in the recipients list as "*username* (family member)".
+
+<h3 id="stopping-delivery-of-an-alias">Stopping delivery of an alias</h3>
+
+If an alias is delivered to you, you can see it under **Settings** > **Family Plan** > **Aliases also delivered to you**. Click **Stop delivery** to stop getting copies of that alias. The alias owner can also remove you from its recipients at any time.
+
+Delivery stops for everyone automatically when a member leaves, is removed, or the family plan ends.
+
+<h3 id="what-family-members-can-and-cannot-do">What family members can and cannot do</h3>
+
+The alias still belongs to the person who created it. If an alias is delivered to you:
+
+- You **cannot** [reply](/help/replying-to-email-using-an-alias/) or [send](/help/sending-email-from-an-alias/) from it.
+- The banner in forwarded emails does not show the **Deactivate** or **Block** actions, and one-click unsubscribe in your email client does not deactivate or delete the alias.
+- Only the alias owner's [rules](/help/creating-a-new-rule/) apply. If a rule blocks an email, nobody gets a copy. A rule that forwards to other recipients does not remove family members.
+- Your recipient's [encryption](/help/enabling-encryption-for-your-recipient/) settings still apply. Account settings such as the banner come from the alias owner's account.
+- Mail to the alias goes to the default recipient you had when you were added. If you later change your default recipient, ask the alias owner to remove you and add you again.
+
+If a copy cannot be delivered, the alias owner sees it on their [failed deliveries](/help/what-is-a-failed-delivery-and-why-do-they-occur/) page as **Family member**, without your email address.
+
 <h2 id="common-questions">Common questions</h2>
 
 **Can members see each other's aliases?**
-No. Accounts stay independent. Even on a shared custom domain, each member only sees the aliases they created.
+No. Accounts stay independent. Even on a shared custom domain, each member only sees the aliases they created. The only exception is when someone [delivers an alias to you](#delivering-aliases-to-family-members): you can then see that alias address on your family plan page.
+
+**My partner and I both want to receive the same alias. Can I add their email address as a recipient?**
+No. A recipient address can only belong to one account, so addy.io shows an error that the recipient already exists. If you are both on the same Duo or Family plan, [deliver the alias to them](#delivering-aliases-to-family-members) instead.
 
 **Can members share a custom domain?**
 Yes. The owner can optionally share a verified custom domain with the plan. Sharing is off by default and controlled per domain. See [Sharing custom domains](#sharing-custom-domains).
