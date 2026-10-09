@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/aliases/view-all-aliases.png
 section: content
 title: Changing the recipients for an alias
-date: 2026-05-26
+date: 2026-10-07
 description: How to change where an addy.io alias forwards emails. Add, remove, or change the recipient addresses for an alias.
 helpCategories: [aliases]
 order: 4
@@ -25,6 +25,6 @@ Each alias forwards incoming mail to one or more [recipients](/help/adding-a-rec
 
 You can also select multiple aliases (up to 25) and edit the recipients for them all in one go too.
 
-If you are on a [Duo or Family plan](/help/duo-and-family-plans/), the recipients list also shows the other people on your plan by username. Choose one to deliver the alias to their default recipient, without seeing their email address. At this time, you can do this only in the web app. See [Delivering aliases to family members](/help/duo-and-family-plans/#delivering-aliases-to-family-members).
+If you are on a [Duo or Family plan](/help/duo-and-family-plans/), the recipients list also shows the other people on your plan by username. Choose one to deliver the alias to their default recipient, without seeing their email address. Turn on **Allow reply and send** if they may reply and send from that alias. Leave it off and they can only receive mail. The same checkbox appears when you edit more than one alias, and it applies to every selected alias. At this time, you can do this only in the web app. See [Delivering aliases to family members](/help/duo-and-family-plans/#delivering-aliases-to-family-members).
 
 New aliases use your account’s [default recipient](/help/changing-the-default-recipient-on-your-account/) until you change them. You can change recipients from the [web app](/help/navigating-the-web-application/), and [mobile app](/help/downloading-and-using-the-mobile-app/) as well. Recipients must be [added and verified](/help/adding-a-recipient/) before you can assign them to an alias.

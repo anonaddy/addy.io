@@ -89,6 +89,17 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
+        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+            <div class="flex items-center justify-center gap-2.5 mb-4">
+                <img src="/assets/img/ente.png" alt="Ente Logo" class="max-h-12 object-contain" />
+                <a href="https://ente.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer">Ente</a>
+            </div>
+            <p class="text-sm/6 text-grey-600">Ente is a privacy-first, end-to-end encrypted photo and video storage service that ensures only you can access your memories.</p>
+            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off for the first 12 months on any Ente plan. Apply the code on photos.ente.com before you purchase.</p>
+            <div class="mt-6">
+                <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
+            </div>
+        </li>
     </ul>
 </div>
 

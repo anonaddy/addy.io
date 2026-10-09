@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/subscriptions/managing-duo-and-family-plan-members.png
 section: content
 title: Duo and Family plans
-date: 2026-08-13
+date: 2026-10-07
 description: How Duo and Family plans work on addy.io. Share full Pro with 2 or 5 independent accounts, invite members by username, optionally share custom domains, deliver aliases to each other, and manage seats.
 helpCategories: [subscriptions]
 order: 5
@@ -136,11 +136,12 @@ The copy goes to the other person's **default recipient**. Their email address s
 1. Go to **Aliases**.
 2. Open the recipients for an alias: when you click **Create Alias**, when you click the "pencil" edit icon to [change the recipients](/help/changing-the-recipients-for-an-alias/), or when you select up to 25 aliases to edit them all at once.
 3. In the recipients list, choose the person by their **username**. Other people on your plan show below your own recipients.
-4. Save your changes.
+4. To let them reply and send from those aliases, turn on **Allow reply and send**. Leave it off and they can only receive mail.
+5. Save your changes.
 
 The other person gets one email that tells them which aliases now deliver to them. If you add them to many aliases at once, the email lists all of them.
 
-If you edit the recipients for more than one alias at once, the recipients you choose replace the recipients on every selected alias.
+If you edit the recipients for more than one alias at once, the recipients you choose replace the recipients on every selected alias. The **Allow reply and send** checkbox applies to every selected alias.
 
 <h3 id="forwarding-with-a-rule">Forwarding with a rule</h3>
 
@@ -172,10 +173,10 @@ Delivery stops for everyone automatically when a member leaves, is removed, or t
 
 The alias still belongs to the person who created it. If an alias is delivered to you:
 
-- You **cannot** [reply](/help/replying-to-email-using-an-alias/) or [send](/help/sending-email-from-an-alias/) from it.
-- The banner in forwarded emails does not show the **Deactivate** or **Block** actions, and one-click unsubscribe in your email client does not deactivate or delete the alias.
+- You cannot [reply](/help/replying-to-email-using-an-alias/) or [send](/help/sending-email-from-an-alias/) from it unless the alias owner turns on **Allow reply and send** for you on that alias. The switch is off until they turn it on. Sharing a domain, or a **Forward to** rule, does not turn it on. The send uses their limit and their rules. You still cannot change the alias.
+- Your copy does not include the addy banner, so it has no **Deactivate** or **Block** actions. A spam warning still shows when the owner uses that warning. One-click unsubscribe in your email client does not deactivate or delete the alias.
 - Only the alias owner's [rules](/help/creating-a-new-rule/) apply. If a rule blocks an email, nobody gets a copy. A rule that forwards to other recipients does not remove family members.
-- Your recipient's [encryption](/help/enabling-encryption-for-your-recipient/) settings still apply. Account settings such as the banner come from the alias owner's account.
+- Your recipient's [encryption](/help/enabling-encryption-for-your-recipient/) settings still apply. The owner's banner setting applies only to their own copy.
 - Mail to the alias goes to the default recipient you had when you were added. If you later change your default recipient, ask the alias owner to remove you and add you again.
 
 If a copy cannot be delivered, the alias owner sees it on their [failed deliveries](/help/what-is-a-failed-delivery-and-why-do-they-occur/) page as **Family member**, without your email address.
