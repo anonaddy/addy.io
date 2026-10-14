@@ -27,7 +27,7 @@ If you don't have a Bitwarden account you can [create one](https://vault.bitward
 
 ## What will this mean for addy.io users?
 
-If you use Bitwarden and addy.io it will mean that you will now be able to create email aliases for addy.io directly from the [Bitwarden Generator](https://bitwarden.com/help/generator/#generate-a-username).
+If you use Bitwarden and addy.io it will mean that you will now be able to create email aliases for addy.io directly from the [Bitwarden Generator](https://bitwarden.com/help/generator/#tab-addy.io-3Uj911RtQsJD9OAhUuoKrz).
 
 This will make it extremely quick and convenient to create and save alias details directly in Bitwarden for each account.
 
@@ -35,7 +35,7 @@ This will make it extremely quick and convenient to create and save alias detail
   <img class="shadow" src="/assets/img/bitwarden-generator.png" alt="Bitwarden Generator" title="Bitwarden Generator">
 </div>
 
-For further details on how to do this please see Bitwarden's [help documentation](https://bitwarden.com/help/generator/#username-types).
+For further details on how to do this please see Bitwarden's [help documentation](https://bitwarden.com/help/generator/#tab-addy.io-3Uj911RtQsJD9OAhUuoKrz).
 
 > "Using a unique email alias, username, and password for every account provides the ultimate defense against data breaches and strong privacy protection. With this new integration into Bitwarden, it’s easier than ever to keep your accounts and online identity secure." - Bitwarden
 
