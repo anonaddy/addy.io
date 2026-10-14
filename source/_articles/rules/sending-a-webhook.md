@@ -7,6 +7,7 @@ title: Sending a webhook
 date: 2026-10-07
 description: How to send a webhook when an addy.io alias receives email. Choose a public https URL, optionally include the message body, and verify the signed JSON payload. Includes a Zapier example that adds a spreadsheet row.
 helpCategories: [rules]
+highlightCode: true
 order: 6
 ---
 

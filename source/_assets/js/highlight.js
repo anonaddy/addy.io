@@ -6,6 +6,7 @@ hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'))
 hljs.registerLanguage('lua', require('highlight.js/lib/languages/lua'))
 hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'))
 hljs.registerLanguage('json', require('highlight.js/lib/languages/json'))
+hljs.registerLanguage('php', require('highlight.js/lib/languages/php'))
 
 document.querySelectorAll('pre code').forEach((element) => {
   hljs.highlightElement(element)
