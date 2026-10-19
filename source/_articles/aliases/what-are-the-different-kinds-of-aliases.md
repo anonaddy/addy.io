@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/aliases/view-all-aliases.png
 section: content
 title: What are the different kinds of aliases?
-date: 2026-05-26
+date: 2026-10-15
 description: Learn the difference between standard aliases and shared domain aliases on addy.io. Understand which aliases can be created on the fly and which must be generated first.
 helpCategories: [aliases]
 order: 1
@@ -29,6 +29,8 @@ A **standard alias** uses a domain that belongs only to you. Examples:
 - **An additional username’s subdomain** - e.g. **shop@janedoe.anonaddy.com** if you have added [additional usernames](/help/adding-an-additional-username/).
 
 Because the domain is unique to you, standard aliases can be **created on the fly**: as soon as the first email is sent to that address, addy.io creates the alias and forwards the message. You do not need to generate them in the dashboard first. This behaviour is called **catch-all**. You can also create them in advance via [Creating new email aliases](/help/creating-new-email-aliases/) (**Create Alias** on the website), the [browser extension](/help/installing-the-browser-extension/) or [mobile app](/help/downloading-and-using-the-mobile-app/).
+
+On Lite and Pro, **Settings** > **General** > **Random Characters on Custom Aliases** can add a short random suffix when you create a **Custom** standard alias in advance. It is off by default, so the local part stays exactly as you type it. With it on, choose a length from 1 to 10 and whether the suffix is letters, numbers, or both. The characters are added after your alias separator: typing **shop** can create **shop.k3mxp**. Addresses you give out for catch-all stay exactly as written. Shared domain custom aliases always add 5 letters and numbers, and this setting does not change that. See [Creating new email aliases](/help/creating-new-email-aliases/#random-characters-on-custom-aliases).
 
 <h2 id="shared-domain-aliases">Shared domain aliases</h2>
 

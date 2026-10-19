@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/aliases/create-new-alias.png
 section: content
 title: Creating new email aliases
-date: 2026-05-28
+date: 2026-10-15
 description: How to create email aliases on addy.io. Use standard aliases on the fly with catch-all, or generate random and shared-domain aliases from the dashboard, extension, mobile app, or API.
 helpCategories: [aliases]
 order: 2
@@ -100,7 +100,17 @@ You can [change recipients](/help/changing-the-recipients-for-an-alias/) for the
 | **Random Words** | e.g. `circus.waltz449` | Paid |
 | **Random Male Name** / **Random Female Name** / **Random Noun** | Human-readable random local parts | Paid |
 
-On a **shared domain**, free plans are limited to **Random Characters** and **UUID** (and **Random Words** where enabled). **Custom** local parts on shared domains require a paid plan; addy.io appends extra random characters to reduce guessing. Defaults for domain and format can be set under **Settings** > **General** (**Update Default Alias Domain** / **Update Default Alias Format**) - these apply on the website and in the [browser extension](/help/installing-the-browser-extension/).
+On a **shared domain**, free plans are limited to **Random Characters** and **UUID** (and **Random Words** where enabled). **Custom** local parts on shared domains require a paid plan. addy.io always appends your alias separator and 5 letters and numbers, for example **facebook.8an2k@anonaddy.me**, to avoid collisions. Defaults for domain and format can be set under **Settings** > **General** (**Update Default Alias Domain** / **Update Default Alias Format**) - these apply on the website and in the [browser extension](/help/installing-the-browser-extension/).
+
+<h3 id="random-characters-on-custom-aliases">Random characters on custom standard aliases</h3>
+
+On a username subdomain, [additional username](/help/adding-an-additional-username/), or [custom domain](/help/adding-a-custom-domain/), a **Custom** alias keeps the local part exactly as you type it unless you turn on **Random Characters on Custom Aliases**. That option is on Lite and Pro, under **Settings** > **General**, and it is off by default.
+
+With it enabled, addy.io adds your alias separator and then 1 to 10 random characters after the text you type. You choose **Letters**, **Numbers**, or **Letters and numbers**. Typing **shop**, with a period and 5 letters and numbers, can create **shop.k3mxp@johndoe.anonaddy.com**. The same suffix is added when the website, [browser extension](/help/installing-the-browser-extension/), [mobile app](/help/downloading-and-using-the-mobile-app/), or API creates the alias with format **Custom**. The address in the response is the one to copy and give out.
+
+This does not change [catch-all](/help/understanding-catch-all-and-alias-auto-create-regex-for-a-username/). An address you type on a signup form is created as that exact address when the first email arrives.
+
+Shared domain custom aliases ignore this setting and always use 5 letters and numbers. If you leave Lite or Pro, the option turns off. Resubscribing turns it back on with the length and character set you had chosen.
 
 ---
 
@@ -108,7 +118,7 @@ On a **shared domain**, free plans are limited to **Random Characters** and **UU
 
 The [browser extension](/help/installing-the-browser-extension/) and [mobile app](/help/downloading-and-using-the-mobile-app/) create aliases using the same rules as the dashboard. Connect them with an [API key](/help/api-settings/) from **Settings** > **API**.
 
-To automate creation, use **`POST /api/v1/aliases`** with `domain`, `format`, optional `local_part` (for custom), `description`, and optional `recipient_ids`. Full details: [API documentation](https://app.addy.io/docs).
+To automate creation, use **`POST /api/v1/aliases`** with `domain`, `format`, optional `local_part` (for custom), `description`, and optional `recipient_ids`. When **Random Characters on Custom Aliases** is enabled and `format` is `custom` on a standard domain, the returned local part already includes the suffix. Full details: [API documentation](https://app.addy.io/docs).
 
 ---
 

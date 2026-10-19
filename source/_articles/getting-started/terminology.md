@@ -4,7 +4,7 @@ ogtype: article
 image: https://addy.io/assets/img/help/getting-started/mobile-app-login.png
 section: content
 title: Terminology
-date: 2026-09-08
+date: 2026-10-15
 description: Definitions for common terms used throughout addy.io, including aliases, recipients, domains, tracking pixels, and more.
 helpCategories: [getting-started]
 order: 1
@@ -36,7 +36,7 @@ Aliases can be created with different formats, the format of an alias changes th
 - **Custom** - facebook.8an2k@anonaddy.me
 - **UUID** - 94960540-f914-42e0-9c50-6faa7a385384@anonaddy.me
 
-When choosing the custom format for a standard alias you can enter any valid local-part that you like, for example **anything@johndoe.anonaddy.com**.
+When choosing the custom format for a standard alias you can enter any valid local-part that you like, for example **anything@johndoe.anonaddy.com**. On Lite and Pro, **Random Characters on Custom Aliases** (under **Settings** > **General**) can add your alias separator and a short random suffix after that local part when the alias is created in advance. It is off by default. Shared domain custom aliases always include 5 extra letters and numbers, for example **facebook.8an2k@anonaddy.me**.
 
 <h3 id="deactivated-alias">Deactivated Alias</h3>
 
@@ -72,7 +72,7 @@ When catch-all is enabled for a username or custom domain, any email sent to an 
 
 <h3 id="alias-local-part">Alias local-part</h3>
 
-The local-part is the part of an email address before the @ symbol (for example, in **hello**@johndoe.anonaddy.com the local-part is "**hello**"). On addy.io it controls how your alias address looks. For shared domain aliases you choose a format (e.g. random characters, random words, custom, UUID); for standard aliases with the custom format you can type any valid local-part you want.
+The local-part is the part of an email address before the @ symbol (for example, in **hello**@johndoe.anonaddy.com the local-part is "**hello**"). On addy.io it controls how your alias address looks. For shared domain aliases you choose a format (e.g. random characters, random words, custom, UUID); for standard aliases with the custom format you can type any valid local-part you want. Lite and Pro can also append random characters to that custom local part - see [Alias Format](#alias-format).
 
 <h3 id="bandwidth">Bandwidth</h3>
 

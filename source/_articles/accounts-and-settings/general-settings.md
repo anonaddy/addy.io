@@ -4,13 +4,13 @@ ogtype: article
 image: https://addy.io/assets/img/help/accounts-and-settings/general-settings-page.png
 section: content
 title: General Settings
-date: 2026-09-08
-description: A guide to addy.io general settings. Learn how to update your account email, choose default alias domains and formats, and manage Block Tracking Pixels for forwarded emails.
+date: 2026-10-15
+description: A guide to addy.io general settings. Learn how to update your account email, choose default alias domains and formats, append random characters to custom aliases, and manage Block Tracking Pixels for forwarded emails.
 helpCategories: [accounts-and-settings]
 order: 1
 ---
 
-General settings control your account-wide preferences, such as the web app theme, updating your email address, which domain and format are used when you create a new alias, and whether addy.io [blocks tracking pixels](/help/blocking-tracking-pixels-in-forwarded-emails/) in forwarded emails. This article explains where to find these options and how to change them. For password and two-factor authentication, see [Security settings](/help/security-settings/); for API keys, see [API Settings](/help/api-settings/).
+General settings control your account-wide preferences, such as the web app theme, updating your email address, which domain and format are used when you create a new alias, whether custom standard aliases get a random suffix, and whether addy.io [blocks tracking pixels](/help/blocking-tracking-pixels-in-forwarded-emails/) in forwarded emails. This article explains where to find these options and how to change them. For password and two-factor authentication, see [Security settings](/help/security-settings/); for API keys, see [API Settings](/help/api-settings/).
 
 <h2 id="where-to-find-general-settings">Where to find General Settings</h2>
 
@@ -52,6 +52,29 @@ The next time you generate an alias, the modal will pre-fill with these defaults
 <div class="flex justify-center my-8">
   <img class="shadow max-w-full h-auto" src="/assets/img/help/accounts-and-settings/default-alias-options.png" alt="Default alias domain and format options in General Settings" title="Default alias domain and format">
 </div>
+
+<h2 id="random-characters-on-custom-aliases">Random characters on custom aliases</h2>
+
+On Lite and Pro, **Random Characters on Custom Aliases** adds a short random suffix when you create a [custom standard alias](/help/what-are-the-different-kinds-of-aliases/#standard-aliases) in advance. It applies to your username subdomain, an [additional username](/help/adding-an-additional-username/), and a [custom domain](/help/adding-a-custom-domain/). Shared domains such as **@anonaddy.me** always add 5 letters and numbers to a custom alias, and this setting does not change that.
+
+The option is off by default. With it off, the local part is stored exactly as you type it, for example **shop@johndoe.anonaddy.com**. With it on, addy.io places your alias separator and then the random characters after the text you type. Typing **shop** with a period and 5 letters and numbers can create **shop.k3mxp@johndoe.anonaddy.com**.
+
+You can set:
+
+- **Random characters** - **Enabled** or **Disabled**.
+- **Number of characters** - from 1 to 10. The default is 5.
+- **Characters** - **Letters**, **Numbers**, or **Letters and numbers**. The default is letters and numbers.
+
+The suffix uses the character from **Alias Separator** on the same page: period, underscore, hyphen, or a random choice of those. The same rules apply when the [browser extension](/help/installing-the-browser-extension/), [mobile app](/help/downloading-and-using-the-mobile-app/), or [API](https://app.addy.io/docs) creates an alias with the **Custom** format. An address you give out for [catch-all](/help/understanding-catch-all-and-alias-auto-create-regex-for-a-username/) is still created as that exact address.
+
+If you leave Lite or Pro, the option turns off and new custom aliases keep the local part you type. Resubscribing turns it back on with the length and character set you had chosen.
+
+To change it:
+
+1. Open **Settings**.
+2. Stay on the **General** tab and scroll to **Random Characters on Custom Aliases**.
+3. Choose whether it is enabled, how many characters to add, and which characters to use.
+4. Click **Update Random Characters**.
 
 <h2 id="block-tracking-pixels">Block Tracking Pixels</h2>
 
