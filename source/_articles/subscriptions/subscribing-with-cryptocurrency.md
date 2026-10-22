@@ -10,7 +10,7 @@ helpCategories: [subscriptions]
 order: 2
 ---
 
-addy.io accepts **cryptocurrency** for subscriptions (e.g. Bitcoin, Monero, Ethereum). Payments are processed via [NOWPayments](https://nowpayments.io/). There may be a minimum invoice value (e.g. $10) and only yearly plans may be available when paying with crypto. This article explains how it works and how to subscribe with cryptocurrency. For card or PayPal, see [Subscribing with a card or PayPal](/help/subscribing-with-a-card-or-paypal/).
+addy.io accepts **cryptocurrency** for subscriptions (e.g. Bitcoin, Monero, Ethereum). Payments are processed via [NOWPayments](https://nowpayments.io/). There may be a minimum invoice value<span data-pricing> (e.g. $10)</span> and only yearly plans may be available when paying with crypto. This article explains how it works and how to subscribe with cryptocurrency. For card or PayPal, see [Subscribing with a card or PayPal](/help/subscribing-with-a-card-or-paypal/).
 
 Crypto is available for yearly **Lite**, **Pro**, **Duo** and **Family** plans. For inviting members and managing seats on Duo or Family, see [Duo and Family plans](/help/duo-and-family-plans/).
 
@@ -24,7 +24,7 @@ Crypto is available for yearly **Lite**, **Pro**, **Duo** and **Family** plans. 
    - **ETH** (Ethereum)
    - **LTC** (Litecoin), **DOGE** (Dogecoin), **DCR** (Decred), **XRP** (Ripple), and others.
 
-For a full list of supported coins, see [NOWPayments](https://nowpayments.io/). There is typically a **minimum invoice value** (e.g. $10), so at the moment you can only pay with cryptocurrency for a yearly plan.
+For a full list of supported coins, see [NOWPayments](https://nowpayments.io/). There is typically a **minimum invoice value**<span data-pricing> (e.g. $10)</span>, so at the moment you can only pay with cryptocurrency for a yearly plan.
 
 You can choose to purchase upto 3 years when subscribing with cryptocurrency.
 

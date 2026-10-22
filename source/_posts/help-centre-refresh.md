@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/new-help-centre.png
+image: https://addy.io/assets/img/share/help-centre-refresh.png
 section: content
 title: The addy.io Help Centre has been refreshed
 date: 2026-05-29

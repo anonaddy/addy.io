@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/help/accounts-and-settings/tracking-report.png
+image: https://addy.io/assets/img/share/addy-io-now-blocks-tracking-pixels.png
 section: content
 title: addy.io now blocks tracking pixels
 date: 2026-09-09
@@ -39,7 +39,7 @@ You can turn it off in **Settings > General** if you would rather receive emails
 
 For what is removed, what is not (including encrypted forwards), and how to change the setting, see [Blocking tracking pixels in forwarded emails](/help/blocking-tracking-pixels-in-forwarded-emails/) in the Help Centre.
 
-Compare plans on the [home page pricing section](/#pricing).
+<span data-pricing>Compare plans on the [pricing page](/pricing/).</span>
 
 ## Feedback and suggestions
 

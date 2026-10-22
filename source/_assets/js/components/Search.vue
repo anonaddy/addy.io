@@ -13,7 +13,7 @@
         id="search"
         v-model="query"
         ref="search"
-        class="transition-fast relative block h-10 w-full lg:w-1/2 lg:focus:w-3/4 border border-grey-500 focus:border-indigo-400 outline-none cursor-pointer text-grey-700 px-4 pb-0 pt-px"
+        class="transition-fast relative block h-10 w-full lg:w-1/2 lg:focus:w-3/4 border border-grey-500 dark:border-grey-700 dark:bg-card dark:placeholder:text-muted focus:border-indigo-400 dark:focus:border-link outline-none cursor-pointer text-grey-700 dark:text-ink px-4 pb-0 pt-px"
         :class="{ 'transition-border': query }"
         autocomplete="off"
         name="search"
@@ -25,7 +25,7 @@
 
       <button
         v-if="query || searching"
-        class="absolute top-0 right-0 leading-snug font-400 text-3xl text-indigo-500 hover:text-indigo-600 focus:outline-none pr-3 md:pr-3"
+        class="absolute top-0 right-0 leading-snug font-400 text-3xl text-indigo-500 dark:text-link hover:text-indigo-600 dark:hover:text-link focus:outline-none pr-3 md:pr-3"
         @click="reset"
       >
         &times;
@@ -37,11 +37,11 @@
           class="absolute left-0 right-0 md:inset-auto w-full lg:w-3/4 text-left mb-4 md:mt-10"
         >
           <div
-            class="flex flex-col bg-white border border-b-0 border-t-0 border-indigo-400 rounded-b-lg shadow-lg"
+            class="flex flex-col bg-white dark:bg-card border border-b-0 border-t-0 border-indigo-400 dark:border-tint-indigo-line rounded-b-lg shadow-lg"
           >
             <a
               v-for="(result, index) in results"
-              class="bg-white hover:bg-indigo-100 border-b border-indigo-400 text-xl cursor-pointer p-4"
+              class="bg-white dark:bg-card hover:bg-indigo-100 dark:hover:bg-tint-indigo border-b border-indigo-400 dark:border-tint-indigo-line text-xl cursor-pointer p-4"
               :class="{ 'rounded-b-lg': index === results.length - 1 }"
               :href="result.item.link"
               :title="result.item.title"
@@ -51,14 +51,14 @@
               {{ result.item.title }}
 
               <span
-                class="block font-normal text-grey-700 text-sm my-1"
+                class="block font-normal text-grey-700 dark:text-ink text-sm my-1"
                 v-html="getHighlightedSnippet(result)"
               ></span>
             </a>
 
             <div
               v-if="!results.length"
-              class="bg-white w-full hover:bg-indigo-100 border-b border-indigo-400 rounded-b-lg shadow cursor-pointer p-4"
+              class="bg-white dark:bg-card w-full hover:bg-indigo-100 dark:hover:bg-tint-indigo border-b border-indigo-400 dark:border-tint-indigo-line rounded-b-lg shadow cursor-pointer p-4"
             >
               <p class="my-0">
                 No results for <strong>{{ query }}</strong>
@@ -73,7 +73,7 @@
       v-if="!searching"
       title="Start searching"
       type="button"
-      class="flex md:hidden bg-grey-50 hover:bg-indigo-100 justify-center items-center border border-grey-500 rounded-full focus:outline-none h-10 px-3"
+      class="flex md:hidden bg-grey-50 dark:bg-subtle hover:bg-indigo-100 dark:hover:bg-tint-indigo justify-center items-center border border-grey-500 dark:border-grey-700 rounded-full focus:outline-none h-10 px-3"
       @click.prevent="showInput"
     >
       <img src="/assets/img/magnifying-glass.svg" alt="search icon" class="h-4 w-4 max-w-none" />
@@ -159,7 +159,7 @@ export default {
           const regex = new RegExp(`(${this.escapeRegex(word)})`, 'gi')
           highlighted = highlighted.replace(
             regex,
-            '<strong class="font-semibold text-grey-900">$1</strong>'
+            '<strong class="font-semibold text-grey-900 dark:text-white">$1</strong>'
           )
         }
 
@@ -173,7 +173,7 @@ export default {
           const regex = new RegExp(`(${this.escapeRegex(word)})`, 'gi')
           highlighted = highlighted.replace(
             regex,
-            '<strong class="font-semibold text-grey-900">$1</strong>'
+            '<strong class="font-semibold text-grey-900 dark:text-white">$1</strong>'
           )
         }
         return highlighted

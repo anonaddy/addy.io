@@ -12,7 +12,7 @@ order: 5
 
 **Duo** and **Family** let one person pay for **full Pro** on more than one addy.io account. Each member keeps their own independent account (aliases, recipients, usernames and settings are not shared by default). One owner manages a single subscription and invites others by username. The owner can also optionally share [custom domains](/help/adding-a-custom-domain/) so members can create their own aliases on a domain the household already uses, and any member can [deliver an alias to another member](#delivering-aliases-to-family-members) without sharing their email address.
 
-See the [pricing section](/#pricing) on the home page for current prices, or the [blog post](/blog/introducing-duo-and-family-plans/) for an overview of the plans.
+See <span data-pricing>the [pricing page](/pricing/) for current prices, or </span>the [blog post](/blog/introducing-duo-and-family-plans/) for an overview of the plans.
 
 <h2 id="plan-sizes">Plan sizes</h2>
 

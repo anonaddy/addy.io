@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/addy.io-windscribe.png
+image: https://addy.io/assets/img/share/addy-io-has-partnered-with-windscribe.png
 section: content
 title: addy.io has partnered with Windscribe
 date: 2026-01-13

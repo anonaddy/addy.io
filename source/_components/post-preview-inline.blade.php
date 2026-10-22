@@ -1,5 +1,5 @@
 <div class="flex flex-col mb-4">
-    <div class="text-grey-700 font-medium my-2 flex flex-wrap items-center">
+    <div class="text-grey-700 dark:text-ink font-medium my-2 flex flex-wrap items-center">
         {{ $post->getDate()->format('F j, Y') }}
         @if ($post->author)
             <span class="mx-2">•</span>
@@ -20,7 +20,7 @@
         <a
             href="{{ $post->getUrl() }}/"
             title="Read more - {{ $post->title }}"
-            class="text-grey-900 font-extrabold"
+            class="text-grey-900 dark:text-white font-extrabold"
         >{{ $post->title }}</a>
     </h2>
 

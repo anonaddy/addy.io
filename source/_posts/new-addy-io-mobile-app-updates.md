@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/mobile-app-updates-rewritten.jpg
+image: https://addy.io/assets/img/share/new-addy-io-mobile-app-updates.png
 section: content
 title: 'New addy.io mobile app updates: Rewritten, not re-heated'
 date: 2026-10-05

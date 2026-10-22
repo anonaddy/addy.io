@@ -46,7 +46,7 @@ NOWPayments supports the following cryptocurrencies:
 - LNBT (Bitcoin Lightning)
 - and many more [full list here](https://nowpayments.io/supported-coins)
 
-There are some limitations such as a minimum invoice value of $10, so at the moment you can only pay with cryptocurrency for a yearly plan. The integration is currently quite basic so you cannot automatically swap plans yet, so please contact me if you wish to upgrade.
+There are some limitations such as a minimum invoice value<span data-pricing> of $10</span>, so at the moment you can only pay with cryptocurrency for a yearly plan. The integration is currently quite basic so you cannot automatically swap plans yet, so please contact me if you wish to upgrade.
 
 ## A new domain
 

@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/addy.io-ente.png
+image: https://addy.io/assets/img/share/addy-io-has-partnered-with-ente.png
 section: content
 title: addy.io has partnered with Ente
 date: 2026-10-09

@@ -36,14 +36,14 @@
                     $previousPage = $currentPage - 1;
                     $previousPath = $previousPage === 1 ? $basePath : $basePath.'/'.$previousPage;
                 @endphp
-                <a href="{{ $previousPath }}/" title="Previous Page" class="bg-grey-200 hover:bg-grey-400 rounded mr-3 px-5 py-3">&LeftArrow;</a>
+                <a href="{{ $previousPath }}/" title="Previous Page" class="bg-grey-200 dark:bg-line hover:bg-grey-400 rounded mr-3 px-5 py-3">&LeftArrow;</a>
             @endif
 
             @for ($pageNumber = 1; $pageNumber <= $totalPages; $pageNumber++)
                 @php
                     $pagePath = $pageNumber === 1 ? $basePath : $basePath.'/'.$pageNumber;
                 @endphp
-                <a href="{{ $pagePath }}/" title="Go to Page {{ $pageNumber }}" class="bg-grey-200 hover:bg-grey-400 text-indigo-700 rounded mr-3 px-5 py-3 {{ $currentPage === $pageNumber ? 'text-blue-600' : '' }}">{{ $pageNumber }}</a>
+                <a href="{{ $pagePath }}/" title="Go to Page {{ $pageNumber }}" class="bg-grey-200 dark:bg-line hover:bg-grey-400 text-indigo-700 dark:text-link rounded mr-3 px-5 py-3 {{ $currentPage === $pageNumber ? 'text-blue-600' : '' }}">{{ $pageNumber }}</a>
             @endfor
 
             @if ($currentPage < $totalPages)
@@ -51,7 +51,7 @@
                     $nextPage = $currentPage + 1;
                     $nextPath = $nextPage === 1 ? $basePath : $basePath.'/'.$nextPage;
                 @endphp
-                <a href="{{ $nextPath }}/" title="Next Page" class="bg-grey-200 hover:bg-grey-400 rounded mr-3 px-5 py-3">&RightArrow;</a>
+                <a href="{{ $nextPath }}/" title="Next Page" class="bg-grey-200 dark:bg-line hover:bg-grey-400 rounded mr-3 px-5 py-3">&RightArrow;</a>
             @endif
         </nav>
     @endif

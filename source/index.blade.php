@@ -6,1489 +6,227 @@ width: full
 @extends('_layouts.master')
 
 @section('body')
-
-<!--Hero-->
-<div class="bg-white">
-    <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
-        <div class="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-[minmax(0,28rem)_minmax(0,1fr)] lg:items-center lg:gap-x-10 lg:px-8 lg:py-48 xl:max-w-[90rem] xl:grid-cols-[minmax(0,32rem)_minmax(0,1fr)]">
-            <div class="px-6 lg:px-0 lg:pt-4">
-                <div class="mx-auto max-w-2xl">
-                    <div class="max-w-lg">
-                        <div class="mt-24 lg:mt-0">
-                            <a href="/blog/addy-io-now-blocks-tracking-pixels/" class="inline-flex items-center space-x-2">
-                                <span class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10">addy.io now blocks tracking pixels →</span>
-                            </a>
-                        </div>
-                        <h1 class="mt-10 text-4xl font-bold tracking-tight text-grey-900">A different email address for every website
-                        </h1>
-                        <p class="mt-6 text-lg leading-8 text-grey-600">addy.io creates <strong>aliases</strong> that forward to your real inbox. Share an alias instead of your main email address - then switch one off if it leaks or starts spamming you.
-                        </p>
-                        <div class="mt-10 flex items-center space-x-4">
-                            <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" data-umami-event="signup-button" data-umami-event-source="hero-cta">Get
-                                started free</a>
-                            <a href="https://github.com/anonaddy/anonaddy" target="_blank" rel="nofollow noreferrer noopener" class="inline-flex items-center">
-                                Open-source
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" height="20" preserveAspectRatio="xMinYMin" class="fill-current inline-block align-top ml-1.5">
-                                    <path d="M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091 2.026 2.026 0 0 1-.872-.39 1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813.282.186.566.28.852.28.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234 5.314 5.314 0 0 1-1.223-.507 3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365-.177-.564-.266-1.215-.266-1.952 0-1.049.342-1.942 1.027-2.68-.32-.788-.29-1.673.091-2.652.252-.079.625-.02 1.119.175.494.195.856.362 1.086.5.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143.39.98.424 1.864.103 2.653.685.737 1.028 1.63 1.028 2.68 0 .737-.089 1.39-.267 1.957-.177.568-.407 1.023-.689 1.366-.282.343-.633.63-1.053.865-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-20 sm:mt-24 md:mx-auto md:max-w-3xl lg:mx-0 lg:mt-0 lg:max-w-none lg:w-full xl:-mr-8 xl:w-[calc(100%+2rem)]">
-                <div class="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white ring-1 ring-indigo-50 md:-mr-20 lg:-mr-36" aria-hidden="true"></div>
-                <div class="overflow-hidden md:rounded-3xl">
-                    <div class="hero-animation-panel relative [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
-                        <div class="absolute -inset-y-px left-1/2 -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-white/5 ring-1 ring-inset ring-white/10 md:ml-20 lg:ml-36" aria-hidden="true"></div>
-                        <div class="relative overflow-hidden pt-4 pb-2 sm:pt-6 sm:pb-4">
-                            <div
-                                id="hero-lottie"
-                                class="hero-lottie w-full aspect-[1920/1000] lg:min-h-[22rem] xl:min-h-[26rem]"
-                            >
-                                <img
-                                    src="/assets/img/hero/addy-hero.svg"
-                                    alt="Illustration of email aliases forwarding messages to your inbox"
-                                    class="hero-lottie-fallback"
-                                    width="1920"
-                                    height="1000"
-                                    decoding="async"
-                                />
-                            </div>
-                            <div class="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10 md:rounded-3xl" aria-hidden="true"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-    </div>
-</div>
-
-<section class="bg-white py-8">
-    <div class="container max-w-5xl mx-auto m-8 border-b border-grey-100">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">How does it work?</h2>
-            <div class="w-full mb-4">
-                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-            </div>
-
-            <div class="flex flex-wrap">
-                <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">1. Choose a username</h3>
-                    <p class="text-grey-600 mb-4">Pick a username (for example <b>johndoe</b>). You can then use an email address like <b>anything@johndoe.addy.io</b> - the bit before the @ sign can be whatever you like.</p>
-
-                    <p class="text-grey-600 mb-4">Want to stay anonymous? Pick a username that is not tied to your real name and that you have not used elsewhere online.</p>
-
-                    <p class="text-grey-600">You can also use <b>shared domains</b> (e.g. @addy.io) so your addresses do not all contain the same username.</p>
-                </div>
-                <div class="w-full sm:w-1/2 p-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/register.svg" alt="Register">
-                </div>
-            </div>
-
-            <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/email_aliases.svg" alt="Email Aliases">
-                </div>
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">2. Give each site its own email</h3>
-                        <p class="text-grey-600 mb-4">When you sign up somewhere, invent a new alias instead of typing your real email address. You can think one up on the spot or generate one in advance - either way works.</p>
-                        <p class="text-grey-600 mb-4">Example: for a Groupon newsletter you might use <b>groupon@johndoe.addy.io</b>.</p>
-                        <p class="text-grey-600 mb-4">We add the alias to your dashboard when the first message arrives. You can reply and send from aliases without exposing your real email address.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="flex flex-wrap">
-                <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">3. Turn off what you do not want</h3>
-                    <p class="text-grey-600 mb-4">If an address starts getting junk mail, open your dashboard and <b>deactivate</b> that alias.</p>
-                    <p class="text-grey-600 mb-4">We then <b>silently discard</b> new mail to it - nothing reaches your inbox for that alias.</p>
-                    <p class="text-grey-600 mb-4"><b>Delete</b> an alias if you prefer senders to get a bounce instead of a quiet drop.</p>
-                </div>
-                <div class="w-full sm:w-1/2 p-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/dashboard.svg" alt="Manage Aliases">
-                </div>
-            </div>
-
-    </div>
-</section>
-
-<section class="bg-white py-8">
-    <div class="container max-w-5xl mx-auto m-8 border-b border-grey-100">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Features you will love</h1>
-            <div class="w-full mb-4">
-                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-            </div>
-
-            <div class="flex flex-wrap">
-                <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Mobile apps</h3>
-                    <p class="text-grey-600 mb-4">Beautiful mobile apps with a buttery smooth user experience to manage your account on the go.
-                    </p>
-
-                    <p class="text-grey-600 mb-4">Completely free to use whether you are using addy.io or your own self-hosted instance.</p>
-
-                    <p class="text-grey-600">The mobile apps are available on <a href="https://apps.apple.com/app/addy-io/id6563138633" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">iOS</a> and <a href="https://play.google.com/store/apps/details?id=host.stjin.anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Android</a> and are both <a href="https://github.com/anonaddy" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a>.</p>
-                </div>
-                <div class="w-full sm:w-1/2 p-6">
-                    <img class="w-full sm:h-72 mx-auto" src="/assets/img/aliases-mobile.svg" alt="Mobile Apps">
-                </div>
-            </div>
-
-            <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/browsers.svg" alt="Browser Extension">
-                </div>
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Browser extension</h3>
-                        <p class="text-grey-600 mb-4">Create a new alias in a couple of clicks while you browse, using our <a href="https://github.com/anonaddy/browser-extension" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">open-source</a> extension.</p>
-                        <p class="text-grey-600 mb-4">Available in <a href="https://addons.mozilla.org/en-GB/firefox/addon/addy_io/" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/addyio-anonymous-email-fo/iadbdpnoknmbdeolbapdackdcogdmjpe" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Chrome</a>, <a href="https://microsoftedge.microsoft.com/addons/detail/addyio-anonymous-email/ohjlgpcfncgkijjfmabldlgnccmgcehl" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Edge</a>, <a href="https://apps.apple.com/app/addy-io-extension/id6670220050" class="text-indigo-700 font-bold" target="_blank" rel="nofollow noopener noreferrer">Safari</a>, and other Chromium-based browsers such as Brave and Vivaldi.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap">
-                <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">GPG / OpenPGP encryption</h3>
-                    <p class="text-grey-600 mb-4">Bring your own GPG/OpenPGP public keys and add them per recipient.
-                    </p>
-
-                    <p class="text-grey-600">You can then easily toggle encryption on and off. With encryption on, all
-                        forwarded messages will be encrypted with your public key. Only you will be able to decrypt them
-                        with the corresponding private key. You can even hide and encrypt the email subject!</p>
-
-                    <p class="text-grey-600">This is great if you are using Gmail or Outlook and wish to prevent any
-                        inbox snooping.</p>
-
-                </div>
-                <div class="w-full sm:w-1/2 p-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/fingerprint.svg" alt="GPG/OpenPGP Encryption">
-                </div>
-            </div>
-
-            <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/domains.svg" alt="Custom Domains">
-                </div>
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Your own domain</h3>
-                        <p class="text-grey-600 mb-4">Bring a domain you control and create addresses like <b>anything@example.com</b>, the same way you do with your username subdomain.</p>
-                        <p class="text-grey-600 mb-4">You can also enable or disable the <b>catch-all</b> functionality
-                            for each of your domains.</p>
-                        <p class="text-grey-600 mb-4">Prefer not to use catch-all? You can still create aliases on the fly with a <b>regular expression</b> match.</p>
-                        <p class="text-grey-600 mb-4">If an address starts attracting spam, deactivate or delete it from your dashboard.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap">
-                <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Random aliases</h3>
-                    <p class="text-grey-600 mb-4">Don't want your username in every address? Generate one-off aliases from your dashboard.</p>
-                    <p class="text-grey-600 mb-4">They look like <b>x481n904@anonaddy.me</b> or <b>weekly-warning694@addy.io</b> - harder for anyone to tie back to you.</p>
-                    <p class="text-grey-600 mb-4">Useful when you want separation without a recognisable pattern.</p>
-                </div>
-                <div class="w-full sm:w-1/2 p-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/anonymous.svg" alt="UUID Aliases">
-                </div>
-            </div>
-
-            <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/mail.svg" alt="Reply to and Send from">
-                </div>
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Reply and send from aliases
-                        </h3>
-                        <p class="text-grey-600 mb-4">Reply <b>anonymously</b> to forwarded emails, the sender will
-                            receive the email as if it has come from the alias.</p>
-                        <p class="text-grey-600 mb-4">You can even initiate an email conversation by sending an email
-                            from one of your aliases.</p>
-                        <p class="text-grey-600 mb-4">Your real email address is <b>not revealed</b> when replying or
-                            sending from an alias.</p>
-                        <p class="text-grey-600 mb-4">This is a paid-only feature. <a href="#pricing" class="text-indigo-700 font-bold">Compare plans</a>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap">
-                <div class="w-full sm:w-1/2 p-6">
-                    <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Add additional usernames</h3>
-                    <p class="text-grey-600 mb-4">Add more usernames to the same account and use them like your first one.</p>
-                    <p class="text-grey-600 mb-4">Example: if you signed up as <b>johndoe</b>, add <b>johnsmith</b> and you can use <b>anything@johnsmith.addy.io</b> as well.</p>
-                    <p class="text-grey-600 mb-4">Handy for separating work, personal, or any other life area without juggling multiple accounts.</p>
-                </div>
-                <div class="w-full sm:w-1/2 p-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/usernames.svg" alt="Additional Usernames">
-                </div>
-            </div>
-
-            <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/recipients.svg" alt="Multiple Recipients">
-                </div>
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Multiple recipients per alias
-                        </h3>
-                        <p class="text-grey-600 mb-4">Route one alias to multiple real email addresses from your dashboard.</p>
-                        <p class="text-grey-600 mb-4">You can send bills or service alerts to you and your partner, forward support emails to a team inbox, or keep a backup address so important messages are still delivered if one mailbox is unavailable.</p>
-                        <p class="text-grey-600 mb-4">For example, <b>waterbills@yourdomain.com</b> can forward to both your personal inbox and your partner's inbox at the same time.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap">
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <div class="align-middle">
-                        <h3 class="text-3xl text-grey-800 font-bold leading-none mb-3">Developer API</h3>
-                        <p class="text-grey-600 mb-4">Automate aliases, recipients, domains, additional usernames and other account resources with the addy.io API.</p>
-                        <p class="text-grey-600 mb-4">Create an API key in your account settings to get started.</p>
-                        <p class="text-grey-600 mb-4"><a href="{{ $page->appUrl }}/docs/" class="text-indigo-700 font-bold">View API documentation</a></p>
-                    </div>
-                </div>
-                <div class="w-full sm:w-1/2 p-6 mt-6">
-                    <img class="w-full sm:h-64 mx-auto" src="/assets/img/api.svg" alt="API">
-                </div>
-            </div>
-
-    </div>
-</section>
-
-<section class="relative isolate bg-white pb-32 pt-24 sm:pt-32">
-  <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl" aria-hidden="true">
-    <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#3AE7E1] to-[#4055A8] clip-path-gradient"></div>
-  </div>
-  <div class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end" aria-hidden="true">
-    <div class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#3AE7E1] to-[#4055A8] xl:ml-0 xl:mr-[calc(50%-12rem)] clip-path-gradient"></div>
-  </div>
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-xl text-center">
-      <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Don't just take our word for it!</h2>
-      <p class="mt-2 text-3xl font-bold tracking-tight text-grey-900 sm:text-4xl">Trusted by thousands of users</p>
-    </div>
-    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-grey-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-      <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-grey-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-        <div class="p-6 text-lg leading-7 tracking-tight text-grey-900 sm:p-12 sm:text-xl sm:leading-8">
-            <p>“I've been using Addy.io for a few years now and it's been absolutely brilliant. Well worth the small amount of money for additional premium features which it seems are being increased and improved on a regular basis. This extension just makes the service even better. Great work!”</p>
-        </div>
-        <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-grey-900/10 px-6 py-4 sm:flex-nowrap">
-          <img class="h-10 w-10 flex-none rounded-full bg-grey-50" src="/assets/img/reviews/grant.png" alt="Grant Marshall">
-          <div class="flex-auto">
-            <div class="font-semibold">Grant Marshall</div>
-            @include('_components.stars')
+<div class="mk">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <a class="pill" href="/blog/addy-io-now-blocks-tracking-pixels/">addy.io now blocks tracking pixels →</a>
+        <h1 class="h1">A different email address for every website</h1>
+        <p>Sign up for things without giving out your real email. Every site gets its own address that forwards to your inbox, and you can switch any of them off in one click.</p>
+        <form class="hero-form" id="hero-form" action="{{ $page->appUrl }}/register" method="GET">
+          <label for="hero-username">Choose your username</label>
+          <div class="hero-form-row">
+            <label class="hero-field" for="hero-username">
+              <input id="hero-username" name="username" placeholder="johndoe" maxlength="20" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="hero-username-hint">
+              <span class="hero-suffix" aria-hidden="true">.anonaddy.com</span>
+            </label>
+            <button class="btn btn-primary" type="submit" data-umami-event="signup-button" data-umami-event-source="hero-cta">Get started free</button>
           </div>
-        </figcaption>
-      </figure>
-      <div class="space-y-8 xl:contents xl:space-y-0">
-        <div class="space-y-8 xl:row-span-2">
-          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-grey-900/5">
-            <div class="text-grey-900">
-                <p>“Great service. Efficient, customer services fast and easy to use. Kudos.”</p>
-            </div>
-            <figcaption class="mt-6 flex items-center gap-x-4">
-            <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/lorenzo.png" alt="Lorenzo">
-              <div>
-                <div class="font-semibold">Lorenzo</div>
-                @include('_components.stars')
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-grey-900/5">
-            <div class="text-grey-900">
-              <p>“Great for protecting your real email address. Browser extension works perfectly.”</p>
-            </div>
-            <figcaption class="mt-6 flex items-center gap-x-4">
-              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/kieran.jpg" alt="Kieran Colfer">
-              <div>
-                <div class="font-semibold">Kieran Colfer</div>
-                @include('_components.stars')
-              </div>
-            </figcaption>
-          </figure>
-          <!-- More testimonials... -->
-        </div>
-        <div class="space-y-8 xl:row-start-1">
-          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-grey-900/5">
-            <div class="text-grey-900">
-              <p>“This is a must have tool for all privacy conscious people on the web.”</p>
-            </div>
-            <figcaption class="mt-6 flex items-center gap-x-4">
-              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/jurgen.webp" alt="Jürgen V.">
-              <div>
-                <div class="font-semibold">Jürgen V.</div>
-                @include('_components.stars')
-              </div>
-            </figcaption>
-          </figure>
-
-          <!-- More testimonials... -->
-        </div>
+          <div class="hero-hint" id="hero-username-hint">Your aliases will look like <span class="mono">shop@<b class="u" id="hero-username-echo">johndoe</b>.anonaddy.com</span></div>
+        </form>
+        <div class="hero-checks"><span>✓ Free forever plan</span><span>✓ No card required</span><span>✓ Open source</span><a class="text-link" href="#how">See how it works →</a></div>
       </div>
-      <div class="space-y-8 xl:contents xl:space-y-0">
-        <div class="space-y-8 xl:row-start-1">
-          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-grey-900/5">
-            <div class="text-grey-900">
-              <p>“Smooth and easy in use. No missing emails. I became a happy paying customer.”</p>
-            </div>
-            <figcaption class="mt-6 flex items-center gap-x-4">
-              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/dan.png" alt="Dan">
-              <div>
-                <div class="font-semibold">Dan</div>
-                @include('_components.stars')
-              </div>
-            </figcaption>
-          </figure>
-
-          <!-- More testimonials... -->
-        </div>
-        <div class="space-y-8 xl:row-span-2">
-          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-grey-900/5">
-            <div class="text-grey-900">
-              <p>“Powerful, and has a gorgeous GUI.”</p>
-            </div>
-            <figcaption class="mt-6 flex items-center gap-x-4">
-              <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/roke.jpeg" alt="Roke Beedell">
-              <div>
-                <div class="font-semibold">Roke Beedell</div>
-                @include('_components.stars')
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-grey-900/5">
-            <div class="text-grey-900">
-              <p>“I love this service. Solved my whole spam problem. The developer seems dedicated and passionate about security and privacy.”</p>
-            </div>
-            <figcaption class="mt-6 flex items-center gap-x-4">
-            <img class="h-10 w-10 rounded-full bg-grey-50" src="/assets/img/reviews/R.png" alt="Richard">
-              <div>
-                <div class="font-semibold">Richard</div>
-                @include('_components.stars')
-              </div>
-            </figcaption>
-          </figure>
-
-          <!-- More testimonials... -->
+      <div class="hero-art">
+        <div class="hero-panel">
+          <div id="hero-lottie" role="img" aria-label="Illustration of email aliases forwarding messages to your inbox">
+            <img class="hero-lottie-fallback" src="/assets/img/hero/addy-hero.svg" alt="" width="1920" height="1000" decoding="async">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="pricing" class="bg-white py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-4xl text-center">
-            <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-grey-800">Pricing</h2>
-                <div class="w-full mb-4">
-                    <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-                </div>
-        </div>
-        <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-grey-600">Simple plans. Simple prices.</p>
-
-        <!-- xs to lg -->
-        <div class="mx-auto mt-12 max-w-md space-y-8 sm:mt-16 lg:hidden">
-            <section class="p-8">
-                <h3 id="tier-free" class="text-sm font-semibold leading-6 text-grey-900">Free</h3>
-                <p class="mt-2 flex items-baseline gap-x-1 text-grey-900">
-                    <span class="text-4xl font-bold"><span class="currency-symbol">$</span>0</span>
-                    <span class="text-sm font-semibold">/month</span>
-                </p>
-                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-free" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-free-mobile-cta">Sign
-                    Up</a>
-                <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-grey-900 list-none">
-                    <li>
-                        <ul role="list" class="space-y-4 list-none">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Unlimited Standard Aliases </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>10</b> Active Shared Domain Aliases </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul role="list" class="space-y-4">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>1</b> Recipient (real email address) </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>2</b> Available Alias Domains </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul role="list" class="space-y-4">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>10MB</b> Monthly Bandwidth Limit </span>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <section class="p-8">
-                <h3 id="tier-lite" class="text-sm font-semibold leading-6 text-grey-900">Lite</h3>
-                <p class="mt-2 flex items-baseline gap-x-1 text-grey-900">
-                    <span class="text-4xl font-bold"><span class="currency-symbol">$</span>1</span>
-                    <span class="text-sm font-semibold">/month</span>
-                </p>
-                <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly</p>
-                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-lite" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-lite-mobile-cta">Sign
-                    Up</a>
-                <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-grey-900">
-                    <li>
-                        <ul role="list" class="space-y-4">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Unlimited Standard Aliases </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>50</b> Active Shared Domain Aliases </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>5</b> Recipients (real email addresses) </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>6</b> Available Alias Domains </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span>
-                                    <b>1</b> Custom Domain
-                                </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span>
-                                    <b>5</b> Additional Usernames
-                                </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span>
-                                    <b>5</b> Rules
-                                </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul role="list" class="space-y-4">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>50</b> Anonymous Replies / Sends Per Day </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Access Paid Plan Settings </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Priority Email Queue </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> View, download and resend Failed Deliveries </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Blocklist to block senders </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Block Tracking Pixels </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <a href="/help/sending-a-webhook/" class="text-indigo-700">Send webhooks</a> </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Option to Disable Catch-All </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>100MB</b> Monthly Bandwidth Limit </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul role="list" class="space-y-4">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Priority Support </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul role="list" class="space-y-4">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Access to <a href="/perks/" class="inline-flex items-center">exclusive discounts</a> </span>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <section class="p-8 rounded-xl bg-grey-400/5 ring-1 ring-inset ring-grey-200">
-                <h3 id="tier-pro" class="text-sm font-semibold leading-6 text-grey-900">Pro</h3>
-                <p class="mt-2 flex items-baseline gap-x-1 text-grey-900">
-                    <span class="text-4xl font-bold"><span class="currency-symbol">$</span>3</span>
-                    <span class="text-sm font-semibold">/month</span>
-                </p>
-                <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly, <span class="currency-symbol">$</span>4
-                    Billed Monthly</p>
-                <a href="{{ $page->appUrl }}/register" aria-describedby="tier-pro" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500" data-umami-event="signup-button" data-umami-event-source="pricing-pro-mobile-cta">Sign
-                    Up</a>
-                <ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-grey-900">
-                    <li>
-                        <ul role="list" class="space-y-4">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Unlimited Standard Aliases </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>Unlimited</b> Active Shared Domain Aliases </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>30</b> Recipient (real email addresses) </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>7</b> Available Alias Domains </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span>
-                                    <b>20</b> Custom Domains
-                                </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span>
-                                    <b>20</b> Additional Usernames
-                                </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span>
-                                    <b>20</b> Rules
-                                </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul role="list" class="space-y-4">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>200</b> Anonymous Replies / Sends Per Day </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Access Paid Plan Settings </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Priority Email Queue </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> View, download and resend Failed Deliveries </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Blocklist to block senders </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Block Tracking Pixels </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <a href="/help/sending-a-webhook/" class="text-indigo-700">Send webhooks</a> </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Option to Disable Catch-All </span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> <b>Unlimited</b> Monthly Bandwidth </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul role="list" class="space-y-4">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Priority Support </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul role="list" class="space-y-4">
-                            <li class="flex gap-x-3">
-                                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                                </svg>
-                                <span> Access to <a href="/perks/" class="inline-flex items-center">exclusive discounts</a> </span>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-        </div>
-
-        <!-- lg+ -->
-        <div class="isolate mt-20 hidden lg:block">
-            <div class="relative -mx-8">
-                <div class="absolute inset-x-4 inset-y-0 -z-10 flex">
-                    <div class="flex w-1/4 px-4 ml-3/4" aria-hidden="true">
-                        <div class="w-full rounded-t-xl border-x border-t border-grey-900/10 bg-grey-400/5"></div>
-                    </div>
-                </div>
-                <table class="w-full table-fixed border-separate border-spacing-x-8 text-left">
-                    <caption class="sr-only">
-                        Pricing plan comparison
-                    </caption>
-                    <colgroup>
-                        <col class="w-1/4">
-                        <col class="w-1/4">
-                        <col class="w-1/4">
-                        <col class="w-1/4">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <td></td>
-                            <th scope="col" class="px-6 pt-6 xl:px-8 xl:pt-8">
-                                <div class="text-sm font-semibold leading-7 text-grey-900">Free</div>
-                            </th>
-                            <th scope="col" class="px-6 pt-6 xl:px-8 xl:pt-8">
-                                <div class="text-sm font-semibold leading-7 text-grey-900">Lite</div>
-                            </th>
-                            <th scope="col" class="px-6 pt-6 xl:px-8 xl:pt-8">
-                                <div class="text-sm font-semibold leading-7 text-grey-900">Pro</div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row"><span class="sr-only">Price</span></th>
-                            <td class="px-6 pt-2 xl:px-8">
-                                <div class="flex items-baseline gap-x-1 text-grey-900">
-                                    <span class="text-4xl font-bold"><span class="currency-symbol">$</span>0</span>
-                                    <span class="text-sm font-semibold leading-6">/month</span>
-                                </div>
-                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-free-cta">Sign
-                                    Up</a>
-                            </td>
-                            <td class="px-6 pt-2 xl:px-8">
-                                <div class="flex items-baseline gap-x-1 text-grey-900">
-                                    <span class="text-4xl font-bold"><span class="currency-symbol">$</span>1</span>
-                                    <span class="text-sm font-semibold leading-6">/month</span>
-                                </div>
-                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-lite-cta">Sign
-                                    Up</a>
-                            </td>
-                            <td class="px-6 pt-2 xl:px-8">
-                                <div class="flex items-baseline gap-x-1 text-grey-900">
-                                    <span class="text-4xl font-bold"><span class="currency-symbol">$</span>3</span>
-                                    <span class="text-sm font-semibold leading-6">/month</span>
-                                </div>
-                                <a href="{{ $page->appUrl }}/register" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white hover:bg-indigo-500" data-umami-event="signup-button" data-umami-event-source="pricing-pro-cta">Sign
-                                    Up</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup" colspan="2" class="pb-4 text-sm font-semibold leading-6 text-grey-900 pt-8">
-                                Features
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/10"></div>
-                            </th>
-                            <th>
-                                <p class="text-xs text-grey-500 mb-0 text-center font-normal">Billed Yearly</p>
-                            </th>
-                            <th>
-                                <p class="text-xs text-grey-500 mb-0 text-center font-normal">Billed Yearly, <span class="currency-symbol">$</span>4 Billed Monthly</p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Unlimited Standard Aliases
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Lite</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Active Shared Domain Aliases
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">10</div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">50</div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">Unlimited</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Recipients (real email addresses)
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">1</div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">5</div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">30</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Available Alias Domains
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">2
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">6
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">7
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Custom Domains
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">1</div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">20</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Additional Usernames
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">5</div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">20</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Rules
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">5</div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">20</div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-grey-900 pt-16">
-                                Usage
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/10"></div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Anonymous Reply + Send From Daily Limit
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">50</div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">200</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Access Paid Plan Settings
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Lite</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Priority Email Queue
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Lite</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                View, download and resend Failed Deliveries
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Lite</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Blocklist to block senders
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Block Tracking Pixels
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Lite</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                <a href="/help/sending-a-webhook/" class="text-indigo-700">Send webhooks</a>
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Lite</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Option to Disable Catch-All
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Lite</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Alias Auto Creation with Regex
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Lite</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Monthly Bandwidth Limit
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">10MB</div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">100MB</div>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <div class="text-center text-sm leading-6 text-grey-800 font-bold">Unlimited</div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-grey-900 pt-16">
-                                Support
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/10"></div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Priority Support
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Lite</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th scope="colgroup" colspan="4" class="pb-4 text-sm font-semibold leading-6 text-grey-900 pt-16">
-                                Perks
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/10"></div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="py-4 text-sm font-normal leading-6 text-grey-900">
-                                Access to <a href="/perks/" class="inline-flex items-center">exclusive discounts</a>
-                                <div class="absolute inset-x-8 mt-4 h-px bg-grey-900/5"></div>
-                            </th>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5 text-grey-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="sr-only">Not included in Free</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Lite</span>
-                            </td>
-                            <td class="px-6 py-4 xl:px-8">
-                                <svg class="mx-auto h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <circle cx="10" cy="10" r="10" fill="#E0E8F9">
-                                        </circle>
-                                        <polyline stroke="#4055A8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="6 10 8.667 12.667 14 7.333"></polyline>
-                                    </g>
-                                </svg>
-                                <span class="sr-only">Included in Pro</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="mx-auto mt-20 max-w-4xl border-t border-grey-900/10 pt-16 sm:mt-24">
-            <div class="mx-auto max-w-2xl text-center">
-                <h3 class="text-3xl font-bold tracking-tight text-grey-900 sm:text-4xl">Duo &amp; Family</h3>
-                <p class="mt-4 text-lg leading-8 text-grey-600">Share Pro with people you trust. One person pays, each member gets full Pro on their own independent account. Optionally share a custom domain so everyone can create aliases on a domain you own, or deliver an alias to another member without sharing email addresses.</p>
-            </div>
-
-            <div class="mx-auto mt-12 grid max-w-lg grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-2">
-                <section class="flex flex-col rounded-xl p-8 ring-1 ring-inset ring-grey-200">
-                    <h4 id="tier-duo" class="text-sm font-semibold leading-6 text-grey-900">Duo</h4>
-                    <p class="mt-1 text-sm text-grey-600">2 members total (you + 1)</p>
-                    <p class="mt-4 flex items-baseline gap-x-1 text-grey-900">
-                        <span class="text-4xl font-bold"><span class="currency-symbol">$</span>4.50</span>
-                        <span class="text-sm font-semibold">/month</span>
-                    </p>
-                    <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly, <span class="currency-symbol">$</span>6 Billed Monthly</p>
-                    <a href="{{ $page->appUrl }}/register" aria-describedby="tier-duo" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-duo-cta">Sign
-                        Up</a>
-                    <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-grey-900">
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> Everything in <b>Pro</b> for each member </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> Independent accounts </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> Optionally <b>share custom domains</b> </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> <b>Deliver aliases</b> to each other </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> Invite by existing addy.io username </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> One subscription </span>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="flex flex-col rounded-xl p-8 ring-1 ring-inset ring-grey-200">
-                    <h4 id="tier-family" class="text-sm font-semibold leading-6 text-grey-900">Family</h4>
-                    <p class="mt-1 text-sm text-grey-600">5 members total (you + 4)</p>
-                    <p class="mt-4 flex items-baseline gap-x-1 text-grey-900">
-                        <span class="text-4xl font-bold"><span class="currency-symbol">$</span>7.50</span>
-                        <span class="text-sm font-semibold">/month</span>
-                    </p>
-                    <p class="text-xs text-grey-500 mb-0 font-normal">Billed Yearly, <span class="currency-symbol">$</span>10 Billed Monthly</p>
-                    <a href="{{ $page->appUrl }}/register" aria-describedby="tier-family" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300" data-umami-event="signup-button" data-umami-event-source="pricing-family-cta">Sign
-                        Up</a>
-                    <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-grey-900">
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> Everything in <b>Pro</b> for each member </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> Independent accounts </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> Optionally <b>share custom domains</b> </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> <b>Deliver aliases</b> to each other </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> Invite by existing addy.io username </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                            </svg>
-                            <span> One subscription </span>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </div>
+  <section class="trust" aria-label="Why people trust addy.io">
+    <div class="wrap trust-row">
+      <span class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM16 12v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-3.5 7.1"/></svg>5M+ aliases created</span>
+      <a class="trust-link trust-item" href="https://www.trustpilot.com/review/addy.io" target="_blank" rel="nofollow noreferrer noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>{{ $page->socialProof['trustpilot']['score'] }} on Trustpilot</a>
+      <a class="trust-link trust-item" href="https://github.com/anonaddy/anonaddy" target="_blank" rel="nofollow noreferrer noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>Open source on GitHub · {{ $page->socialProof['github']['starsFormatted'] }} ★</a>
+      <a class="trust-link trust-item" href="/blog/addy-io-passes-independent-security-audit/"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4"/></svg>Audited by Securitum</a>
+      <a class="trust-link trust-item" href="/features/#apps"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM11 18h2"/></svg>iOS · Android · Chrome · Firefox</a>
     </div>
-</section>
+  </section>
 
-<div class="bg-white">
-    <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-            <h2 class="text-3xl font-bold tracking-tight text-grey-900 sm:text-4xl">Protect your privacy.<br>Eliminate
-                spam.</h2>
-            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-grey-600">Join thousands of others who are already
-                protecting their privacy online and keeping their inboxes tidy.</p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="{{ $page->appUrl }}/register" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" data-umami-event="signup-button" data-umami-event-source="newsletter-cta">Secure
-                    your inbox today
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block ml-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg>
-                </a>
-            </div>
-        </div>
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="eyebrow">// how it works</div>
+      <h2 class="h2 reveal">Set up in three steps</h2>
+      <ol class="grid grid-3 reveal mt-9 mb-0 p-0 list-none">
+        <li class="card lift">
+          <div class="step-num">1</div>
+          <h3>Choose a username</h3>
+          <p>Pick any username, for example <b class="u">johndoe</b>. You get your own domain: <span class="mono text-ink"><span class="u">johndoe</span>.anonaddy.com</span>. To stay anonymous, choose one that isn't linked to your real name.</p>
+        </li>
+        <li class="card lift">
+          <div class="step-num">2</div>
+          <h3>Give each site its own email</h3>
+          <div class="demo" aria-hidden="true"><span class="label">Email</span><span class="type">shop@<span class="u">johndoe</span>.anonaddy.com</span></div>
+          <p>Make one up on the spot. It appears in your dashboard when the first email arrives.</p>
+        </li>
+        <li class="card lift">
+          <div class="step-num">3</div>
+          <h3>Turn off what you don't want</h3>
+          <div class="demo spread" aria-hidden="true"><span class="alias">old-forum@<span class="u">johndoe</span>.anonaddy.com</span><span class="toggle"></span></div>
+          <p>If an alias starts getting junk, deactivate it. New mail to it is silently discarded.</p>
+        </li>
+      </ol>
     </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow">// why it matters</div>
+      <h2 class="h2 reveal max-w-[760px]">Your email address is the key that links every account you own.</h2>
+      <div class="why reveal">
+        <div class="why-head" aria-hidden="true"><span></span><span>Without addy.io</span><span class="why-with-label">With addy.io</span></div>
+        <div class="why-row">
+          <div class="why-topic"><div class="risk">Data breach</div><h3>A site gets hacked</h3></div>
+          <div class="why-cell why-without"><span class="why-cell-label">Without addy.io</span><p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Your real address ends up on every leaked list.</p></div>
+          <div class="why-cell why-with"><span class="why-cell-label">With addy.io</span><p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Only that one alias leaks. Delete it and move on.</p></div>
+        </div>
+        <div class="why-row">
+          <div class="why-topic"><div class="risk">Spam</div><h3>Your address gets sold</h3></div>
+          <div class="why-cell why-without"><span class="why-cell-label">Without addy.io</span><p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>Spam arrives with no way to tell who sold your address.</p></div>
+          <div class="why-cell why-with"><span class="why-cell-label">With addy.io</span><p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>You see which alias got the spam, so you know who sold it. Switch it off and the spam stops.</p></div>
+        </div>
+        <div class="why-row">
+          <div class="why-topic"><div class="risk">Tracking</div><h3>Companies link your profiles</h3></div>
+          <div class="why-cell why-without"><span class="why-cell-label">Without addy.io</span><p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>One address ties your accounts together across every site.</p></div>
+          <div class="why-cell why-with"><span class="why-cell-label">With addy.io</span><p><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Unique aliases can't be matched across sites, and tracking pixels are stripped before mail reaches you.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="features-head">
+        <h2 class="h2 reveal m-0">Everything you need, nothing you don't</h2>
+        <p class="lead">Browser extension, mobile apps and your own domain, all managed from one dashboard.</p>
+      </div>
+      <div class="grid bento reveal">
+        <div class="tile span-2 lift"><h3>Your alias dashboard</h3><p>See every alias, how many emails it forwarded, and turn any off in one click.</p>
+          @include('_partials.mockups.dashboard')
+        </div>
+        <div class="tile t2 lift"><h3>Browser extension</h3><p>Create an alias right inside any signup form.</p>
+          <div class="popup-frame">@include('_partials.mockups.extension-field')</div>
+        </div>
+        <div class="tile t1 lift"><h3>Reply anonymously</h3><p>Reply and send from an alias. Your real address never appears.</p></div>
+        <div class="tile lift"><h3>Use your own domain</h3><p>Bring a domain you own and make aliases on it.</p></div>
+        <div class="tile lift"><h3>GPG / OpenPGP</h3><p>Encrypt forwarded emails with your public key.</p></div>
+        <div class="tile t3 span-2 lift"><div class="flex-[1_1_240px]"><h3>iOS and Android apps</h3><p class="mt-2">Manage aliases on the go, with open-source mobile apps.</p></div><div class="phone-frame">@include('_partials.mockups.phone')</div></div>
+        <div class="tile navy lift"><h3>Blocks tracking pixels</h3><p>Stops senders knowing when you opened their email. Each email links to a report of what was removed, and your dashboard shows how many were blocked.</p><div class="px-row" aria-hidden="true"><span class="px"></span>1×1 tracker removed</div></div>
+      </div>
+      <div class="grid more">
+        <div class="card lift"><div class="mini-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg></div><h3>Random aliases</h3><p>One-off addresses like <span class="mono">x481n904@anonaddy.me</span> with no username in them.</p></div>
+        <div class="card lift"><div class="mini-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Additional usernames</h3><p>Separate work and personal under one account.</p></div>
+        <div class="card lift"><div class="mini-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5M8 3H3v5M12 22v-8.3a4 4 0 0 0-1.2-2.8L3 3M21 3l-7.8 7.8"/></svg></div><h3>Multiple recipients</h3><p>Send one alias to several real inboxes at once.</p></div>
+        <div class="card lift"><div class="mini-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8zM7 7h.01"/></svg></div><h3>Labels</h3><p>Tag aliases like Shopping or Banking and filter by them.</p></div>
+        <div class="card lift"><div class="mini-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.5V19l4 2v-8.5L22 3z"/></svg></div><h3>Rules</h3><p>Act on emails that match conditions you set: block senders, set labels, rewrite the subject or send a webhook.</p></div>
+        <div class="card lift"><div class="mini-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM4.9 4.9l14.2 14.2"/></svg></div><h3>Blocklist</h3><p>Block specific senders or whole domains across all your aliases.</p></div>
+        <div class="card lift"><div class="mini-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.6 7.6a5.5 5.5 0 1 1-7.8 7.8 5.5 5.5 0 0 1 7.8-7.8zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div><h3>Works with Bitwarden</h3><p>Bitwarden's generator can create an addy.io alias as it makes your password.</p></div>
+        <div class="card lift"><div class="mini-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div><h3>Developer API &amp; webhooks</h3><p>Automate aliases from code, and trigger a webhook when a rule matches an email.</p></div>
+      </div>
+      <div class="center-link"><a class="text-link" href="/features/">See every feature in detail →</a></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <div class="reviews-head reveal">
+        <div>
+          <div class="eyebrow">// what users say</div>
+          <h2 class="h2" id="reviews-title">“Solved my whole spam problem”</h2>
+        </div>
+        <div class="arrows">
+          <button class="icon-btn" type="button" id="rev-prev" aria-label="Previous reviews"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="icon-btn" type="button" id="rev-next" aria-label="Next reviews"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+      </div>
+      <div class="reviews-row" id="reviews" tabindex="0" aria-label="Reviews, scroll sideways">
+        <figure class="review card lift"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>“I love this service. Solved my whole spam problem. The developer seems dedicated and passionate about security and privacy.”</blockquote><figcaption><img src="/assets/img/reviews/R-80.webp" alt="" width="40" height="40">Richard</figcaption></figure>
+        <figure class="review card lift"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>“I've been using Addy.io for a few years now and it's been absolutely brilliant. Well worth the small amount of money for additional premium features.”</blockquote><figcaption><img src="/assets/img/reviews/grant-80.webp" alt="" width="40" height="40">Grant Marshall</figcaption></figure>
+        <figure class="review card lift"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>“Great for protecting your real email address. Browser extension works perfectly.”</blockquote><figcaption><img src="/assets/img/reviews/kieran-80.webp" alt="" width="40" height="40">Kieran Colfer</figcaption></figure>
+        <figure class="review card lift"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>“This is a must have tool for all privacy conscious people on the web.”</blockquote><figcaption><img src="/assets/img/reviews/jurgen-80.webp" alt="" width="40" height="40">Jürgen V.</figcaption></figure>
+        <figure class="review card lift"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>“Smooth and easy in use. No missing emails. I became a happy paying customer.”</blockquote><figcaption><img src="/assets/img/reviews/dan-80.webp" alt="" width="40" height="40">Dan</figcaption></figure>
+        <figure class="review card lift"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>“Powerful, and has a gorgeous GUI.”</blockquote><figcaption><img src="/assets/img/reviews/roke-80.webp" alt="" width="40" height="40">Roke Beedell</figcaption></figure>
+        <figure class="review card lift"><div class="stars" aria-label="5 stars">★★★★★</div><blockquote>“Great service. Efficient, customer services fast and easy to use. Kudos.”</blockquote><figcaption><img src="/assets/img/reviews/lorenzo-80.webp" alt="" width="40" height="40">Lorenzo</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pricing" id="pricing" data-pricing>
+    <div class="wrap">
+      <h2 class="h2 reveal m-0">Free to start. <span class="currency-symbol">$</span>1 a month to go further.</h2>
+      <div class="grid plans reveal">
+        <div class="plan">
+          <div class="name">Free</div>
+          <div class="tag">Everything you need to get started</div>
+          <div class="price"><span class="currency-symbol">$</span>0<small>/month</small></div>
+          <div class="billing">Free forever</div>
+          <ul><li>✓ Unlimited aliases on your username</li><li>✓ 10 random aliases, like x481n904@anonaddy.me</li><li>✓ Forwards to 1 inbox</li><li>✓ Alias domains @anonaddy.com and @anonaddy.me</li><li>✓ 10MB of forwarded email a month</li></ul>
+          <a class="cta" href="{{ $page->appUrl }}/register" data-umami-event="signup-button" data-umami-event-source="pricing-free-cta">Sign up free</a>
+        </div>
+        <div class="plan">
+          <div class="name">Lite</div>
+          <div class="tag">Reply privately and use your own domain</div>
+          <div class="price"><span class="currency-symbol">$</span>1<small>/month</small></div>
+          <div class="billing">Billed yearly</div>
+          <ul><li>✓ Reply and send from aliases</li><li>✓ Use 1 domain you own</li><li>✓ More alias domains, including @addy.io</li><li>✓ Forward to up to 5 inboxes</li><li>✓ Block tracking pixels</li></ul>
+          <a class="cta" href="{{ $page->appUrl }}/register" data-umami-event="signup-button" data-umami-event-source="pricing-lite-cta">Choose Lite</a>
+        </div>
+        <div class="plan pro">
+          <div class="badge">BEST VALUE</div>
+          <div class="name">Pro</div>
+          <div class="tag">No limits on aliases or bandwidth</div>
+          <div class="price"><span class="currency-symbol">$</span>3<small>/month</small></div>
+          <div class="billing">Billed yearly, or <span class="currency-symbol">$</span>4 monthly</div>
+          <ul><li>✓ Unlimited random aliases</li><li>✓ Reply and send from aliases</li><li>✓ Use up to 20 domains you own</li><li>✓ Forward to up to 30 inboxes</li><li>✓ Every alias domain, including @addy.io</li><li>✓ No monthly email limit</li></ul>
+          <a class="cta" href="{{ $page->appUrl }}/register" data-umami-event="signup-button" data-umami-event-source="pricing-pro-cta">Choose Pro</a>
+        </div>
+      </div>
+      <div class="shared">
+        <span><b>Duo &amp; Family:</b> Pro for 2 people from <span class="currency-symbol">$</span>4.50/mo, or up to 5 from <span class="currency-symbol">$</span>7.50/mo.</span>
+        <a class="text-link" href="/pricing/#shared-plans">See shared plans →</a>
+      </div>
+      <p class="perks">Paid plans also include exclusive discounts from privacy partners like Ente, Kagi, Tuta and Windscribe. <a class="text-link" href="/perks/">See all perks →</a></p>
+      <p class="mt-[26px] mb-0"><a class="text-link" href="/pricing/" data-umami-event="pricing-click" data-umami-event-source="homepage-compare">Compare all plans →</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap faq">
+      <div class="eyebrow text-center">// questions</div>
+      <h2 class="h2 reveal text-center">Before you sign up</h2>
+      <div class="faq-list">
+        <details open><summary>Do I need to change my email provider?</summary><p>No. addy.io forwards to the inbox you already use, whether that's Gmail, Outlook, Proton or any other provider.</p></details>
+        <details><summary>Is it really free?</summary><p>Yes. The free plan includes unlimited <a class="text-link" href="/help/terminology/#standard-alias">standard aliases</a> with no time limit.<span data-pricing> Paid plans start at <span class="currency-symbol">$</span>1/month when you want your own domain, replies from aliases and higher limits.</span></p></details>
+        <details><summary>Does addy.io read my emails?</summary><p>No. Emails are forwarded automatically and aren't stored, unless a delivery fails and you've turned on storing failed deliveries. For extra protection, turn on GPG / OpenPGP encryption so forwarded emails are encrypted with your public key and only you can read them.</p></details>
+        <details><summary>Can I reply without revealing my real address?</summary><p>Yes, on the Lite and Pro plans. Replies and new emails are sent from your alias, so the recipient never sees your real address.</p></details>
+        <details><summary>Will forwarded emails end up in spam?</summary><p>Most forwarded email lands straight in your inbox. Now and then a provider may filter a message, especially when you first start using addy.io. If that happens, mark it as “not spam” so your inbox learns. <a class="text-link" href="/help/what-to-do-when-forwarded-email-is-marked-as-spam/">Our guide shows how for Gmail, Outlook and other providers</a>. If an alias starts getting unwanted email, switch the alias off instead of marking messages as spam, which harms delivery for everyone.</p></details>
+        <details><summary>Will websites accept my alias?</summary><p>Almost all do. A few sites wrongly treat alias services as throwaway email and block their domains. If that happens, try another addy.io alias domain or your own domain, and <a class="text-link" href="/help/report-a-website-that-is-blocking-addy-io-alias-domains/">let us know about the site</a> so we can ask them to allow addy.io.</p></details>
+        <details><summary>Am I locked in to addy.io?</summary><p>No. You can export a list of your aliases at any time. Aliases on a domain you own are fully portable: point the domain somewhere else and they keep working. Aliases on addy.io’s own domains, including your username, only work through addy.io, so use your own domain for anything you might want to move later. addy.io is also open source, so you can run it on your own server.</p></details>
+        <details><summary>How is addy.io different from other alias services?</summary><p>addy.io is independent and open source, so anyone can check how it works or run it themselves. The free plan includes unlimited aliases on your own username, and it works with any email provider on any device. You can also use your own domains, reply from aliases and encrypt forwarded emails with GPG / OpenPGP.</p></details>
+        <details><summary>Who's behind addy.io?</summary><p>addy.io is built and run by Will Browning, an independent web developer in the UK and a long-time advocate for online privacy and open-source software. There's no venture capital funding. Paid subscriptions cover the servers, so the service never relies on ads or selling your data.</p></details>
+      </div>
+      <p class="mt-[22px] mb-0 text-center"><a class="text-link" href="/faq/">More answers in the FAQ →</a></p>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <div class="final-box">
+        <h2 class="h2">Your next sign-up doesn't need your real email.</h2>
+        <p>Free forever plan, no card required.</p>
+        <a class="btn" href="{{ $page->appUrl }}/register" data-umami-event="signup-button" data-umami-event-source="footer-cta">Get started free</a>
+      </div>
+    </div>
+  </section>
 </div>
-
-<div class="bg-white py-16 sm:py-24">
-    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="relative isolate overflow-hidden bg-grey-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
-            <img src="/assets/img/cover.jpg" alt="addy.io Newsletter Background" class="absolute inset-0 -z-10 brightness-[0.35] w-full h-full object-none">
-
-            <div class="">
-                <h2 class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">Product
-                    news and updates</h2>
-                <p class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-grey-100">Occasional emails - no spam. Unsubscribe any time.</p>
-                <form action="{{ $page->appUrl }}/newsletter/subscribe" method="POST" accept-charset="utf-8" class="mx-auto mt-10 flex max-w-md flex-col items-center gap-y-4">
-                    <div class="flex w-full gap-x-4">
-                        <label for="email-address" class="sr-only">Email address</label>
-                        <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6" placeholder="Enter your email">
-                        <div class="hidden" aria-hidden="true">
-                            <label for="hp-home">HP</label>
-                            <input type="text" name="hp" id="hp-home" tabindex="-1" autocomplete="off">
-                        </div>
-                        <button type="submit" class="flex-none cursor-pointer rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-grey-900 shadow-sm hover:bg-grey-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" data-umami-event="newsletter-submit" data-umami-event-source="newsletter-form-home">Notify
-                            me</button>
-                    </div>
-                    <div class="cf-turnstile" data-sitekey="{{ $page->turnstileNewsletterSiteKey }}" data-action="newsletter" data-theme="dark" data-size="flexible" data-appearance="interaction-only"></div>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-@stop
+@endsection
 
 @push('scripts')
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 <script type="module" src="{{ $page->vite('source/_assets/js/hero-animation.js') }}"></script>
+<script type="module" src="{{ $page->vite('source/_assets/js/home.js') }}"></script>
 <script>
     fetch("{{ $page->appUrl }}/default-currency").then((e => e.json())).then((e => {
         [...document.getElementsByClassName("currency-symbol")].forEach((n => n.innerText = e.currency))

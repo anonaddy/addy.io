@@ -1,5 +1,6 @@
 <?php
 
+use App\Listeners\FetchSocialProof;
 use App\Listeners\GenerateCategoryPagination;
 use App\Listeners\GenerateHelpIndex;
 use App\Listeners\GenerateIndex;
@@ -19,6 +20,7 @@ use App\Listeners\GenerateSitemap;
  * });
  */
 
+$events->beforeBuild(FetchSocialProof::class);
 $events->afterCollections(GenerateCategoryPagination::class);
 $events->afterBuild(GenerateSitemap::class);
 $events->afterBuild(GenerateIndex::class);

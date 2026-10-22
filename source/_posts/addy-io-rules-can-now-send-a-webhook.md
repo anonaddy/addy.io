@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/help/rules/rule-webhooks.png
+image: https://addy.io/assets/img/share/addy-io-rules-can-now-send-a-webhook.png
 section: content
 title: addy.io rules can now send a webhook
 date: 2026-10-14
@@ -31,7 +31,7 @@ Webhooks are available on **Lite and Pro** as part of the Rules system. They are
 
 For how to add the action, what is in the payload, and how to check the signature, see [Sending a webhook](/help/sending-a-webhook/) in the Help Centre.
 
-Compare plans on the [home page pricing section](/#pricing).
+<span data-pricing>Compare plans on the [pricing page](/pricing/).</span>
 
 ## Feedback and suggestions
 

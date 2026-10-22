@@ -6,16 +6,18 @@ use TightenCo\Jigsaw\Jigsaw;
 
 class GenerateIndex
 {
+    use RemovesPricing;
+
     public function handle(Jigsaw $jigsaw)
     {
         $data = collect($jigsaw->getCollection('posts')->map(function ($page) use ($jigsaw) {
-            $content = strip_tags($page->getContent());
+            $content = strip_tags($this->withoutPricing($page->getContent()));
             $content = preg_replace('/\s+/', ' ', $content);
             $content = trim($content);
 
             return [
                 'title' => $page->title,
-                'snippet' => strip_tags($jigsaw->getConfig('getExcerpt')($page, 180)),
+                'snippet' => strip_tags($this->withoutPricing($jigsaw->getConfig('getExcerpt')($page, 180))),
                 'content' => $content,
                 'categories' => $page->categories,
                 'link' => rightTrimPath($jigsaw->getConfig('baseUrl')).$page->getPath().'/', // add trailing slash

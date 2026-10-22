@@ -1,9 +1,165 @@
 @import 'tailwindcss';
+@import './marketing.css';
 @config "../../../tailwind.config.js";
 @source "../../../source/**/*.{blade.php,blade.md,md,html,vue,js}";
 
+/* Self-hosted variable fonts (SIL Open Font License, see /assets/fonts/*-OFL.txt).
+   Latin and Latin Extended only; browsers download a file only when the page uses its characters. */
+@font-face {
+  font-family: 'Plus Jakarta Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url('/assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2') format('woff2-variations');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url('/assets/fonts/plus-jakarta-sans-latin-ext-wght-normal.woff2') format('woff2-variations');
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url('/assets/fonts/plus-jakarta-sans-latin-wght-italic.woff2') format('woff2-variations');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url('/assets/fonts/jetbrains-mono-latin-wght-normal.woff2') format('woff2-variations');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url('/assets/fonts/jetbrains-mono-latin-ext-wght-normal.woff2') format('woff2-variations');
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+
+/* Dark mode is driven by the .dark class on <html>, set in the master layout
+   from the visitor's saved choice or their system preference. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+
+  --canvas: #ffffff;
+  --subtle: #f5f7fa;
+  --card: #ffffff;
+  --line: #e4e7eb;
+  --ink: #1f2933;
+  --heading: #19216c;
+  --muted: #52606d;
+  --accent: #4055a8;
+  --on-accent: #ffffff;
+  --link: #35469c;
+  --code: #06737f;
+  --warn: #a30664;
+  --feature: #19216c;
+  --tint-indigo: #e0e8f9;
+  --tint-indigo-line: #e0e8f9;
+  --tint-cyan: #e1fcf8;
+  --tint-cyan-line: #e1fcf8;
+  --tint-pink: #ffe3ec;
+  --tint-pink-line: #ffe3ec;
+  --star: #b7791f;
+  --shadow: rgba(25, 33, 108, 0.14);
+
+  /* Product mockup (SVG) colours */
+  --m-app: #ffffff;
+  --m-input: #e0e8f9;
+  --m-table: #ffffff;
+  --m-link: #35469c;
+  --m-warn: #a30664;
+  --m-row-hi: #fff1f5;
+  --m-off: #cbd2d9;
+  --m-ok: #e1fcf8;
+  --m-ok-text: #06737f;
+  --m-screen: #f5f7fa;
+  --m-card: #ffffff;
+  --shop-bg: #dcfce7;
+  --shop-text: #15803d;
+  --read-bg: #dbeafe;
+  --read-text: #1d4ed8;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.dark {
+  color-scheme: dark;
+  --table-line: var(--line);
+
+  --canvas: #0b1020;
+  --subtle: #111830;
+  --card: #161f3a;
+  --line: #26324f;
+  --ink: #e4e7eb;
+  --heading: #ffffff;
+  --muted: #aab4c0;
+  --accent: #3ae7e1;
+  --on-accent: #0b1020;
+  --link: #3ae7e1;
+  --code: #3ae7e1;
+  --warn: #ff8cba;
+  --feature: #1e2a78;
+  --tint-indigo: #1a2452;
+  --tint-indigo-line: #2a376e;
+  --tint-cyan: #0c2a33;
+  --tint-cyan-line: #0d4f5b;
+  --tint-pink: #2b1028;
+  --tint-pink-line: #55123f;
+  --star: #f0b429;
+  --shadow: rgba(0, 0, 0, 0.4);
+
+  --m-app: #1b2333;
+  --m-input: #2a3441;
+  --m-table: #222b3b;
+  --m-link: #98aeeb;
+  --m-warn: #ff8cba;
+  --m-row-hi: #33182b;
+  --m-off: #52606d;
+  --m-ok: #0c2a33;
+  --m-ok-text: #3ae7e1;
+  --m-screen: #0f1524;
+  --m-card: #1b2333;
+  --shop-bg: #14532d;
+  --shop-text: #86efac;
+  --read-bg: #1e3a8a;
+  --read-text: #bfdbfe;
+}
+
 html {
   scroll-behavior: smooth;
+  scrollbar-color: var(--line) var(--canvas);
+  accent-color: var(--accent);
+  caret-color: var(--link);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -14,6 +170,8 @@ html {
 
 body {
   font-size: 16px;
+  background-color: var(--canvas);
+  color: var(--ink);
 }
 
 .gradient {
@@ -56,7 +214,7 @@ body {
 @layer base {
   a {
     @apply no-underline;
-    @apply text-indigo-600;
+    @apply text-indigo-600 dark:text-link;
   }
 
   blockquote {
@@ -66,13 +224,13 @@ body {
     @apply italic;
     @apply my-8;
     @apply pl-6;
-    @apply text-grey-800;
+    @apply text-grey-800 dark:text-ink;
     @apply text-lg;
   }
 
   code {
-    @apply bg-cyan-100;
-    @apply text-cyan-900;
+    @apply bg-cyan-100 dark:bg-tint-cyan;
+    @apply text-cyan-900 dark:text-cyan-300;
     @apply px-2;
     @apply py-px;
     @apply rounded;
@@ -100,7 +258,7 @@ body {
     @apply leading-tight;
     @apply mb-4;
     @apply mt-8;
-    @apply text-grey-900;
+    @apply text-grey-900 dark:text-white;
   }
 
   h1:first-child,
@@ -128,7 +286,7 @@ body {
   }
 
   h3.faq-category {
-    @apply underline decoration-grey-400 decoration-2 underline-offset-4;
+    @apply underline decoration-grey-400 dark:decoration-grey-600 decoration-2 underline-offset-4;
   }
 
   h4 {
@@ -148,7 +306,7 @@ body {
 
   hr {
     @apply border-b;
-    @apply border-indigo-200;
+    @apply border-indigo-200 dark:border-line;
     @apply my-12;
     @apply rounded-full;
   }
@@ -189,16 +347,28 @@ body {
 
   .article-with-heading-links table {
     @apply my-6 w-full border-collapse text-sm;
-    border: 1px solid theme('colors.grey.200');
+    border: 1px solid var(--table-line, theme('colors.grey.200'));
+  }
+
+  /* Long URLs and file paths wrap instead of widening the page on phones */
+  main :is(p, li, td, blockquote) {
+    overflow-wrap: break-word;
+  }
+
+  /* On phones, wide tables scroll sideways inside themselves instead of widening the page */
+  @media (max-width: 767px) {
+    .article-with-heading-links table {
+      @apply block overflow-x-auto;
+    }
   }
 
   .article-with-heading-links th,
   .article-with-heading-links td {
-    @apply border border-grey-200 px-4 py-2 align-top text-left;
+    @apply border border-grey-200 dark:border-line px-4 py-2 align-top text-left;
   }
 
   .article-with-heading-links thead th {
-    @apply bg-grey-50 font-semibold text-grey-900;
+    @apply bg-grey-50 dark:bg-subtle font-semibold text-grey-900 dark:text-white;
   }
 
   p {
@@ -236,8 +406,8 @@ body {
   }
 
   ::selection {
-    @apply bg-indigo-500;
-    @apply text-white;
+    background-color: #3ae7e1;
+    color: #05313a;
   }
 }
 
@@ -306,15 +476,40 @@ input[name='search'].transition-border {
   opacity: 0;
 }
 
-.hero-animation-panel {
-  background: radial-gradient(circle at 50% 50%, #183f50 0%, #161938 55%, #161938 100%);
+/* Buttons and links that feel pressed when clicked */
+.press {
+  transition:
+    transform 160ms var(--ease-out),
+    opacity 160ms var(--ease-out);
 }
 
-#hero-lottie svg,
-.hero-lottie-fallback {
-  display: block;
-  width: 108%;
-  max-width: none;
-  margin-left: -4%;
-  height: auto;
+.press:active {
+  transform: scale(0.97);
+}
+
+/* Phone menu fades in rather than appearing instantly */
+#mobile-menu:not(.hidden) .mobile-menu-panel {
+  animation: menu-in 180ms var(--ease-out);
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .press:active {
+    transform: none;
+  }
+
+  #mobile-menu:not(.hidden) .mobile-menu-panel {
+    animation: none;
+  }
+}
+
+/* App Store mode (see the layout): never show prices or pricing links */
+.appstore [data-pricing] {
+  display: none !important;
 }

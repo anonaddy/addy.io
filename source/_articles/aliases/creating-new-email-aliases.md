@@ -42,7 +42,7 @@ This works the same way for [custom domains](/help/adding-a-custom-domain/) and 
 
 - **Shared domains** (e.g. `@anonaddy.me`) - you must use [Option 2](#option-2-create-an-alias-in-the-dashboard) below. Giving out a random `@anonaddy.me` address that was never generated will not work.
 - **Catch-all disabled** - mail to unknown local parts on that username or domain is rejected unless you use [alias auto create regex](/help/understanding-catch-all-and-alias-auto-create-regex-for-a-username/) (paid plans; catch-all must be off while regex is in use).
-- **Hourly limits** - very large numbers of new aliases in a short time may hit your plan’s hourly creation limit. See [pricing](/#pricing) if you need higher limits.
+- **Hourly limits** - very large numbers of new aliases in a short time may hit your plan’s hourly creation limit.<span data-pricing> See [pricing](/pricing/) if you need higher limits.</span>
 
 If an alias receives spam, you can [deactivate](/help/deactivating-email-aliases/) or [delete](/help/deleting-an-alias/) it. You can also [forget](/help/forgetting-an-alias/) a standard alias so the address can be used again later (behaviour differs for shared domains).
 
@@ -74,7 +74,7 @@ Use this for **all shared-domain aliases** and whenever you want a specific form
 
 4. Click **Create Alias**.
 
-If you have reached your **shared-domain alias limit** on a free or Lite plan, the button may show **Subscribe To Add More** or **Upgrade To Add More** instead - see [pricing](/#pricing).
+If you have reached your **shared-domain alias limit** on a free or Lite plan, the button may show **Subscribe To Add More** or **Upgrade To Add More** instead<span data-pricing> - see [pricing](/pricing/)</span>.
 
 <h3 id="your-new-address">Your new address</h3>
 

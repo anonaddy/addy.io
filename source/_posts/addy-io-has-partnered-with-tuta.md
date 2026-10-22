@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/addy.io-tuta.png
+image: https://addy.io/assets/img/share/addy-io-has-partnered-with-tuta.png
 section: content
 title: addy.io has partnered with Tuta
 date: 2026-03-05

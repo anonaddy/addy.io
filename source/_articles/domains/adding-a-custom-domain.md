@@ -16,7 +16,7 @@ For a **subdomain** (e.g. `mail.example.com`), use the same process but differen
 
 <h2 id="before-you-start">Before you start</h2>
 
-- **Plan** - Custom domains require a **Lite** or **Pro** subscription (free accounts cannot add domains). Lite allows **1** custom domain; Pro, Duo and Family allow **20** (see [pricing](/#pricing)).
+- **Plan** - Custom domains require a **Lite** or **Pro** subscription (free accounts cannot add domains). Lite allows **1** custom domain; Pro, Duo and Family allow **20**<span data-pricing> (see [pricing](/pricing/))</span>.
 - **DNS access** - You need to add records at your domain registrar or DNS host (Cloudflare, Namecheap, etc.).
 - **Domain format** - Enter `example.com` only. Do not include `http://`, `https://`, or paths.
 - **Not a recipient domain** - The domain must not already be used as a [verified recipient](/help/adding-a-recipient/) address on your account.

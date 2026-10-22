@@ -341,7 +341,7 @@ addy.io is independently run and open-source; there is no venture capital fundin
 
 The most common example is **replying to and sending from an alias** (anonymous replies and new outbound mail from your alias address). These are **not included on the Free plan**. If you try to reply or send from an alias on a Free account, the message will not be delivered and you will receive an email notification that the feature requires a paid plan.
 
-Other paid-only features include **custom domains**, **additional usernames**, **rules**, **blocklist**, access to some **alias domains**, higher **bandwidth**, and more **shared-domain aliases**. A full comparison is on the [pricing section](/#pricing) of the home page.
+Other paid-only features include **custom domains**, **additional usernames**, **rules**, **blocklist**, access to some **alias domains**, higher **bandwidth**, and more **shared-domain aliases**.<span data-pricing> A full comparison is on the [pricing page](/pricing/).</span>
 
 **Why not allow free users to reply or send even once a day or once a week?** Outbound mail from aliases is frequently abused for spam, phishing, and bulk signups. Even a small free allowance would attract bad actors and could damage the reputation of addy.io mail servers, which would affect email delivery for all users.
 
@@ -380,7 +380,7 @@ Yes. **Duo** (2 members total, including the owner) and **Family** (5 members to
 
 You invite existing addy.io accounts by username. Members who already have their own paid subscription need to cancel it before accepting an invite. You can pay with card / PayPal (monthly or yearly) or cryptocurrency (yearly only). Duo and Family are not available through the App Store or Play Store.
 
-See the [pricing section](/#pricing) on the home page for current prices, and [Duo and Family plans](/help/duo-and-family-plans/) in the Help Centre for how to subscribe, invite members, share custom domains, deliver aliases to each other and manage seats.
+See <span data-pricing>the [pricing page](/pricing/) for current prices, and </span>[Duo and Family plans](/help/duo-and-family-plans/) in the Help Centre for how to subscribe, invite members, share custom domains, deliver aliases to each other and manage seats.
 
 <h3 class="faq-category">Plans & limits</h3>
 
@@ -411,7 +411,7 @@ The average email is about 76800 bytes (75KB), this is roughly equivalent to 7,0
 If you get close to your limit (over 80%) you'll be sent an email letting you know. What happens after you go over depends on your plan:
 
 * **Free** - the server will respond to any delivery attempts to your aliases with `552 5.2.2 Recipient address rejected: User over quota` until your bandwidth resets the next calendar month, or you [upgrade](https://app.addy.io/settings/subscription) to Lite or Pro.
-* **Lite** - the first time you hit the 100MB limit in a calendar year, your usage for that month is automatically reset to 0 and forwarding continues. You get **one free reset per calendar year**. If you hit the limit again in the same year, you can buy a one-off reset for $5 / €5 / £5 from the [subscription page](https://app.addy.io/settings/subscription), wait until the next calendar month, or upgrade to Pro. A reset only zeros this month's usage; your monthly 100MB limit stays the same.
+* **Lite** - the first time you hit the 100MB limit in a calendar year, your usage for that month is automatically reset to 0 and forwarding continues. You get **one free reset per calendar year**. If you hit the limit again in the same year, you can <span data-pricing>buy a one-off reset for $5 / €5 / £5 from the [subscription page](https://app.addy.io/settings/subscription), </span>wait until the next calendar month, or upgrade to Pro. A reset only zeros this month's usage; your monthly 100MB limit stays the same.
 * **Pro** - there is no monthly bandwidth limit.
 
 <h3 class="faq-category">Apps & extensions</h3>

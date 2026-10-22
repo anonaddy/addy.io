@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/addy.io-kagi.png
+image: https://addy.io/assets/img/share/addy-io-has-partnered-with-kagi.png
 section: content
 title: addy.io has partnered with Kagi
 date: 2026-02-10

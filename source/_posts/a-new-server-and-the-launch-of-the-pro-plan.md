@@ -24,7 +24,7 @@ Their servers are located in Amsterdam, Netherlands and run entirely on Dutch wi
 
 ## The launch of the Pro plan
 
-A few users had voiced their concerns about the longevity of the service and asked how I was able to keep it running for free. The Pro plan will be how this service covers its operating costs, you can find details about pricing and features on the [home page](https://addy.io) of this site.
+A few users had voiced their concerns about the longevity of the service and asked how I was able to keep it running for free. The Pro plan will be how this service covers its operating costs<span data-pricing>, you can find details about pricing and features on the [home page](https://addy.io) of this site</span>.
 
 I started the open beta to try to iron out any existing bugs and to make the service as stable as I could before officially launching.
 

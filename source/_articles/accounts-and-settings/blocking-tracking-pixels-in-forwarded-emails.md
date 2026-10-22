@@ -28,7 +28,7 @@ addy.io removes matching images from the HTML before the email is forwarded to y
 4. Select **Enabled** or **Disabled**.
 5. Click **Update Block Tracking Pixels**.
 
-On the Free plan the option is locked. You will see **Enabled (Subscribe To Unlock)** and a **Subscribe To Unlock** button instead of the update button. The setting can look enabled, but addy.io does not remove tracking pixels until you have a Lite or Pro subscription. See [pricing](/#pricing) and [Why are some features paid only?](/faq/#why-are-some-features-paid-only).
+On the Free plan the option is locked. You will see **Enabled (Subscribe To Unlock)** and a **Subscribe To Unlock** button instead of the update button. The setting can look enabled, but addy.io does not remove tracking pixels until you have a Lite or Pro subscription. See <span data-pricing>[pricing](/pricing/) and </span>[Why are some features paid only?](/faq/#why-are-some-features-paid-only).
 
 The setting applies to all of your aliases. There is no per-alias control.
 

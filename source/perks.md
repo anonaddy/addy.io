@@ -13,89 +13,89 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
 
 <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
     <ul role="list" class="mx-auto grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-8">
-        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+        <li class="rounded-2xl bg-grey-50 dark:bg-subtle px-8 py-10">
             <div class="flex items-center justify-center gap-2.5 mb-4">
-                <img src="/assets/img/notesnook.svg" alt="Notesnook Logo" class="max-h-12 object-contain" />
-                <a href="https://notesnook.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer">Notesnook</a>
+                <img src="/assets/img/notesnook.svg" alt="Notesnook Logo" class="max-h-12 object-contain dark:box-content dark:rounded-lg dark:bg-white dark:px-3 dark:py-2" />
+                <a href="https://notesnook.com/" class="text-2xl font-semibold text-grey-900 dark:text-white hover:text-grey-800 dark:hover:text-ink" target="_blank" rel="nofollow noopener noreferrer">Notesnook</a>
             </div>
-            <p class="text-sm/6 text-grey-600">An end-to-end encrypted, open source note-taking application focused on user privacy and ease of use.</p>
-            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off your first year.</p>
+            <p class="text-sm/6 text-grey-600 dark:text-muted">An end-to-end encrypted, open source note-taking application focused on user privacy and ease of use.</p>
+            <p class="text-sm/6 text-grey-900 dark:text-white font-semibold">addy.io paid subscribers get 25% off your first year.</p>
             <div class="mt-6">
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
-        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+        <li class="rounded-2xl bg-grey-50 dark:bg-subtle px-8 py-10">
             <div class="flex items-center justify-center gap-2.5 mb-4">
-                <img src="/assets/img/windscribe.svg" alt="Windscribe Logo" class="max-h-12 object-contain" />
-                <a href="https://windscribe.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer">Windscribe</a>
+                <img src="/assets/img/windscribe.svg" alt="Windscribe Logo" class="max-h-12 object-contain dark:box-content dark:rounded-lg dark:bg-white dark:px-3 dark:py-2" />
+                <a href="https://windscribe.com/" class="text-2xl font-semibold text-grey-900 dark:text-white hover:text-grey-800 dark:hover:text-ink" target="_blank" rel="nofollow noopener noreferrer">Windscribe</a>
             </div>
-            <p class="text-sm/6 text-grey-600">Court-proven, audited no-logs VPN service with post-quantum safe encryption.</p>
-            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get a 3 month Pro trial, then the annual Pro plan for 49 USD per year.</p>
+            <p class="text-sm/6 text-grey-600 dark:text-muted">Court-proven, audited no-logs VPN service with post-quantum safe encryption.</p>
+            <p class="text-sm/6 text-grey-900 dark:text-white font-semibold">addy.io paid subscribers get a 3 month Pro trial, then the annual Pro plan for 49 USD per year.</p>
             <div class="mt-6">
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
-        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+        <li class="rounded-2xl bg-grey-50 dark:bg-subtle px-8 py-10">
             <div class="flex items-center justify-center gap-2.5 mb-4">
-                <img src="/assets/img/kagi.svg" alt="Kagi Logo" class="max-h-12 object-contain" />
-                <a href="https://kagi.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer">Kagi</a>
+                <img src="/assets/img/kagi.svg" alt="Kagi Logo" class="max-h-12 object-contain dark:box-content dark:rounded-lg dark:bg-white dark:px-3 dark:py-2" />
+                <a href="https://kagi.com/" class="text-2xl font-semibold text-grey-900 dark:text-white hover:text-grey-800 dark:hover:text-ink" target="_blank" rel="nofollow noopener noreferrer">Kagi</a>
             </div>
-            <p class="text-sm/6 text-grey-600">A premium, privacy-focused, ad-free search engine that prioritises user experience over advertising revenue.</p>
-            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 3 months of Kagi's Professional plan for free.</p>
+            <p class="text-sm/6 text-grey-600 dark:text-muted">A premium, privacy-focused, ad-free search engine that prioritises user experience over advertising revenue.</p>
+            <p class="text-sm/6 text-grey-900 dark:text-white font-semibold">addy.io paid subscribers get 3 months of Kagi's Professional plan for free.</p>
             <div class="mt-6">
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
-        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+        <li class="rounded-2xl bg-grey-50 dark:bg-subtle px-8 py-10">
             <div class="flex items-center justify-center gap-2.5 mb-4">
-                <a href="https://tuta.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer"><img src="/assets/img/tuta.svg" alt="Tuta Logo" class="max-h-12 object-contain" /></a>
+                <a href="https://tuta.com/" class="text-2xl font-semibold text-grey-900 dark:text-white hover:text-grey-800 dark:hover:text-ink" target="_blank" rel="nofollow noopener noreferrer"><img src="/assets/img/tuta.svg" alt="Tuta Logo" class="max-h-12 object-contain dark:box-content dark:rounded-lg dark:bg-white dark:px-3 dark:py-2" /></a>
             </div>
-            <p class="text-sm/6 text-grey-600">Take back your data with Tuta's encrypted email, calendar and contacts.</p>
-            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off your first year.</p>
+            <p class="text-sm/6 text-grey-600 dark:text-muted">Take back your data with Tuta's encrypted email, calendar and contacts.</p>
+            <p class="text-sm/6 text-grey-900 dark:text-white font-semibold">addy.io paid subscribers get 25% off your first year.</p>
             <div class="mt-6">
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
-        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+        <li class="rounded-2xl bg-grey-50 dark:bg-subtle px-8 py-10">
             <div class="flex items-center justify-center gap-2.5 mb-4">
-                <a href="https://www.easyoptouts.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer"><img src="/assets/img/easyoptoutslogo.svg" alt="EasyOptOuts Logo" class="max-h-12 object-contain" /></a>
+                <a href="https://www.easyoptouts.com/" class="text-2xl font-semibold text-grey-900 dark:text-white hover:text-grey-800 dark:hover:text-ink" target="_blank" rel="nofollow noopener noreferrer"><img src="/assets/img/easyoptoutslogo.svg" alt="EasyOptOuts Logo" class="max-h-12 object-contain dark:box-content dark:rounded-lg dark:bg-white dark:px-3 dark:py-2" /></a>
             </div>
-            <p class="text-sm/6 text-grey-600">EasyOptOuts is an automated data removal service that scrubs your name, address, and phone number from 200+ data brokers and people-search sites.</p>
-            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off for life. Each coupon covers 5 sign-ups, so you can protect yourself and the people you care about.</p>
+            <p class="text-sm/6 text-grey-600 dark:text-muted">EasyOptOuts is an automated data removal service that scrubs your name, address, and phone number from 200+ data brokers and people-search sites.</p>
+            <p class="text-sm/6 text-grey-900 dark:text-white font-semibold">addy.io paid subscribers get 25% off for life. Each coupon covers 5 sign-ups, so you can protect yourself and the people you care about.</p>
             <div class="mt-6">
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
             <p class="mt-6 mb-0 text-xs text-grey-400">US customers only.</p>
         </li>
-        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+        <li class="rounded-2xl bg-grey-50 dark:bg-subtle px-8 py-10">
             <div class="flex items-center justify-center gap-2.5 mb-4">
-                <img src="/assets/img/leavemealone.png" alt="Leave Me Alone Logo" class="max-h-12 object-contain" />
-                <a href="https://leavemealone.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer">Leave Me Alone</a>
+                <img src="/assets/img/leavemealone.png" alt="Leave Me Alone Logo" class="max-h-12 object-contain dark:box-content dark:rounded-lg dark:bg-white dark:px-3 dark:py-2" />
+                <a href="https://leavemealone.com/" class="text-2xl font-semibold text-grey-900 dark:text-white hover:text-grey-800 dark:hover:text-ink" target="_blank" rel="nofollow noopener noreferrer">Leave Me Alone</a>
             </div>
-            <p class="text-sm/6 text-grey-600">A privacy-first tool to unsubscribe from newsletters and manage your inbox.</p>
-            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 10% off a 7 day pass, 45% off the Yearly Casual Plan, or 65% off the Yearly InboxZero Hero plan.</p>
+            <p class="text-sm/6 text-grey-600 dark:text-muted">A privacy-first tool to unsubscribe from newsletters and manage your inbox.</p>
+            <p class="text-sm/6 text-grey-900 dark:text-white font-semibold">addy.io paid subscribers get 10% off a 7 day pass, 45% off the Yearly Casual Plan, or 65% off the Yearly InboxZero Hero plan.</p>
             <div class="mt-6">
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
-        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+        <li class="rounded-2xl bg-grey-50 dark:bg-subtle px-8 py-10">
             <div class="flex items-center justify-center gap-2.5 mb-4">
-                <img src="/assets/img/obscura.svg" alt="Obscura Logo" class="max-h-12 object-contain" />
-                <a href="https://obscura.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer">Obscura</a>
+                <img src="/assets/img/obscura.svg" alt="Obscura Logo" class="max-h-12 object-contain dark:box-content dark:rounded-lg dark:bg-white dark:px-3 dark:py-2" />
+                <a href="https://obscura.com/" class="text-2xl font-semibold text-grey-900 dark:text-white hover:text-grey-800 dark:hover:text-ink" target="_blank" rel="nofollow noopener noreferrer">Obscura</a>
             </div>
-            <p class="text-sm/6 text-grey-600">The first VPN that can't log your activity and outsmarts internet censorship.</p>
-            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off Obscura for up to a year. The code works on all platforms for top-ups and subscriptions.</p>
+            <p class="text-sm/6 text-grey-600 dark:text-muted">The first VPN that can't log your activity and outsmarts internet censorship.</p>
+            <p class="text-sm/6 text-grey-900 dark:text-white font-semibold">addy.io paid subscribers get 25% off Obscura for up to a year. The code works on all platforms for top-ups and subscriptions.</p>
             <div class="mt-6">
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
         </li>
-        <li class="rounded-2xl bg-grey-50 px-8 py-10">
+        <li class="rounded-2xl bg-grey-50 dark:bg-subtle px-8 py-10">
             <div class="flex items-center justify-center gap-2.5 mb-4">
-                <img src="/assets/img/ente.png" alt="Ente Logo" class="max-h-12 object-contain" />
-                <a href="https://ente.com/" class="text-2xl font-semibold text-grey-900 hover:text-grey-800" target="_blank" rel="nofollow noopener noreferrer">Ente</a>
+                <img src="/assets/img/ente.png" alt="Ente Logo" class="max-h-12 object-contain dark:box-content dark:rounded-lg dark:bg-white dark:px-3 dark:py-2" />
+                <a href="https://ente.com/" class="text-2xl font-semibold text-grey-900 dark:text-white hover:text-grey-800 dark:hover:text-ink" target="_blank" rel="nofollow noopener noreferrer">Ente</a>
             </div>
-            <p class="text-sm/6 text-grey-600">Ente is a privacy-first, end-to-end encrypted photo and video storage service that ensures only you can access your memories.</p>
-            <p class="text-sm/6 text-grey-900 font-semibold">addy.io paid subscribers get 25% off for the first 12 months on any Ente plan. Apply the code on photos.ente.com before you purchase.</p>
+            <p class="text-sm/6 text-grey-600 dark:text-muted">Ente is a privacy-first, end-to-end encrypted photo and video storage service that ensures only you can access your memories.</p>
+            <p class="text-sm/6 text-grey-900 dark:text-white font-semibold">addy.io paid subscribers get 25% off for the first 12 months on any Ente plan. Apply the code on photos.ente.com before you purchase.</p>
             <div class="mt-6">
                 <a href="https://app.addy.io/settings/perks" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Redeem Offer</a>
             </div>
@@ -104,33 +104,33 @@ description: Where privacy is the default. Exclusive perks from privacy-first co
 </div>
 
 <div class="mx-auto max-w-3xl px-6 pt-24 text-center lg:px-8">
-    <h2 class="text-3xl font-semibold tracking-tight text-grey-900">Want to partner with addy.io?</h2>
-    <p class="mt-6 text-base/7 text-grey-600">If you run a privacy-first company and would like to offer a perk to addy.io subscribers, get in touch. Partnerships are usually reciprocal discounts for each other's customers, and addy.io does not take a commission.</p>
+    <h2 class="text-3xl font-semibold tracking-tight text-grey-900 dark:text-white">Want to partner with addy.io?</h2>
+    <p class="mt-6 text-base/7 text-grey-600 dark:text-muted">If you run a privacy-first company and would like to offer a perk to addy.io subscribers, get in touch. Partnerships are usually reciprocal discounts for each other's customers, and addy.io does not take a commission.</p>
     <div class="mt-8">
-        <a href="/contact/" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get in touch</a>
+        <a href="/contact/" class="inline-block rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get in touch</a>
     </div>
 </div>
 
-<div class="bg-white">
+<div>
   <div class="mx-auto max-w-7xl px-6 pt-24 lg:px-8">
-    <h2 class="text-3xl font-semibold tracking-tight text-grey-900 text-center">Frequently asked questions</h2>
-    <dl class="mt-12 divide-y divide-grey-900/10">
+    <h2 class="text-3xl font-semibold tracking-tight text-grey-900 dark:text-white text-center">Frequently asked questions</h2>
+    <dl class="mt-12 divide-y divide-grey-900/10 dark:divide-line">
       <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
-        <dt class="text-base/7 font-semibold text-grey-900 lg:col-span-5">Who can take advantage of these offers?</dt>
+        <dt class="text-base/7 font-semibold text-grey-900 dark:text-white lg:col-span-5">Who can take advantage of these offers?</dt>
         <dd class="mt-4 lg:col-span-7 lg:mt-0">
-          <p class="text-base/7 text-grey-600">All addy.io paid subscribers (Lite, Pro, Duo or Family, including family plan members) can claim these offers.</p>
+          <p class="text-base/7 text-grey-600 dark:text-muted">All addy.io paid subscribers (Lite, Pro, Duo or Family, including family plan members) can claim these offers.</p>
         </dd>
       </div>
       <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
-        <dt class="text-base/7 font-semibold text-grey-900 lg:col-span-5">How do I redeem one of these offers?</dt>
+        <dt class="text-base/7 font-semibold text-grey-900 dark:text-white lg:col-span-5">How do I redeem one of these offers?</dt>
         <dd class="mt-4 lg:col-span-7 lg:mt-0">
-          <p class="text-base/7 text-grey-600">Login to your account at <a href="https://app.addy.io">app.addy.io</a>, click your username in the top right of the page to open the dropdown menu > "addy.io Perks" > "Redeem code" for the offer you wish to receive.</p>
+          <p class="text-base/7 text-grey-600 dark:text-muted">Login to your account at <a href="https://app.addy.io">app.addy.io</a>, click your username in the top right of the page to open the dropdown menu > "addy.io Perks" > "Redeem code" for the offer you wish to receive.</p>
         </dd>
       </div>
       <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
-        <dt class="text-base/7 font-semibold text-grey-900 lg:col-span-5">Does addy.io get commission when an offer is redeemed?</dt>
+        <dt class="text-base/7 font-semibold text-grey-900 dark:text-white lg:col-span-5">Does addy.io get commission when an offer is redeemed?</dt>
         <dd class="mt-4 lg:col-span-7 lg:mt-0">
-          <p class="text-base/7 text-grey-600">No commission or kickback is received by addy.io when any of these offers are redeemed. The partners usually have a reciprocal offering for their own subscribers, giving a discount code for new addy.io customers.</p>
+          <p class="text-base/7 text-grey-600 dark:text-muted">No commission or kickback is received by addy.io when any of these offers are redeemed. The partners usually have a reciprocal offering for their own subscribers, giving a discount code for new addy.io customers.</p>
         </dd>
       </div>
     </dl>

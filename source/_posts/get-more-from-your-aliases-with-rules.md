@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/rules.png
+image: https://addy.io/assets/img/share/get-more-from-your-aliases-with-rules.png
 section: content
 title: Get more from your aliases with rules
 date: 2026-08-17
@@ -228,7 +228,7 @@ That makes it obvious at a glance which alias a message came through, without re
     <li>Rules run in order from top to bottom. Put more specific rules above broader ones when that matters.</li>
     <li>You can combine conditions with <b>AND</b> or <b>OR</b>, and a single rule can have multiple actions.</li>
     <li>Check <b>last applied</b> on a rule to confirm it is matching the mail you expect.</li>
-    <li>Rules are available on paid plans. See the <a href="/#pricing">pricing section</a> for details.</li>
+    <li>Rules are available on paid plans.<span data-pricing> See the <a href="/pricing/">pricing page</a> for details.</span></li>
 </ul>
 
 For step-by-step setup, start with [Creating a new rule](/help/creating-a-new-rule/) in the Help Centre.

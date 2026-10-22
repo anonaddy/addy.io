@@ -7,7 +7,7 @@
 
     <h1 class="leading-none mb-2">{{ $page->title }}</h1>
 
-    <div class="text-grey-700 text-xl mb-1 md:mt-0 flex flex-wrap items-center">
+    <div class="text-grey-700 dark:text-ink text-xl mb-1 md:mt-0 flex flex-wrap items-center">
         {{ date('F j, Y', $page->date) }}
         @if ($page->author)
             <span class="mx-2">•</span>
@@ -26,7 +26,7 @@
     </div>
 
 
-    <div class="border-b border-indigo-200 mt-6 mb-10 pb-4" v-pre>
+    <div class="border-b border-indigo-200 dark:border-tint-indigo-line mt-6 mb-10 pb-4" v-pre>
         @yield('content')
     </div>
 

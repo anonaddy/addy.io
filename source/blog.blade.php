@@ -29,15 +29,15 @@ description: The list of all blog posts for addy.io. You'll find information abo
     @if($pagination->pages->count() > 1)
     <nav class="flex text-base my-8">
         @if($previous = $pagination->previous)
-            <a href="{{ $previous }}/" title="Previous Page" class="bg-grey-200 hover:bg-grey-400 rounded mr-3 px-5 py-3">&LeftArrow;</a>
+            <a href="{{ $previous }}/" title="Previous Page" class="bg-grey-200 dark:bg-line hover:bg-grey-400 rounded mr-3 px-5 py-3">&LeftArrow;</a>
         @endif
 
         @foreach($pagination->pages as $pageNumber => $path)
-            <a href="{{ $path }}/" title="Go to Page {{ $pageNumber }}" class="bg-grey-200 hover:bg-grey-400 text-indigo-700 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : '' }}">{{ $pageNumber }}</a>
+            <a href="{{ $path }}/" title="Go to Page {{ $pageNumber }}" class="bg-grey-200 dark:bg-line hover:bg-grey-400 text-indigo-700 dark:text-link rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : '' }}">{{ $pageNumber }}</a>
         @endforeach
 
         @if($next = $pagination->next)
-            <a href="{{ $next }}/" title="Next Page" class="bg-grey-200 hover:bg-grey-400 rounded mr-3 px-5 py-3">&RightArrow;</a>
+            <a href="{{ $next }}/" title="Next Page" class="bg-grey-200 dark:bg-line hover:bg-grey-400 rounded mr-3 px-5 py-3">&RightArrow;</a>
         @endif
     </nav>
     @endif

@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/addy.io-easyoptouts.png
+image: https://addy.io/assets/img/share/addy-io-has-partnered-with-easyoptouts.png
 section: content
 title: addy.io has partnered with EasyOptOuts
 date: 2026-03-09

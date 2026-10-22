@@ -6,12 +6,14 @@ use TightenCo\Jigsaw\Jigsaw;
 
 class GenerateHelpIndex
 {
+    use RemovesPricing;
+
     public function handle(Jigsaw $jigsaw)
     {
         $baseUrl = rightTrimPath($jigsaw->getConfig('baseUrl'));
 
         $articles = collect($jigsaw->getCollection('articles')->map(function ($page) use ($baseUrl) {
-            $content = strip_tags($page->getContent());
+            $content = strip_tags($this->withoutPricing($page->getContent()));
             $content = preg_replace('/\s+/', ' ', trim($content));
 
             return [
@@ -61,7 +63,7 @@ class GenerateHelpIndex
 
     protected function markdownToSearchText(string $markdown): string
     {
-        $text = preg_replace('/\[([^\]]+)\]\([^)]+\)/', '$1', $markdown);
+        $text = preg_replace('/\[([^\]]+)\]\([^)]+\)/', '$1', $this->withoutPricing($markdown));
         $text = preg_replace('/^>\s?/m', '', $text);
         $text = preg_replace('/[*_`#]/', '', $text);
         $text = strip_tags($text);

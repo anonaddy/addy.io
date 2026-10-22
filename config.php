@@ -40,6 +40,14 @@ return [
 
     'menuItems' => [
         [
+            'title' => 'Features',
+            'href' => '/features/',
+        ],
+        [
+            'title' => 'Pricing',
+            'href' => '/pricing/',
+        ],
+        [
             'title' => 'Help',
             'href' => '/help/',
         ],
@@ -50,10 +58,6 @@ return [
         [
             'title' => 'Blog',
             'href' => '/blog/',
-        ],
-        [
-            'title' => 'Pricing',
-            'href' => '/#pricing',
         ],
     ],
 

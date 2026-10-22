@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/addy-leavemealone.png
+image: https://addy.io/assets/img/share/addy-io-has-partnered-with-leave-me-alone.png
 section: content
 title: addy.io has partnered with Leave Me Alone
 date: 2026-09-04

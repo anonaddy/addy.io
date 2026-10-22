@@ -2,7 +2,21 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        sans: [
+          '"Plus Jakarta Sans Variable"',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          '"Segoe UI"',
+          'Roboto',
+          'sans-serif',
+        ],
         mono: [
+          '"JetBrains Mono Variable"',
+          'ui-monospace',
+          'SFMono-Regular',
+          'Menlo',
+          'Consolas',
           'monospace',
         ],
       },
@@ -27,6 +41,27 @@ module.exports = {
         '136': '34rem'
       },
       colors: {
+        // Theme-aware colours: values are CSS variables defined in main.css
+        // for light mode on :root and for dark mode on .dark
+        canvas: 'var(--canvas)',
+        subtle: 'var(--subtle)',
+        card: 'var(--card)',
+        line: 'var(--line)',
+        ink: 'var(--ink)',
+        heading: 'var(--heading)',
+        muted: 'var(--muted)',
+        accent: 'var(--accent)',
+        'on-accent': 'var(--on-accent)',
+        link: 'var(--link)',
+        code: 'var(--code)',
+        warn: 'var(--warn)',
+        feature: 'var(--feature)',
+        'tint-indigo': 'var(--tint-indigo)',
+        'tint-indigo-line': 'var(--tint-indigo-line)',
+        'tint-cyan': 'var(--tint-cyan)',
+        'tint-cyan-line': 'var(--tint-cyan-line)',
+        'tint-pink': 'var(--tint-pink)',
+        'tint-pink-line': 'var(--tint-pink-line)',
         indigo: {
           50: '#E0E8F9',
           100: '#BED0F7',

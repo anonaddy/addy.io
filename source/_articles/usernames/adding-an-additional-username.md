@@ -15,7 +15,7 @@ Additional usernames let you create more subdomains (e.g. `shop@**janedoe**.anon
 <h2 id="before-you-add-a-username">Before you add a username</h2>
 
 - Choose a username **unrelated** to the one you signed up with and not used elsewhere online.
-- **Plan limits** - Lite allows **5** additional usernames (6 total including your sign-up username); Pro allows **20** additional (21 total). See [pricing](/#pricing).
+- **Plan limits** - Lite allows **5** additional usernames (6 total including your sign-up username); Pro allows **20** additional (21 total).<span data-pricing> See [pricing](/pricing/).</span>
 - If you delete a username immediately after adding it, that username **cannot be used again**.
 
 <h2 id="how-to-add-an-additional-username">How to add an additional username</h2>

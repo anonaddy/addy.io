@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/addy.io-obscura.png
+image: https://addy.io/assets/img/share/addy-io-has-partnered-with-obscura.png
 section: content
 title: addy.io has partnered with Obscura
 date: 2026-10-02

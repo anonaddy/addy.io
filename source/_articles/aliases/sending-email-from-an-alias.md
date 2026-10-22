@@ -20,7 +20,7 @@ This article explains what you need before sending, how the address format works
 
 Make sure the following are in place:
 
-- **Plan** - Sending from an alias requires a **Lite** or **Pro** subscription (not available on the Free plan). See [pricing](/#pricing) and [Why are some features paid only?](/faq/#why-are-some-features-paid-only).
+- **Plan** - Sending from an alias requires a **Lite** or **Pro** subscription (not available on the Free plan). See <span data-pricing>[pricing](/pricing/) and </span>[Why are some features paid only?](/faq/#why-are-some-features-paid-only).
 - **Verified recipient** - You must send the email from a [verified recipient](/help/adding-a-recipient/) address on your addy.io account. If you send from another address, the message will not be sent from your alias and will instead be forwarded back to you as if from an external sender.
 - **Reply/send allowed** - That recipient must be allowed to [reply and send](/help/allowing-or-disallowing-a-recipient-to-reply-send-from-your-aliases/) from your aliases. This is enabled by default.
 - **Alias exists (or can be created)** - The alias must already exist, or you must be able to create it when the message is sent (see [Standard vs shared-domain aliases](#standard-vs-shared-domain-aliases) below). If the alias has been [deactivated](/help/deactivating-email-aliases/) or [deleted](/help/deleting-an-alias/), sending will fail until you restore or reactivate it.

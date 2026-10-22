@@ -10,6 +10,7 @@ $releasesDir = "{$baseDir}/releases";
 $currentDir = "{$baseDir}/current";
 $newReleaseName = date("Ymd-His");
 $newReleaseDir = "{$releasesDir}/{$newReleaseName}";
+$localProjectDir = __DIR__;
 
 // Non-interactive SSH does not source ~/.bashrc
 // Prefer ENVOY_NODE_BIN_PREPEND (absolute path to the bin directory that contains node and npm).
@@ -55,6 +56,18 @@ finishDeploy
 deploymentRollback
 @endstory
 
+@story("deploy-staged-to-staging")
+startDeployment
+prepareRelease
+rsyncLocalChanges
+runComposer
+runNpm
+mergeHelpArticles
+generateAssets
+cleanOldReleases
+finishDeploy
+@endstory
+
 @task("startDeployment", ["on" => "local"])
 {{ logMessage("🏃  Starting deployment...") }}
 @endtask
@@ -77,6 +90,52 @@ echo "*" > .git/info/sparse-checkout
 echo "!storage" >> .git/info/sparse-checkout
 echo "!public/build" >> .git/info/sparse-checkout
 git read-tree -mu HEAD
+@endtask
+
+@task("prepareRelease", ["on" => "remote"])
+{{ logMessage("📁  Preparing new release directory...") }}
+[ -d {{ $releasesDir }} ] || mkdir -p {{ $releasesDir }}
+mkdir {{ $newReleaseDir }}
+
+@if (isset($staged_only) && $staged_only)
+if [ -d {{ $currentDir }} ]; then
+    cp -a {{ $currentDir }}/. {{ $newReleaseDir }}/
+fi
+@endif
+@endtask
+
+@task("rsyncLocalChanges", ["on" => "local"])
+{{ logMessage("📤  Syncing local changes to staging...") }}
+cd {{ $localProjectDir }}
+
+@if (isset($staged_only) && $staged_only)
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACMR)
+if [ -z "$STAGED_FILES" ]; then
+    echo "No staged files to deploy. Stage changes with git add first."
+    exit 1
+fi
+@foreach ($userAndServer as $server)
+echo "$STAGED_FILES" | rsync -avz -e ssh --files-from=- --relative ./ {{ trim($server) }}:{{ $newReleaseDir }}/
+@endforeach
+@else
+@foreach ($userAndServer as $server)
+rsync -avz --delete -e ssh \
+    --exclude '.git/' \
+    --exclude 'node_modules/' \
+    --exclude '/vendor/' \
+    --exclude '.env' \
+    --exclude 'build_local/' \
+    --exclude 'build_staging/' \
+    --exclude 'build_production/' \
+    --exclude 'build_development/' \
+    --exclude 'cache/' \
+    --exclude 'merged_help_articles/' \
+    --exclude 'source/assets/build/' \
+    --exclude 'storage/' \
+    --exclude 'public/build/' \
+    ./ {{ trim($server) }}:{{ $newReleaseDir }}/
+@endforeach
+@endif
 @endtask
 
 @task("runComposer", ["on" => "remote"])

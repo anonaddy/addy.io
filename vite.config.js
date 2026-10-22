@@ -48,6 +48,8 @@ export default defineConfig(() => {
           "article-heading-links": "source/_assets/js/article-heading-links.js",
           styles: "source/_assets/css/main.css",
           "hero-animation": "source/_assets/js/hero-animation.js",
+          home: "source/_assets/js/home.js",
+          pricing: "source/_assets/js/pricing.js",
         },
       },
     },

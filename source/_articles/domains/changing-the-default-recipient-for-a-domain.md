@@ -34,7 +34,7 @@ If you want all mail at that domain to reach more than one inbox, it is possible
 1. **Conditions** - Set an **alias email** condition that matches your custom domain (for example `@yourdomain.com`). Choose the `ends with` match type and enter this `@yourdomain.com` making sure to replace "yourdomain.com" with your actual custom domain.
 2. **Actions** - Select **forward to** your chosen recipient and then click "Add action" and select **forward to** your next recipient etc.
 
-When an email arrives at an alias on that domain, the rule will be matched and applied, so each recipient will receive a copy of the email. Rules are a paid feature (Lite and Pro); see [pricing](/#pricing).
+When an email arrives at an alias on that domain, the rule will be matched and applied, so each recipient will receive a copy of the email. Rules are a paid feature (Lite and Pro)<span data-pricing>; see [pricing](/pricing/)</span>.
 
 <div class="flex justify-center my-8">
   <img class="shadow max-w-full h-auto" src="/assets/img/help/domains/multiple-default-recipients-for-a-custom-domain.png" alt="Multiple default recipients for a custom domain" title="Multiple default recipients for a custom domain">

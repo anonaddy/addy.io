@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 ogtype: article
-image: https://addy.io/assets/img/duo-and-family-plans.png
+image: https://addy.io/assets/img/share/introducing-duo-and-family-plans.png
 section: content
 title: Introducing Duo and Family plans
 date: 2026-08-11
@@ -27,7 +27,7 @@ Duo and Family fix that. One owner pays, invites the others by username, and eve
 
 <ul class="list-disc pl-6">
     <li><b>2 members</b> total (you + 1)</li>
-    <li><b>$4.50 / month</b> when billed yearly ($54 / year), or <b>$6 / month</b> billed monthly</li>
+    <li data-pricing><b>$4.50 / month</b> when billed yearly ($54 / year), or <b>$6 / month</b> billed monthly</li>
     <li>Ideal for couples or two people who both want Pro</li>
 </ul>
 
@@ -35,11 +35,11 @@ Duo and Family fix that. One owner pays, invites the others by username, and eve
 
 <ul class="list-disc pl-6">
     <li><b>5 members</b> total (you + 4)</li>
-    <li><b>$7.50 / month</b> when billed yearly ($90 / year), or <b>$10 / month</b> billed monthly</li>
+    <li data-pricing><b>$7.50 / month</b> when billed yearly ($90 / year), or <b>$10 / month</b> billed monthly</li>
     <li>Ideal for households or a small group of people you trust</li>
 </ul>
 
-Full pricing details are on the [pricing section](/#pricing) of the home page.
+<span data-pricing>Full pricing details are on the [pricing page](/pricing/).</span>
 
 ## Benefits
 
@@ -55,11 +55,11 @@ This is **not** a shared inbox. Aliases, recipients, usernames, and settings sta
 
 The owner manages a single subscription. Members do not need their own paid plan while they remain on Duo or Family.
 
-#### Better value than buying Pro separately
+<h4 data-pricing>Better value than buying Pro separately</h4>
 
-Compared with separate yearly Pro subscriptions ($36 each):
+<p data-pricing>Compared with separate yearly Pro subscriptions ($36 each):</p>
 
-<ul class="list-disc pl-6">
+<ul class="list-disc pl-6" data-pricing>
     <li><b>Duo</b> yearly is <b>$54</b> instead of <b>$72</b> for two Pro plans (<b>25%</b> saving)</li>
     <li><b>Family</b> yearly is <b>$90</b> instead of <b>$180</b> for five Pro plans (<b>50%</b> saving)</li>
 </ul>
@@ -91,7 +91,7 @@ New to addy.io? [Create a free account](https://app.addy.io/register), then choo
 
 Already subscribed? You can switch to Duo or Family from your subscription settings when you are ready.
 
-Compare all plans on the [home page pricing section](/#pricing). For step-by-step invites, custom domain sharing and seat management, see [Duo and Family plans](/help/duo-and-family-plans/) in the Help Centre.
+<span data-pricing>Compare all plans on the [pricing page](/pricing/). </span>For step-by-step invites, custom domain sharing and seat management, see [Duo and Family plans](/help/duo-and-family-plans/) in the Help Centre.
 
 ## Feedback and suggestions
 

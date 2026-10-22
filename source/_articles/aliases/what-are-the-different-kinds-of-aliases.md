@@ -38,4 +38,4 @@ A **shared domain alias** uses a domain that many addy.io users share. The most 
 
 Because the domain is shared, these aliases **must be generated before use**. You cannot create them on the fly by giving out an address; you must use **Create Alias** on the website, the browser extension, mobile app or the [API](https://app.addy.io/docs). Once it exists, you can give it out and receive mail. Shared domain aliases often use **random character** or **random word** formats so they are hard to guess and not tied to your username.
 
-There is usually a limit on how many shared domain aliases you can have; aliases at your own username subdomain or custom domain do not count toward that limit. See the [pricing section](/#pricing) for more details.
+There is usually a limit on how many shared domain aliases you can have; aliases at your own username subdomain or custom domain do not count toward that limit.<span data-pricing> See the [pricing page](/pricing/) for more details.</span>

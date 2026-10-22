@@ -7,13 +7,12 @@
         id="search"
         v-model="query"
         ref="search"
-        class="transition-fast relative block h-12 w-full border border-grey-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none cursor-pointer text-grey-700 px-4 py-3 rounded-lg shadow-sm"
+        class="transition-fast relative block h-12 w-full text-[16px] border border-grey-300 dark:border-grey-700 dark:bg-card dark:placeholder:text-muted focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 dark:focus:ring-tint-indigo-line outline-none cursor-pointer text-grey-700 dark:text-ink px-4 py-3 rounded-lg shadow-sm"
         :class="{ 'transition-border': query }"
         autocomplete="off"
         name="search"
         placeholder="Search help articles and FAQ..."
         type="text"
-        style="font-size: 16px"
         @keyup.esc="reset"
         @focus="showResults = true"
         @blur="handleBlur"
@@ -21,7 +20,7 @@
 
       <button
         v-if="query || searching"
-        class="absolute top-0 right-0 leading-snug font-400 text-3xl text-indigo-500 hover:text-indigo-600 focus:outline-none pr-4 pt-2"
+        class="absolute top-0 right-0 leading-snug font-400 text-3xl text-indigo-500 dark:text-link hover:text-indigo-600 dark:hover:text-link focus:outline-none pr-4 pt-2"
         @click="reset"
       >
         &times;
@@ -29,10 +28,12 @@
 
       <transition name="fade">
         <div v-if="query && showResults" class="absolute left-0 right-0 w-full text-left mt-2">
-          <div class="flex flex-col bg-white border border-grey-200 rounded-lg shadow-xl">
+          <div
+            class="flex flex-col bg-white dark:bg-card border border-grey-200 dark:border-line rounded-lg shadow-xl"
+          >
             <a
               v-for="(result, index) in results"
-              class="bg-white hover:bg-indigo-50 border-b border-grey-100 text-lg cursor-pointer p-4 transition-colors"
+              class="bg-white dark:bg-card hover:bg-indigo-50 dark:hover:bg-tint-indigo border-b border-grey-100 dark:border-line text-lg cursor-pointer p-4 transition-colors"
               :class="{
                 'rounded-b-lg border-b-0': index === results.length - 1,
                 'rounded-t-lg': index === 0,
@@ -43,16 +44,18 @@
               @mousedown.prevent
               @mousedown="clearBlurTimeout"
             >
-              <div class="font-semibold text-grey-900 mb-1">{{ result.item.title }}</div>
+              <div class="font-semibold text-grey-900 dark:text-white mb-1">
+                {{ result.item.title }}
+              </div>
               <span
-                class="block font-normal text-grey-600 text-sm"
+                class="block font-normal text-grey-600 dark:text-muted text-sm"
                 v-html="getHighlightedSnippet(result)"
               ></span>
             </a>
 
             <div
               v-if="!results.length"
-              class="bg-white w-full hover:bg-indigo-50 rounded-lg border-b-0 cursor-pointer p-4"
+              class="bg-white dark:bg-card w-full hover:bg-indigo-50 dark:hover:bg-tint-indigo rounded-lg border-b-0 cursor-pointer p-4"
             >
               <p class="my-0">
                 No results for <strong>{{ query }}</strong>
@@ -67,7 +70,7 @@
       v-if="!searching"
       title="Start searching"
       type="button"
-      class="flex md:hidden bg-grey-50 hover:bg-indigo-100 justify-center items-center border border-grey-300 rounded-lg focus:outline-none h-12 px-4 w-full"
+      class="flex md:hidden bg-grey-50 dark:bg-subtle hover:bg-indigo-100 dark:hover:bg-tint-indigo justify-center items-center border border-grey-300 dark:border-line rounded-lg focus:outline-none h-12 px-4 w-full"
       @click.prevent="showInput"
     >
       <img
@@ -75,7 +78,7 @@
         alt="search icon"
         class="h-4 w-4 max-w-none mr-2"
       />
-      <span class="text-grey-600">Search help articles and FAQ...</span>
+      <span class="text-grey-600 dark:text-muted">Search help articles and FAQ...</span>
     </button>
   </div>
 </template>
@@ -204,7 +207,7 @@ export default {
           const regex = new RegExp(`(${this.escapeRegex(word)})`, 'gi')
           highlighted = highlighted.replace(
             regex,
-            '<strong class="font-semibold text-grey-900">$1</strong>'
+            '<strong class="font-semibold text-grey-900 dark:text-white">$1</strong>'
           )
         }
 
@@ -219,7 +222,7 @@ export default {
           const regex = new RegExp(`(${this.escapeRegex(word)})`, 'gi')
           highlighted = highlighted.replace(
             regex,
-            '<strong class="font-semibold text-grey-900">$1</strong>'
+            '<strong class="font-semibold text-grey-900 dark:text-white">$1</strong>'
           )
         }
         return highlighted
