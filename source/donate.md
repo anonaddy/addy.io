@@ -14,10 +14,11 @@ If you find addy.io useful and would like to support me, any contribution is gre
 
 ## Cryptocurrencies
 
-- **Bitcoin** (BTC): <span class="break-words">3JbGY9SpUXzaRypwzmsQFUkpgGsNxGDLT8</span>
+- **Bitcoin** (BTC): <span class="break-words">bc1qxc3pfpagsxq7huscl7mxlmaxxy2eqfxfn5ktzu</span>
+- **Lightning** (BTC LN): <span class="break-words">frillycat588@cake.cash</span>
 - **Monero** (XMR): <span class="break-words">84qZgh4rLS16PMuw6PBPbsBQPfzQSLpaJ9DENzXVTwgJPjsAPNFxvf5BpJF9Y2ayp47GFVWvDYnmNJ9dYyT1aAB9BvbVJbk</span>
-- **Ethereum** (ETH): <span class="break-words">0xe7e4c7d7b8cfcc6b716e4a9be742a18ac2dc5172</span>
-- **Litecoin** (LTC): <span class="break-words">MArmVxUi4nPLBexGEErH54Na5nfuT5rAgb</span>
+- **Ethereum** (ETH): <span class="break-words">0x1eE8E698cdD5b957789ea4A3645C910B865d9756</span>
+- **Litecoin** (LTC): <span class="break-words">ltc1q45lkune3fyee6pru6e80e9qg6sl499u2stlx99</span>
 
 ## GitHub Sponsors
 
