@@ -33,6 +33,8 @@ If you only want to stop mail temporarily, use [Deactivate](/help/deactivating-e
   <img class="shadow max-w-full h-auto" src="/assets/img/help/aliases/forgetting-an-alias.png" alt="Forget alias option in addy.io" title="Forgetting an alias">
 </div>
 
+To forget every deleted alias at once, set the filter to **Deleted only**, then choose **Forget all deleted**. Enter your password to confirm. Shared domain aliases can never be restored or used again. Standard aliases can be created again later.
+
 <h2 id="difference-between-deleting-deactivating-and-forgetting">Difference between deleting, deactivating and forgetting</h2>
 
 - **Deactivate** - Stops forwarding; mail is silently discarded; you can turn the alias back on. See [Deactivating email aliases](/help/deactivating-email-aliases/).

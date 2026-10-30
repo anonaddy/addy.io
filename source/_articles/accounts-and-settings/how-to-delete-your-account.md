@@ -36,13 +36,16 @@ Deleting your addy.io account permanently removes your account, aliases, recipie
 
 When you delete your account, the following happens:
 
-- **Recipients** - All of your recipients are deleted from the database.
-- **Aliases on shared domains** - All of your aliases that use a shared domain (e.g. `@anonaddy.me`) are soft deleted from the database. This is to prevent any chance of another user generating the same alias in the future. Any identifying information, such as the alias description, is removed.
+- **Recipients** - Your recipients, including any unconfirmed email changes, are deleted from the database, and any PGP keys are removed.
+- **Aliases on shared domains** - All of your aliases that use a shared domain (e.g. `@anonaddy.me`) are stripped of your data and soft deleted from the database, and are no longer linked to you. The address is kept to prevent any chance of another user generating the same alias in the future.
 - **Other aliases** - All of your other aliases are deleted from the database.
-- **Custom domains** - All of your custom domains are deleted from the database.
-- **Your user details** - Your user details are deleted from the database.
+- **Custom domains, rules, labels and blocklist** - Your custom domains, rules, labels and blocklist entries are deleted from the database.
+- **Failed deliveries** - Your failed deliveries and any stored copies of those emails are deleted.
+- **Your user details** - Your user details and API keys are deleted from the database.
 - **Usernames** - Your username and any additional usernames that you created are encrypted and added to a table in the database. This is to prevent anybody signing up with the same username in the future.
-- **Subscription** - Any subscription information is deleted from the database.
+- **Subscription** - Your subscription information is deleted from the database. Your saved payment methods are removed from Stripe, and Stripe keeps its own customer and payment records.
+- **Vouchers, perks and bandwidth resets** - These records are kept but are no longer linked to you.
+- **Delivery records** - Records used for handling bounces are removed automatically within 7 days.
 
 If you need a record of your aliases or settings, [export your data](/help/importing-and-exporting-account-data/) before deleting.
 
