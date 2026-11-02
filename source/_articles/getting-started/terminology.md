@@ -78,7 +78,7 @@ The local-part is the part of an email address before the @ symbol (for example,
 
 This is the amount of data that can be transmitted in a fixed amount of time. On addy.io bandwidth is incremented each time an email is forwarded or a reply is sent (this is the data). Every calendar month (e.g. January, February etc.) your bandwidth is reset to 0. When an alias is deactivated or deleted emails sent to it do not count towards your bandwidth.
 
-On the Lite plan, the first time you hit the monthly limit in a calendar year, that month's usage is reset to 0 automatically. Further resets in the same year can be bought as a one-off payment from the [subscription page](https://app.addy.io/settings/subscription).
+On the Lite plan, the first time you hit the monthly limit in a calendar year, that month's usage is reset to 0 automatically. Further resets in the same year can be bought as a one-off payment from the [subscription page](https://app.addy.io/settings/subscription). Until that reset (or the next calendar month), new mail is temporarily deferred and senders retry for a few days, so a reset in that window can still deliver it. On the Free plan, new mail is rejected until the next calendar month or you upgrade.
 
 <h3 id="gpg-openpgp-key">GPG/OpenPGP Key</h3>
 
