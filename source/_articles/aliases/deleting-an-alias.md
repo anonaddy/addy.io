@@ -25,6 +25,8 @@ Deleting an alias removes it from your account so that emails sent to that addre
 
 You can also delete an alias from the [browser extension](/help/installing-the-browser-extension/) or [mobile app](/help/downloading-and-using-the-mobile-app/). Deleted aliases can be [restored](/help/restoring-a-deleted-alias/) from your alias list until you choose to forget them permanently.
 
+Some senders stop emailing an address after it rejects their mail, even once the alias is restored. If this happens, see [My alias is active but some sender's emails aren't arriving](/faq/#my-alias-is-active-but-some-senders-emails-arent-arriving-whats-wrong).
+
 <h2 id="what-is-the-difference-between-deleting-deactivating-and-forgetting-an-alias">What is the difference between deleting, deactivating and forgetting an alias?</h2>
 
 - **Deactivate** - The alias stays on your account but **stops forwarding**. Incoming mail is **silently discarded**; the sender is not told the address is inactive. You can turn the alias back on anytime. Use this when you want to pause an alias (e.g. for spam) without removing it. See [Deactivating email aliases](/help/deactivating-email-aliases/).

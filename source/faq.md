@@ -52,6 +52,7 @@ For step-by-step guides, see the [Help Centre](/help/).
 
 - [Does this work with any email provider?](#does-this-work-with-any-email-provider)
 - [I'm not receiving any emails, what's wrong?](#im-not-receiving-any-emails-whats-wrong)
+- [My alias is active but some sender's emails aren't arriving, what's wrong?](#my-alias-is-active-but-some-senders-emails-arent-arriving-whats-wrong)
 
 <h3 class="faq-category">Subscriptions</h3>
 
@@ -299,7 +300,7 @@ Yes this will work with any provider, although I can't guarantee it won't land i
 
 Please make sure to add no-reply@addy.io and any aliases you use to your address book and also to check your spam folder. Make sure to mark emails from addy.io as safe if they turn up in spam.
 
-If an alias has been deleted and you try to send email to it, the emails will be rejected with an error message - "550 5.1.1 Recipient address rejected: Address does not exist".
+If an alias has been deleted and you try to send email to it, the emails will be rejected with an error message - "550 5.1.1 Recipient address rejected: Address does not exist". If you've since restored it but a sender's emails still aren't arriving, see [My alias is active but some sender's emails aren't arriving](#my-alias-is-active-but-some-senders-emails-arent-arriving-whats-wrong).
 
 Check that you have not deactivated the alias, custom domain or additional username. When any of these are deactivated, emails will be silently discarded, they will not be rejected or return any error message.
 
@@ -326,6 +327,21 @@ I will also soon be adding an option to change the format of the display from pa
 If neither of the above options work then please try changing to another recipient so that you can continue to receive emails.
 
 If you still aren't receiving emails please contact me.
+
+## My alias is active but some sender's emails aren't arriving, what's wrong? {#my-alias-is-active-but-some-senders-emails-arent-arriving-whats-wrong}
+
+If an alias was recently deleted, or your account on the Free plan was over its monthly bandwidth limit, emails sent during that time will have been rejected with an error such as `550 5.1.1 Recipient address rejected: Address does not exist` or `552 5.2.2 Recipient address rejected: User over quota`.
+
+When a sender gets one of these errors they will often add your alias to a suppression list (also called a bounce list). They then stop trying to send to that address, even after it starts working again. Because they never make another delivery attempt, nothing reaches addy.io, so nothing appears in your failed deliveries and I can't fix it from this end.
+
+To check, send a test email to the alias from a different email address. If it arrives then the alias is working and the sender is suppressing it.
+
+Some senders clear these entries after a while, but many keep them until someone removes them, so waiting may not help. You have two options:
+
+1. **Use a new alias** - create a new alias and change your email address on that website or service. This is usually the quickest fix.
+2. **Ask the sender to remove it** - contact their support team, tell them your address was temporarily rejecting emails but is working again, and ask them to remove it from their suppression list.
+
+If you might want an alias again later, [deactivate](/help/deactivating-email-aliases/) it instead of deleting it. Emails to a deactivated alias are silently discarded, so the sender doesn't get a bounce.
 
 <h3 class="faq-category">Subscriptions</h3>
 
