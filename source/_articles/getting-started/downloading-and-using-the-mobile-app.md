@@ -23,7 +23,7 @@ The official addy.io mobile app is available for both Android and Apple devices.
 
 **iOS**
 
-- [addy.io on the App Store](https://apps.apple.com/app/addy-io/id1535634360)
+- [addy.io on the App Store](https://apps.apple.com/app/addy-io/id6563138633)
 
 <h2 id="logging-in-to-the-app">Logging in to the app</h2>
 

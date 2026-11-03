@@ -44,7 +44,7 @@ You must be [logged in](https://app.addy.io) (or log in after clicking the link)
 
 - [Google Play](https://play.google.com/store/apps/details?id=host.stjin.anonaddy)
 - [F-Droid](https://f-droid.org/packages/host.stjin.anonaddy)
-- [App Store](https://apps.apple.com/app/addy-io/id1535634360)
+- [App Store](https://apps.apple.com/app/addy-io/id6563138633)
 
 Open the alias in the app and use the deactivate option. See [Downloading and using the mobile app](/help/downloading-and-using-the-mobile-app/) for more.
 
