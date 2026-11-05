@@ -10,6 +10,12 @@ $releasesDir = "{$baseDir}/releases";
 $currentDir = "{$baseDir}/current";
 $newReleaseName = date("Ymd-His");
 $newReleaseDir = "{$releasesDir}/{$newReleaseName}";
+
+$stagingUserAndServer = explode(',', $_ENV["ENVOY_STAGING_USER_AND_SERVER"]);
+$stagingBaseDir = $_ENV["ENVOY_STAGING_BASE_DIR"];
+$stagingReleasesDir = "{$stagingBaseDir}/releases";
+$stagingCurrentDir = "{$stagingBaseDir}/current";
+$stagingNewReleaseDir = "{$stagingReleasesDir}/{$newReleaseName}";
 $localProjectDir = __DIR__;
 
 // Non-interactive SSH does not source ~/.bashrc
@@ -39,7 +45,7 @@ function logMessage($message) {
 }
 @endsetup
 
-@servers(["local" => "127.0.0.1", "remote" => $userAndServer])
+@servers(["local" => "127.0.0.1", "remote" => $userAndServer, "staging" => $stagingUserAndServer])
 
 @story("deploy")
 startDeployment
@@ -58,13 +64,13 @@ deploymentRollback
 
 @story("deploy-staged-to-staging")
 startDeployment
-prepareRelease
-rsyncLocalChanges
-runComposer
-runNpm
-mergeHelpArticles
-generateAssets
-cleanOldReleases
+prepareReleaseToStaging
+rsyncLocalChangesToStaging
+runComposerOnStaging
+runNpmOnStaging
+mergeHelpArticlesOnStaging
+generateAssetsOnStaging
+cleanOldReleasesOnStaging
 finishDeploy
 @endstory
 
@@ -92,19 +98,19 @@ echo "!public/build" >> .git/info/sparse-checkout
 git read-tree -mu HEAD
 @endtask
 
-@task("prepareRelease", ["on" => "remote"])
+@task("prepareReleaseToStaging", ["on" => "staging"])
 {{ logMessage("📁  Preparing new release directory...") }}
-[ -d {{ $releasesDir }} ] || mkdir -p {{ $releasesDir }}
-mkdir {{ $newReleaseDir }}
+[ -d {{ $stagingReleasesDir }} ] || mkdir -p {{ $stagingReleasesDir }}
+mkdir {{ $stagingNewReleaseDir }}
 
 @if (isset($staged_only) && $staged_only)
-if [ -d {{ $currentDir }} ]; then
-    cp -a {{ $currentDir }}/. {{ $newReleaseDir }}/
+if [ -d {{ $stagingCurrentDir }} ]; then
+    cp -a {{ $stagingCurrentDir }}/. {{ $stagingNewReleaseDir }}/
 fi
 @endif
 @endtask
 
-@task("rsyncLocalChanges", ["on" => "local"])
+@task("rsyncLocalChangesToStaging", ["on" => "local"])
 {{ logMessage("📤  Syncing local changes to staging...") }}
 cd {{ $localProjectDir }}
 
@@ -114,11 +120,11 @@ if [ -z "$STAGED_FILES" ]; then
     echo "No staged files to deploy. Stage changes with git add first."
     exit 1
 fi
-@foreach ($userAndServer as $server)
-echo "$STAGED_FILES" | rsync -avz -e ssh --files-from=- --relative ./ {{ trim($server) }}:{{ $newReleaseDir }}/
+@foreach ($stagingUserAndServer as $server)
+echo "$STAGED_FILES" | rsync -avz -e ssh --files-from=- --relative ./ {{ trim($server) }}:{{ $stagingNewReleaseDir }}/
 @endforeach
 @else
-@foreach ($userAndServer as $server)
+@foreach ($stagingUserAndServer as $server)
 rsync -avz --delete -e ssh \
     --exclude '.git/' \
     --exclude 'node_modules/' \
@@ -133,7 +139,7 @@ rsync -avz --delete -e ssh \
     --exclude 'source/assets/build/' \
     --exclude 'storage/' \
     --exclude 'public/build/' \
-    ./ {{ trim($server) }}:{{ $newReleaseDir }}/
+    ./ {{ trim($server) }}:{{ $stagingNewReleaseDir }}/
 @endforeach
 @endif
 @endtask
@@ -176,6 +182,46 @@ ln -nfs {{ $newReleaseDir }} {{ $currentDir }}
 cd {{ $releasesDir }}
 ls -dt {{ $releasesDir }}/* | tail -n +4 | xargs -d "\n" chown -R deployer .
 ls -dt {{ $releasesDir }}/* | tail -n +4 | xargs -d "\n" rm -rf
+@endtask
+
+@task("runComposerOnStaging", ["on" => "staging"])
+{{ logMessage("🚚  Running Composer...") }}
+cd {{ $stagingNewReleaseDir }}
+composer install --prefer-dist --no-scripts --no-dev -q -o
+@endtask
+
+@task("runNpmOnStaging", ["on" => "staging"])
+{{ logMessage("📦  Running Npm...") }}
+{{ $remoteNodeInit }}
+cd {{ $stagingNewReleaseDir }}
+npm install --no-progress &> /dev/null
+@endtask
+
+@task("mergeHelpArticlesOnStaging", ["on" => "staging"])
+{{ logMessage("📚  Merging help articles by category...") }}
+cd {{ $stagingNewReleaseDir }}
+bash scripts/merge-help-articles.sh
+@endtask
+
+@task("generateAssetsOnStaging", ["on" => "staging"])
+{{ logMessage("🌅  Generating assets...") }}
+{{ $remoteNodeInit }}
+cd {{ $stagingNewReleaseDir }}
+npm run prod --no-progress &> /dev/null
+
+# Mark release
+cd {{ $stagingNewReleaseDir }}
+echo "{{ $newReleaseName }}" > build_production/release-name.txt
+
+ln -nfs {{ $stagingNewReleaseDir }} {{ $stagingCurrentDir }}
+@endtask
+
+@task("cleanOldReleasesOnStaging", ["on" => "staging"])
+{{ logMessage("🚾  Cleaning up old releases...") }}
+# Delete all but the 3 most recent.
+cd {{ $stagingReleasesDir }}
+ls -dt {{ $stagingReleasesDir }}/* | tail -n +4 | xargs -d "\n" chown -R deployer .
+ls -dt {{ $stagingReleasesDir }}/* | tail -n +4 | xargs -d "\n" rm -rf
 @endtask
 
 @task("finishDeploy", ["on" => "local"])

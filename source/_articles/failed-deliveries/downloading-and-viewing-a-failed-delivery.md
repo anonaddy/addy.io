@@ -29,4 +29,6 @@ When addy.io records a [failed delivery](/help/what-is-a-failed-delivery-and-why
 
 If you cannot download **inbound quarantined** or **outbound bounce** entries, enable **Store Failed Deliveries** under **Settings** > **General** at [app.addy.io/settings](https://app.addy.io/settings).
 
+To find out what an error means, paste it into the [SMTP error code lookup](/smtp-errors/). You can also open a downloaded `.eml` file in the [email header analyser](/tools/email-header-analyser/) to see the route the message took and its SPF, DKIM and DMARC results. Both tools run in your browser, so nothing is uploaded.
+
 After you fix the underlying issue (for example an invalid [recipient](/help/adding-a-recipient/) or full mailbox), you can [resend the failed delivery](/help/resending-a-failed-delivery/).

@@ -18,6 +18,7 @@
         'support' => [
             ['title' => 'FAQ', 'href' => '/faq/'],
             ['title' => 'Help Centre', 'href' => '/help/'],
+            ['title' => 'Email tools', 'href' => '/tools/', 'badge' => 'New'],
             ['title' => 'Contact', 'href' => '/contact/'],
             ['title' => 'Status', 'href' => 'https://status.addy.io/'],
         ],

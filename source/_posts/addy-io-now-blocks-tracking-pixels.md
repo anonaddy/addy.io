@@ -25,7 +25,7 @@ addy.io now strips matching images from the HTML as the email is forwarded. Norm
 
 ## How you will see it
 
-If any pixels are removed, the forwarded email banner includes a line such as **Blocked 2 tracking pixels. View report**.
+If any pixels are removed, the forwarded email banner includes a line such as **Removed 2 tracking pixels - View report**.
 
 The report shows how many pixels were blocked, the From and To addresses, and which tracker hosts were removed. The report data is encoded in the link. It is **not stored** in the addy.io database, and the link expires 30 days after the email was forwarded.
 

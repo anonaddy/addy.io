@@ -49,7 +49,7 @@ What to do:
 
 These happen before addy.io accepts the message. The sender's server or domain fails basic checks, so the message is rejected during SMTP.
 
-Below are common inbound rejection examples and what they usually mean:
+Below are common inbound rejection examples and what they usually mean. For other codes, paste the error into the [SMTP error code lookup](/smtp-errors/).
 
 - **`554 5.5.2 Helo command rejected: need fully-qualified hostname`** - The sending server introduced itself in SMTP HELO/EHLO with an invalid name (for example `localhost`, a short host name, or a non-FQDN value). Receiving servers expect a fully-qualified host name such as `mail.example.com`.
 - **`554 5.7.1 Helo command rejected: Host not found`** - The host name given in HELO/EHLO does not resolve in DNS (A/AAAA record missing or broken). The sending server claims a host identity that cannot be looked up.

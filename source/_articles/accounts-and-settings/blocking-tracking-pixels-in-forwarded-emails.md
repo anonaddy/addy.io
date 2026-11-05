@@ -20,6 +20,8 @@ Some emails include tiny hidden images, often 1 pixel by 1 pixel. When your emai
 
 addy.io removes matching images from the HTML before the email is forwarded to you, so that open signal is not sent.
 
+To see which trackers an email contains, paste its source into the [email tracker checker](/tools/email-tracker-checker/). It uses the same rules as addy.io and runs in your browser.
+
 <h2 id="how-to-enable-or-disable">How to enable or disable Block Tracking Pixels</h2>
 
 1. [Log in](https://app.addy.io) and click **Settings** in the navigation bar.
@@ -41,7 +43,7 @@ addy.io scans the HTML of a forwarded email and removes matching `<img>` tags wh
 
 Normal images are kept. That includes photos, logos, and typical social icons.
 
-If addy.io blocked any pixels, the forwarded email banner includes a line such as **Blocked 2 tracking pixels. View report**.
+If addy.io blocked any pixels, the forwarded email banner includes a line such as **Removed 2 tracking pixels - View report**.
 
 <h2 id="the-tracking-report">The tracking report</h2>
 

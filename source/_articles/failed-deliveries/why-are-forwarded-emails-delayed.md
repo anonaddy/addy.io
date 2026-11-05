@@ -49,6 +49,7 @@ This is usually **not** caused by a misconfiguration on your Gmail account alone
 <h2 id="what-you-can-do">What you can do</h2>
 
 - **Wait** - Temporary limits often clear on their own; retries usually succeed without any action from you.
+- **Check where the delay happened** - Paste a delayed email's headers into the [email header analyser](/tools/email-header-analyser/) to see how long it waited at each server. A long gap before the hop into Gmail usually means a temporary rate limit.
 - **Check spam** - Delayed mail can still land in **Spam** when it arrives. Mark legitimate forwards as **Not spam** so Gmail learns they are wanted.
 - **Add trusted senders** - Add `no-reply@addy.io` and important alias addresses to your Google Contacts or safe senders where possible.
 - **Reduce sudden bursts** - If you forward very high volumes to one Gmail inbox, spreading traffic or using another verified recipient can help.

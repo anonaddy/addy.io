@@ -244,7 +244,7 @@ If an incoming email looks like spam (for example, because it has failed its [DM
 
 Most of the time this is nothing to worry about and is just because the sender has not correctly configured their DNS records.
 
-To see why this banner was added you can view the headers of the received email and look for the header called 'X-AnonAddy-Authentication-Results'. This header shows the original email's authentication results and will show you why the email failed its DMARC checks.
+To see why this banner was added you can view the headers of the received email and look for the header called 'X-AnonAddy-Authentication-Results'. This header shows the original email's authentication results and will show you why the email failed its DMARC checks. You can paste the headers into the [email header analyser](/tools/email-header-analyser/) to have this explained in plain English.
 
 ## Does addy.io strip out the banner information when I reply to an email? {#does-addy-io-strip-out-the-banner-information-when-i-reply-to-an-email}
 
@@ -304,7 +304,7 @@ If an alias has been deleted and you try to send email to it, the emails will be
 
 Check that you have not deactivated the alias, custom domain or additional username. When any of these are deactivated, emails will be silently discarded, they will not be rejected or return any error message.
 
-The sender of the email may be failing SPF, DMARC or DNS blacklist checks resulting in the email being rejected. The sender should also have correct reverse DNS setup and use a FQDN as their hostname.
+The sender of the email may be failing SPF, DMARC or DNS blacklist checks resulting in the email being rejected. The sender should also have correct reverse DNS setup and use a FQDN as their hostname. If the sender received a bounce message, they can paste it into the [SMTP error code lookup](/smtp-errors/) to see what it means.
 
 If you are forwarding emails to an icloud.com email address some users are having issues with a small number of emails being rejected (often those from Facebook).
 
@@ -485,7 +485,7 @@ Yes. On Lite and Pro, addy.io can remove known tracking pixels from forwarded HT
 
 If pixels are removed, the email banner includes a **View report** link. The report data is encoded in the URL and is not stored in the database.
 
-For details, limits, and how to change the setting, see [Blocking tracking pixels in forwarded emails](/help/blocking-tracking-pixels-in-forwarded-emails/).
+For details, limits, and how to change the setting, see [Blocking tracking pixels in forwarded emails](/help/blocking-tracking-pixels-in-forwarded-emails/). To check an email for trackers yourself, use the [email tracker checker](/tools/email-tracker-checker/).
 
 ## Where is the server located? {#where-is-the-server-located}
 

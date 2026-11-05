@@ -36,6 +36,22 @@ return [
             'sort' => '-date',
             'path' => 'changelog/{filename}',
         ],
+        'smtpErrors' => [
+            'sort' => 'status',
+            'path' => 'smtp-errors/{filename}',
+            'marketing' => true,
+            'width' => 'full',
+            'ogtype' => 'article',
+        ],
+    ],
+
+    // SMTP error pages are listed under these headings, in this order
+    'smtpGroups' => [
+        'address' => 'Address problems',
+        'mailbox' => 'Mailbox problems',
+        'message' => 'Message problems',
+        'policy' => 'Security and policy',
+        'temporary' => 'Temporary delays',
     ],
 
     'menuItems' => [
