@@ -1,4 +1,14 @@
 // Email header analyser on /tools/email-header-analyser/. Everything runs here in the browser: nothing pasted or opened is sent anywhere
+import {
+  SERVICES,
+  SLOW_DELAY,
+  explainDelays,
+  orgDomain,
+  parseReceived,
+  providerName,
+  receiverOf,
+} from './header-analyser-route'
+
 const form = document.getElementById('analyser')
 const input = document.getElementById('header-text')
 const fileInput = document.getElementById('header-file')
@@ -37,64 +47,6 @@ Message-ID: <20261103171202.8F2A11C0042@mailer.shop.example>
 List-Unsubscribe: <mailto:unsubscribe@mailer.shop.example>
 MIME-Version: 1.0
 Content-Type: text/html; charset=UTF-8`
-
-// Domains that identify well-known email services, checked against Received hosts, DKIM domains and the envelope sender
-const SERVICES = [
-  ['amazonses.com', 'Amazon SES'],
-  ['sendgrid.net', 'SendGrid'],
-  ['mailgun.org', 'Mailgun'],
-  ['mailgun.net', 'Mailgun'],
-  ['mcsv.net', 'Mailchimp'],
-  ['mcdlv.net', 'Mailchimp'],
-  ['rsgsv.net', 'Mailchimp'],
-  ['mandrillapp.com', 'Mailchimp Transactional'],
-  ['sparkpostmail.com', 'SparkPost'],
-  ['mtasv.net', 'Postmark'],
-  ['postmarkapp.com', 'Postmark'],
-  ['hubspotemail.net', 'HubSpot'],
-  ['klaviyomail.com', 'Klaviyo'],
-  ['exacttarget.com', 'Salesforce Marketing Cloud'],
-  ['customeriomail.com', 'Customer.io'],
-  ['brevo.com', 'Brevo'],
-  ['sendinblue.com', 'Brevo'],
-  ['zoho.com', 'Zoho Mail'],
-  ['zohomail.eu', 'Zoho Mail'],
-  ['protection.outlook.com', 'Microsoft 365'],
-  ['outlook.com', 'Outlook'],
-  ['google.com', 'Google'],
-  ['protonmail.ch', 'Proton Mail'],
-  ['proton.me', 'Proton Mail'],
-  ['icloud.com', 'iCloud Mail'],
-  ['yahoo.com', 'Yahoo'],
-  ['fastmail.com', 'Fastmail'],
-  ['messagingengine.com', 'Fastmail'],
-  ['tutanota.de', 'Tuta'],
-  ['mailbox.org', 'mailbox.org'],
-  ['anonaddy.me', 'addy.io'],
-  ['anonaddy.com', 'addy.io'],
-  ['addy.io', 'addy.io'],
-]
-
-// Two-part public suffixes, so mail.example.co.uk and example.co.uk count as the same organisation
-const TWO_PART_SUFFIXES = [
-  'co.uk',
-  'org.uk',
-  'ac.uk',
-  'gov.uk',
-  'me.uk',
-  'com.au',
-  'net.au',
-  'org.au',
-  'co.nz',
-  'co.jp',
-  'co.za',
-  'com.br',
-  'com.mx',
-  'co.in',
-  'com.cn',
-  'com.tr',
-  'com.sg',
-]
 
 const el = (tag, className, text) => {
   const node = document.createElement(tag)
@@ -174,13 +126,6 @@ const domainOf = (address) => {
   return domain || null
 }
 
-const orgDomain = (domain) => {
-  if (!domain) return null
-  const labels = domain.split('.')
-  const lastTwo = labels.slice(-2).join('.')
-  return labels.slice(TWO_PART_SUFFIXES.includes(lastTwo) ? -3 : -2).join('.')
-}
-
 const aligned = (a, b) => Boolean(a && b && orgDomain(a) === orgDomain(b))
 
 // "mx.google.com; dkim=pass header.i=@example.com; spf=pass (...) smtp.mailfrom=x@example.com; dmarc=pass (p=REJECT) header.from=example.com"
@@ -220,30 +165,6 @@ const parseAuthResults = (value) => {
   }
 
   return results
-}
-
-const parseReceived = (value) => {
-  const semicolon = value.lastIndexOf(';')
-  const datePart =
-    semicolon === -1
-      ? ''
-      : value
-          .slice(semicolon + 1)
-          .replace(/\([^)]*\)/g, '')
-          .trim()
-  const routePart = semicolon === -1 ? value : value.slice(0, semicolon)
-  const date = datePart ? new Date(datePart) : null
-  const fromClause =
-    routePart.match(/\bfrom\s+(.+?)(?=\s+by\s|\s+with\s|\s+id\s|\s+for\s|$)/i)?.[1] ?? ''
-
-  return {
-    from: fromClause.match(/^(\S+)/)?.[1] ?? null,
-    fromIp: fromClause.match(/\[(?:IPv6:)?([0-9a-f:.]+)\]/i)?.[1] ?? null,
-    by: routePart.match(/\bby\s+(\S+)/i)?.[1] ?? null,
-    with: routePart.match(/\bwith\s+(Microsoft SMTP Server|[A-Za-z0-9]+)/i)?.[1] ?? null,
-    tls: /\bwith\s+\w*SMTPSA?\b/i.test(routePart) || /version=TLS|cipher=|\bTLSv?1/i.test(value),
-    date: date && !Number.isNaN(date.getTime()) ? date : null,
-  }
 }
 
 const formatDelay = (ms) => {
@@ -302,6 +223,47 @@ const authTable = (auth) => {
     }
   }
   return dl
+}
+
+// Says where a slow hop's delay happened, so a delay at the recipient's email provider isn't taken for addy.io's
+const delayNote = ({ kind, provider }, delay) => {
+  const note = el('div', 'ha-hop-note')
+  const name = provider ?? 'the receiving email provider'
+
+  if (kind === 'handoff') {
+    note.append(el('p', 'ha-hop-note-title', `Delayed by ${provider ?? 'the receiving provider'}`))
+    const text = el(
+      'p',
+      null,
+      `addy.io had already forwarded this email, but it took ${delay} for ${name} to accept it. That's almost always ${name} temporarily deferring incoming mail, for example to rate limit it or run extra spam checks. addy.io keeps retrying automatically until it's accepted, so nothing is lost. If it happens often, ${name} can tell you why they're deferring it. `
+    )
+    const link = el('a', null, 'Why are forwarded emails delayed?')
+    link.href = '/help/why-are-forwarded-emails-delayed/'
+    text.append(link)
+    note.append(text)
+  } else if (kind === 'before-addy') {
+    note.append(el('p', 'ha-hop-note-title', 'Delayed before reaching addy.io'))
+    note.append(
+      el(
+        'p',
+        null,
+        `This ${delay} delay happened before the email reached addy.io, while it was with the sender or their email provider.`
+      )
+    )
+  } else {
+    note.append(
+      el('p', 'ha-hop-note-title', `Delayed inside ${provider ?? 'the receiving provider'}`)
+    )
+    note.append(
+      el(
+        'p',
+        null,
+        `This ${delay} delay happened after ${name} accepted the email from addy.io, while it was passing between ${name}'s own servers.`
+      )
+    )
+  }
+
+  return note
 }
 
 const verdict = (auth, fromDomain) => {
@@ -494,6 +456,7 @@ const analyse = (raw) => {
       `${hops.length} ${hops.length === 1 ? 'hop' : 'hops'}, oldest first${total !== null && total >= 0 ? `. Total time: ${formatDelay(total)}` : ''}.`
     )
     const list = el('ol', 'ha-hops')
+    const explanations = explainDelays(hops)
     let previous = null
 
     hops.forEach((hop, i) => {
@@ -503,13 +466,19 @@ const analyse = (raw) => {
       const route = el('span', 'ha-hop-route')
       route.append(el('span', 'mono', hop.from ?? 'internal'))
       route.append(el('span', 'ha-muted', ' → '))
-      route.append(el('span', 'mono', hop.by ?? 'unknown'))
+      const receiver = receiverOf(hops, i)
+      route.append(
+        hop.by
+          ? el('span', 'mono', hop.by)
+          : el('span', 'ha-muted', receiver ? `a ${orgDomain(receiver)} server` : 'unknown')
+      )
       head.append(route)
 
+      let delay = null
       if (previous?.date && hop.date) {
-        const delay = hop.date - previous.date
+        delay = hop.date - previous.date
         const label = delay < 0 ? 'clock skew' : `+${formatDelay(delay)}`
-        head.append(el('span', `ha-delay ${delay >= 60000 ? 'is-slow' : ''}`, label))
+        head.append(el('span', `ha-delay ${delay >= SLOW_DELAY ? 'is-slow' : ''}`, label))
       }
       item.append(head)
 
@@ -520,6 +489,7 @@ const analyse = (raw) => {
         hop.date ? formatDate(hop.date) : 'no time',
       ].filter(Boolean)
       item.append(el('p', 'ha-hop-meta', meta.join(' · ')))
+      if (explanations[i]) item.append(delayNote(explanations[i], formatDelay(delay)))
       list.append(item)
       if (hop.date) previous = hop
     })

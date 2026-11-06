@@ -2535,6 +2535,23 @@
       color: var(--muted);
       overflow-wrap: anywhere;
     }
+    .ha-hop-note {
+      margin: 10px 0 0 28px;
+      padding: 12px 14px;
+      border: 1px solid var(--tint-indigo-line);
+      border-radius: 12px;
+      background: var(--tint-indigo);
+      font-size: 14px;
+      color: var(--ink);
+    }
+    .ha-hop-note p {
+      margin: 0;
+    }
+    .ha-hop-note .ha-hop-note-title {
+      margin-bottom: 4px;
+      font-weight: 800;
+      color: var(--heading);
+    }
     .ha-all summary {
       cursor: pointer;
       font-size: 17px;
