@@ -1,6 +1,8 @@
 ---
 title: "Email header analyser"
 description: "Paste email headers to see an email's route, the delay at each hop, its SPF, DKIM and DMARC results, and whether the sender looks spoofed."
+image: https://addy.io/assets/img/share/email-header-analyser.png
+imageAlt: "Email header analyser from addy.io showing an email's route, delays and SPF, DKIM and DMARC results"
 width: full
 marketing: true
 ---

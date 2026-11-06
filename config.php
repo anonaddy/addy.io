@@ -42,6 +42,8 @@ return [
             'marketing' => true,
             'width' => 'full',
             'ogtype' => 'article',
+            'image' => 'https://addy.io/assets/img/share/smtp-errors.png',
+            'imageAlt' => 'SMTP error code lookup from addy.io explaining a 550 5.1.1 bounce',
         ],
     ],
 

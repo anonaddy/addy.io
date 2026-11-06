@@ -1,6 +1,8 @@
 ---
 title: "SMTP error codes explained"
 description: "Paste a bounce message to see what went wrong, or look up common SMTP error codes like 550 5.1.1 and 552 5.2.2, with fixes for recipients and senders."
+image: https://addy.io/assets/img/share/smtp-errors.png
+imageAlt: "SMTP error code lookup from addy.io explaining a 550 5.1.1 bounce"
 width: full
 marketing: true
 ---

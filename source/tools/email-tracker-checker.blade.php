@@ -1,6 +1,8 @@
 ---
 title: "Email tracker checker"
 description: "Is this email tracking you? Paste an email's source or open an .eml file to find the tracking pixels in it and see who's watching when you open it."
+image: https://addy.io/assets/img/share/email-tracker-checker.png
+imageAlt: "Email tracker checker from addy.io finding 4 tracking pixels in an email"
 width: full
 marketing: true
 ---

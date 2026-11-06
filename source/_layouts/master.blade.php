@@ -16,6 +16,12 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="addy.io: a different email address for every website">
     @endunless
+    @if($page->imageAlt)
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{ $page->imageAlt }}">
+    <meta property="twitter:image:alt" content="{{ $page->imageAlt }}" />
+    @endif
     <meta property="og:type" content="{{ $page->ogtype ?? 'website'}}" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:site" content="@addy_io" />

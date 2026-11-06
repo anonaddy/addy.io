@@ -1,6 +1,8 @@
 ---
 title: "Free email tools"
 description: "Free email tools from addy.io: find tracking pixels, analyse email headers, check SPF, DKIM and DMARC, and look up SMTP bounce codes. All in your browser."
+image: https://addy.io/assets/img/share/email-tools.png
+imageAlt: "Free email tools from addy.io: tracker checker, header analyser and SMTP error code lookup"
 width: full
 marketing: true
 ---
