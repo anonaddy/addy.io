@@ -343,7 +343,7 @@ const analyse = (raw) => {
   // Verdict
   const [kind, title, text] = addyAuth
     ? verdict(addyAuth, originalDomain)
-    : verdict(auth, fromDomain)
+    : verdict(auth, auth?.dmarc[0]?.domain ?? fromDomain)
   const summary = el('div', `card ha-verdict ${kind}`)
   summary.append(el('p', 'ha-verdict-label', addyAuth ? 'Original sender' : 'Sender check'))
   summary.append(el('h2', null, title))
@@ -421,23 +421,37 @@ const analyse = (raw) => {
     card.append(authTable(auth))
 
     const notes = el('ul', 'ha-notes')
-    const dkimFor = auth.dkim.find((r) => r.result === 'pass')?.domain ?? dkimDomains[0]
-    if (fromDomain && dkimFor && !aligned(dkimFor, fromDomain)) {
+    // Compare against the From domain these results checked, as a forwarding service may have changed the From header since
+    const checkedFrom = auth.dmarc[0]?.domain ?? fromDomain
+    if (checkedFrom && fromDomain && !aligned(checkedFrom, fromDomain)) {
       notes.append(
         el(
           'li',
           null,
-          `The DKIM signature is for ${dkimFor}, not the From address domain ${fromDomain}. That's normal for some email services, but it means DKIM alone doesn't prove who sent it.`
+          `These results checked the From address domain ${checkedFrom}. The From address was changed to ${fromDomain} afterwards, which is normal when an email has been forwarded.`
         )
       )
     }
-    const mailFrom = domainOf(returnPath)
-    if (fromDomain && mailFrom && !aligned(mailFrom, fromDomain)) {
+    const dkimFor = auth.dkim.find((r) => r.result === 'pass')?.domain ?? dkimDomains[0]
+    if (checkedFrom && dkimFor && !aligned(dkimFor, checkedFrom)) {
       notes.append(
         el(
           'li',
           null,
-          `The envelope sender domain ${mailFrom} is different to the From address domain ${fromDomain}, so SPF can't count towards DMARC.`
+          `The DKIM signature is for ${dkimFor}, not the From address domain ${checkedFrom}. That's normal for some email services, but it means DKIM alone doesn't prove who sent it.`
+        )
+      )
+    }
+    const mailFrom =
+      auth.spf.find((r) => r.result === 'pass')?.domain ??
+      auth.spf[0]?.domain ??
+      domainOf(returnPath)
+    if (checkedFrom && mailFrom && !aligned(mailFrom, checkedFrom)) {
+      notes.append(
+        el(
+          'li',
+          null,
+          `The envelope sender domain ${mailFrom} is different to the From address domain ${checkedFrom}, so SPF can't count towards DMARC.`
         )
       )
     }
