@@ -19,10 +19,6 @@ class FetchSocialProof
             $stats['github'] = $github;
         }
 
-        if ($trustpilot = $this->fetchTrustpilot()) {
-            $stats['trustpilot'] = $trustpilot;
-        }
-
         $stats['github']['starsFormatted'] = $this->formatCount($stats['github']['stars'] ?? 0);
 
         $jigsaw->setConfig('socialProof', $stats);
@@ -48,31 +44,6 @@ class FetchSocialProof
 
         return [
             'stars' => (int) $data['stargazers_count'],
-        ];
-    }
-
-    private function fetchTrustpilot(): ?array
-    {
-        $apiKey = env('TRUSTPILOT_API_KEY');
-        $businessUnitId = env('TRUSTPILOT_BUSINESS_UNIT_ID');
-
-        if (! $apiKey || ! $businessUnitId) {
-            return null;
-        }
-
-        $data = $this->getJson(
-            'https://api.trustpilot.com/v1/business-units/'.rawurlencode($businessUnitId),
-            ['apikey: '.$apiKey]
-        );
-
-        if (! isset($data['score']['trustScore'], $data['numberOfReviews']['total'])) {
-            return null;
-        }
-
-        return [
-            'score' => round((float) $data['score']['trustScore'], 1),
-            'stars' => (float) ($data['score']['stars'] ?? 0),
-            'reviews' => (int) $data['numberOfReviews']['total'],
         ];
     }
 
@@ -107,12 +78,12 @@ class FetchSocialProof
     private function readFallback(): array
     {
         if (! file_exists(self::FALLBACK_PATH)) {
-            return ['github' => ['stars' => 0], 'trustpilot' => null];
+            return ['github' => ['stars' => 0]];
         }
 
         $decoded = json_decode(file_get_contents(self::FALLBACK_PATH), true);
 
-        return is_array($decoded) ? $decoded : ['github' => ['stars' => 0], 'trustpilot' => null];
+        return is_array($decoded) ? $decoded : ['github' => ['stars' => 0]];
     }
 
     private function formatCount(int $count): string
