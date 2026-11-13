@@ -4,8 +4,8 @@ ogtype: article
 image: https://addy.io/assets/img/help/failed-deliveries/failed-deliveries.png
 section: content
 title: Why are forwarded emails delayed?
-date: 2026-06-04
-description: Why your email provider sometimes delays addy.io forwards while your dashboard already shows them as forwarded. Covers temporary 421 4.7.28 SPF rate limits and what you can do.
+date: 2026-11-13
+description: Why your email provider sometimes delays addy.io forwards while your dashboard already shows them as forwarded. Covers Gmail's 421 4.7.28 rate limits, Yahoo's 421 4.7.0 [TSS04] deferrals and what you can do.
 helpCategories: [failed-deliveries]
 order: 6
 ---
@@ -46,23 +46,37 @@ Delays are more likely when:
 
 This is usually **not** caused by a misconfiguration on your Gmail account alone.
 
+<h2 id="yahoo-temporary-deferrals-421-4-7-0-tss04">Yahoo temporary deferrals (421 4.7.0 [TSS04])</h2>
+
+Yahoo, which also handles mail for AOL addresses, can delay forwards in a similar way. The error looks like this:
+
+> host mx-eu.mail.am0.yahoodns.net[...] said: 421 4.7.0 [TSS04] Messages from [...] temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes (in reply to MAIL FROM command)
+
+The `yahoodns.net` server name shows the email was being delivered to Yahoo. The address after **Messages from** is the IP address of the addy.io mail server, not your own address or username domain.
+
+Unlike Gmail's limit, which applies to your username subdomain, Yahoo's applies to the **sending server's IP address**. Yahoo slows down mail from a server when it sees a sudden rise in volume, or when its users mark mail from that server as spam. Because many addy.io users forward to Yahoo and AOL from the same servers, your forwards can be delayed even if you only receive a few emails yourself.
+
+This is also a **temporary** response (code **421**). addy.io retries deferred messages automatically, and Yahoo usually accepts them once the volume or complaint rate drops, so the email arrives late rather than not at all. See [421 4.7.0](/smtp-errors/421-4-7-0/) for more on this error, and [Yahoo's error codes](https://postmaster.yahooinc.com/error-codes) for Yahoo's own explanation.
+
+If you use Yahoo or AOL, avoid marking forwarded emails as spam to get rid of them. Each report counts against the addy.io server that forwarded the email, which can delay mail for everyone using it. If you no longer want emails sent to an alias, [deactivate](/help/deactivating-email-aliases/) or delete the alias instead.
+
 <h2 id="what-you-can-do">What you can do</h2>
 
 - **Wait** - Temporary limits often clear on their own; retries usually succeed without any action from you.
-- **Check where the delay happened** - Paste a delayed email's headers into the [email header analyser](/tools/email-header-analyser/) to see how long it waited at each server. A long gap before the hop into Gmail usually means a temporary rate limit.
-- **Check spam** - Delayed mail can still land in **Spam** when it arrives. Mark legitimate forwards as **Not spam** so Gmail learns they are wanted.
-- **Add trusted senders** - Add `no-reply@addy.io` and important alias addresses to your Google Contacts or safe senders where possible.
-- **Reduce sudden bursts** - If you forward very high volumes to one Gmail inbox, spreading traffic or using another verified recipient can help.
-- **Adjust forwarding settings** - Steps that can help Gmail accept forwards more reliably (banner, From format, encryption) are in [How can I prevent or reduce failed deliveries?](/help/how-can-i-prevent-or-reduce-failed-deliveries/) and the [FAQ](/faq/#im-not-receiving-any-emails-whats-wrong).
+- **Check where the delay happened** - Paste a delayed email's headers into the [email header analyser](/tools/email-header-analyser/) to see how long it waited at each server. A long gap before the hop into Gmail or Yahoo usually means a temporary rate limit.
+- **Check spam** - Delayed mail can still land in **Spam** when it arrives. Mark legitimate forwards as **Not spam** so your email provider learns they are wanted.
+- **Add trusted senders** - Add `no-reply@addy.io` and important alias addresses to your contacts or safe senders where possible.
+- **Reduce sudden bursts** - If you forward very high volumes to one inbox, spreading traffic or using another verified recipient can help.
+- **Adjust forwarding settings** - Steps that can help your email provider accept forwards more reliably (banner, From format, encryption) are in [How can I prevent or reduce failed deliveries?](/help/how-can-i-prevent-or-reduce-failed-deliveries/) and the [FAQ](/faq/#im-not-receiving-any-emails-whats-wrong).
 
-If mail **never** arrives and you see a **failed delivery** in the dashboard, use [Downloading and viewing a failed delivery](/help/downloading-and-viewing-a-failed-delivery/) to read the exact error from Gmail.
+If mail **never** arrives and you see a **failed delivery** in the dashboard, use [Downloading and viewing a failed delivery](/help/downloading-and-viewing-a-failed-delivery/) to read the exact error from your email provider.
 
 <h2 id="when-to-contact-support">When to contact support</h2>
 
 Contact [addy.io support](/contact/) if:
 
 - Delays persist for **more than 24 hours** on multiple messages
-- Gmail eventually returns a **permanent** bounce (5xx) and a failed delivery is recorded
+- Your email provider eventually returns a **permanent** bounce (5xx) and a failed delivery is recorded
 - Only your account is affected and you have already tried the steps above
 
-Include the approximate time the message was sent to your alias and your Gmail recipient address so the delivery logs can be checked.
+Include the approximate time the message was sent to your alias and your recipient address so the delivery logs can be checked.
