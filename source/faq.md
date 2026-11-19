@@ -61,6 +61,8 @@ For step-by-step guides, see the [Help Centre](/help/).
 - [If I subscribe will Stripe see my real email address?](#if-i-subscribe-will-stripe-see-my-real-email-address)
 - [Do you offer student discount?](#do-you-offer-student-discount)
 - [Do you offer Duo or Family plans?](#do-you-offer-duo-or-family-plans)
+- [Do you offer business or enterprise plans?](#do-you-offer-business-or-enterprise-plans)
+- [Can I use addy.io to hide my customers' email addresses from each other?](#can-i-use-addy-io-to-hide-my-customers-email-addresses-from-each-other)
 
 <h3 class="faq-category">Plans & limits</h3>
 
@@ -397,6 +399,18 @@ Yes. **Duo** (2 members total, including the owner) and **Family** (5 members to
 You invite existing addy.io accounts by username. Members who already have their own paid subscription need to cancel it before accepting an invite. You can pay with card / PayPal (monthly or yearly) or cryptocurrency (yearly only). Duo and Family are not available through the App Store or Play Store.
 
 See <span data-pricing>the [pricing page](/pricing/) for current prices, and </span>[Duo and Family plans](/help/duo-and-family-plans/) in the Help Centre for how to subscribe, invite members, share custom domains, deliver aliases to each other and manage seats.
+
+## Do you offer business or enterprise plans? {#do-you-offer-business-or-enterprise-plans}
+
+addy.io's plans are made for individuals and households, so there is no business or enterprise plan to subscribe to here.
+
+If your company needs more than that, for example aliases for a whole team, shared inboxes such as `sales@` or `invoices@`, roles for different members of staff, or an API and webhooks for your own systems, please get in touch through the [contact page](/contact/) and tell me a little about what you need.
+
+## Can I use addy.io to hide my customers' email addresses from each other? {#can-i-use-addy-io-to-hide-my-customers-email-addresses-from-each-other}
+
+Not with an addy.io account. An alias forwards email to your own verified recipients, so it protects your address. It isn't designed to connect two other people, such as a buyer and a seller on a marketplace, so that they can email each other without either seeing the other's real address.
+
+If that is what you are looking for, two-way masking for a marketplace or a platform, please get in touch through the [contact page](/contact/) and tell me a little about your platform.
 
 <h3 class="faq-category">Plans & limits</h3>
 

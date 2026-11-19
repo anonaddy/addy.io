@@ -109,6 +109,10 @@ marketing: true
     <p class="shared-more"><a class="text-link" href="/help/duo-and-family-plans/">How Duo and Family plans work →</a></p>
   </section>
 
+  <section class="wrap">
+    <p class="perks text-center">Looking for a business or enterprise plan, or masked email between your own customers? <a class="text-link" href="/contact/" data-umami-event="business-enquiry" data-umami-event-source="pricing-plans">Get in touch →</a></p>
+  </section>
+
   <section class="section">
     <div class="wrap">
       <h2 class="h2 reveal m-0">Compare every feature</h2>
@@ -148,6 +152,7 @@ marketing: true
         <details><summary>Can I pay without a recurring subscription?</summary><p>Yes. Buy a voucher code for Lite or Pro and redeem it on your account whenever you're ready, or give it to someone else as a gift. Vouchers are also sold by <a class="text-link" href="https://digitalgoods.proxysto.re/" target="_blank" rel="nofollow noopener noreferrer">ProxyStore</a>, an official reseller that accepts Monero, Bitcoin, cash and SEPA bank transfer. <a class="text-link" href="/help/voucher-codes/">How voucher codes work</a></p></details>
         <details><summary>What happens if I cancel?</summary><p>Your plan stays active until the end of the billing period. After that your account moves to the Free plan and paid features such as custom domains, additional usernames and extra recipients are deactivated. Resubscribe within 90 days and they're switched back on automatically. <a class="text-link" href="/faq/#what-happens-if-i-have-a-subscription-but-then-cancel-it">Full details in the FAQ</a></p></details>
         <details><summary>Can Duo and Family members see each other's emails?</summary><p>No. Every member has their own independent account, so aliases, recipients and usernames stay private. The owner can choose to share a custom domain, and members can deliver an alias to each other without seeing anyone's email address.</p></details>
+        <details><summary>Do you offer business or enterprise plans?</summary><p>These plans are for individuals and households. If your company needs aliases for a whole team, an API and webhooks for your own systems, or masked email between your own customers, such as buyers and sellers on a marketplace, <a class="text-link" href="/contact/" data-umami-event="business-enquiry" data-umami-event-source="pricing-questions">get in touch</a> and tell me a little about what you need.</p></details>
         <details><summary>Can I self-host instead?</summary><p>Yes. addy.io is open source, and the <a class="text-link" href="/self-hosting/">self-hosting guide</a> walks you through running it on your own server.</p></details>
       </div>
       <p class="mt-[22px] mb-0 text-center"><a class="text-link" href="/faq/">More answers in the FAQ →</a></p>

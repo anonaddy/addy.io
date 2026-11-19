@@ -14,6 +14,10 @@ You should be able to find the answers to most questions on the [FAQ](/faq/) pag
 
 If you wish to encrypt your email please use <a href="/contact-public-key.asc">this PGP Key</a> (E652C2DB43859328F35575DEBF7B93C6497510D0).
 
+## Business and enterprise
+
+addy.io's plans are made for individuals and households. If you are looking for a business or enterprise plan, aliases for a whole team, or a way to mask email between your own customers (for example buyers and sellers on a marketplace), please email the address above with a little about your company, what you would like to do and roughly how much email is involved.
+
 ## Feature requests
 
 If you have a feature that you'd like to see added to addy.io then please feel free to post it on [GitHub discussions](https://github.com/anonaddy/anonaddy/discussions). Make sure to check the [Roadmap](https://github.com/orgs/anonaddy/projects/1/views/1) first to see if it isn't already in the pipeline.
