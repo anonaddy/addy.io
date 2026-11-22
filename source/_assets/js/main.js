@@ -99,3 +99,25 @@ if (document.documentElement.classList.contains('appstore')) {
     }
   })
 })()
+
+// Remove promo banners once their offer has ended, until the markup itself is taken out
+document.querySelectorAll('[data-promo-ends-at]').forEach((banner) => {
+  if (Date.now() > Date.parse(banner.dataset.promoEndsAt)) {
+    banner.remove()
+  }
+})
+
+// Copy buttons for promo codes, e.g. the Black Friday banner
+document.querySelectorAll('[data-copy-code]').forEach((button) => {
+  const label = button.querySelector('[data-copy-code-label]')
+
+  button.addEventListener('click', () => {
+    navigator.clipboard?.writeText(button.dataset.copyCode).then(() => {
+      if (!label) return
+      label.textContent = 'Copied!'
+      setTimeout(() => {
+        label.textContent = 'Copy'
+      }, 2000)
+    })
+  })
+})

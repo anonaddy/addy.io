@@ -1,3 +1,13 @@
+<div class="bg-pink-600" data-pricing data-promo-ends-at="2026-11-30T23:59:59Z">
+    <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+        <p class="text-center text-sm sm:text-base font-medium text-white mb-0 tracking-wide">
+            <a href="/pricing/" class="text-white hover:underline underline-offset-2" data-umami-event="pricing-click" data-umami-event-source="black-friday-banner"><span class="hidden sm:inline">Black Friday Offer! Get </span><b>40% off</b> your first year on <span class="hidden sm:inline">any yearly plan</span><span class="sm:hidden">yearly plans</span> with code</a>
+            <button type="button" class="ml-1 inline-flex items-center gap-1.5 rounded border border-dashed border-white/70 px-1.5 font-extrabold tracking-wide text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" data-copy-code="BLACKFRIDAY26" title="Copy code" data-umami-event="black-friday-code-copy">BLACKFRIDAY26<span class="text-xs font-semibold" data-copy-code-label>Copy</span></button>
+            <span class="inline-block">until 30 Nov</span>
+        </p>
+    </div>
+</div>
+<div class="relative">
 <header class="absolute inset-x-0 top-0 z-50 bg-canvas {{ $page->isActive('/') ? 'border-b border-line' : 'shadow dark:shadow-none dark:border-b dark:border-line' }}">
     <nav class="mx-auto flex max-w-[75rem] items-center justify-between gap-x-6 px-6 py-3" aria-label="Global">
         <div class="flex lg:flex-1">
@@ -69,3 +79,4 @@
         </div>
     </div>
 </header>
+</div>
