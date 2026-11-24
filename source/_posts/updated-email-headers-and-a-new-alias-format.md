@@ -59,8 +59,6 @@ Clicking that will bring up a modal where you simply need to enter the email des
 
 On Thursday the 17th December addy.io's hosting provider Greenhost suffered a large DDoS attack targeting one of their customers. This attack was large enough to also affect other parts of their network and it took addy.io offline for roughly 4 hours. I apologise if this downtime affected you in any way.
 
-Greenhost have more details on the incident here - [https://status.greenhost.net/incidents/22](https://status.greenhost.net/incidents/22).
-
 They have taken measures to make their infrastructure more resilient and fault tolerant and added DDoS mitigation.
 
 On the back of this I will be looking into ways to make addy.io more resilient too by adding a backup mail server so that emails can continue to be delivered in the event of any downtime with the main mail server.

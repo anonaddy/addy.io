@@ -16,7 +16,7 @@ You can subscribe to addy.io through the **Google Play Store** when using the [a
 
 <h2 id="how-to-subscribe-via-the-google-play-store">How to subscribe via the Google Play Store</h2>
 
-1. Install the addy.io app from the [Play Store](https://play.google.com/store/apps/details?id=io.addy.android) and login to your account.
+1. Install the addy.io app from the [Play Store](https://play.google.com/store/apps/details?id=host.stjin.anonaddy) and login to your account.
 2. In the app, click on the icon in the top right showing the first two letters of your username (e.g. JO for the username 'johndoe') then click **Manage subscription**. Choose the plan you want (e.g. Lite or Pro) and tap **Subscribe Now**.
 3. Complete the purchase with your **Google account**. Google will charge you according to the plan and billing period (e.g. monthly or yearly). Your addy.io account is upgraded as soon as the purchase completes.
 

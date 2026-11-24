@@ -16,7 +16,7 @@ You can subscribe to addy.io through the **Apple App Store** when using the [add
 
 <h2 id="how-to-subscribe-via-the-apple-app-store">How to subscribe via the Apple App Store</h2>
 
-1. Install the addy.io app from the [App Store](https://apps.apple.com/app/addy-io/id1592359462) and login to your account.
+1. Install the addy.io app from the [App Store](https://apps.apple.com/app/addy-io/id6563138633) and login to your account.
 2. In the app, open the subscription or upgrade screen (e.g. from Settings or the main menu). Choose the plan you want (e.g. Lite or Pro) and tap to subscribe.
 3. Complete the purchase with your **Apple ID** (Face ID, Touch ID or password). Apple will charge you according to the plan and billing period (e.g. monthly or yearly). Your addy.io account is upgraded as soon as the purchase completes.
 
