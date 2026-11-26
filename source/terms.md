@@ -68,7 +68,7 @@ We do not accept any responsibility for any loss which may arise from accessing 
 
 ## Disclaimer
 
-Your use of the Service is at your sole risk. The Service is provided on an "as if" and "as available" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
+Your use of the Service is at your sole risk. The Service is provided on an "as is" and "as available" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
 
 Access to our site is permitted on a temporary basis, and we reserve the right to withdraw or amend the Service we provide on our site without notice. We will not be liable if for any reason our site is unavailable at any time or for any period.
 
